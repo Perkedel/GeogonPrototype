@@ -1,0 +1,10 @@
+by JOELwindows7
+Perkedel Technologies
+Software: GNU GPL v3
+Stuffs: CC4.0-BY-SA
+
+Refference:
+Unity (c) Unity. This game was built with Unity
+
+Assets involved:
+Github for Unity. to do Git with this Unity project
