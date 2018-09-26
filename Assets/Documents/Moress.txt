@@ -1,2 +1,4 @@
 Geogon Polymetry: The Proof Concept
 Change your shape to do something!
+
+Readme extended bellow:

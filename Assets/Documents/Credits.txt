@@ -8,3 +8,4 @@ Unity (c) Unity. This game was built with Unity
 
 Assets involved:
 Github for Unity. to do Git with this Unity project
+2D Game Kit (Decommissioned, Ruining the Game Collider)(Try Partial and watch what things change first!)
