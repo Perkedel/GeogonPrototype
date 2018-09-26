@@ -3,8 +3,14 @@ Perkedel Technologies
 Software: GNU GPL v3
 Stuffs: CC4.0-BY-SA
 
+Copying:
+Unity3D (c) Unity [100% $$$+]. This game was built with Unity3D.
+
 Refference:
-Unity (c) Unity. This game was built with Unity
+Digital-Phantom https://answers.unity.com/questions/930656/how-to-prevent-camera-rotation.html . The Follow camera without rotation.
+Unity UI tutorial Main menu https://unity3d.com/learn/tutorials/topics/user-interface-ui/creating-main-menu . Main menu Tutorial. Too long video! just copy code and left it.
+Brackey's Menu tutorial https://www.youtube.com/watch?v=zc8ac_qUXQY . Nah that's better. WOW!!! BRACKEY!! THAT'S YOU!!! THX!!! Check out SampleMenuScene to see what I did follow.
+
 
 Assets involved:
 Github for Unity. to do Git with this Unity project
