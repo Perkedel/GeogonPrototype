@@ -58,8 +58,8 @@ public class SettingsMenu : MonoBehaviour {
         //}
 
         //qualityDropdown.AddOptions(optionq);
-        qualityDropdown.value = currentQualityIndex;
-        qualityDropdown.RefreshShownValue();
+        //qualityDropdown.value = currentQualityIndex;
+        //qualityDropdown.RefreshShownValue();
         
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
