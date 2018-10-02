@@ -5,13 +5,24 @@ Stuffs: CC4.0-BY-SA
 
 Copying:
 Unity3D (c) Unity [100% $$$+]. This game was built with Unity3D.
+________ (c) ___________. Joel knows it was him. that guy lectures him.
 
 Refference:
 Digital-Phantom https://answers.unity.com/questions/930656/how-to-prevent-camera-rotation.html . The Follow camera without rotation.
 Unity UI tutorial Main menu https://unity3d.com/learn/tutorials/topics/user-interface-ui/creating-main-menu . Main menu Tutorial. Too long video! just copy code and left it.
 Brackey's Menu tutorial https://www.youtube.com/watch?v=zc8ac_qUXQY . Nah that's better. WOW!!! BRACKEY!! THAT'S YOU!!! THX!!! Check out SampleMenuScene to see what I did follow.
+Brackey's Option Menu https://www.youtube.com/watch?v=YOaYQrN1oYQ . Improvements!!! thx!!!
+Brackey's Pause Menu https://www.youtube.com/watch?v=JivuXdrIHK0&t=29s . Thx again!!! Paused.
+SHoonBee's cryptic message about soul composing. Joel knows what it means. If you correct, a VAPOUR of refference will rise against your head.
 
 
 Assets involved:
 Github for Unity. to do Git with this Unity project
-2D Game Kit (Decommissioned, Ruining the Game Collider)(Try Partial and watch what things change first!)
+Text Mesh Pro. Acquired by Unity. All in one Stylish Text solution!!! Must have or none of the coolness!!!
+2D Game Kit. Decommissioned, Ruining the Game Collider! Try Partial and watch what things change first!
+2D Standard Asset Unity. Essential Unity's package containing Standard Assets for 2D things
+MOVINARC Package Uninstaller. Sometimes, some package were no longer be needed. can be a hassle to remove just be like that.
+
+Packages involved (Beside preinstalled and built-in, user installed!):
+2D Sprite Shape. Create bendable string of sprites! great for various shaped platform, and other weird stuff! Unity's experimental!!!
+Vector Graphics. SVG in Unity!!! Scalable Sprite Assets!!! no more broken image! Oh turns out still not in relevant worthness. unable to acceleration path points!

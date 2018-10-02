@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class HUD : MonoBehaviour {
     public void ReturnToMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(0);
     }
 }
