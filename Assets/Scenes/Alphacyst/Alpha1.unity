@@ -1875,7 +1875,7 @@ MonoBehaviour:
   target: {fileID: 279229056}
   damping: 0
   lookAheadFactor: 3
-  lookAheadReturnSpeed: 0.5
+  lookAheadReturnSpeed: 1
   lookAheadMoveThreshold: 0.1
 --- !u!1 &1309155695
 GameObject:
