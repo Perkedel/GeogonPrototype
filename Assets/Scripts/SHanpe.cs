@@ -39,6 +39,17 @@ public class SHanpe : MonoBehaviour {
         if (currSlide > 0) ControlSlide = Input.GetAxis("Horizontal") * currSlide; else ControlSlide = 0;
         if (currRolls > 0) ControlRolls = Input.GetAxis("Horizontal") * currRolls; else ControlRolls = 0;
 
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            bentuk = Bentuk.Lingkaran;
+        } else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            bentuk = Bentuk.Kotak;
+        } else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            bentuk = Bentuk.Segitiga;
+        }
+
         switch (bentuk)
         {
             case Bentuk.Lingkaran:
