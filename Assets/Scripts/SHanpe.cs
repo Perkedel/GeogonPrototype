@@ -23,6 +23,8 @@ public class SHanpe : MonoBehaviour {
     public int jumpToken = 2; //Recomended 2! Not Recomended when > 2!
     [SerializeField][Range(0,2)] int currJumpToken = 2;
 
+
+
     [SerializeField] bool grounded = false;
 
     public Rigidbody2D rb2D;
@@ -107,7 +109,7 @@ public class SHanpe : MonoBehaviour {
     //Tony Morelli https://www.youtube.com/watch?v=cl201U1oUYs
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collision Enter");
+        //Debug.Log("Collision Enter");
         if (collision.gameObject.tag == "Ground")
         {
             grounded = true;
@@ -117,7 +119,7 @@ public class SHanpe : MonoBehaviour {
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        Debug.Log("Collision Exit");
+        //Debug.Log("Collision Exit");
         if (collision.gameObject.tag == "Ground")
         {
             grounded = false;
