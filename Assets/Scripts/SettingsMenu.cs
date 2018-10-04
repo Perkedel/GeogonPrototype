@@ -13,6 +13,8 @@ using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour {
 
+    //Brackeys https://www.youtube.com/watch?v=YOaYQrN1oYQ
+
     public AudioMixer audioMixer;
 
     public Dropdown resolutionDropdown;

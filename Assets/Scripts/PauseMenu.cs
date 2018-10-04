@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour {
 
+    //Brackeys https://www.youtube.com/watch?v=JivuXdrIHK0
+
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;

@@ -252,7 +252,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0cb77231a430b454fb792ff7ffcc3943, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -274,6 +274,9 @@ MonoBehaviour:
   Triangling: {fileID: 695573499}
   Sliding: 10
   Rolling: 10
+  Jumping: 100
+  jumpToken: 2
+  currJumpToken: 2
   rb2D: {fileID: 0}
 --- !u!1 &339343332
 GameObject:
@@ -422,7 +425,7 @@ GameObject:
   - component: {fileID: 339848722}
   m_Layer: 0
   m_Name: SpriteShape
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -435,7 +438,7 @@ EdgeCollider2D:
   m_GameObject: {fileID: 339848721}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0ff68450636c66b499e0da399cef1e47, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

@@ -7,14 +7,16 @@ Copying:
 Unity3D (c) Unity [100% $$$+]. This game was built with Unity3D.
 ________ (c) ___________. Joel knows it was him. that guy lectures him.
 
-Refference:
+Refferences:
 Digital-Phantom https://answers.unity.com/questions/930656/how-to-prevent-camera-rotation.html . The Follow camera without rotation.
 Unity UI tutorial Main menu https://unity3d.com/learn/tutorials/topics/user-interface-ui/creating-main-menu . Main menu Tutorial. Too long video! just copy code and left it.
-Brackey's Menu tutorial https://www.youtube.com/watch?v=zc8ac_qUXQY . Nah that's better. WOW!!! BRACKEY!! THAT'S YOU!!! THX!!! Check out SampleMenuScene to see what I did follow.
-Brackey's Option Menu https://www.youtube.com/watch?v=YOaYQrN1oYQ . Improvements!!! thx!!!
-Brackey's Pause Menu https://www.youtube.com/watch?v=JivuXdrIHK0&t=29s . Thx again!!! Paused.
+Brackeys' Menu tutorial https://www.youtube.com/watch?v=zc8ac_qUXQY . Nah that's better. WOW!!! BRACKEY!! THAT'S YOU!!! THX!!! Check out SampleMenuScene to see what I did follow.
+Brackeys' Option Menu https://www.youtube.com/watch?v=YOaYQrN1oYQ . Improvements!!! thx!!!
+Brackeys' Pause Menu https://www.youtube.com/watch?v=JivuXdrIHK0&t=29s . Thx again!!! Paused.
+Brackeys' Loading Screen https://www.youtube.com/watch?v=YMj2qPq9CP8 . Loading....
 SHoonBee's cryptic message about soul composing. Joel knows what it means. If you correct, a VAPOUR of refference will rise against your head.
-
+Tony Morelli's jumping tutorial https://www.youtube.com/watch?v=cl201U1oUYs . Make this thing jump only if grounded!
+ChrisWoo found the RangeAtributes! https://answers.unity.com/questions/25074/whats-attribute-to-limit-range-of-serialized-varia.html . make the Inspector Script has that slider serialized score thingy!
 
 Assets involved:
 Github for Unity. to do Git with this Unity project
