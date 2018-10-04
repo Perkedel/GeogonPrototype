@@ -2,9 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+#pragma warning disable 0169
+//https://stackoverflow.com/questions/3820985/suppressing-is-never-used-and-is-never-assigned-to-warnings-in-c-sharp
+//suppress warning "is never used"!
+
+#pragma warning disable 0414
+//https://answers.unity.com/questions/367829/c-variable-is-assigned-but-its-value-is-never-used.html
+//suppress also for Unity engine
+//but this is not recomended!
+
 //excercise file. this coding is dirty. sorry for inconveniences
 
 public class HeroPlayer_SHanpe : MonoBehaviour {
+
+#pragma warning disable 0169
+#pragma warning disable 0414
 
     private enum Shaping{Circle, Line, Triangle, Square, Pentagon, Hexagon, Septagon, Octagon};
     [SerializeField] Shaping skin;
@@ -46,6 +58,8 @@ public class HeroPlayer_SHanpe : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+#pragma warning disable 0169
+#pragma warning disable 0414
         rb = GetComponent<Rigidbody2D>();
         prevRb = rb;
         newRb = PentaColRigid.GetComponent<Rigidbody2D>();
@@ -64,6 +78,8 @@ public class HeroPlayer_SHanpe : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+#pragma warning disable 0169
+#pragma warning disable 0414
         float translation = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         float translotion = Input.GetAxis("Vertical") * speed * Time.deltaTime;
         float pushroller = Input.GetAxis("Horizontal") * roll;
@@ -169,3 +185,5 @@ public class HeroPlayer_SHanpe : MonoBehaviour {
         }
     }
 }
+
+//#pragma warning restore 0169

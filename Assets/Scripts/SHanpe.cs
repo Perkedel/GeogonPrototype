@@ -23,15 +23,13 @@ public class SHanpe : MonoBehaviour {
     public int jumpToken = 2; //Recomended 2! Not Recomended when > 2!
     [SerializeField][Range(0,2)] int currJumpToken = 2;
 
-    bool grounded = false;
+    [SerializeField] bool grounded = false;
 
     public Rigidbody2D rb2D;
 
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        
-        
     }
 
     // Use this for initialization
