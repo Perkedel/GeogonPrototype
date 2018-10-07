@@ -2295,6 +2295,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a036d3c13bfb934c9e519fcba6ee6fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  constrainXleft: -100
+  constrainYdown: -100
+  constrainXright: 100
+  constrainYup: 100
+  Zoom: 10
+  constrainZoomMax: 100
+  constrainZoomMin: 1
   target: {fileID: 640276361}
   distance: 10
 --- !u!1 &1371205512
@@ -3932,6 +3939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 318576714}
+  hideThoseUI: {fileID: 2029325217}
 --- !u!1 &1845536855
 GameObject:
   m_ObjectHideFlags: 0
