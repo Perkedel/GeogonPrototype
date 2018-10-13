@@ -23,11 +23,20 @@ public class SHanpe : MonoBehaviour {
     public int jumpToken = 2; //Recomended 2! Not Recomended when > 2!
     [SerializeField][Range(0,2)] int currJumpToken = 2;
 
-
+    //Vital Conditions
+    [Range(0, 100)] private float healthPoint = 100;
+    [Range(0, 100)] private float armourPoint = 20;
 
     [SerializeField] bool grounded = false;
 
     public Rigidbody2D rb2D;
+
+    //Extern Conditions
+    [SerializeField] private bool eekSerkat = false; //eek Serkat means died
+
+    //View Conditions
+    [SerializeField][Range(0, 100)] private float healthMonitor = 100;
+    [SerializeField][Range(0, 100)] private float armourMonitor = 20;
 
     //Item Effects
     private bool isTickled = false;
@@ -43,6 +52,34 @@ public class SHanpe : MonoBehaviour {
         {
             isTickled = value;
             //Debug.Log("setTickled");
+        }
+    }
+
+    public float HealthPoint
+    {
+        get
+        {
+            return healthPoint;
+        }
+
+        set
+        {
+            healthPoint = value;
+            healthMonitor = value;
+        }
+    }
+
+    public float ArmourPoint
+    {
+        get
+        {
+            return armourPoint;
+        }
+
+        set
+        {
+            armourPoint = value;
+            armourMonitor = value;
         }
     }
 
@@ -124,12 +161,50 @@ public class SHanpe : MonoBehaviour {
         rb2D.AddForce(Vector2.right * ControlSlide);
         rb2D.AddTorque(ControlRolls * -1f);
 
-        if (isTickled)
+        //interclamper
+        if(healthPoint > 100)
         {
-            viewTickled = true;
-        } else
+            healthPoint = 100;
+        }
+        if(healthPoint < 0)
+        {
+            healthPoint = 0;
+            eekSerkat = true;
+        }
+
+        if (armourPoint > 100)
+        {
+            armourPoint = 100;
+        }
+        if (armourPoint < 0)
+        {
+            armourPoint = 0;
+        }
+
+        if (healthMonitor > 100)
+        {
+            healthMonitor = 100;
+        }
+        if (healthMonitor < 0)
+        {
+            healthMonitor = 0;
+        }
+        if (armourMonitor > 100)
+        {
+            armourMonitor = 100;
+        }
+        if (armourMonitor < 0)
+        {
+            armourMonitor = 0;
+        }
+
+        //tickled
+        if (!isTickled)
         {
             viewTickled = false;
+        } else
+        {
+            viewTickled = true;
         }
 	}
 
