@@ -29,6 +29,25 @@ public class SHanpe : MonoBehaviour {
 
     public Rigidbody2D rb2D;
 
+    //Item Effects
+    private bool isTickled = false;
+
+    public bool IsTickled
+    {
+        get
+        {
+            return isTickled;
+        }
+
+        set
+        {
+            isTickled = value;
+            //Debug.Log("setTickled");
+        }
+    }
+
+    public bool viewTickled;
+
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -104,6 +123,14 @@ public class SHanpe : MonoBehaviour {
 
         rb2D.AddForce(Vector2.right * ControlSlide);
         rb2D.AddTorque(ControlRolls * -1f);
+
+        if (isTickled)
+        {
+            viewTickled = true;
+        } else
+        {
+            viewTickled = false;
+        }
 	}
 
     //Tony Morelli https://www.youtube.com/watch?v=cl201U1oUYs
