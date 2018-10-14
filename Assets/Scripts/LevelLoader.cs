@@ -57,5 +57,10 @@ public class LevelLoader : MonoBehaviour {
         }
     }
 
-    
+    //https://forum.unity.com/threads/how-to-get-the-loaded-scene-name.86910/
+    //jasonjoh for get scene name
+    public void RestartLevel()
+    {
+        LoadLevel(SceneManager.GetActiveScene().name);
+    }
 }

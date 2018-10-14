@@ -5,6 +5,10 @@ TextureImporter:
     21300000: SHanpe_Circle
     21300002: SHanpe_Square
     21300004: SHanpe_Triangle
+    21300006: SHanpe_Circle
+    21300008: SHanpe_Square
+    21300010: SHanpe_Triangle
+    21300012: SHanpe_eekSerkat
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -123,10 +127,10 @@ TextureImporter:
       name: SHanpe_Circle
       rect:
         serializedVersion: 2
-        x: 95
-        y: 95
-        width: 3013
-        height: 3010
+        x: 93
+        y: 94
+        width: 3028
+        height: 3012
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,7 +138,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f69fd7379fa97440a9757b55b66112d
+      spriteID: 9479e15bb5537c04881df6f3253daa44
       vertices: []
       indices: 
       edges: []
@@ -143,10 +147,10 @@ TextureImporter:
       name: SHanpe_Square
       rect:
         serializedVersion: 2
-        x: 3294
-        y: 95
-        width: 3012
-        height: 3010
+        x: 3290
+        y: 94
+        width: 3017
+        height: 3012
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,7 +158,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63717fcdee0def2429f295b52fa14fdf
+      spriteID: 655cd3ed2357134438537457b5020197
       vertices: []
       indices: 
       edges: []
@@ -163,10 +167,10 @@ TextureImporter:
       name: SHanpe_Triangle
       rect:
         serializedVersion: 2
-        x: 6441
-        y: 76
-        width: 3517
-        height: 3048
+        x: 6439
+        y: 74
+        width: 3522
+        height: 3052
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,7 +178,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7d5bda5300e1fd45a91ba09beece293
+      spriteID: 609c4a7a6a048db4790aa4cc28cc797e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHanpe_eekSerkat
+      rect:
+        serializedVersion: 2
+        x: 9994
+        y: 94
+        width: 3015
+        height: 3012
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636eb8dcdb3c9744da7ab7610a717587
       vertices: []
       indices: 
       edges: []
