@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Sample from Unity page
+
 public class Item : MonoBehaviour {
 
     public bool enter = true;

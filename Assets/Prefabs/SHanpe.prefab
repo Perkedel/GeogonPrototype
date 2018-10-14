@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4991322985501718}
   - component: {fileID: 212665738512623306}
   - component: {fileID: 58926467136105224}
-  - component: {fileID: 114171778982337888}
   m_Layer: 0
   m_Name: SHanpe_Circle
   m_TagString: Untagged
@@ -284,17 +283,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 30.119999, y: 30.1}
   m_EdgeRadius: 0
---- !u!114 &114171778982337888
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1243890392989994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a85f3143c552e6941a22e01a093e22bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114236269783304298
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -317,6 +305,10 @@ MonoBehaviour:
   currJumpToken: 2
   grounded: 0
   rb2D: {fileID: 0}
+  eekSerkat: 0
+  healthMonitor: 100
+  armourMonitor: 20
+  viewTickled: 0
 --- !u!212 &212339846982561796
 SpriteRenderer:
   m_ObjectHideFlags: 1

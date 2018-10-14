@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//test Shanpe tickled bool
+
 public class Item2 : MonoBehaviour {
 
     public SHanpe player;

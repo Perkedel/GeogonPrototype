@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Test shanpe hurt
+//Test shanpe heal
 
-public class Item3 : MonoBehaviour {
+public class Item4 : MonoBehaviour
+{
 
     public SHanpe player;
     public bool stay = true;
-    public float damager = 1;
+    public float healer = 1;
 
     // Use this for initialization
     void Start()
@@ -24,7 +25,7 @@ public class Item3 : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+
     }
 
     //check Item.cs script!
@@ -35,8 +36,12 @@ public class Item3 : MonoBehaviour {
         {
             if (stayCount > 0.25f)
             {
-                Debug.Log("ouch!");
-                player.HealthPoint -= damager;
+                if (player.HealthPoint < 100)
+                {
+                    Debug.Log("ahhh");
+                    player.HealthPoint += healer;
+                }
+                else Debug.Log("Health is full!");
                 stayCount = stayCount - 0.25f;
             }
             else
@@ -48,6 +53,6 @@ public class Item3 : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        
+
     }
 }
