@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SHanpe : MonoBehaviour {
 
+    //Shape of SHanpe
     public enum Bentuk { eekSerkat, Lingkaran, Kotak, Segitiga};
     public Bentuk bentuk, currBentuk;
 
@@ -25,22 +26,27 @@ public class SHanpe : MonoBehaviour {
     public int jumpToken = 2; //Recomended 2! Not Recomended when > 2!
     [SerializeField][Range(0,2)] int currJumpToken = 2;
 
-    //Parametrics
+    //Parametrics, Customizable variables
     public float timeToRestart = 5f;
-    public enum whatToDoIfDead { ReloadLevel, Respawn};
+    public enum whatToDoIfDead { ReloadLevel, Respawn, quitToMenu, GameOverScreen, DoNothing};
     public whatToDoIfDead deadAction = whatToDoIfDead.Respawn;
+    public bool resetRotationOnRespawn = true;
+    public bool resetShapeOnRespawn = false;
+    public bool canChangeShapeWhileDead = true;
 
     //Vital Conditions
     [Range(0, 100)] private float healthPoint = 100;
     [Range(0, 100)] private float armourPoint = 20;
 
-    [SerializeField] bool grounded = false;
+    [SerializeField] private bool grounded = false;
 
     public Rigidbody2D rb2D;
 
     //Extern Conditions
     [SerializeField] private bool eekSerkat = false; //eek Serkat means died
     [SerializeField] private float timerRestart = 0;
+    [SerializeField] public bool healthWasChanged = false;
+    private float timerHealthChanged;
 
     //View Conditions
     [SerializeField][Range(0, 100)] private float healthMonitor = 100;
@@ -74,6 +80,8 @@ public class SHanpe : MonoBehaviour {
         {
             healthPoint = value;
             healthMonitor = value;
+            healthWasChanged = true;
+            timerHealthChanged = 0;
         }
     }
 
@@ -99,16 +107,51 @@ public class SHanpe : MonoBehaviour {
     private float initHP;
     private float initArmour;
 
-    //functionality
+    //Hold Functionality template
+    public void changeShapeButton()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            if(!eekSerkat) bentuk = Bentuk.Lingkaran;
+            currBentuk = Bentuk.Lingkaran;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if(!eekSerkat) bentuk = Bentuk.Kotak;
+            currBentuk = Bentuk.Kotak;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            if(!eekSerkat) bentuk = Bentuk.Segitiga;
+            currBentuk = Bentuk.Segitiga;
+        }
+    }
+
+    //functionality, Template Methods
+    public void setShape(int index)
+    {
+        if(!eekSerkat) bentuk = (Bentuk) index;
+        currBentuk = (Bentuk)index;
+    }
+
     public LevelLoader LevelLoadering;
-    void restartLevel()
+    public void restartLevel()
     {
         LevelLoadering.RestartLevel();
     }
-    void respawn()
+    public void respawn()
     {
-        bentuk = initBentuk;
-        currBentuk = initBentuk;
+        if (resetRotationOnRespawn)
+        {
+            //https://answers.unity.com/questions/208447/set-rotation-of-a-transform.html
+            //bbrode
+            transform.localEulerAngles = new Vector3(0f, 0f);
+        }
+        if (resetShapeOnRespawn)
+        {
+            bentuk = initBentuk;
+            currBentuk = initBentuk;
+        }
         HealthPoint = initHP;
         ArmourPoint = initArmour;
         eekSerkat = false;
@@ -116,7 +159,23 @@ public class SHanpe : MonoBehaviour {
         //https://answers.unity.com/questions/8291/how-to-move-a-gameobject-from-his-position-to-a-xy.html
         transform.position = new Vector2(initPosition.x, initPosition.y);
     }
+    public void quitToMenu()
+    {
+        LevelLoadering.GoToMenu();
+    }
+    public void GameOverScreen()
+    {
+        LevelLoadering.GameOver();
+    }
 
+    public bool SelfDestructButton = false;
+    void ScronchSelf()
+    {
+        SelfDestructButton = false;
+        HealthPoint = 0;
+    }
+
+    //Begin
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -162,21 +221,8 @@ public class SHanpe : MonoBehaviour {
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                bentuk = Bentuk.Lingkaran;
-                currBentuk = Bentuk.Lingkaran;
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                bentuk = Bentuk.Kotak;
-                currBentuk = Bentuk.Kotak;
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                bentuk = Bentuk.Segitiga;
-                currBentuk = Bentuk.Segitiga;
-            }
+            //change shape
+            changeShapeButton();
         } else //start to dead
         {
             bentuk = Bentuk.eekSerkat;
@@ -196,7 +242,20 @@ public class SHanpe : MonoBehaviour {
                     case whatToDoIfDead.Respawn:
                         respawn();
                         break;
+                    case whatToDoIfDead.quitToMenu:
+                        quitToMenu();
+                        break;
+                    case whatToDoIfDead.GameOverScreen:
+                        GameOverScreen();
+                        break;
+                    case whatToDoIfDead.DoNothing:
+                        break;
                 }
+                timerRestart = 0;
+            }
+            if (canChangeShapeWhileDead)
+            {
+                changeShapeButton();
             }
         }
 
@@ -257,7 +316,7 @@ public class SHanpe : MonoBehaviour {
         if(healthPoint < 0)
         {
             healthPoint = 0;
-            eekSerkat = true;
+            //eekSerkat = true;
         }
 
         if (armourPoint > 100)
@@ -293,6 +352,33 @@ public class SHanpe : MonoBehaviour {
         } else
         {
             viewTickled = true;
+        }
+
+        //Dedd
+        if(healthPoint == 0)
+        {
+            eekSerkat = true;
+        } else
+        {
+            eekSerkat = false;
+        }
+
+        //SelfDestroy
+        if (SelfDestructButton)
+        {
+            SelfDestructButton = false;
+            ScronchSelf();
+        }
+
+        //health was changed
+        if (healthWasChanged)
+        {
+            timerHealthChanged += Time.deltaTime;
+
+            if(timerHealthChanged > 2)
+            {
+                healthWasChanged = false;
+            }
         }
 	}
 

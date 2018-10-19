@@ -370,6 +370,8 @@ MonoBehaviour:
   currJumpToken: 2
   timeToRestart: 5
   deadAction: 1
+  resetRotationOnRespawn: 1
+  resetShapeOnRespawn: 0
   grounded: 0
   rb2D: {fileID: 0}
   eekSerkat: 0
@@ -377,6 +379,8 @@ MonoBehaviour:
   healthMonitor: 100
   armourMonitor: 20
   viewTickled: 0
+  LevelLoadering: {fileID: 0}
+  SelfDestructButton: 0
 --- !u!212 &212341738295727336
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -11,6 +11,10 @@ public class LevelLoader : MonoBehaviour {
     public Slider slider;
     public Text progressText;
 
+    //Customizable Variables
+    public string MainMenuName = "SampleMenuScene";
+    public string GameOverName = "SampleGameOver";
+
     public void LoadLevel(int sceneIndex)
     {
         StartCoroutine(LoadAsynchronously(sceneIndex));
@@ -57,10 +61,33 @@ public class LevelLoader : MonoBehaviour {
         }
     }
 
+    ///////////////////////////////////////Template Methods/////////////////////////////////////////////
     //https://forum.unity.com/threads/how-to-get-the-loaded-scene-name.86910/
     //jasonjoh for get scene name
     public void RestartLevel()
     {
         LoadLevel(SceneManager.GetActiveScene().name);
+    }
+
+    public void GoToMenu()
+    {
+        LoadLevel(MainMenuName);
+        //By Default, the Main Menu is placed on 0th scene index.
+        //Sometimes 0th index may be a logo scene.
+    }
+
+    public void GameOver()
+    {
+        LoadLevel(GameOverName);
+    }
+
+    public void NextLevel()
+    {
+        LoadLevel(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void PrevLevel()
+    {
+        LoadLevel(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }

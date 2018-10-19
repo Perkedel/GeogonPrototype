@@ -6,9 +6,27 @@ using UnityEngine.UI;
 public class ECGcable : MonoBehaviour {
 
     public SHanpe target;
-    [Range(0, 100)] public float HP;
+    [Range(0, 100)] public float HP = 100f;
+    float lastHP = 100f;
     public Slider healthBar;
+    public Slider prevHealthBar;
+    private Color inColoring;
+    public Image HPBarBGColor;
     public Image HPfillColor;
+    public Text HPTextInfo;
+    public GameObject EekSerkatText;
+    public Scrollbar ShapeStatusBar;
+    public ShapeStatus refferShapeStatusScript;
+    public Scrollbar HighlightStatusBar;
+
+    //Condition
+    private bool startDelayDecrease;
+    private float delayDecrease;
+    [SerializeField] private bool hasBeenDedd;
+    private SHanpe.Bentuk bentuk;
+    [SerializeField] private float ShapeStatus;
+    private float currShapeStatus;
+    private float setShapeValue;
 
 	// Use this for initialization
 	void Start () {
@@ -23,18 +41,129 @@ public class ECGcable : MonoBehaviour {
         if(HP >= 100)
         {
             HPfillColor.color = Color.blue;
+            HPTextInfo.color = Color.yellow;
+            hasBeenDedd = false;
         } else if(HP < 100 && HP >= 50)
         {
             HPfillColor.color = Color.green;
+            HPTextInfo.color = Color.magenta;
+            hasBeenDedd = false;
         } else if(HP < 50 && HP >= 25)
         {
             HPfillColor.color = Color.yellow;
+            HPTextInfo.color = Color.blue;
+            hasBeenDedd = false;
         } else if(HP < 25 && HP > 0)
         {
             HPfillColor.color = Color.red;
-        } else if(HP <= 0)
+            HPTextInfo.color = Color.cyan;
+            hasBeenDedd = false;
+        } else if(HP == 0)
         {
             HPfillColor.color = Color.grey;
+            HPTextInfo.color = Color.white;
+            hasBeenDedd = true;
+        }
+
+        //if (lastHP != HP) startDelayDecrease = true;
+        //if (startDelayDecrease) delayDecrease += Time.deltaTime;
+        //if (delayDecrease > 2f)
+        //{
+        //    startDelayDecrease = false;
+        //    if (lastHP > HP) lastHP--;
+        //    if (lastHP < HP) lastHP++;
+
+        //    if (lastHP == HP) delayDecrease = 0;
+        //}
+        if (!target.healthWasChanged)
+        {
+            if (lastHP > HP) lastHP--;
+            if (lastHP < HP) lastHP++;
+        }
+        prevHealthBar.value = lastHP;
+
+        //https://docs.unity3d.com/ScriptReference/Color-ctor.html
+        //color using value precisely
+        inColoring = new Color((float)HP / 100f, (float)HP / 100f, (float)HP / 100f);
+        HPBarBGColor.color = inColoring;
+        if (HP == 100) HPTextInfo.text = "FULL";
+        else if (HP == 0) HPTextInfo.text = "DEDD";
+        else HPTextInfo.text = HP + "%";
+
+        if (hasBeenDedd)
+        {
+            EekSerkatText.SetActive(true);
+        } else
+        {
+            EekSerkatText.SetActive(false);
+        }
+
+        //Scrollbar of Shape Statusing. ShapeStatusBar
+        if (!target.canChangeShapeWhileDead)
+        {
+            if (hasBeenDedd)
+            {
+                ShapeStatusBar.interactable = false;
+            }
+            else ShapeStatusBar.interactable = true;
+        }
+        else ShapeStatusBar.interactable = true;
+
+        bentuk = target.currBentuk;
+        //ShapeStatusBar.value = (float)bentuk/3f;
+        switch (bentuk)
+        {
+            default:
+                break;
+            case SHanpe.Bentuk.Lingkaran:
+                currShapeStatus = 0f;
+                if (!refferShapeStatusScript.beingDragged)
+                {
+                    if (ShapeStatusBar.value > 0f) ShapeStatusBar.value -= Time.deltaTime;
+                }
+                break;
+            case SHanpe.Bentuk.Kotak:
+                currShapeStatus = .5f;
+                if (!refferShapeStatusScript.beingDragged)
+                {
+                    if (ShapeStatusBar.value < .5f) ShapeStatusBar.value += Time.deltaTime;
+                    if (ShapeStatusBar.value > .5f) ShapeStatusBar.value -= Time.deltaTime; //does not vibrate!!!
+                }
+                break;
+            case SHanpe.Bentuk.Segitiga:
+                currShapeStatus = 1f;
+                if (!refferShapeStatusScript.beingDragged)
+                {
+                    if (ShapeStatusBar.value < 1f) ShapeStatusBar.value += Time.deltaTime;
+                }
+                break;
+        }
+        //ShapeStatusBar.value = currShapeStatus;
+        //if(ShapeStatusBar.value > currShapeStatus)
+        //{
+        //    ShapeStatusBar.value -= Time.deltaTime;
+        //} else if(ShapeStatusBar.value < currShapeStatus)
+        //{
+        //    ShapeStatusBar.value += Time.deltaTime;
+        //} else if(ShapeStatusBar.value == currShapeStatus) //float is inaccurate! .5 is vibrating!
+        //{
+        //    //ShapeStatusBar.value = currShapeStatus;
+        //}
+        HighlightStatusBar.value = currShapeStatus;
+
+        setShapeValue = ShapeStatusBar.value;
+        if (refferShapeStatusScript.beingDragged)
+        {
+            if(setShapeValue < .25)
+            {
+                target.setShape(1);
+            } else if(setShapeValue > .25 && setShapeValue < .75)
+            {
+                target.setShape(2);
+            } else if(setShapeValue > .75)
+            {
+                target.setShape(3);
+            }
         }
 	}
 
