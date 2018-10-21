@@ -96,9 +96,19 @@ public class LevelLoader : MonoBehaviour {
         LoadLevel(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
+    //Workaround to get the store selected selects button on newly activated menu part e.g. Menu -> Option
+    //Fill it with the selectable Button GameObject!
+    public void SetStoreSelected(GameObject newThing)
+    {
+        StoreSelected = newThing;
+        eventSystem.SetSelectedGameObject(StoreSelected);
+    }
+    //End Template Method
+
     //Basic Unity Method
     public void Start()
     {
+        
         StoreSelected = eventSystem.firstSelectedGameObject;
     }
     public void Update()

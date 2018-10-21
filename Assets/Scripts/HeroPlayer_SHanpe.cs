@@ -104,6 +104,15 @@ public class HeroPlayer_SHanpe : MonoBehaviour {
         //transform.Translate(translation, 0, 0, Space.World);
         rb.AddTorque(pushroller * -1);
 
+        if(Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            skin--;
+        }
+        if(Input.GetButtonDown("Fire3") || Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            skin++;
+        }
+
         switch (skin)
         {
             case Shaping.Circle:

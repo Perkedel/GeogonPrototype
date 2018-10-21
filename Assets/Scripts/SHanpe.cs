@@ -223,6 +223,8 @@ public class SHanpe : MonoBehaviour {
             //Controlling
             if (currSlide > 0) ControlSlide = Input.GetAxis("Horizontal") * currSlide; else ControlSlide = 0;
             if (currRolls > 0) ControlRolls = Input.GetAxis("Horizontal") * currRolls; else ControlRolls = 0;
+            //To allow Keyboard controll, you must have Axes Horizontal and Vertical that set to Type as Key or Mouse Button
+            //Then add another same set for Joystick. Types are Joystick Axis.
 
             //jump button
             JumpButton();
@@ -231,6 +233,9 @@ public class SHanpe : MonoBehaviour {
             changeShapeButton();
         } else //start to dead
         {
+            //Handheld.Vibrate(); //https://docs.unity3d.com/ScriptReference/Handheld.Vibrate.html
+            
+            
             bentuk = Bentuk.eekSerkat;
             currJumpToken = 0;
 

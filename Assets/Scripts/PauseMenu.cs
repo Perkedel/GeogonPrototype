@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour {
 
@@ -11,6 +12,9 @@ public class PauseMenu : MonoBehaviour {
 
     public GameObject pauseMenuUI;
     public GameObject [] hideThoseUI;
+
+    public GameObject InsertResumeButtonObjectHere;
+    public LevelLoader levelLoader;
 
     //Controller Configurations
     private void PauseButton()
@@ -34,6 +38,7 @@ public class PauseMenu : MonoBehaviour {
                     hideThoseUI[i].SetActive(false);
                 }
                 //hideThoseUI.SetActive(false);
+                levelLoader.SetStoreSelected(InsertResumeButtonObjectHere);
             }
         }
     }

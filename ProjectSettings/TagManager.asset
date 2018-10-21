@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Ceiling
   - Item
+  - EventSystem
   layers:
   - Default
   - TransparentFX

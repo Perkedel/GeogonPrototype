@@ -39,10 +39,11 @@ public class FollowPlayerCSharp : MonoBehaviour
             relativeX -= (Zoom / 10) * Input.GetAxis("Mouse X");
             relativeY -= (Zoom / 10) * Input.GetAxis("Mouse Y");
         }
+        relativeX += Input.GetAxis("MoveCamX"); relativeY += Input.GetAxis("MoveCamY");
         if (relativeX <= constrainXleft) relativeX = constrainXleft; if (relativeX >= constrainXright) relativeX = constrainXright;
         if (relativeY <= constrainYdown) relativeY = constrainYdown; if (relativeY >= constrainYup) relativeY = constrainYup;
 
-        if (Input.GetKeyDown(KeyCode.Tab)) //Reset camera (JOELwindows7)
+        if (Input.GetButtonDown("CamReset")) //Reset camera (JOELwindows7)
         {
             relativeX = 0; relativeY = 0; Zoom = initialZoom;
         }
@@ -58,6 +59,7 @@ public class FollowPlayerCSharp : MonoBehaviour
             //Camera.main.orthographicSize++;
             Zoom++;
         }
+        Zoom += Input.GetAxis("Zoom");
         if (Zoom <= constrainZoomMin) Zoom = constrainZoomMin;
         if (Zoom >= constrainZoomMax) Zoom = constrainZoomMax;
         Camera.main.orthographicSize = Zoom;
