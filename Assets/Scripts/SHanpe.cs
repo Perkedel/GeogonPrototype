@@ -107,23 +107,35 @@ public class SHanpe : MonoBehaviour {
     private float initHP;
     private float initArmour;
 
-    //Hold Functionality template
-    public void changeShapeButton()
+    //Controller Configurations, Hold Functionality template
+    private void changeShapeButton()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetButtonDown("Fire1"))
         {
             if(!eekSerkat) bentuk = Bentuk.Lingkaran;
             currBentuk = Bentuk.Lingkaran;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        else if (Input.GetKeyDown(KeyCode.Alpha2)|| Input.GetButtonDown("Fire2"))
         {
             if(!eekSerkat) bentuk = Bentuk.Kotak;
             currBentuk = Bentuk.Kotak;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        else if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetButtonDown("Fire3"))
         {
             if(!eekSerkat) bentuk = Bentuk.Segitiga;
             currBentuk = Bentuk.Segitiga;
+        }
+    }
+
+    private void JumpButton()
+    {
+        if (Input.GetButtonDown("Jump")) //Jump button
+        {
+            if (currJumpToken > 0)
+            {
+                rb2D.AddForce(Vector2.up * currJumps * 10f);
+                currJumpToken -= 1;
+            }
         }
     }
 
@@ -212,14 +224,8 @@ public class SHanpe : MonoBehaviour {
             if (currSlide > 0) ControlSlide = Input.GetAxis("Horizontal") * currSlide; else ControlSlide = 0;
             if (currRolls > 0) ControlRolls = Input.GetAxis("Horizontal") * currRolls; else ControlRolls = 0;
 
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                if (currJumpToken > 0)
-                {
-                    rb2D.AddForce(Vector2.up * currJumps * 10f);
-                    currJumpToken -= 1;
-                }
-            }
+            //jump button
+            JumpButton();
 
             //change shape
             changeShapeButton();

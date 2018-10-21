@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class LevelLoader : MonoBehaviour {
 
@@ -10,6 +11,10 @@ public class LevelLoader : MonoBehaviour {
     public GameObject loadingScreen;
     public Slider slider;
     public Text progressText;
+    public EventSystem eventSystem;
+
+    //Spare part variable
+    private GameObject StoreSelected; //https://youtu.be/FRbRQFpVFxg
 
     //Customizable Variables
     public string MainMenuName = "SampleMenuScene";
@@ -89,5 +94,25 @@ public class LevelLoader : MonoBehaviour {
     public void PrevLevel()
     {
         LoadLevel(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    //Basic Unity Method
+    public void Start()
+    {
+        StoreSelected = eventSystem.firstSelectedGameObject;
+    }
+    public void Update()
+    {
+        //https://youtu.be/FRbRQFpVFxg
+        if (eventSystem.currentSelectedGameObject != StoreSelected)
+        {
+            if(eventSystem.currentSelectedGameObject == null)
+            {
+                eventSystem.SetSelectedGameObject(StoreSelected);
+            } else
+            {
+                StoreSelected = eventSystem.currentSelectedGameObject;
+            }
+        }
     }
 }

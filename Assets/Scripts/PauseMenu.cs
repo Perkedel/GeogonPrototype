@@ -10,22 +10,37 @@ public class PauseMenu : MonoBehaviour {
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
-    public GameObject hideThoseUI;
-	
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.Escape))
+    public GameObject [] hideThoseUI;
+
+    //Controller Configurations
+    private void PauseButton()
+    {
+        if (Input.GetButtonDown("Pause"))
         {
             if (GameIsPaused)
             {
                 Resume();
-                hideThoseUI.SetActive(true);
-            } else
+                for(int i = 0; i < hideThoseUI.Length; i++)
+                {
+                    hideThoseUI[i].SetActive(true);
+                }
+                //hideThoseUI.SetActive(true);
+            }
+            else
             {
                 Pause();
-                hideThoseUI.SetActive(false);
+                for (int i = 0; i < hideThoseUI.Length; i++)
+                {
+                    hideThoseUI[i].SetActive(false);
+                }
+                //hideThoseUI.SetActive(false);
             }
         }
+    }
+	
+	// Update is called once per frame
+	void Update () {
+        PauseButton();
 	}
 
     public void Resume()

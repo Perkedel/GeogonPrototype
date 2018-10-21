@@ -17,7 +17,8 @@ Brackeys' Menu tutorial https://www.youtube.com/watch?v=zc8ac_qUXQY . Nah that's
 Brackeys' Option Menu https://www.youtube.com/watch?v=YOaYQrN1oYQ . Improvements!!! thx!!!
 Brackeys' Pause Menu https://www.youtube.com/watch?v=JivuXdrIHK0&t=29s . Thx again!!! Paused.
 Brackeys' Loading Screen https://www.youtube.com/watch?v=YMj2qPq9CP8 . Loading....
-Blackthornprod UI tutorial . Total fix something that Brackeys forgot such as UI scalings with Shift+Alt.
+Blackthornprod UI tutorial https://www.youtube.com/watch?v=_RIsfVOqTaE . Total fix something that Brackeys forgot such as UI scalings with Shift+Alt.
+Dilon Richie https://www.youtube.com/watch?v=dkduVooA9tE & https://youtu.be/FRbRQFpVFxg . UI navigation!
 SHoonBee's cryptic message about soul composing. Joel knows what it means. If you correct, a VAPOUR of refference will rise against your head. But sorry, it's not the gift one. I don't have intention to gift lol. Think about it!
 Tony Morelli's jumping tutorial https://www.youtube.com/watch?v=cl201U1oUYs . Make this thing jump only if grounded!
 ChrisWoo found the RangeAtributes! https://answers.unity.com/questions/25074/whats-attribute-to-limit-range-of-serialized-varia.html . make the Inspector Script has that slider serialized score thingy!
