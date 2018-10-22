@@ -20,4 +20,8 @@ You slides and defense
 You attacc and very sharp!
 
 ##Links
+New version: Coming soon
 itch: https://joelwindows7.itch.io/geogon-polymetry-the-proof-concept
+Steam: No. it has DRM. sorry.
+Google Play: No. it's expensive! sorry.
+App Store: d'hek man? I said No! no proprietary platform!!!

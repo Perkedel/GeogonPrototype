@@ -21,6 +21,9 @@ Brackeys' Loading Screen https://www.youtube.com/watch?v=YMj2qPq9CP8 . Loading..
 Brackeys' Mobile Touch Control https://www.youtube.com/watch?v=bp2PiFC9sSs&t=771s . Use Touchscreen joystick to control in Mobile!!!
 Blackthornprod UI tutorial https://www.youtube.com/watch?v=_RIsfVOqTaE . Total fix something that Brackeys forgot such as UI scalings with Shift+Alt.
 Dilon Richie https://www.youtube.com/watch?v=dkduVooA9tE & https://youtu.be/FRbRQFpVFxg . UI navigation!
+Alexander Zotov https://www.youtube.com/watch?v=DNLAuV-d4sA . Jump Button! Standard Assets Cross Platform Input is now used for it!
+As Told By Waldo Pan Zoom https://www.youtube.com/watch?v=0G4vcH9N0gc . Pan and Zoom touch.
+As Told By Waldo Touch Button https://www.youtube.com/watch?v=VmGmMRhR-Ts . Cross Platform input is incompatible on WIndows!
 Unity Community XBOX controller mapping http://wiki.unity3d.com/index.php?title=Xbox360Controller . Refference for Xinput based mapping.
 SHoonBee's cryptic message about soul composing. Joel knows what it means. If you correct, a VAPOUR of refference will rise against your head. But sorry, it's not the gift one. I don't have intention to gift lol. Think about it!
 Tony Morelli's jumping tutorial https://www.youtube.com/watch?v=cl201U1oUYs . Make this thing jump only if grounded!

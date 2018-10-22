@@ -33,6 +33,31 @@ public class FollowPlayerCSharp : MonoBehaviour
                 // Set the target to the object we found
                 target = go.transform;
         }
+
+        if(Input.touchCount == 2)
+        {
+            //https://www.youtube.com/watch?v=0G4vcH9N0gc As Told By Waldo
+            Touch touchZero = Input.GetTouch(0);
+            Touch touchOne = Input.GetTouch(1);
+
+            Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
+            Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
+
+            float prevMagnitude = (touchZeroPrevPos - touchOnePrevPos).magnitude;
+            float currentMagnitude = (touchZero.position - touchOne.position).magnitude;
+
+            float difference = currentMagnitude - prevMagnitude;
+
+            zoom(difference * 0.01f);
+
+            Vector3 LineStart;
+            Vector3 LinePositional = (touchZero.position - touchOne.position);
+            LineStart = LinePositional;
+            LinePositional.z = 0;
+            Vector3 LineDirection = LineStart - Camera.main.ScreenToWorldPoint(LinePositional);
+            Camera.main.transform.position += LineDirection;
+        }
+
         //https://gamedev.stackexchange.com/questions/104693/how-to-use-input-getaxismouse-x-y-to-rotate-the-camera Fuzzy Logic
         if (Input.GetKey(KeyCode.Mouse2) || Input.GetKey(KeyCode.Mouse1))
         {
@@ -64,8 +89,18 @@ public class FollowPlayerCSharp : MonoBehaviour
         if (Zoom >= constrainZoomMax) Zoom = constrainZoomMax;
         Camera.main.orthographicSize = Zoom;
 
+        //Here is better and easier function by Told by Waldo https://www.youtube.com/watch?v=0G4vcH9N0gc
+        //Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - Zoom, constrainZoomMin, constrainZoomMax);
+        //unfortunately, I have made it already. Please don't overhaul it! we are in Unity (Proprietary Subscription only) remember?!
+        //Next time.
+
         if (target)
             transform.position = new Vector3(target.position.x + relativeX, target.position.y + relativeY, target.position.z - distance);
             //transform.position = new Vector3(target.position.x, target.position.y + 25, target.position.z - distance); // original. in 2D, Y must face right at it. So remove +25 on the Y vector.
+    }
+
+    void zoom(float increment)
+    {
+        Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, constrainZoomMin, constrainZoomMax);
     }
 }

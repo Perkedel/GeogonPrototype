@@ -381,8 +381,7 @@ MonoBehaviour:
   healthMonitor: 100
   armourMonitor: 20
   viewTickled: 0
-  SHanpedJoystick: {fileID: 114859346367353968, guid: 523fe5c85970d82469a25ab9e23b32a7,
-    type: 2}
+  SHanpedJoystick: {fileID: 0}
   LevelLoadering: {fileID: 0}
   SelfDestructButton: 0
 --- !u!212 &212341738295727336

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.CrossPlatformInput; //https://www.youtube.com/watch?v=DNLAuV-d4sA 
 
 public class SHanpe : MonoBehaviour {
 
@@ -109,6 +110,7 @@ public class SHanpe : MonoBehaviour {
 
     //Controller Configurations, Hold Functionality template
     public Joystick SHanpedJoystick;
+    
     private void changeShapeButton()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetButtonDown("Fire1"))
@@ -130,7 +132,7 @@ public class SHanpe : MonoBehaviour {
 
     private void JumpButton()
     {
-        if (Input.GetButtonDown("Jump")) //Jump button
+        if (Input.GetButtonDown("Jump") || CrossPlatformInputManager.GetButtonDown("Jump")) //Jump button
         {
             if (currJumpToken > 0)
             {
@@ -141,6 +143,11 @@ public class SHanpe : MonoBehaviour {
     }
 
     //functionality, Template Methods
+    public void JumpByHand()
+    {
+       
+    }
+
     public void setShape(int index)
     {
         if(!eekSerkat) bentuk = (Bentuk) index;
