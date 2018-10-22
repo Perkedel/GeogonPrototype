@@ -108,6 +108,7 @@ public class SHanpe : MonoBehaviour {
     private float initArmour;
 
     //Controller Configurations, Hold Functionality template
+    public Joystick SHanpedJoystick;
     private void changeShapeButton()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetButtonDown("Fire1"))
@@ -212,6 +213,12 @@ public class SHanpe : MonoBehaviour {
         float ControlSlide = 0;
         float ControlRolls = 0;
 
+        for (int i = 0; i < Input.touchCount; i++)
+        {
+            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
+            Debug.DrawLine(Vector3.zero, touchPosition, Color.red);
+        }
+
         if (!eekSerkat)
         {
             if (bentuk == Bentuk.eekSerkat) //resurrect from death
@@ -221,8 +228,8 @@ public class SHanpe : MonoBehaviour {
             }
 
             //Controlling
-            if (currSlide > 0) ControlSlide = Input.GetAxis("Horizontal") * currSlide; else ControlSlide = 0;
-            if (currRolls > 0) ControlRolls = Input.GetAxis("Horizontal") * currRolls; else ControlRolls = 0;
+            if (currSlide > 0) ControlSlide = (Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal) * currSlide; else ControlSlide = 0;
+            if (currRolls > 0) ControlRolls = (Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal)* currRolls; else ControlRolls = 0;
             //To allow Keyboard controll, you must have Axes Horizontal and Vertical that set to Type as Key or Mouse Button
             //Then add another same set for Joystick. Types are Joystick Axis.
 

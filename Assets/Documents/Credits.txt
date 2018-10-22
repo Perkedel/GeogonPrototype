@@ -18,6 +18,7 @@ Brackeys' Menu tutorial https://www.youtube.com/watch?v=zc8ac_qUXQY . Nah that's
 Brackeys' Option Menu https://www.youtube.com/watch?v=YOaYQrN1oYQ . Improvements!!! thx!!!
 Brackeys' Pause Menu https://www.youtube.com/watch?v=JivuXdrIHK0&t=29s . Thx again!!! Paused.
 Brackeys' Loading Screen https://www.youtube.com/watch?v=YMj2qPq9CP8 . Loading....
+Brackeys' Mobile Touch Control https://www.youtube.com/watch?v=bp2PiFC9sSs&t=771s . Use Touchscreen joystick to control in Mobile!!!
 Blackthornprod UI tutorial https://www.youtube.com/watch?v=_RIsfVOqTaE . Total fix something that Brackeys forgot such as UI scalings with Shift+Alt.
 Dilon Richie https://www.youtube.com/watch?v=dkduVooA9tE & https://youtu.be/FRbRQFpVFxg . UI navigation!
 Unity Community XBOX controller mapping http://wiki.unity3d.com/index.php?title=Xbox360Controller . Refference for Xinput based mapping.
@@ -38,6 +39,7 @@ Text Mesh Pro. Acquired by Unity. All in one Stylish Text solution!!! Must have 
 2D Game Kit. Decommissioned, Ruining the Game Collider! Try Partial and watch what things change first!
 2D Standard Asset Unity. Essential Unity's package containing Standard Assets for 2D things
 MOVINARC Package Uninstaller. Sometimes, some package were no longer be needed. can be a hassle to remove just be like that.
+Fenerax Studio Virtual Joystick pack. There is now premade Touch joystick!!! thx Brackeys for telling me this. It is inefficient to create from scratch!
 
 Packages involved (Beside preinstalled and built-in, user installed!):
 2D Sprite Shape. Create bendable string of sprites! great for various shaped platform, and other weird stuff! Unity's experimental!!!
