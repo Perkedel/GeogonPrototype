@@ -130,22 +130,53 @@ public class SHanpe : MonoBehaviour {
         }
     }
 
+    public void LetsJump()
+    {
+        if (currJumpToken > 0)
+        {
+            rb2D.AddForce(Vector2.up * currJumps * 10f);
+            currJumpToken -= 1;
+        }
+    }
     private void JumpButton()
     {
-        if (Input.GetButtonDown("Jump") || CrossPlatformInputManager.GetButtonDown("Jump")) //Jump button
+        //CrossPlatformInputManager is incompatible with PC (Windows) standalone!
+        if (Input.GetButtonDown("Jump") && !TheCameraAction.isMovingCamera) //Jump button
         {
-            if (currJumpToken > 0)
-            {
-                rb2D.AddForce(Vector2.up * currJumps * 10f);
-                currJumpToken -= 1;
-            }
+            LetsJump();
         }
     }
 
     //functionality, Template Methods
+    //Hard To figure out Jump By touch button
+    //Devin Curry https://www.youtube.com/watch?v=gKjKFZ30684 , Learn Everything Fast https://www.youtube.com/watch?v=JoyjDac-oJY
+    public int JumpingCable = 0;
+    [SerializeField] private bool hasJumpPressed = false;
     public void JumpByHand()
     {
-       
+        if (!TheCameraAction.isMovingCamera)
+        {
+            if (!hasJumpPressed && JumpingCable == 0)
+            {
+                JumpingCable = 1;
+                hasJumpPressed = true;
+
+                //Insert Jump Methodings
+                LetsJump();
+            }
+            if (hasJumpPressed && JumpingCable != 0)
+            {
+                JumpingCable = 0;
+            }
+        } else
+        {
+            JumpingCable = 0;
+        }
+    }
+    public void JumpByNone()
+    {
+        JumpingCable = 0;
+        hasJumpPressed = false;
     }
 
     public void setShape(int index)
@@ -195,6 +226,9 @@ public class SHanpe : MonoBehaviour {
         HealthPoint = 0;
     }
 
+    //Check Something from other objects
+    public FollowPlayerCSharp TheCameraAction;
+
     //Begin
     private void Awake()
     {
@@ -205,6 +239,7 @@ public class SHanpe : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        JumpingCable = 0;
         currJumpToken = jumpToken;
 
         //catching initial parameters for respawning
@@ -220,11 +255,11 @@ public class SHanpe : MonoBehaviour {
         float ControlSlide = 0;
         float ControlRolls = 0;
 
-        for (int i = 0; i < Input.touchCount; i++)
-        {
-            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
-            Debug.DrawLine(Vector3.zero, touchPosition, Color.red);
-        }
+        //for (int i = 0; i < Input.touchCount; i++)
+        //{
+        //    Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
+        //    Debug.DrawLine(Vector3.zero, touchPosition, Color.red);
+        //}
 
         if (!eekSerkat)
         {
@@ -233,18 +268,20 @@ public class SHanpe : MonoBehaviour {
                 bentuk = currBentuk;
                 currJumpToken = jumpToken;
             }
+            if (!TheCameraAction.isMovingCamera)
+            {
+                //Controlling
+                if (currSlide > 0) ControlSlide = (Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal) * currSlide; else ControlSlide = 0;
+                if (currRolls > 0) ControlRolls = (Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal) * currRolls; else ControlRolls = 0;
+                //To allow Keyboard controll, you must have Axes Horizontal and Vertical that set to Type as Key or Mouse Button
+                //Then add another same set for Joystick. Types are Joystick Axis.
 
-            //Controlling
-            if (currSlide > 0) ControlSlide = (Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal) * currSlide; else ControlSlide = 0;
-            if (currRolls > 0) ControlRolls = (Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal)* currRolls; else ControlRolls = 0;
-            //To allow Keyboard controll, you must have Axes Horizontal and Vertical that set to Type as Key or Mouse Button
-            //Then add another same set for Joystick. Types are Joystick Axis.
+                //jump button
+                JumpButton();
 
-            //jump button
-            JumpButton();
-
-            //change shape
-            changeShapeButton();
+                //change shape
+                changeShapeButton();
+            }
         } else //start to dead
         {
             //Handheld.Vibrate(); //https://docs.unity3d.com/ScriptReference/Handheld.Vibrate.html

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 //by Digital-Phantom
 //https://answers.unity.com/questions/930656/how-to-prevent-camera-rotation.html
@@ -7,6 +8,16 @@ using System.Collections;
 
 public class FollowPlayerCSharp : MonoBehaviour
 {
+    //Explicit Blocking Refferences
+    public Joystick[] BlockJoystick;
+    public Scrollbar[] BlockShapeStatus;
+    public ShapeStatus[] BlockShapeStatusScript;
+    public Button[] BlockButton;
+
+    //Expose Function Variables
+    public bool isMovingCamera;
+
+    //Camera Settings
     private float relativeX, relativeY;
     [Range(10,1000000)]public float constrainXleft = -100, constrainYdown = -100, constrainXright = 100, constrainYup = 100;
 
@@ -17,6 +28,14 @@ public class FollowPlayerCSharp : MonoBehaviour
     public Transform target; //This will be your citizen
     public float distance;
 
+    [SerializeField] private bool JoystickIsTouched = false;
+    public void SetJoystickIsTouched(bool value)
+    {
+        JoystickIsTouched = value;
+    }
+
+    public GameObject[] BlockThoseObjects;
+
     private void Start()
     {
         initialZoom = Zoom;
@@ -24,6 +43,14 @@ public class FollowPlayerCSharp : MonoBehaviour
 
     void Update()
     {
+        float [] LineDirectioning = { 0f, 0f, 0f };
+        bool DualTouched = false ;
+        for (int i = 0; i < Input.touchCount; i++)
+        {
+            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
+            Debug.DrawLine(Vector3.zero, touchPosition, Color.red);
+        }
+
         if (!target)
         {
             // Search for object with Player tag
@@ -34,11 +61,23 @@ public class FollowPlayerCSharp : MonoBehaviour
                 target = go.transform;
         }
 
-        if(Input.touchCount == 2)
+        if (Input.touchCount >= 2 && !JoystickIsTouched)
         {
+            DualTouched = true;
             //https://www.youtube.com/watch?v=0G4vcH9N0gc As Told By Waldo
+
             Touch touchZero = Input.GetTouch(0);
             Touch touchOne = Input.GetTouch(1);
+            //if (!JoystickIsTouched)
+            //{
+            //    touchZero = Input.GetTouch(0);
+            //    touchOne = Input.GetTouch(1);
+            //}
+            //else if (JoystickIsTouched)
+            //{
+            //    touchZero = Input.GetTouch(1);
+            //    touchOne = Input.GetTouch(2);
+            //}
 
             Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
             Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
@@ -48,21 +87,69 @@ public class FollowPlayerCSharp : MonoBehaviour
 
             float difference = currentMagnitude - prevMagnitude;
 
-            zoom(difference * 0.01f);
+            //zoom(difference * 0.01f);
+            Zoom -= difference * 0.01f;
 
             Vector3 LineStart;
             Vector3 LinePositional = (touchZero.position - touchOne.position);
-            LineStart = LinePositional;
+            Vector3 PrevLinePositional = (touchZeroPrevPos - touchOnePrevPos);
+            Vector3 MouseLine = (touchZero.deltaPosition + touchOne.deltaPosition);
+            
+            //LineStart = LinePositional;
             LinePositional.z = 0;
-            Vector3 LineDirection = LineStart - Camera.main.ScreenToWorldPoint(LinePositional);
-            Camera.main.transform.position += LineDirection;
+            Vector3 LineDifference = LinePositional - PrevLinePositional;
+            //Vector3 LineDirection = Camera.main.ScreenToWorldPoint(LineStart) + Camera.main.ScreenToWorldPoint(LinePositional);
+            //Camera.main.transform.position += LineDirection;
+            LineDirectioning[0] = MouseLine.x *.01f;
+            LineDirectioning[1] = MouseLine.y *.01f;
+            Debug.DrawLine(touchOne.position, touchZero.position, Color.yellow);
+        }
+        else DualTouched = false;
+        if (DualTouched)
+        {
+            isMovingCamera = true;
+            for(int i = 0; i < BlockButton.Length; i++)
+            {
+                BlockButton[i].interactable = false;
+            }
+            for (int i = 0; i < BlockJoystick.Length; i++)
+            {
+                
+            }
+            for (int i = 0; i < BlockShapeStatusScript.Length; i++)
+            {
+                BlockShapeStatusScript[i].beingBlocked = true;
+            }
+            for (int i = 0; i < BlockShapeStatus.Length; i++)
+            {
+                BlockShapeStatus[i].interactable = false;
+            }
+        } else
+        {
+            isMovingCamera = false;
+            for (int i = 0; i < BlockButton.Length; i++)
+            {
+                BlockButton[i].interactable = true;
+            }
+            for (int i = 0; i < BlockJoystick.Length; i++)
+            {
+
+            }
+            for (int i = 0; i < BlockShapeStatusScript.Length; i++)
+            {
+                BlockShapeStatusScript[i].beingBlocked = false;
+            }
+            for (int i = 0; i < BlockShapeStatus.Length; i++)
+            {
+                BlockShapeStatus[i].interactable = true;
+            }
         }
 
         //https://gamedev.stackexchange.com/questions/104693/how-to-use-input-getaxismouse-x-y-to-rotate-the-camera Fuzzy Logic
-        if (Input.GetKey(KeyCode.Mouse2) || Input.GetKey(KeyCode.Mouse1))
+        if (Input.GetKey(KeyCode.Mouse2) || Input.GetKey(KeyCode.Mouse1) || DualTouched)
         {
-            relativeX -= (Zoom / 10) * Input.GetAxis("Mouse X");
-            relativeY -= (Zoom / 10) * Input.GetAxis("Mouse Y");
+            relativeX -= (Zoom / 10) * (Input.GetAxis("Mouse X") + LineDirectioning[0]);
+            relativeY -= (Zoom / 10) * (Input.GetAxis("Mouse Y") + LineDirectioning[1]);
         }
         relativeX += Input.GetAxis("MoveCamX"); relativeY += Input.GetAxis("MoveCamY");
         if (relativeX <= constrainXleft) relativeX = constrainXleft; if (relativeX >= constrainXright) relativeX = constrainXright;

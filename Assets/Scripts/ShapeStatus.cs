@@ -1,40 +1,41 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 //https://docs.unity3d.com/ScriptReference/UI.ScrollRect.OnDrag.html
 //https://docs.unity3d.com/ScriptReference/UI.ScrollRect.OnBeginDrag.html
 
-public class ShapeStatus : MonoBehaviour, IDragHandler, IDropHandler, IBeginDragHandler{
+public class ShapeStatus : MonoBehaviour{
     public bool beingDragged = false;
+    public bool beingBlocked = false;
 
-    public void OnMouseDown()
+    public void SetBeingDragged(bool value)
     {
-        beingDragged = true; //flue, false and true combined, hatchih!
-        Debug.Log("MouseDowned");
+        if (!beingBlocked)
+        {
+            beingDragged = value;
+        } else
+        {
+            beingDragged = false;
+        }
     }
 
-    public void OnMouseDrag()
+    public void SetBeingBlocked(bool value)
     {
-        beingDragged = true;
+        beingBlocked = value;
     }
 
-    public void OnDrag(PointerEventData eventData)
-    {
-        //throw new System.NotImplementedException();
-        beingDragged = true;
-    }
+    //Use Event Trigger!!!
 
-    public void OnDrop(PointerEventData eventData)
+    public void Update()
     {
-        //throw new System.NotImplementedException();
-        beingDragged = false;
-    }
-
-    public void OnBeginDrag(PointerEventData eventData)
-    {
-        //throw new System.NotImplementedException();
-        //Debug.Log("BeginDraged");
-        beingDragged = true;
+        if (beingBlocked)
+        {
+            gameObject.GetComponent<Scrollbar>().interactable = false;
+        } else
+        {
+            gameObject.GetComponent<Scrollbar>().interactable = true;
+        }
     }
 }

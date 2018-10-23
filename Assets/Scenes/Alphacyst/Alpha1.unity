@@ -412,7 +412,6 @@ GameObject:
   - component: {fileID: 135888127}
   - component: {fileID: 135888126}
   - component: {fileID: 135888125}
-  - component: {fileID: 135888129}
   - component: {fileID: 135888128}
   m_Layer: 5
   m_Name: JumpButton
@@ -435,11 +434,11 @@ RectTransform:
   m_Father: {fileID: 1309155699}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 618.05, y: -301.23}
-  m_SizeDelta: {x: 200, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -244.95001, y: 65.79999}
+  m_SizeDelta: {x: 197, y: 200}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &135888125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,17 +530,6 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 135888129}
-          m_MethodName: SetDownState
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 509937484}
           m_MethodName: JumpByHand
           m_Mode: 1
@@ -552,6 +540,17 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1279050726}
+          m_MethodName: SetJoystickIsTouched
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -559,8 +558,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 135888129}
-          m_MethodName: SetUpState
+        - m_Target: {fileID: 509937484}
+          m_MethodName: JumpByNone
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -570,9 +569,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 509937484}
-          m_MethodName: JumpByHand
-          m_Mode: 1
+        - m_Target: {fileID: 1279050726}
+          m_MethodName: SetJoystickIsTouched
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -584,18 +583,6 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
---- !u!114 &135888129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 135888123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85bf3be603548374ca46f521a3aa7fda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Jump
 --- !u!1 &172945336
 GameObject:
   m_ObjectHideFlags: 0
@@ -2831,6 +2818,58 @@ RectTransform:
   m_AnchoredPosition: {x: -0.4699707, y: 0}
   m_SizeDelta: {x: -10.94, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &774973059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1605939441684070, guid: ce5089f3caa5bb042a4d4c23a427bc82,
+    type: 2}
+  m_PrefabInternal: {fileID: 1439287693}
+--- !u!114 &774973060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774973059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1279050726}
+          m_MethodName: SetJoystickIsTouched
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1279050726}
+          m_MethodName: SetJoystickIsTouched
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &829475259
 GameObject:
   m_ObjectHideFlags: 0
@@ -3011,6 +3050,11 @@ Prefab:
       propertyPath: LevelLoadering
       value: 
       objectReference: {fileID: 106708173}
+    - target: {fileID: 114835651349734718, guid: 76b832945ffb2ce4780d3ce6bc342d1d,
+        type: 2}
+      propertyPath: TheCameraAction
+      value: 
+      objectReference: {fileID: 1279050726}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b832945ffb2ce4780d3ce6bc342d1d, type: 2}
   m_IsPrefabAsset: 0
@@ -4206,6 +4250,7 @@ GameObject:
   - component: {fileID: 1214536937}
   - component: {fileID: 1214536936}
   - component: {fileID: 1214536939}
+  - component: {fileID: 1214536940}
   m_Layer: 5
   m_Name: ShapeStatus
   m_TagString: Untagged
@@ -4255,7 +4300,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.49019608, g: 0.69803923, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.18039216, g: 0.2784314, b: 0.50980395, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 0.26666668}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -4325,6 +4370,76 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beingDragged: 0
+  beingBlocked: 0
+--- !u!114 &1214536940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1214536934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1214536939}
+          m_MethodName: SetBeingDragged
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1279050726}
+          m_MethodName: SetJoystickIsTouched
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1214536939}
+          m_MethodName: SetBeingDragged
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1279050726}
+          m_MethodName: SetJoystickIsTouched
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1254393017
 GameObject:
   m_ObjectHideFlags: 0
@@ -4538,6 +4653,7 @@ GameObject:
   - component: {fileID: 1279050724}
   - component: {fileID: 1279050723}
   - component: {fileID: 1279050726}
+  - component: {fileID: 1279050727}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4616,6 +4732,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a036d3c13bfb934c9e519fcba6ee6fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BlockJoystick:
+  - {fileID: 1439287695}
+  BlockShapeStatus:
+  - {fileID: 1214536936}
+  BlockShapeStatusScript:
+  - {fileID: 1214536939}
+  BlockButton:
+  - {fileID: 135888125}
+  isMovingCamera: 0
   constrainXleft: -100
   constrainYdown: -100
   constrainXright: 100
@@ -4625,6 +4750,23 @@ MonoBehaviour:
   constrainZoomMin: 1
   target: {fileID: 279229056}
   distance: 10
+  JoystickIsTouched: 0
+  BlockThoseObjects: []
+--- !u!114 &1279050727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1279050722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbadd32989a3da4478751d745de9c124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  one_click: 0
+  timer_running: 0
+  timer_for_double_click: 0
+  delay: 1
 --- !u!1 &1309155695
 GameObject:
   m_ObjectHideFlags: 0

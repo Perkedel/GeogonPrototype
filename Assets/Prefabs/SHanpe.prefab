@@ -382,8 +382,11 @@ MonoBehaviour:
   armourMonitor: 20
   viewTickled: 0
   SHanpedJoystick: {fileID: 0}
+  JumpingCable: 0
+  hasJumpPressed: 0
   LevelLoadering: {fileID: 0}
   SelfDestructButton: 0
+  TheCameraAction: {fileID: 0}
 --- !u!212 &212341738295727336
 SpriteRenderer:
   m_ObjectHideFlags: 1

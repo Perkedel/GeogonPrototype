@@ -24,6 +24,8 @@ Dilon Richie https://www.youtube.com/watch?v=dkduVooA9tE & https://youtu.be/FRbR
 Alexander Zotov https://www.youtube.com/watch?v=DNLAuV-d4sA . Jump Button! Standard Assets Cross Platform Input is now used for it!
 As Told By Waldo Pan Zoom https://www.youtube.com/watch?v=0G4vcH9N0gc . Pan and Zoom touch.
 As Told By Waldo Touch Button https://www.youtube.com/watch?v=VmGmMRhR-Ts . Cross Platform input is incompatible on WIndows!
+Learn Everything Fast https://www.youtube.com/watch?v=JoyjDac-oJY . This is not Jump button
+Devin Curry https://www.youtube.com/watch?v=gKjKFZ30684 . Sigh I'll figure out jump button myself.
 Unity Community XBOX controller mapping http://wiki.unity3d.com/index.php?title=Xbox360Controller . Refference for Xinput based mapping.
 SHoonBee's cryptic message about soul composing. Joel knows what it means. If you correct, a VAPOUR of refference will rise against your head. But sorry, it's not the gift one. I don't have intention to gift lol. Think about it!
 Tony Morelli's jumping tutorial https://www.youtube.com/watch?v=cl201U1oUYs . Make this thing jump only if grounded!
@@ -33,6 +35,7 @@ AnaRhisT ZoomIN ZoomOUT https://answers.unity.com/questions/20228/mouse-wheel-zo
 Brian Kehrer https://answers.unity.com/questions/10006/mouse-camera-camera-mouse.html . Valid Tranform move camera.
 bbrode https://answers.unity.com/questions/208447/set-rotation-of-a-transform.html. reset rotation after respawn.
 Molix https://answers.unity.com/questions/14637/get-the-currently-open-scene-name-or-file-name.html. get currently active scene name.
+sparkzbarca https://answers.unity.com/questions/331545/double-click-mouse-detection-.html . Double Click!
 Fabryka Twórców Gier https://www.youtube.com/watch?v=H-jYAWtVnQA . Set this Unity Remote 5 up.
 
 
