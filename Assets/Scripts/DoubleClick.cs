@@ -6,6 +6,10 @@ using UnityEngine;
 
 public class DoubleClick : MonoBehaviour
 {
+    //CUstom
+    public FollowPlayerCSharp targetCameraScript;
+
+    //Internal
     [SerializeField] bool one_click = false;
     [SerializeField] bool timer_running;
     [SerializeField] float timer_for_double_click;
@@ -22,7 +26,7 @@ public class DoubleClick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (targetCameraScript.TwoClick) //Input.GetMouse(0);
         {
             if (!one_click) // first click no previous clicks
             {
@@ -36,7 +40,8 @@ public class DoubleClick : MonoBehaviour
                 one_click = false; // found a double click, now reset
 
                 //do double click things
-                Debug.Log("Clickk");
+                //Debug.Log("Clickk");
+                targetCameraScript.ResetCamera();
             }
         }
         if (one_click)

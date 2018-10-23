@@ -16,6 +16,7 @@ public class FollowPlayerCSharp : MonoBehaviour
 
     //Expose Function Variables
     public bool isMovingCamera;
+    public bool TwoClick;
 
     //Camera Settings
     private float relativeX, relativeY;
@@ -25,6 +26,7 @@ public class FollowPlayerCSharp : MonoBehaviour
     private float initialZoom;
     [Range(1, 1000000)] public float constrainZoomMax = 100f, constrainZoomMin = 1f;
 
+    //Conditions
     public Transform target; //This will be your citizen
     public float distance;
 
@@ -32,6 +34,12 @@ public class FollowPlayerCSharp : MonoBehaviour
     public void SetJoystickIsTouched(bool value)
     {
         JoystickIsTouched = value;
+    }
+
+    //Template Methods
+    public void ResetCamera()
+    {
+        relativeX = 0; relativeY = 0; Zoom = initialZoom;
     }
 
     public GameObject[] BlockThoseObjects;
@@ -60,7 +68,13 @@ public class FollowPlayerCSharp : MonoBehaviour
                 // Set the target to the object we found
                 target = go.transform;
         }
-
+        if(Input.touchCount == 2)
+        {
+            TwoClick = true;
+        } else
+        {
+            TwoClick = false;
+        }
         if (Input.touchCount >= 2 && !JoystickIsTouched)
         {
             DualTouched = true;
@@ -157,7 +171,7 @@ public class FollowPlayerCSharp : MonoBehaviour
 
         if (Input.GetButtonDown("CamReset")) //Reset camera (JOELwindows7)
         {
-            relativeX = 0; relativeY = 0; Zoom = initialZoom;
+            ResetCamera();
         }
 
         //https://answers.unity.com/questions/20228/mouse-wheel-zoom.html AnaRhisT
