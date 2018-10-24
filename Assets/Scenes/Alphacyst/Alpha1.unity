@@ -3198,11 +3198,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114835651349734718, guid: 76b832945ffb2ce4780d3ce6bc342d1d,
         type: 2}
-      propertyPath: SHanpedJoystick
-      value: 
-      objectReference: {fileID: 1439287695}
-    - target: {fileID: 114835651349734718, guid: 76b832945ffb2ce4780d3ce6bc342d1d,
-        type: 2}
       propertyPath: LevelLoadering
       value: 
       objectReference: {fileID: 106708173}
@@ -3211,6 +3206,11 @@ Prefab:
       propertyPath: TheCameraAction
       value: 
       objectReference: {fileID: 1279050726}
+    - target: {fileID: 82693016819999122, guid: 76b832945ffb2ce4780d3ce6bc342d1d,
+        type: 2}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b832945ffb2ce4780d3ce6bc342d1d, type: 2}
   m_IsPrefabAsset: 0

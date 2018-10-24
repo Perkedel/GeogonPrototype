@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput; //https://www.youtube.com/watch?v=DNLAuV-d4sA 
-
+using UnityEngine.Audio; //https://docs.unity3d.com/ScriptReference/AudioSource.Play.html
+[RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class SHanpe : MonoBehaviour {
 
     //Shape of SHanpe
@@ -15,6 +17,11 @@ public class SHanpe : MonoBehaviour {
     public GameObject Squaring;
     public GameObject Triangling;
     public GameObject Dying;
+
+    public AudioSource itSelfSound;
+    public AudioClip[] CollisionSounds;
+    public AudioClip[] JumpSounds;
+    public AudioClip[] RollingSounds;
 
     public float Sliding = 10f;
     public float Rolling = 10f;
@@ -134,6 +141,7 @@ public class SHanpe : MonoBehaviour {
     {
         if (currJumpToken > 0)
         {
+            itSelfSound.PlayOneShot(JumpSounds[Random.Range(0, JumpSounds.Length)], .05f);
             rb2D.AddForce(Vector2.up * currJumps * 10f);
             currJumpToken -= 1;
         }
@@ -235,6 +243,7 @@ public class SHanpe : MonoBehaviour {
         rb2D = GetComponent<Rigidbody2D>();
         //bentuk = Bentuk.Lingkaran;
         currBentuk = bentuk;
+        itSelfSound = GetComponent<AudioSource>();
     }
 
     // Use this for initialization
@@ -281,6 +290,18 @@ public class SHanpe : MonoBehaviour {
 
                 //change shape
                 changeShapeButton();
+
+                //Rolling
+                if (grounded)
+                {
+                    if (!itSelfSound.isPlaying)
+                    {
+                        //itSelfSound.PlayOneShot(RollingSounds[Random.Range(0, RollingSounds.Length)], rb2D.velocity.magnitude * .01f);
+                    }
+                } else
+                {
+                    
+                }
             }
         } else //start to dead
         {
@@ -447,7 +468,9 @@ public class SHanpe : MonoBehaviour {
     //Tony Morelli https://www.youtube.com/watch?v=cl201U1oUYs
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //itSelfSound.Play(0);
         //Debug.Log("Collision Enter");
+        itSelfSound.PlayOneShot(CollisionSounds[Random.Range(0, CollisionSounds.Length)], .01f);
         if (collision.gameObject.tag == "Ground")
         {
             grounded = true;

@@ -104,7 +104,6 @@ public class FollowPlayerCSharp : MonoBehaviour
             //zoom(difference * 0.01f);
             Zoom -= difference * 0.01f;
 
-            Vector3 LineStart;
             Vector3 LinePositional = (touchZero.position - touchOne.position);
             Vector3 PrevLinePositional = (touchZeroPrevPos - touchOnePrevPos);
             Vector3 MouseLine = (touchZero.deltaPosition + touchOne.deltaPosition);
@@ -116,7 +115,7 @@ public class FollowPlayerCSharp : MonoBehaviour
             //Camera.main.transform.position += LineDirection;
             LineDirectioning[0] = MouseLine.x *.01f;
             LineDirectioning[1] = MouseLine.y *.01f;
-            Debug.DrawLine(touchOne.position, touchZero.position, Color.yellow);
+            Debug.DrawLine(Camera.main.ScreenToWorldPoint(touchOne.position), Camera.main.ScreenToWorldPoint(touchZero.position), Color.yellow);
         }
         else DualTouched = false;
         if (DualTouched)
@@ -165,7 +164,8 @@ public class FollowPlayerCSharp : MonoBehaviour
             relativeX -= (Zoom / 10) * (Input.GetAxis("Mouse X") + LineDirectioning[0]);
             relativeY -= (Zoom / 10) * (Input.GetAxis("Mouse Y") + LineDirectioning[1]);
         }
-        relativeX += Input.GetAxis("MoveCamX"); relativeY += Input.GetAxis("MoveCamY");
+        relativeX += (Zoom/10) * Input.GetAxis("MoveCamX");
+        relativeY += (Zoom/10) * Input.GetAxis("MoveCamY");
         if (relativeX <= constrainXleft) relativeX = constrainXleft; if (relativeX >= constrainXright) relativeX = constrainXright;
         if (relativeY <= constrainYdown) relativeY = constrainYdown; if (relativeY >= constrainYup) relativeY = constrainYup;
 
