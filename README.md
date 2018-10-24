@@ -19,7 +19,7 @@ You slides and defense
 ### Triangle
 You attacc and very sharp!
 
-##Links
+## Links
 New version: Coming soon
 itch: https://joelwindows7.itch.io/geogon-polymetry-the-proof-concept
 Steam: No. it has DRM. sorry.
