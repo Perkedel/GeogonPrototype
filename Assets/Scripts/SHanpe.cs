@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput; //https://www.youtube.com/watch?v=DNLAuV-d4sA 
-using UnityEngine.Audio; //https://docs.unity3d.com/ScriptReference/AudioSource.Play.html
+using UnityEngine.Audio; //https://docs.unity3d.com/ScriptReference/AudioSource.Play.html
+
 [RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(Rigidbody2D))]
 public class SHanpe : MonoBehaviour {
