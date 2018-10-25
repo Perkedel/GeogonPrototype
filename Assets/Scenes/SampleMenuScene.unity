@@ -536,6 +536,7 @@ GameObject:
   - component: {fileID: 144877301}
   - component: {fileID: 144877300}
   - component: {fileID: 144877299}
+  - component: {fileID: 144877302}
   m_Layer: 5
   m_Name: Alpha 1
   m_TagString: Untagged
@@ -623,6 +624,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 144877302}
+        m_MethodName: VibrateIt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &144877300
@@ -659,6 +671,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 144877297}
   m_CullTransparentMesh: 0
+--- !u!114 &144877302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 144877297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &239675564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,6 +1165,7 @@ MonoBehaviour:
   audioMixer: {fileID: 24100000, guid: 7e8f511c4bff2e942adf4670b10d4639, type: 2}
   resolutionDropdown: {fileID: 345224973}
   qualityDropdown: {fileID: 0}
+  hideThoseUI: []
 --- !u!1 &464563811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2452,6 +2476,7 @@ GameObject:
   - component: {fileID: 706669337}
   - component: {fileID: 706669336}
   - component: {fileID: 706669335}
+  - component: {fileID: 706669338}
   m_Layer: 5
   m_Name: Sample 1
   m_TagString: Untagged
@@ -2539,6 +2564,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 706669338}
+        m_MethodName: VibrateIt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &706669336
@@ -2575,6 +2611,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 706669333}
   m_CullTransparentMesh: 0
+--- !u!114 &706669338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 706669333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &708352396
 GameObject:
   m_ObjectHideFlags: 0
@@ -3257,6 +3304,7 @@ GameObject:
   - component: {fileID: 915160035}
   - component: {fileID: 915160034}
   - component: {fileID: 915160033}
+  - component: {fileID: 915160036}
   m_Layer: 5
   m_Name: Play_button
   m_TagString: Untagged
@@ -3355,6 +3403,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 915160036}
+        m_MethodName: VibrateIt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &915160034
@@ -3391,6 +3450,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 915160031}
   m_CullTransparentMesh: 0
+--- !u!114 &915160036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 915160031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &922389031
 GameObject:
   m_ObjectHideFlags: 0
@@ -3765,6 +3835,7 @@ GameObject:
   - component: {fileID: 1002777529}
   - component: {fileID: 1002777528}
   - component: {fileID: 1002777527}
+  - component: {fileID: 1002777530}
   m_Layer: 5
   m_Name: Exit_button
   m_TagString: Untagged
@@ -3841,6 +3912,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1002777530}
+        m_MethodName: VibrateIt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1002777528
@@ -3877,6 +3959,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1002777525}
   m_CullTransparentMesh: 0
+--- !u!114 &1002777530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1002777525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1022217975
 GameObject:
   m_ObjectHideFlags: 0
@@ -4147,6 +4240,7 @@ GameObject:
   - component: {fileID: 1077096311}
   - component: {fileID: 1077096310}
   - component: {fileID: 1077096309}
+  - component: {fileID: 1077096312}
   m_Layer: 5
   m_Name: Back_button
   m_TagString: Untagged
@@ -4234,6 +4328,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1077096312}
+        m_MethodName: VibrateIt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1077096310
@@ -4270,6 +4375,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1077096307}
   m_CullTransparentMesh: 0
+--- !u!114 &1077096312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1077096307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1095856481
 GameObject:
   m_ObjectHideFlags: 0
@@ -4670,6 +4786,7 @@ GameObject:
   - component: {fileID: 1205014390}
   - component: {fileID: 1205014389}
   - component: {fileID: 1205014388}
+  - component: {fileID: 1205014391}
   m_Layer: 5
   m_Name: Sample 3
   m_TagString: Untagged
@@ -4757,6 +4874,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1205014391}
+        m_MethodName: VibrateIt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1205014389
@@ -4793,6 +4921,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1205014386}
   m_CullTransparentMesh: 0
+--- !u!114 &1205014391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205014386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1222915736
 GameObject:
   m_ObjectHideFlags: 0
@@ -4804,6 +4943,7 @@ GameObject:
   - component: {fileID: 1222915740}
   - component: {fileID: 1222915739}
   - component: {fileID: 1222915738}
+  - component: {fileID: 1222915741}
   m_Layer: 5
   m_Name: Back_button
   m_TagString: Untagged
@@ -4913,6 +5053,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1222915741}
+        m_MethodName: VibrateIt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1222915739
@@ -4949,6 +5100,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222915736}
   m_CullTransparentMesh: 0
+--- !u!114 &1222915741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1222915736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1233671411
 GameObject:
   m_ObjectHideFlags: 0
@@ -5424,7 +5586,7 @@ GameObject:
   - component: {fileID: 1417261821}
   m_Layer: 0
   m_Name: LevelLoader
-  m_TagString: Untagged
+  m_TagString: LevelLoader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5581,6 +5743,7 @@ GameObject:
   - component: {fileID: 1563687641}
   - component: {fileID: 1563687640}
   - component: {fileID: 1563687639}
+  - component: {fileID: 1563687642}
   m_Layer: 5
   m_Name: Back_button
   m_TagString: Untagged
@@ -5679,6 +5842,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1563687642}
+        m_MethodName: VibrateIt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1563687640
@@ -5715,6 +5889,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1563687637}
   m_CullTransparentMesh: 0
+--- !u!114 &1563687642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1563687637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1589000820
 GameObject:
   m_ObjectHideFlags: 0
@@ -5795,6 +5980,7 @@ GameObject:
   - component: {fileID: 1596495878}
   - component: {fileID: 1596495877}
   - component: {fileID: 1596495876}
+  - component: {fileID: 1596495879}
   m_Layer: 5
   m_Name: Sample 2
   m_TagString: Untagged
@@ -5882,6 +6068,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1596495879}
+        m_MethodName: VibrateIt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1596495877
@@ -5918,6 +6115,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1596495874}
   m_CullTransparentMesh: 0
+--- !u!114 &1596495879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1596495874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1651416798
 GameObject:
   m_ObjectHideFlags: 0
@@ -7071,6 +7279,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2000362850}
+  - component: {fileID: 2000362851}
+  - component: {fileID: 2000362852}
   m_Layer: 5
   m_Name: OptionsNewMenu
   m_TagString: Untagged
@@ -7103,6 +7313,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 404, y: 311}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2000362851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2000362849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6831c6fdc36b8b04d84324f9e43019ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideThoseObjects:
+  - {fileID: 2000362849}
+  - {fileID: 898545068}
+  hideThoseButtons: []
+  reshowThoseObjects:
+  - {fileID: 1907057727}
+  levelManager: {fileID: 1417261821}
+  setStoreSelected: {fileID: 915160031}
+  letVibrate: {fileID: 2000362852}
+--- !u!114 &2000362852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2000362849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2017357604
 GameObject:
   m_ObjectHideFlags: 0
@@ -7389,6 +7630,7 @@ GameObject:
   - component: {fileID: 2089971584}
   - component: {fileID: 2089971583}
   - component: {fileID: 2089971582}
+  - component: {fileID: 2089971585}
   m_Layer: 5
   m_Name: Options_button
   m_TagString: Untagged
@@ -7498,6 +7740,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2089971585}
+        m_MethodName: VibrateIt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2089971583
@@ -7534,6 +7787,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2089971580}
   m_CullTransparentMesh: 0
+--- !u!114 &2089971585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089971580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2110962125
 GameObject:
   m_ObjectHideFlags: 0

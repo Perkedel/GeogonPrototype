@@ -1188,7 +1188,7 @@ GameObject:
   - component: {fileID: 646669555}
   m_Layer: 0
   m_Name: LevelLoader
-  m_TagString: Untagged
+  m_TagString: LevelLoader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2704,6 +2704,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a036d3c13bfb934c9e519fcba6ee6fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BlockJoystick: []
+  BlockShapeStatus: []
+  BlockShapeStatusScript: []
+  BlockButton: []
+  isMovingCamera: 0
+  TwoClick: 0
   constrainXleft: -100
   constrainYdown: -100
   constrainXright: 100
@@ -2713,6 +2719,8 @@ MonoBehaviour:
   constrainZoomMin: 1
   target: {fileID: 640276361}
   distance: 10
+  JoystickIsTouched: 0
+  BlockThoseObjects: []
 --- !u!1 &1371205512
 GameObject:
   m_ObjectHideFlags: 0

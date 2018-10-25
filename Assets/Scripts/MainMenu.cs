@@ -17,4 +17,15 @@ public class MainMenu : MonoBehaviour {
         Debug.Log("QUITTED!!!");
         Application.Quit();
     }
+
+    public void Update()
+    {
+        if(gameObject.activeSelf)
+        {
+            if(Input.GetButtonDown("Cancel"))
+            {
+                QuitGame();
+            }
+        }
+    }
 }

@@ -42,6 +42,12 @@ public class FollowPlayerCSharp : MonoBehaviour
         relativeX = 0; relativeY = 0; Zoom = initialZoom;
     }
 
+    //https://answers.unity.com/questions/386592/using-delta-to-find-mouse-movement.html delta mouse position
+    //https://forum.unity.com/threads/input-getmousebutton-0-deltaposition.180701/ delta mouse position
+    Vector2 oldMousePosition = Vector2.zero;
+    Vector2 curMousePosition = Vector2.zero;
+    float[] deltaMousePosition = { 0, 0, 0 };
+
     public GameObject[] BlockThoseObjects;
 
     private void Start()
@@ -51,12 +57,15 @@ public class FollowPlayerCSharp : MonoBehaviour
 
     void Update()
     {
+        //MouseClick Heurestics
+
         float [] LineDirectioning = { 0f, 0f, 0f };
         bool DualTouched = false ;
         for (int i = 0; i < Input.touchCount; i++)
         {
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
-            Debug.DrawLine(Vector3.zero, touchPosition, Color.red);
+            //Debug.DrawLine(Vector3.zero, touchPosition, Color.red);
+            Debug.DrawLine(Camera.main.transform.position + (Vector3.forward * 10), touchPosition + (Vector3.forward * 10), Color.red);
         }
 
         if (!target)
@@ -110,12 +119,12 @@ public class FollowPlayerCSharp : MonoBehaviour
             
             //LineStart = LinePositional;
             LinePositional.z = 0;
-            Vector3 LineDifference = LinePositional - PrevLinePositional;
+            //Vector3 LineDifference = LinePositional - PrevLinePositional;
             //Vector3 LineDirection = Camera.main.ScreenToWorldPoint(LineStart) + Camera.main.ScreenToWorldPoint(LinePositional);
             //Camera.main.transform.position += LineDirection;
-            LineDirectioning[0] = MouseLine.x *.01f;
-            LineDirectioning[1] = MouseLine.y *.01f;
-            Debug.DrawLine(Camera.main.ScreenToWorldPoint(touchOne.position), Camera.main.ScreenToWorldPoint(touchZero.position), Color.yellow);
+            LineDirectioning[0] = MouseLine.x * .01f;
+            LineDirectioning[1] = MouseLine.y * .01f;
+            Debug.DrawLine(Camera.main.ScreenToWorldPoint(touchOne.position) + (Vector3.forward * 10), Camera.main.ScreenToWorldPoint(touchZero.position) + (Vector3.forward * 10), Color.yellow);
         }
         else DualTouched = false;
         if (DualTouched)
@@ -158,14 +167,49 @@ public class FollowPlayerCSharp : MonoBehaviour
             }
         }
 
-        //https://gamedev.stackexchange.com/questions/104693/how-to-use-input-getaxismouse-x-y-to-rotate-the-camera Fuzzy Logic
-        if (Input.GetKey(KeyCode.Mouse2) || Input.GetKey(KeyCode.Mouse1) || DualTouched)
+        //DeltaMousePostition
+        if (oldMousePosition.x == -999.99f && oldMousePosition.y == -999.99f)
         {
-            relativeX -= (Zoom / 10) * (Input.GetAxis("Mouse X") + LineDirectioning[0]);
-            relativeY -= (Zoom / 10) * (Input.GetAxis("Mouse Y") + LineDirectioning[1]);
+            oldMousePosition = Event.current.mousePosition;
         }
-        relativeX += (Zoom/10) * Input.GetAxis("MoveCamX");
-        relativeY += (Zoom/10) * Input.GetAxis("MoveCamY");
+        curMousePosition = Input.mousePosition;
+        deltaMousePosition[0] = -(oldMousePosition.x - curMousePosition.x) * Time.deltaTime;
+        deltaMousePosition[1] = -(oldMousePosition.y - curMousePosition.y) * Time.deltaTime;
+        oldMousePosition = curMousePosition;
+
+        //https://gamedev.stackexchange.com/questions/104693/how-to-use-input-getaxismouse-x-y-to-rotate-the-camera Fuzzy Logic
+        if (!JoystickIsTouched)
+        {
+            if ((Input.GetMouseButton(2) || Input.GetMouseButton(1)) && !DualTouched)
+            {
+                //relativeX -= (Zoom / 10) * Input.GetAxis("Mouse X"); //Deprecated! conflict with Android Touchscreen (treated as Mouse movement)
+                //relativeY -= (Zoom / 10) * Input.GetAxis("Mouse Y");
+                relativeX -= (Zoom /10f) * deltaMousePosition[0];
+                relativeY -= (Zoom /10f) * deltaMousePosition[1];
+            }
+            else if (DualTouched && !(Input.GetMouseButton(2) || Input.GetMouseButton(1)))
+            {
+                relativeX -= (Zoom / 10f) * LineDirectioning[0];
+                relativeY -= (Zoom / 10f) * LineDirectioning[1];
+            }
+            else if (DualTouched && (Input.GetMouseButton(2) || Input.GetMouseButton(1)))
+            {
+                //Debug.Log("<color=red>Woi!! satu satu! jangang berebutan!!!</color>");
+                relativeX -= (Zoom / 10f) * LineDirectioning[0];
+                relativeY -= (Zoom / 10f) * LineDirectioning[1];
+            }
+            else
+            {
+
+            }
+        }
+        //Don't use keycode mouse 2 something like that! this code is also treated on Android e.g.
+        //nvm. Unity succ! cannot differentiate mouse click and touchscreen on Editor at all!
+        if (Input.GetAxis("MoveCamX") > 0 || Input.GetAxis("MoveCamY") > 0) //don't mess with relatives if none right analog stick axes moved!
+        {
+            relativeX += (Zoom / 10) * Input.GetAxis("MoveCamX");
+            relativeY += (Zoom / 10) * Input.GetAxis("MoveCamY");
+        }
         if (relativeX <= constrainXleft) relativeX = constrainXleft; if (relativeX >= constrainXright) relativeX = constrainXright;
         if (relativeY <= constrainYdown) relativeY = constrainYdown; if (relativeY >= constrainYup) relativeY = constrainYup;
 
@@ -204,4 +248,6 @@ public class FollowPlayerCSharp : MonoBehaviour
     {
         Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, constrainZoomMin, constrainZoomMax);
     }
+
+    
 }

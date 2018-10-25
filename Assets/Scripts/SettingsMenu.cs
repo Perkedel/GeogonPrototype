@@ -23,13 +23,20 @@ public class SettingsMenu : MonoBehaviour {
     Resolution[] resolutions;
     //QualityLevel[] qualityLevels;
 
+    public GameObject[] hideThoseUI;
 
     void Start()
     {
         resolutions = Screen.resolutions;
         //qualitySettings = QualitySettings.GetQualityLevel;
-        
 
+        if (gameObject.activeSelf)
+        {
+            if (Input.GetButtonDown("Cancel"))
+            {
+
+            }
+        }
         resolutionDropdown.ClearOptions();
 
         List<string> options = new List<string>();
