@@ -47,6 +47,7 @@ sparkzbarca https://answers.unity.com/questions/331545/double-click-mouse-detect
 Fabryka Twórców Gier https://www.youtube.com/watch?v=H-jYAWtVnQA . Set this Unity Remote 5 up.
 CodeMasterMike https://answers.unity.com/questions/386592/using-delta-to-find-mouse-movement.html . Delta Mouse position sesungguhnya! (edited for this case)
 Various https://forum.unity.com/threads/how-to-skip-handheld-vibrate-when-building-for-mac-pc.166910/ . Platform Specific vibrate methods Handhel Vibrate!
+Kuldeep Singh https://www.youtube.com/watch?v=eM3Vw0PGX4Y . Vibration class for Android introduction.
 
 
 Assets involved:
@@ -60,6 +61,12 @@ Fenerax Studio Virtual Joystick pack. There is now premade Touch joystick!!! thx
 Packages involved (Beside preinstalled and built-in, user installed!):
 2D Sprite Shape. Create bendable string of sprites! great for various shaped platform, and other weird stuff! Unity's experimental!!!
 Vector Graphics. SVG in Unity!!! Scalable Sprite Assets!!! no more broken image! Oh turns out still not in relevant worthness. unable to acceleration path points!
+
+DownloadExtra:
+Scripts:
+aVolpe https://gist.github.com/aVolpe/707c8cf46b1bb8dfb363 . Vibration class for Android.
+Pack:
+Kenney Vleugels https://kenney.nl https://kenney.itch.io https://opengameart.org/comment/58559 . Platformer Complete Pack 0. 
 
 (FLAC is not supported by Unity default! maybe try use some asset package?)
 (Audacity edited if necessary)

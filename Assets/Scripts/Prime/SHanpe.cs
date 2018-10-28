@@ -43,9 +43,13 @@ public class SHanpe : MonoBehaviour {
     public bool resetShapeOnRespawn = false;
     public bool canChangeShapeWhileDead = true;
 
+    //Initial Conditions
+    [Range(0, 100)] public float InitHealthPoint = 100;
+    [Range(0, 100)] public float InitArmourPoint = 20;
+
     //Vital Conditions
     [Range(0, 100)] private float healthPoint = 100; //This is real health point
-    [Range(0, 100)] private float armourPoint = 20;
+    [Range(0, 100)] private float armourPoint = 20; //there is no extra armour by reproductive exposeness because SHanpe is not Human!
 
     [SerializeField] private bool grounded = false;
 
@@ -61,7 +65,7 @@ public class SHanpe : MonoBehaviour {
     [SerializeField][Range(0, 100)] private float healthMonitor = 100;
     [SerializeField][Range(0, 100)] private float armourMonitor = 20;
 
-    //Item Effects
+    //Item Effects (Deprecating)
     private bool isTickled = false;
 
     public bool IsTickled
@@ -128,13 +132,18 @@ public class SHanpe : MonoBehaviour {
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2)|| Input.GetButtonDown("Fire2"))
         {
-            if(!eekSerkat) bentuk = Bentuk.Kotak;
+            if (!eekSerkat) bentuk = Bentuk.Kotak;
             currBentuk = Bentuk.Kotak;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetButtonDown("Fire3"))
         {
-            if(!eekSerkat) bentuk = Bentuk.Segitiga;
+            if (!eekSerkat) bentuk = Bentuk.Segitiga;
             currBentuk = Bentuk.Segitiga;
+        }
+        if((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3)) ||
+            (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2") || Input.GetButtonDown("Fire3")))
+        {
+            Vibration.Vibrate(50);
         }
     }
 
@@ -143,6 +152,7 @@ public class SHanpe : MonoBehaviour {
         if (currJumpToken > 0)
         {
             itSelfSound.PlayOneShot(JumpSounds[Random.Range(0, JumpSounds.Length)], .05f);
+            Vibration.Vibrate(75);
             rb2D.AddForce(Vector2.up * currJumps * 10f);
             currJumpToken -= 1;
         }
@@ -190,6 +200,7 @@ public class SHanpe : MonoBehaviour {
 
     public void setShape(int index)
     {
+        //Vibration.Vibrate(50);
         if(!eekSerkat) bentuk = (Bentuk) index;
         currBentuk = (Bentuk)index;
     }
@@ -216,12 +227,17 @@ public class SHanpe : MonoBehaviour {
 
     public void damageMe(float value) //To hurt SHanpe, this is the correct method that should be used instead!
     {
-        if (value <= 0)
+        if (value > 0)
         {
+            Vibration.Vibrate(150);
             HealthPoint -= (value - ArmourPoint/3f);
         } else
         {
             Debug.LogError("Damage Value = " + value + "\n<color=red>Damage Value cannot be minus or zero a.k.a <= 0!!!</color>");
+        }
+        if(HealthPoint <= 0)
+        {
+            Vibration.Vibrate(2000);
         }
     }
 
@@ -294,6 +310,9 @@ public class SHanpe : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        //Let's INit
+        setHealth(InitHealthPoint);
+        setArmour(InitArmourPoint);
         JumpingCable = 0;
         currJumpToken = jumpToken;
 
@@ -352,7 +371,7 @@ public class SHanpe : MonoBehaviour {
         } else //start to dead
         {
             //Handheld.Vibrate(); //https://docs.unity3d.com/ScriptReference/Handheld.Vibrate.html
-            
+            //Vibration.Vibrate(2000); //Just use the basic 2s vibrate! this character is not human being that uses heartbeat dying pattern!!!
             
             bentuk = Bentuk.eekSerkat;
             currJumpToken = 0;
@@ -514,6 +533,7 @@ public class SHanpe : MonoBehaviour {
     //Tony Morelli https://www.youtube.com/watch?v=cl201U1oUYs
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Vibration.Vibrate(50);
         //Touched the Ground
         //itSelfSound.Play(0);
         //Debug.Log("Collision Enter");
@@ -525,10 +545,25 @@ public class SHanpe : MonoBehaviour {
         }
 
         //Picked an Item
-        ItemEffects anItem = collision.collider.GetComponent<ItemEffects>();
-        if(anItem != null) //if you collide with item
+        GameObject anItem = collision.gameObject;
+        ItemEffects anItemEffect = anItem.GetComponent<ItemEffects>();
+        if(collision.gameObject.CompareTag("Item")) //if you collide with item
         {
-
+            Debug.Log(anItem.gameObject.name);
+            if (anItemEffect.doAddHealth)
+            {
+                addHealth(anItemEffect.addHPvalue);
+            }
+            if (anItemEffect.doSetHealth)
+            {
+                setHealth(anItemEffect.setHPvalue);
+            }
+            if (anItemEffect.singleUse)
+            {
+                //anItem.destroySelf();
+                Destroy(anItem);
+            }
+            collision.gameObject.SetActive(false);
         }
     }
 
@@ -542,5 +577,41 @@ public class SHanpe : MonoBehaviour {
             //currJumpToken -= 1; //uncomment to make him lose 1 jump token in air.
 
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //Picked an Item
+        ItemEffects anItemEffect = collision.GetComponent<ItemEffects>();
+        if (anItemEffect != null) //if you collide with item
+        {
+            Vibration.Vibrate(50);
+            Debug.Log(anItemEffect.gameObject.name);
+            if (anItemEffect.doAddHealth)
+            {
+                addHealth(anItemEffect.addHPvalue);
+            }
+            if (anItemEffect.doSetHealth)
+            {
+                setHealth(anItemEffect.setHPvalue);
+            }
+            if (anItemEffect.doDamageMe)
+            {
+                damageMe(anItemEffect.damageMeValue);
+            }
+            if (anItemEffect.singleUse)
+            {
+                //anItem.destroySelf();
+                Destroy(anItemEffect.gameObject);
+            }
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        
     }
 }

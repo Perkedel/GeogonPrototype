@@ -82,13 +82,14 @@ public class ECGcable : MonoBehaviour {
         }
         prevHealthBar.value = lastHP;
 
+        //HP Bar BG
         //https://docs.unity3d.com/ScriptReference/Color-ctor.html
         //color using value precisely
         inColoring = new Color((float)HP / 100f, (float)HP / 100f, (float)HP / 100f);
         HPBarBGColor.color = inColoring;
         if (HP == 100) HPTextInfo.text = "FULL";
         else if (HP == 0) HPTextInfo.text = "DEDD";
-        else HPTextInfo.text = HP + "%";
+        else HPTextInfo.text = Mathf.Floor((HP*1000))/1000 + "%";
 
         if (hasBeenDedd)
         {
