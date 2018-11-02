@@ -48,6 +48,7 @@ Fabryka Twórców Gier https://www.youtube.com/watch?v=H-jYAWtVnQA . Set this Un
 CodeMasterMike https://answers.unity.com/questions/386592/using-delta-to-find-mouse-movement.html . Delta Mouse position sesungguhnya! (edited for this case)
 Various https://forum.unity.com/threads/how-to-skip-handheld-vibrate-when-building-for-mac-pc.166910/ . Platform Specific vibrate methods Handhel Vibrate!
 Kuldeep Singh https://www.youtube.com/watch?v=eM3Vw0PGX4Y . Vibration class for Android introduction.
+Pro Android Dev https://proandroiddev.com/using-vibrate-in-android-b0e3ef5d5e07 . vibration refferences for new Android O and up.
 
 
 Assets involved:

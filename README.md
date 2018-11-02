@@ -27,4 +27,4 @@ Google Play: No. it's expensive! sorry.
 App Store: d'hek man? I said No! no proprietary platform!!!
 
 ## It's cool!
-### dude publish id site owner!!!!
+dude publish id site owner!!!!
