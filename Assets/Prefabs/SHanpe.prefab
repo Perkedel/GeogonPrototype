@@ -93,7 +93,7 @@ GameObject:
   m_Layer: 0
   m_Name: SHanpe
   m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2800000, guid: ab1eaae4db1082e4491efdda2f517e5b, type: 3}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -366,7 +366,7 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 0.1
+  DopplerLevel: 0
   MinDistance: 1
   MaxDistance: 50
   Pan2D: 0
@@ -480,6 +480,8 @@ MonoBehaviour:
   resetRotationOnRespawn: 1
   resetShapeOnRespawn: 0
   canChangeShapeWhileDead: 1
+  InitHealthPoint: 100
+  InitArmourPoint: 20
   grounded: 0
   rb2D: {fileID: 50533945764740296}
   eekSerkat: 0

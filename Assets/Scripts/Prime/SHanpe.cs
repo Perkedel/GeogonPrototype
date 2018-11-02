@@ -547,7 +547,7 @@ public class SHanpe : MonoBehaviour {
         //Picked an Item
         GameObject anItem = collision.gameObject;
         ItemEffects anItemEffect = anItem.GetComponent<ItemEffects>();
-        if(collision.gameObject.CompareTag("Item")) //if you collide with item
+        if(collision.gameObject.CompareTag("Item") && !!collision.gameObject.GetComponent<Collider2D>().isTrigger) //if you collide with item and is not trigger
         {
             Debug.Log(anItem.gameObject.name);
             if (anItemEffect.doAddHealth)
@@ -561,9 +561,9 @@ public class SHanpe : MonoBehaviour {
             if (anItemEffect.singleUse)
             {
                 //anItem.destroySelf();
-                Destroy(anItem);
+                Destroy(anItem.gameObject);
             }
-            collision.gameObject.SetActive(false);
+            //collision.gameObject.SetActive(false);
         }
     }
 
@@ -585,33 +585,40 @@ public class SHanpe : MonoBehaviour {
         ItemEffects anItemEffect = collision.GetComponent<ItemEffects>();
         if (anItemEffect != null) //if you collide with item
         {
-            Vibration.Vibrate(50);
-            Debug.Log(anItemEffect.gameObject.name);
-            if (anItemEffect.doAddHealth)
-            {
-                addHealth(anItemEffect.addHPvalue);
-            }
-            if (anItemEffect.doSetHealth)
-            {
-                setHealth(anItemEffect.setHPvalue);
-            }
-            if (anItemEffect.doDamageMe)
-            {
-                damageMe(anItemEffect.damageMeValue);
-            }
-            if (anItemEffect.singleUse)
-            {
-                //anItem.destroySelf();
-                Destroy(anItemEffect.gameObject);
-            }
+            //Debug.Log(anItemEffect.gameObject.name);
+            //if (anItemEffect.doVibrate)
+            //{
+            //    Vibration.Vibrate();
+            //}
+            //if (anItemEffect.doAddHealth)
+            //{
+            //    addHealth(anItemEffect.addHPvalue);
+            //}
+            //if (anItemEffect.doSetHealth)
+            //{
+            //    setHealth(anItemEffect.setHPvalue);
+            //}
+            //if (anItemEffect.doDamageMe)
+            //{
+            //    damageMe(anItemEffect.damageMeValue);
+            //}
+            //if (anItemEffect.singleUse)
+            //{
+            //    //anItem.destroySelf();
+            //    Destroy(anItemEffect.gameObject);
+            //}
+            //if (anItemEffect.doSayDebug)
+            //{
+            //    anItemEffect.sayDebug(anItemEffect.whatDoesDebugSay);
+            //}
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        
+        //stayed on item
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        
+        //left from item
     }
 }

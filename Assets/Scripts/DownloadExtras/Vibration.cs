@@ -7,7 +7,6 @@ using System.Collections;
 
 public static class Vibration
 {
-
 #if UNITY_ANDROID && !UNITY_EDITOR
     public static AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
     public static AndroidJavaObject currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
@@ -54,6 +53,9 @@ public static class Vibration
         {}
 #endif
     }
+
+    //https://proandroiddev.com/using-vibrate-in-android-b0e3ef5d5e07 Vibration refference
+    
 
     public static bool HasVibrator()
     {

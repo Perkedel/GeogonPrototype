@@ -205,7 +205,7 @@ public class FollowPlayerCSharp : MonoBehaviour
         }
         //Don't use keycode mouse 2 something like that! this code is also treated on Android e.g.
         //nvm. Unity succ! cannot differentiate mouse click and touchscreen on Editor at all!
-        if (Input.GetAxis("MoveCamX") > 0 || Input.GetAxis("MoveCamY") > 0) //don't mess with relatives if none right analog stick axes moved!
+        if ((Input.GetAxis("MoveCamX") > 0 || Input.GetAxis("MoveCamY") > 0) || (Input.GetAxis("MoveCamX") < 0 || Input.GetAxis("MoveCamY") < 0)) //don't mess with relatives if none right analog stick axes moved!
         {
             relativeX += (Zoom / 10) * Input.GetAxis("MoveCamX");
             relativeY += (Zoom / 10) * Input.GetAxis("MoveCamY");

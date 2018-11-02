@@ -9,12 +9,13 @@ public class ItemEffects : MonoBehaviour {
 
     Collision2D whosTouching;
     GameObject genericToucher;
+    public GameObject theGameObject;
     public SHanpe theSHanpeWhoIsTouching;
 
     //Parametering
     public float setHPvalue = 100;
     public float addHPvalue = 10;
-    public float damageMeValue = 20;
+    public float damageMeValue = 20; public float lavaDamageValue = 10;
     public float addArmorValue = 50;
 
     //Template Methods
@@ -31,7 +32,12 @@ public class ItemEffects : MonoBehaviour {
     }
 
     public bool doDamageMe;
-    public void damageMe(float value)
+    public bool doLavaDamage;
+    public void damageMe(float value) //initial single time damage
+    {
+        theSHanpeWhoIsTouching.damageMe(value);
+    }
+    public void lavaDamage(float value) //continuous damage
     {
         theSHanpeWhoIsTouching.damageMe(value);
     }
@@ -42,16 +48,29 @@ public class ItemEffects : MonoBehaviour {
         Destroy(gameObject);
     }
 
+    public bool doSayDebug = false;
+    public string whatDoesDebugSay;
+    public void sayDebug(string something)
+    {
+        Debug.Log(something);
+    }
+
+    public bool doVibrate = true;
+    public void Vibrates()
+    {
+        Vibration.Vibrate(50);
+    }
+
     //Base
 	// Use this for initialization
 	void Start () {
         //GetComponent<Rigidbody2D>().isKinematic = true;
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        
+    }
 
     //OnCollision Detection
     //Make sure IsTrigger is ON!
@@ -92,4 +111,65 @@ public class ItemEffects : MonoBehaviour {
     //{
 
     //}
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!theSHanpeWhoIsTouching)
+        {
+            // Search for object with Player tag
+            var go = GameObject.FindWithTag("Player");
+            // Check we found an object with the player tag
+            if (go)
+            // Set the target to the object we found
+            {
+                theGameObject = go;
+                if(theGameObject.CompareTag("Player"))
+                theSHanpeWhoIsTouching = go.gameObject.GetComponent<SHanpe>();
+            }
+        }
+        if (theSHanpeWhoIsTouching)
+        {
+            if (doVibrate)
+            {
+                Vibration.Vibrate(50); //android O has trouble with just calling vibrate. deprecated probably
+            }
+            if (doAddHealth)
+            {
+                addHealth(addHPvalue);
+            }
+            if (doSetHealth)
+            {
+                setHealth(setHPvalue);
+            }
+            if (doDamageMe)
+            {
+                damageMe(damageMeValue);
+                Debug.Log("OUCH");
+            }
+            if (singleUse)
+            {
+                //anItem.destroySelf();
+                Destroy(gameObject);
+            }
+            if (doSayDebug)
+            {
+                sayDebug(whatDoesDebugSay);
+            }
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (theGameObject.tag == "Player")
+        {
+            if (doLavaDamage)
+            {
+                damageMe(lavaDamageValue);
+                Debug.Log("hot");
+            }
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        
+    }
 }

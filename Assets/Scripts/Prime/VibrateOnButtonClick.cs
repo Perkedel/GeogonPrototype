@@ -7,8 +7,9 @@ using UnityEngine.UI;
 public class VibrateOnButtonClick : MonoBehaviour {
 
     //Patterns
-    long[] DoubleClick = { 10, 10 };
-    long[] LongDouble = { 500, 500 };
+    long[] DoubleClick = {0, 10, 100, 10 };
+    long[] LongDouble = {0, 500, 250, 500 };
+    long[] Nanang_Nang = { 0, 100, 50, 100, 250, 250 }; //Who made this monopoly.jar game? it was a sound of window transition!
 
 	// Use this for initialization
 	void Start () {
@@ -46,7 +47,7 @@ public class VibrateOnButtonClick : MonoBehaviour {
         switch (index)
         {
             default:
-                selecting = new long[] { 50 , 50, 50};
+                selecting = new long[] {0, 50 , 50, 50, 50, 50};
                 break;
             case 0:
                 selecting = DoubleClick;
@@ -54,9 +55,13 @@ public class VibrateOnButtonClick : MonoBehaviour {
             case 1:
                 selecting = LongDouble;
                 break;
+            case 2:
+                selecting = Nanang_Nang;
+                break;
         }
-        VibrateIt(selecting, 1);
+        VibrateIt(selecting, -1); //-1 is out of bound repeat from. it will then stop
     }
+    //https://proandroiddev.com/using-vibrate-in-android-b0e3ef5d5e07 Android vibrate
 
     public void VibrateStyle(int index, int repeat)
     {
@@ -64,7 +69,7 @@ public class VibrateOnButtonClick : MonoBehaviour {
         switch (index)
         {
             default:
-                selecting = new long[] { 50, 50, 50};
+                selecting = new long[] {0, 50, 50, 50};
                 break;
             case 0:
                 selecting = DoubleClick;
@@ -72,7 +77,12 @@ public class VibrateOnButtonClick : MonoBehaviour {
             case 1:
                 selecting = LongDouble;
                 break;
+            case 2:
+                selecting = Nanang_Nang;
+                break;
         }
-        VibrateIt(selecting, repeat);
+        VibrateIt(selecting, repeat); //repeat means repeat from elements in array
     }
+
+    //bonus AdamJason = Trademark_Quality(bit.64);
 }

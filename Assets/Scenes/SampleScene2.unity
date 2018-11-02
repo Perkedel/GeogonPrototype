@@ -4346,6 +4346,7 @@ GameObject:
   - component: {fileID: 1822949424}
   - component: {fileID: 1822949427}
   - component: {fileID: 1822949428}
+  - component: {fileID: 1822949429}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -4450,6 +4451,18 @@ MonoBehaviour:
   - {fileID: 601411422}
   InsertResumeButtonObjectHere: {fileID: 736288349}
   levelLoader: {fileID: 646669555}
+  vibratings: {fileID: 1822949429}
+--- !u!114 &1822949429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1822949423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1832631930
 GameObject:
   m_ObjectHideFlags: 0

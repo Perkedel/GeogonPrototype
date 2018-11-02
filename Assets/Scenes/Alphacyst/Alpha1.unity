@@ -139,7 +139,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 11331356}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 170.6, y: 0, z: 0.28899044}
+  m_LocalPosition: {x: 170.85, y: 0.65, z: 0.28899044}
   m_LocalScale: {x: 10, y: 10, z: 5}
   m_Children: []
   m_Father: {fileID: 89588077}
@@ -156,15 +156,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2527ea718bdb55845abc6bc9a8eb4daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theGameObject: {fileID: 0}
   theSHanpeWhoIsTouching: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
+  lavaDamageValue: 10
   addArmorValue: 50
   doSetHealth: 0
   doAddHealth: 0
   doDamageMe: 1
+  doLavaDamage: 0
   singleUse: 1
+  doSayDebug: 0
+  whatDoesDebugSay: 
+  doVibrate: 1
 --- !u!60 &11331359
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1344,6 +1350,81 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 231735370}
   m_CullTransparentMesh: 0
+--- !u!1 &252351504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 252351506}
+  - component: {fileID: 252351505}
+  m_Layer: 0
+  m_Name: bg_castle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &252351505
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 252351504}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c8e5569a034ae664fb61dd4d21674474, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.56, y: 2.56}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &252351506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 252351504}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 433908893}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &269532736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,15 +1468,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2527ea718bdb55845abc6bc9a8eb4daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theGameObject: {fileID: 0}
   theSHanpeWhoIsTouching: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
+  lavaDamageValue: 10
   addArmorValue: 50
   doSetHealth: 0
   doAddHealth: 0
   doDamageMe: 1
+  doLavaDamage: 0
   singleUse: 1
+  doSayDebug: 0
+  whatDoesDebugSay: 
+  doVibrate: 1
 --- !u!60 &269532739
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1588,95 +1675,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 339343335}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1309155700}
-        m_MethodName: Resume
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 416069264}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1344585792}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2062265073}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 774973059}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 135888123}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 474706431}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 339343337}
-        m_MethodName: VibrateIt
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &339343335
@@ -1721,9 +1720,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 339343332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1309155700}
+          m_MethodName: Resume
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &339848721
 GameObject:
   m_ObjectHideFlags: 0
@@ -2667,6 +2685,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &433908892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 433908893}
+  m_Layer: 0
+  m_Name: BG_move_z-up-to_moveBehind
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &433908893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 433908892}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.42, y: 2.35, z: 1}
+  m_LocalScale: {x: 11.098, y: 3.5, z: 1}
+  m_Children:
+  - {fileID: 1900270141}
+  - {fileID: 252351506}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &437951050
 GameObject:
   m_ObjectHideFlags: 0
@@ -2992,7 +3040,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 501972342}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -577.4, y: -19.7, z: 0.28899044}
+  m_LocalPosition: {x: -577.45, y: -19.35, z: 0.28899044}
   m_LocalScale: {x: 10, y: 10, z: 5}
   m_Children: []
   m_Father: {fileID: 89588077}
@@ -3009,15 +3057,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2527ea718bdb55845abc6bc9a8eb4daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theGameObject: {fileID: 0}
   theSHanpeWhoIsTouching: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
+  lavaDamageValue: 10
   addArmorValue: 50
   doSetHealth: 0
   doAddHealth: 0
   doDamageMe: 1
+  doLavaDamage: 0
   singleUse: 1
+  doSayDebug: 0
+  whatDoesDebugSay: 
+  doVibrate: 1
 --- !u!60 &501972345
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3784,6 +3838,11 @@ Prefab:
       propertyPath: InitArmourPoint
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82693016819999122, guid: 76b832945ffb2ce4780d3ce6bc342d1d,
+        type: 2}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b832945ffb2ce4780d3ce6bc342d1d, type: 2}
   m_IsPrefabAsset: 0
@@ -4130,7 +4189,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 970276649}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -369.5, y: -19.9, z: 0.28899044}
+  m_LocalPosition: {x: -369.45, y: -19.4, z: 0.28899044}
   m_LocalScale: {x: 10, y: 10, z: 5}
   m_Children: []
   m_Father: {fileID: 89588077}
@@ -4147,15 +4206,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2527ea718bdb55845abc6bc9a8eb4daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theGameObject: {fileID: 0}
   theSHanpeWhoIsTouching: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
+  lavaDamageValue: 10
   addArmorValue: 50
   doSetHealth: 0
   doAddHealth: 0
   doDamageMe: 1
+  doLavaDamage: 0
   singleUse: 1
+  doSayDebug: 0
+  whatDoesDebugSay: 
+  doVibrate: 1
 --- !u!60 &970276652
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4310,15 +4375,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2527ea718bdb55845abc6bc9a8eb4daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theGameObject: {fileID: 0}
   theSHanpeWhoIsTouching: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
+  lavaDamageValue: 10
   addArmorValue: 50
   doSetHealth: 0
   doAddHealth: 0
   doDamageMe: 1
+  doLavaDamage: 0
   singleUse: 1
+  doSayDebug: 0
+  whatDoesDebugSay: 
+  doVibrate: 1
 --- !u!60 &982211928
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4510,7 +4581,6 @@ GameObject:
   - component: {fileID: 989337603}
   - component: {fileID: 989337602}
   - component: {fileID: 989337601}
-  - component: {fileID: 989337604}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -4587,17 +4657,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 989337604}
-        m_MethodName: VibrateStyle
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &989337602
@@ -4634,17 +4693,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 989337599}
   m_CullTransparentMesh: 0
---- !u!114 &989337604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 989337599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1020709981
 GameObject:
   m_ObjectHideFlags: 0
@@ -5391,6 +5439,88 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1168787200}
   m_CullTransparentMesh: 0
+--- !u!1 &1212425839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1212425840}
+  - component: {fileID: 1212425843}
+  - component: {fileID: 1212425842}
+  - component: {fileID: 1212425841}
+  m_Layer: 5
+  m_Name: Feedback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1212425840
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1212425839}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1439287694}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000012398, y: 0.000012398}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1212425841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1212425839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 222562a19a1ecfa4ba09fc8e22212e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refferenceTouch: {fileID: 1439287695}
+--- !u!114 &1212425842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1212425839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 037afc69da65a064d9634e18581a788e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1212425843
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1212425839}
+  m_CullTransparentMesh: 0
 --- !u!1 &1214536934
 GameObject:
   m_ObjectHideFlags: 0
@@ -5917,6 +6047,7 @@ GameObject:
   - component: {fileID: 1309155697}
   - component: {fileID: 1309155696}
   - component: {fileID: 1309155700}
+  - component: {fileID: 1309155701}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -6015,14 +6146,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 11550647}
   hideThoseUI:
-  - {fileID: 416069264}
-  - {fileID: 1344585792}
-  - {fileID: 2062265073}
-  - {fileID: 774973059}
-  - {fileID: 135888123}
-  - {fileID: 474706431}
+  - {fileID: 1533230480}
   InsertResumeButtonObjectHere: {fileID: 339343332}
   levelLoader: {fileID: 106708173}
+  vibratings: {fileID: 1309155701}
+  sceneMenu: SampleMenuScene
+--- !u!114 &1309155701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1309155695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1313482330
 GameObject:
   m_ObjectHideFlags: 0
@@ -6154,15 +6293,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2527ea718bdb55845abc6bc9a8eb4daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theGameObject: {fileID: 0}
   theSHanpeWhoIsTouching: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
+  lavaDamageValue: 10
   addArmorValue: 50
   doSetHealth: 0
   doAddHealth: 0
   doDamageMe: 1
+  doLavaDamage: 0
   singleUse: 0
+  doSayDebug: 0
+  whatDoesDebugSay: 
+  doVibrate: 1
 --- !u!60 &1321216505
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6799,15 +6944,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2527ea718bdb55845abc6bc9a8eb4daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theGameObject: {fileID: 0}
   theSHanpeWhoIsTouching: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
+  lavaDamageValue: 10
   addArmorValue: 50
   doSetHealth: 0
   doAddHealth: 0
   doDamageMe: 1
+  doLavaDamage: 0
   singleUse: 1
+  doSayDebug: 0
+  whatDoesDebugSay: 
+  doVibrate: 1
 --- !u!60 &1448507700
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6928,7 +7079,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1467345942}
   m_Layer: 5
-  m_Name: VirtualController
+  m_Name: VirtualControllers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6951,8 +7102,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0009765625}
-  m_SizeDelta: {x: -2, y: 0.049987793}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1533230480
 GameObject:
@@ -7107,15 +7258,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2527ea718bdb55845abc6bc9a8eb4daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theGameObject: {fileID: 0}
   theSHanpeWhoIsTouching: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
+  lavaDamageValue: 10
   addArmorValue: 50
   doSetHealth: 1
   doAddHealth: 1
   doDamageMe: 0
+  doLavaDamage: 0
   singleUse: 1
+  doSayDebug: 1
+  whatDoesDebugSay: Chingkringggg
+  doVibrate: 1
 --- !u!60 &1545710159
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7554,7 +7711,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1613587369}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 125, y: 0, z: 0.28899044}
+  m_LocalPosition: {x: 125, y: 0.5, z: 0.28899044}
   m_LocalScale: {x: 10, y: 10, z: 5}
   m_Children: []
   m_Father: {fileID: 89588077}
@@ -7571,15 +7728,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2527ea718bdb55845abc6bc9a8eb4daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theGameObject: {fileID: 0}
   theSHanpeWhoIsTouching: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
+  lavaDamageValue: 10
   addArmorValue: 50
   doSetHealth: 0
   doAddHealth: 0
   doDamageMe: 1
+  doLavaDamage: 0
   singleUse: 1
+  doSayDebug: 0
+  whatDoesDebugSay: 
+  doVibrate: 1
 --- !u!60 &1613587372
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7787,7 +7950,6 @@ GameObject:
   - component: {fileID: 1769585075}
   - component: {fileID: 1769585074}
   - component: {fileID: 1769585073}
-  - component: {fileID: 1769585076}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -7864,17 +8026,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1769585076}
-        m_MethodName: VibrateIt
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1769585074
@@ -7911,17 +8062,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1769585071}
   m_CullTransparentMesh: 0
---- !u!114 &1769585076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1769585071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1770012319
 GameObject:
   m_ObjectHideFlags: 0
@@ -8268,6 +8408,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1900270139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1900270141}
+  - component: {fileID: 1900270140}
+  m_Layer: 0
+  m_Name: bg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1900270140
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1900270139}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 2a88dc71ab26b6245bcdc515c58e816a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.56, y: 2.56}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1900270141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1900270139}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.009731466, y: 2.3717144, z: 0}
+  m_LocalScale: {x: 1.0451434, y: 0.7642857, z: 1}
+  m_Children: []
+  m_Father: {fileID: 433908893}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1949189220
 GameObject:
   m_ObjectHideFlags: 0
@@ -8298,15 +8513,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2527ea718bdb55845abc6bc9a8eb4daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theGameObject: {fileID: 0}
   theSHanpeWhoIsTouching: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
+  lavaDamageValue: 10
   addArmorValue: 50
   doSetHealth: 0
   doAddHealth: 0
   doDamageMe: 0
+  doLavaDamage: 0
   singleUse: 1
+  doSayDebug: 0
+  whatDoesDebugSay: 
+  doVibrate: 1
 --- !u!58 &1949189222
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8556,15 +8777,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2527ea718bdb55845abc6bc9a8eb4daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theGameObject: {fileID: 0}
   theSHanpeWhoIsTouching: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
+  lavaDamageValue: 10
   addArmorValue: 50
   doSetHealth: 0
   doAddHealth: 1
   doDamageMe: 0
+  doLavaDamage: 0
   singleUse: 0
+  doSayDebug: 0
+  whatDoesDebugSay: 
+  doVibrate: 1
 --- !u!60 &1985281413
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8844,6 +9071,7 @@ GameObject:
   - component: {fileID: 2062265077}
   - component: {fileID: 2062265076}
   - component: {fileID: 2062265075}
+  - component: {fileID: 2062265078}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -8920,78 +9148,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2062265073}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1344585792}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 416069264}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 106708173}
         m_MethodName: SetStoreSelected
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 339343332}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 474706431}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 135888123}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 774973059}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9033,6 +9195,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2062265073}
   m_CullTransparentMesh: 0
+--- !u!114 &2062265078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2062265073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841461c2a882e54cb2872e92fe56753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2145377149
 GameObject:
   m_ObjectHideFlags: 0
