@@ -60,6 +60,73 @@ public class ItemEffects : MonoBehaviour {
     {
         Vibration.Vibrate(50);
     }
+    public void Vibrates(long value) //Milliseconds
+    {
+        Vibration.Vibrate(value);
+    }
+    public void Vibrates(long[] pattern, int repeatFrom)
+    {
+        Vibration.Vibrate(pattern, repeatFrom);
+    }
+
+    public bool doLevelComplete = false;
+    public void LevelComplete()
+    {
+
+    }
+
+    public bool doLevelFailed = false;
+    public void LevelFailed() //or game over
+    {
+
+    }
+
+    public bool doChangeShape = false;
+    public void ChangeShape()
+    {
+
+    }
+
+    public bool doSetShapeLock = false; //disable/enable change shape by hand
+    public void SetShapeLock()
+    {
+
+    }
+
+    public bool doSetSize = false;
+    public void SetSize() //scaling local
+    {
+
+    }
+
+    public bool doSetSpeed = false;
+    public void SetSpeed()
+    {
+
+    }
+
+    public bool doSetGravity = false;
+    public void SetGravity()
+    {
+
+    }
+
+    //toDo list
+    /*
+     * Set camera zoom
+     * Set camera rotation
+     * Set camera effect
+     * particle
+     * medical
+     * cynical
+     * ah
+     * im tierd
+     * sleep
+     * set position
+     * set velocity (picking up this item will make the player run that fast)
+     * disable movement
+     * etc
+    */
 
     //Base
 	// Use this for initialization
