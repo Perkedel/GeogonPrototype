@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="206.52893"
-     inkscape:cy="911.30514"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="328.62696"
+     inkscape:cy="464.57825"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -105,7 +105,9 @@
      id="layer1"
      transform="translate(0,-106.5)">
     <g
-       id="g1536">
+       id="g1536"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          transform="translate(-128,64)"
          id="g1492">
@@ -139,7 +141,9 @@
            id="flowPara1488">Perkedel Technologies</flowPara></flowRoot>    </g>
     <g
        transform="translate(0,192)"
-       id="g1536-6">
+       id="g1536-6"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          transform="translate(-128,64)"
          id="g1492-8">
