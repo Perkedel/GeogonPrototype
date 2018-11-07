@@ -15,9 +15,12 @@ public class ECGcable : MonoBehaviour {
     public Image HPfillColor;
     public Text HPTextInfo;
     public GameObject EekSerkatText;
+    public GameObject LevelCompleteText;
+    public GameObject LevelFailedText;
     public Scrollbar ShapeStatusBar;
     public ShapeStatus refferShapeStatusScript;
     public Scrollbar HighlightStatusBar;
+    public LevelLoader LevelManager;
 
     //Condition
     private bool startDelayDecrease;
@@ -30,11 +33,37 @@ public class ECGcable : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        //Search for object with Player tag
+        if (!target)
+        {
+            var go = GameObject.FindWithTag("Player");
+            // Check we found an object with the player tag
+            if (go)
+            // Set the target to the object we found
+            {
+                if (go.CompareTag("Player"))
+                    target = go.gameObject.transform.parent.GetComponent<SHanpe>();
+            }
+        }
+        if (!LevelManager)
+        {
+            var go = GameObject.FindWithTag("LevelLoader");
+            // Check we found an object with the player tag
+            if (go)
+            // Set the target to the object we found
+            {
+                if (go.CompareTag("LevelLoader"))
+                    LevelManager = go.gameObject.GetComponent<LevelLoader>();
+            }
+        }
+    }
+
+    //Parametrics
+    public bool doFreezeControllerLCompleteFail = true;
+    public bool willGameOver = false;
+
+    // Update is called once per frame
+    void Update () {
         HP = getPlayerHP();
         healthBar.value = getPlayerHP();
 
@@ -166,10 +195,22 @@ public class ECGcable : MonoBehaviour {
                 target.setShape(3);
             }
         }
+
+        if (LevelManager.levelIsCompleted)
+        {
+            CompleteTheLevel();
+        }
+
 	}
 
+    //Templatics
     public float getPlayerHP()
     {
         return target.HealthPoint;
+    }
+
+    public void CompleteTheLevel()
+    {
+        LevelCompleteText.SetActive(true);
     }
 }

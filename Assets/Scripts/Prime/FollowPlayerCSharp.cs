@@ -20,15 +20,18 @@ public class FollowPlayerCSharp : MonoBehaviour
 
     //Camera Settings
     private float relativeX, relativeY;
-    [Range(10,1000000)]public float constrainXleft = -100, constrainYdown = -100, constrainXright = 100, constrainYup = 100;
+    [Range(10, 1000000)] public float constrainXleft = -100, constrainYdown = -100, constrainXright = 100, constrainYup = 100;
 
-    [Range(1, 1000000)] public float Zoom = 10f; //Modification has just happened! (JOELwindows7)
-    private float initialZoom;
+    [Range(1, 1000000)] public float Zoom; //Modification has just happened! (JOELwindows7)
+    [SerializeField] private float initialZoom;
     [Range(1, 1000000)] public float constrainZoomMax = 100f, constrainZoomMin = 1f;
 
     //Conditions
     public Transform target; //This will be your citizen
     public float distance;
+
+    //Initialisation
+    public float startUpZoom = 10f;
 
     [SerializeField] private bool JoystickIsTouched = false;
     public void SetJoystickIsTouched(bool value)
@@ -52,6 +55,8 @@ public class FollowPlayerCSharp : MonoBehaviour
 
     private void Start()
     {
+        initialZoom = startUpZoom;
+        Zoom = startUpZoom;
         initialZoom = Zoom;
     }
 

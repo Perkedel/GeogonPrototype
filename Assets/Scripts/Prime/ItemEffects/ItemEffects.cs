@@ -11,6 +11,8 @@ public class ItemEffects : MonoBehaviour {
     GameObject genericToucher;
     public GameObject theGameObject;
     public SHanpe theSHanpeWhoIsTouching;
+    public LevelLoader levelManager;
+    public ECGcable theHUD;
 
     //Parametering
     public float setHPvalue = 100;
@@ -50,7 +52,12 @@ public class ItemEffects : MonoBehaviour {
 
     public bool doSayDebug = false;
     public string whatDoesDebugSay;
-    public void sayDebug(string something)
+    public void sayDebug()
+    {
+        Debug.Log(whatDoesDebugSay);
+    }
+    public bool doSayDebugDynamic = false;
+    public void sayDebugDynamic(string something)
     {
         Debug.Log(something);
     }
@@ -59,6 +66,12 @@ public class ItemEffects : MonoBehaviour {
     public void Vibrates()
     {
         Vibration.Vibrate(50);
+    }
+    public bool doVibrateCertainTime = false;
+    public long vibrateForHowLong = 10; //milliseconds
+    public void VibrateCertainMillisecond()
+    {
+        Vibration.Vibrate(vibrateForHowLong);
     }
     public void Vibrates(long value) //Milliseconds
     {
@@ -72,7 +85,7 @@ public class ItemEffects : MonoBehaviour {
     public bool doLevelComplete = false;
     public void LevelComplete()
     {
-
+        levelManager.CompleteTheLevel();
     }
 
     public bool doLevelFailed = false;
@@ -106,6 +119,7 @@ public class ItemEffects : MonoBehaviour {
     }
 
     public bool doSetGravity = false;
+    public float gravityNewValue = 1f;
     public void SetGravity()
     {
 
@@ -132,6 +146,29 @@ public class ItemEffects : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         //GetComponent<Rigidbody2D>().isKinematic = true;
+        //Search for object with HUD tag
+        if (!theHUD)
+        {
+            var go = GameObject.FindWithTag("HUD");
+            // Check we found an object with the player tag
+            if (go)
+            // Set the target to the object we found
+            {
+                if (go.CompareTag("HUD"))
+                    theHUD = go.gameObject.GetComponent<ECGcable>();
+            }
+        }
+        if (!levelManager)
+        {
+            var go = GameObject.FindWithTag("LevelLoader");
+            // Check we found an object with the player tag
+            if (go)
+            // Set the target to the object we found
+            {
+                if (go.CompareTag("LevelLoader"))
+                    levelManager = go.gameObject.GetComponent<LevelLoader>();
+            }
+        }
     }
 	
 	// Update is called once per frame
@@ -181,19 +218,26 @@ public class ItemEffects : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!theSHanpeWhoIsTouching)
-        {
-            // Search for object with Player tag
-            var go = GameObject.FindWithTag("Player");
-            // Check we found an object with the player tag
-            if (go)
-            // Set the target to the object we found
-            {
-                theGameObject = go;
-                if(theGameObject.CompareTag("Player"))
-                theSHanpeWhoIsTouching = go.gameObject.GetComponent<SHanpe>();
-            }
-        }
+        //if (!theSHanpeWhoIsTouching)
+        //{
+        //    //// Search for object with Player tag
+        //    //var go = GameObject.FindWithTag("Player");
+        //    //// Check we found an object with the player tag
+        //    //if (go)
+        //    //// Set the target to the object we found
+        //    //{
+        //    //    theGameObject = go;
+        //    //    if(theGameObject.CompareTag("Player"))
+        //    //    theSHanpeWhoIsTouching = go.gameObject.GetComponent<SHanpe>();
+        //    //}
+        //    theGameObject = collision.gameObject;
+        //    theSHanpeWhoIsTouching = collision.gameObject.GetComponent<SHanpe>();
+        //}
+
+        //Get Parent gameobject! https://answers.unity.com/questions/12301/how-can-i-get-a-parent-gameobject-of-gameobject-us.html
+        //Because children contact collide with item!!!
+        theGameObject = collision.gameObject.transform.parent.gameObject;
+        theSHanpeWhoIsTouching = theGameObject.GetComponent<SHanpe>();
         if (theSHanpeWhoIsTouching)
         {
             if (doVibrate)
@@ -220,7 +264,19 @@ public class ItemEffects : MonoBehaviour {
             }
             if (doSayDebug)
             {
-                sayDebug(whatDoesDebugSay);
+                sayDebug();
+            }
+            if (doVibrate)
+            {
+                Vibrates();
+            }
+            if (doLevelComplete)
+            {
+                LevelComplete();
+            }
+            if (doSetGravity)
+            {
+                theGameObject.GetComponent<Rigidbody2D>().gravityScale = gravityNewValue;
             }
         }
     }

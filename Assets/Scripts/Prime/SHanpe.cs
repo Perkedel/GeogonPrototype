@@ -42,6 +42,7 @@ public class SHanpe : MonoBehaviour {
     public bool resetRotationOnRespawn = true;
     public bool resetShapeOnRespawn = false;
     public bool canChangeShapeWhileDead = true;
+    public bool controllerIsActive = true;
 
     //Initial Conditions
     [Range(0, 100)] public float InitHealthPoint = 100;
@@ -262,6 +263,7 @@ public class SHanpe : MonoBehaviour {
     }
     public void respawn()
     {
+        Vibration.Cancel();
         if (resetRotationOnRespawn)
         {
             //https://answers.unity.com/questions/208447/set-rotation-of-a-transform.html
@@ -273,6 +275,8 @@ public class SHanpe : MonoBehaviour {
             bentuk = initBentuk;
             currBentuk = initBentuk;
         }
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        GetComponent<Rigidbody2D>().angularVelocity = 0f;
         HealthPoint = initHP;
         ArmourPoint = initArmour;
         eekSerkat = false;
@@ -321,6 +325,31 @@ public class SHanpe : MonoBehaviour {
         initBentuk = bentuk;
         initHP = HealthPoint;
         initArmour = armourPoint;
+
+        //find Object
+        if (!LevelLoadering)
+        {
+            var go = GameObject.FindWithTag("LevelLoader");
+            // Check we found an object with the player tag
+            if (go)
+            // Set the target to the object we found
+            {
+                if (go.CompareTag("LevelLoader"))
+                    LevelLoadering = go.gameObject.GetComponent<LevelLoader>();
+            }
+        }
+        if (!TheCameraAction)
+        {
+            var go = GameObject.FindWithTag("MainCamera");
+            // Check we found an object with the player tag
+            if (go)
+            // Set the target to the object we found
+            {
+                if (go.CompareTag("MainCamera"))
+                    TheCameraAction = go.gameObject.GetComponent<FollowPlayerCSharp>();
+            }
+        }
+
     }
 	
 	// Update is called once per frame
@@ -345,17 +374,20 @@ public class SHanpe : MonoBehaviour {
             if (!TheCameraAction.isMovingCamera)
             {
                 //Controlling
-                if (currSlide > 0) ControlSlide = (Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal) * currSlide; else ControlSlide = 0;
-                if (currRolls > 0) ControlRolls = (Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal) * currRolls; else ControlRolls = 0;
-                //To allow Keyboard controll, you must have Axes Horizontal and Vertical that set to Type as Key or Mouse Button
-                //Then add another same set for Joystick. Types are Joystick Axis.
+                if (controllerIsActive)
+                {
+                    if (currSlide > 0) ControlSlide = (Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal) * currSlide; else ControlSlide = 0;
+                    if (currRolls > 0) ControlRolls = (Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal) * currRolls; else ControlRolls = 0;
 
-                //jump button
-                JumpButton();
+                    //To allow Keyboard controll, you must have Axes Horizontal and Vertical that set to Type as Key or Mouse Button
+                    //Then add another same set for Joystick. Types are Joystick Axis.
 
-                //change shape
-                changeShapeButton();
+                    //jump button
+                    JumpButton();
 
+                    //change shape
+                    changeShapeButton();
+                }
                 //Rolling
                 if (grounded)
                 {

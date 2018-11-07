@@ -49,6 +49,8 @@ CodeMasterMike https://answers.unity.com/questions/386592/using-delta-to-find-mo
 Various https://forum.unity.com/threads/how-to-skip-handheld-vibrate-when-building-for-mac-pc.166910/ . Platform Specific vibrate methods Handhel Vibrate!
 Kuldeep Singh https://www.youtube.com/watch?v=eM3Vw0PGX4Y . Vibration class for Android introduction.
 Pro Android Dev https://proandroiddev.com/using-vibrate-in-android-b0e3ef5d5e07 . vibration refferences for new Android O and up.
+Eric5h5 https://answers.unity.com/questions/12301/how-can-i-get-a-parent-gameobject-of-gameobject-us.html . get Parent game object because SHanpe has children gameobject and that's what collide with items!!!
+Alex Stuart Mahan (YandereDev, EvaXephon) https://www.youtube.com/watch?v=8vT-97qiaNQ . Better naming for Proof Concept for Investors.
 
 
 Assets involved:
@@ -83,7 +85,7 @@ https://freesound.org/people/Claire.H/sounds/182345 marble rolling on a stone ta
 People: Perkedel Technologies
 Name (NIM). Role. Job Tier.
 - Joel Robert Justiawan (2101629672). Lead project. Founder
-- Septesen (...). Artist. Volunteer
+- Septesen (...). Artist, Level Designer. Volunteer
 -
 -
 -
