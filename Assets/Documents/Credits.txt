@@ -9,6 +9,7 @@ ________ (c) ___________,__________[100% 3rdP-DRM]. Joel knows it was him. that 
 Audacity [<100%]. Edit audio!
 Inkscape [<100%]. Vector graphic!!!
 https://ezgif.com [100%]. Easy Gif making tool online!
+https://image.online-convert.com/convert-to-ico [100%]. Convert to ICO!!!
 
 Refferences: (Big Shoutout and Thx)
 Digital-Phantom https://answers.unity.com/questions/930656/how-to-prevent-camera-rotation.html . The Follow camera without rotation.
