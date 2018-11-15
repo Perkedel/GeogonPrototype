@@ -41,3 +41,7 @@ Voice Actor!!!
 - Entry. Bahasa Indonesia + English + Any Language. Swearings.
 - Medium. Bahasa Indonesia very fluent + English fluent + Any Language. Swearings. Mild Anti-Wumpus. Standard heartbeat record.
 - Patent. Bahasa Indonesia real native + English very fluent + Any Language. Real Swearings. Full Anti-Wumpus. Full Cardiophille. METICULOUSY!!!
+
+Godot refferences
+https://www.youtube.com/watch?v=1GlGzFeB_Tc . Change exe icon. (violation detected) no credit name of music
+http://docs.godotengine.org/en/3.0/getting_started/step_by_step/index.html . learn Godot for the 1st time.
