@@ -16,7 +16,7 @@
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="JOELwindows7_StoryBoardConcept_drawMenuAndSceneStoryBoard.svg"
-   inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Misc\(Bonus) Story Board Concept art\UTS\TitleScreen.png"
+   inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Misc\(Bonus) Story Board Concept art\UTS\NavigationLayoutScreen.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
   <defs
@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.45254834"
-     inkscape:cx="1344.0592"
-     inkscape:cy="320.37934"
+     inkscape:zoom="0.64"
+     inkscape:cx="1425.2971"
+     inkscape:cy="486.52939"
      inkscape:document-units="px"
-     inkscape:current-layer="layer18"
+     inkscape:current-layer="layer19"
      showgrid="true"
      units="px"
      inkscape:window-width="1920"
@@ -95,7 +95,8 @@
     <g
        inkscape:groupmode="layer"
        id="layer2"
-       inkscape:label="mainTitle">
+       inkscape:label="mainTitle"
+       style="display:inline">
       <rect
          style="opacity:1;fill:#000000;fill-opacity:0.99421967;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect820"
@@ -513,7 +514,7 @@
          id="rect991"
          style="opacity:1;fill:#ff7d00;fill-opacity:1;stroke:#020000;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <rect
-         style="opacity:1;fill:#ff7d00;fill-opacity:1;stroke:#020000;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="opacity:1;fill:#003cff;fill-opacity:1;stroke:#020000;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect993"
          width="74.083336"
          height="58.208332"
@@ -527,12 +528,12 @@
          id="rect995"
          style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#020000;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.25588682px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="fill:none;stroke:#00ff00;stroke-width:0.25588682px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 439.33627,222.37795 h 36.78578 v 44.85556 h -36.78578 z"
          id="path997"
          inkscape:connector-curvature="0" />
       <path
-         style="fill:#03ff00;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="fill:#03ff00;fill-opacity:1;stroke:#00ff00;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 439.20833,222.25 34.39583,7.9375 v 42.33333 l -34.39583,-5.29167 z"
          id="path999"
          inkscape:connector-curvature="0" />
@@ -601,6 +602,56 @@
            x="122.17084"
            y="273.81534"
            style="stroke-width:0.26458332">Ekstra</tspan></text>
+      <text
+         id="text1279"
+         y="273.74533"
+         x="340.84195"
+         style="font-style:normal;font-weight:normal;font-size:8.38004398px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2095011"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.2095011"
+           y="273.74533"
+           x="340.84195"
+           id="tspan1277"
+           sodipodi:role="line">Ganti Permainan</tspan></text>
+      <path
+         style="opacity:1;fill:#00ff00;fill-opacity:1;stroke:#00ffff;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1420,840 a 79.999998,79.999998 0 0 0 -80,80 79.999998,79.999998 0 0 0 80,80 79.999998,79.999998 0 0 0 80,-80 79.999998,79.999998 0 0 0 -80,-80 z m 0,60 a 20,20 0 0 1 20,20 20,20 0 0 1 -20,20 20,20 0 0 1 -20,-20 20,20 0 0 1 20,-20 z"
+         transform="scale(0.26458333)"
+         id="path1281"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.29016876px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15725422"
+         x="362.38165"
+         y="254.96371"
+         id="text1288"><tspan
+           sodipodi:role="line"
+           id="tspan1286"
+           x="362.38165"
+           y="254.96371"
+           style="stroke-width:0.15725422">BD-ROM</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.46393108px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.16159827"
+         x="362.63055"
+         y="235.90479"
+         id="text1292"><tspan
+           sodipodi:role="line"
+           id="tspan1290"
+           x="362.63055"
+           y="235.90479"
+           style="stroke-width:0.16159827">OpenCX</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:1.91392529px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.04784813"
+         x="369.25085"
+         y="229.84175"
+         id="text1296"><tspan
+           sodipodi:role="line"
+           id="tspan1294"
+           x="369.25085"
+           y="229.84175"
+           style="stroke-width:0.04784813">Game untuk</tspan></text>
     </g>
   </g>
   <g
@@ -1347,7 +1398,7 @@
              x="420"
              y="560"
              style="font-size:96px;text-align:end;text-anchor:end" /></flowRegion><flowPara
-           id="flowPara2087"></flowPara></flowRoot>      <flowRoot
+           id="flowPara2087" /></flowRoot>      <flowRoot
          xml:space="preserve"
          id="flowRoot2091"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
@@ -1474,5 +1525,1033 @@
   <g
      inkscape:groupmode="layer"
      id="layer18"
-     inkscape:label="PlayGame" />
+     inkscape:label="PlayGame"
+     style="display:none">
+    <g
+       inkscape:groupmode="layer"
+       id="layer21"
+       inkscape:label="Progressing">
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:0.13294797;stroke:none;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1404"
+         width="508"
+         height="285.75"
+         x="0"
+         y="0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:23.58002472px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.58950061"
+         x="14.605792"
+         y="26.261604"
+         id="text1408"><tspan
+           sodipodi:role="line"
+           id="tspan1406"
+           x="14.605792"
+           y="26.261604"
+           style="stroke-width:0.58950061">Mainkan</tspan></text>
+      <g
+         transform="translate(1.0659281e-6,8.4244451e-6)"
+         style="display:inline"
+         id="g2037-5">
+        <g
+           id="g2026-0">
+          <rect
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect957-9"
+             width="84.666664"
+             height="21.166666"
+             x="5.2916665"
+             y="259.29166" />
+          <g
+             id="g2018-5">
+            <circle
+               r="9.8096619"
+               cy="269.875"
+               cx="16.602602"
+               id="path959-9"
+               style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:0.35671496;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+            <g
+               style="stroke:#00ffff;stroke-opacity:1"
+               transform="matrix(1.1097554,0,0,1.1097554,-30.523856,-23.747781)"
+               id="g967-8">
+              <path
+                 style="fill:none;stroke:#00ffff;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                 d="M 37.041666,259.29166 H 47.624999 V 269.875 H 37.041666"
+                 id="path961-9"
+                 inkscape:connector-curvature="0" />
+              <path
+                 style="fill:none;stroke:#00ffff;stroke-width:0.19635189px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                 d="m 38.462759,260.59982 h 7.85408 v 3.92704 c 0,0 0,3.92704 -3.92704,3.92704 -3.92704,0 -3.92704,-3.92704 -3.92704,-3.92704"
+                 id="path963-3"
+                 inkscape:connector-curvature="0" />
+            </g>
+          </g>
+        </g>
+        <text
+           id="text971-7"
+           y="275.57785"
+           x="27.439169"
+           style="font-style:normal;font-weight:normal;font-size:15.31727028px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.38293174"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.38293174"
+             y="275.57785"
+             x="27.439169"
+             id="tspan969-5"
+             sodipodi:role="line">Kembali</tspan></text>
+      </g>
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:0.13294797;stroke:none;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1452"
+         width="481.54166"
+         height="127"
+         x="15.875"
+         y="37.041668" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:13.27318573px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33182964"
+         x="222.42915"
+         y="89.727272"
+         id="text1456"><tspan
+           sodipodi:role="line"
+           id="tspan1454"
+           x="222.42915"
+           y="89.727272"
+           style="stroke-width:0.33182964">Bab 12 - Konspirasi Para Badut Korporat</tspan></text>
+      <circle
+         style="opacity:1;fill:#000000;fill-opacity:0.13294797;stroke:none;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path1458"
+         cx="89.958336"
+         cy="100.54166"
+         r="59.751556" />
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:0.13294797;stroke:none;stroke-width:1.45998025;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1462"
+         width="125.67708"
+         height="25.135416"
+         x="381"
+         y="255.32291"
+         ry="8.217954e-006" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:19.06054306px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47651356"
+         x="385.46381"
+         y="276.06158"
+         id="text1466"><tspan
+           sodipodi:role="line"
+           id="tspan1464"
+           x="385.46381"
+           y="276.06158"
+           style="stroke-width:0.47651356">Lanjutkan</tspan></text>
+      <path
+         style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 481.54166,259.29166 v 19.84375 l 21.16667,-9.26041 z"
+         id="path1468"
+         inkscape:connector-curvature="0" />
+      <rect
+         style="opacity:1;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1470"
+         width="74.083336"
+         height="42.333332"
+         x="15.875"
+         y="174.625" />
+      <rect
+         y="174.625"
+         x="92.604164"
+         height="42.333332"
+         width="74.083336"
+         id="rect1472"
+         style="opacity:1;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1474"
+         width="74.083336"
+         height="42.333332"
+         x="169.33333"
+         y="174.625" />
+      <rect
+         y="174.625"
+         x="248.70833"
+         height="42.333332"
+         width="74.083336"
+         id="rect1476"
+         style="opacity:1;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1478"
+         width="74.083336"
+         height="42.333332"
+         x="328.08334"
+         y="174.625" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="21.166666"
+         y="211.66666"
+         id="text1482"><tspan
+           sodipodi:role="line"
+           id="tspan1480"
+           x="21.166666"
+           y="211.66666"
+           style="stroke-width:0.26458332">Opsi</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer19"
+     inkscape:label="GameLayoutNavigation"
+     style="display:inline">
+    <g
+       inkscape:groupmode="layer"
+       id="layer20"
+       inkscape:label="NavigationLayout">
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:0.1878613;stroke:#ffffff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1109"
+         width="508"
+         height="285.75"
+         x="0"
+         y="0" />
+      <rect
+         style="opacity:1;fill:#213c5d;fill-opacity:0.51764706;stroke:#00ff00;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1298"
+         width="201.08333"
+         height="37.041668"
+         x="169.33333"
+         y="211.66666" />
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:0.1878613;stroke:#ffffff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1112"
+         width="74.083336"
+         height="21.166666"
+         x="10.583333"
+         y="5.2916665" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12.36308384px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.30907708"
+         x="21.282249"
+         y="16.476891"
+         id="text1116"><tspan
+           sodipodi:role="line"
+           id="tspan1114"
+           x="21.282249"
+           y="16.476891"
+           style="stroke-width:0.30907708">Booting</tspan></text>
+      <rect
+         y="5.2916665"
+         x="89.958328"
+         height="21.166666"
+         width="74.083336"
+         id="rect1123"
+         style="opacity:1;fill:#000000;fill-opacity:0.1878613;stroke:#ffffff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         id="text1127"
+         y="14.744999"
+         x="94.520149"
+         style="font-style:normal;font-weight:normal;font-size:8.34774208px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.20869352"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.20869352"
+           y="14.744999"
+           x="94.520149"
+           sodipodi:role="line"
+           id="tspan1173">Selamat Datang</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:5.00021076px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12500526"
+         x="27.994808"
+         y="22.549782"
+         id="text1136"><tspan
+           sodipodi:role="line"
+           x="27.994808"
+           y="22.549782"
+           style="stroke-width:0.12500526"
+           id="tspan1138">Memuat, logo</tspan></text>
+      <text
+         id="text1147"
+         y="22.999861"
+         x="101.86211"
+         style="font-style:normal;font-weight:normal;font-size:6.8801322px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17200328"
+         xml:space="preserve"><tspan
+           id="tspan1145"
+           style="stroke-width:0.17200328"
+           y="22.999861"
+           x="101.86211"
+           sodipodi:role="line">Judul ke Menu</tspan></text>
+      <path
+         style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.16439575px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 77.43173,12.587085 H 90.583391 V 9.2991698 l 6.57583,6.5758302 -6.57583,6.57583 V 19.162915 H 77.43173 Z"
+         id="path1149"
+         inkscape:connector-curvature="0" />
+      <rect
+         style="opacity:1;fill:#00e400;fill-opacity:0.1878613;stroke:#ffffff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1151"
+         width="74.083336"
+         height="21.166666"
+         x="87.3125"
+         y="81.888542" />
+      <rect
+         style="opacity:1;fill:#ff00ff;fill-opacity:0.1878613;stroke:#ffffff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1181"
+         width="82.020836"
+         height="95.25"
+         x="179.91667"
+         y="10.583333" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1153"
+         d="m 164.11917,91.320003 h 13.15166 v -3.287916 l 6.57583,6.575831 -6.57583,6.575832 v -3.287917 h -13.15166 z"
+         style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.16439575px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1.32291663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 137.58333,26.458333 v 15.875 h -37.04166 v 31.749999 h -5.291671 l 5.291671,5.291667 5.29166,-5.291667 h -5.29166 V 42.333333 h 37.04166 z"
+         id="path1155"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:9.6179018px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.24044754"
+         x="95.780952"
+         y="96.411827"
+         id="text1159"><tspan
+           sodipodi:role="line"
+           id="tspan1157"
+           x="95.780952"
+           y="96.411827"
+           style="stroke-width:0.24044754">Menu Utama</tspan></text>
+      <rect
+         y="21.148623"
+         x="185.19028"
+         height="15.778796"
+         width="74.119423"
+         id="rect1161"
+         style="opacity:1;fill:#ff00ff;fill-opacity:0.1878613;stroke:#ffffff;stroke-width:0.22849616;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#ff00ff;fill-opacity:0.1878613;stroke:#ffffff;stroke-width:0.22849616;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1163"
+         width="74.119423"
+         height="15.778796"
+         x="185.19029"
+         y="39.735603" />
+      <rect
+         y="58.256435"
+         x="185.19029"
+         height="15.778796"
+         width="74.119423"
+         id="rect1165"
+         style="opacity:1;fill:#ff00ff;fill-opacity:0.1878613;stroke:#ffffff;stroke-width:0.22849616;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#ff00ff;fill-opacity:0.1878613;stroke:#ffffff;stroke-width:0.22849616;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1167"
+         width="74.119423"
+         height="15.778796"
+         x="185.19029"
+         y="76.777267" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.10087061px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15252176"
+         x="185.64607"
+         y="19.422579"
+         id="text1171"><tspan
+           sodipodi:role="line"
+           id="tspan1169"
+           x="185.64607"
+           y="19.422579"
+           style="stroke-width:0.15252176">Laci pilihan lainnya</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="189.56465"
+         y="31.967041"
+         id="text1179"><tspan
+           sodipodi:role="line"
+           id="tspan1177"
+           x="189.56465"
+           y="31.967041"
+           style="stroke-width:0.26458332">Opsi</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:9.12895584px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2282239"
+         x="190.11589"
+         y="51.023842"
+         id="text1185"><tspan
+           sodipodi:role="line"
+           id="tspan1183"
+           x="190.11589"
+           y="51.023842"
+           style="stroke-width:0.2282239">Konten Ekstra</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:5.07999897px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12699997"
+         x="248.729"
+         y="45.502956"
+         id="text1189"><tspan
+           sodipodi:role="line"
+           x="248.729"
+           y="45.502956"
+           style="stroke-width:0.12699997"
+           id="tspan1191">DLC</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="205.31563"
+         y="88.606995"
+         id="text1197"><tspan
+           sodipodi:role="line"
+           id="tspan1195"
+           x="205.31563"
+           y="88.606995"
+           style="stroke-width:0.26458332">Keluar</tspan></text>
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 190.5,79.374999 10.58333,10.583333 -5.29167,-5.291666 -5.29166,5.291666 10.58333,-10.583333 -5.29167,5.291667 z"
+         id="path1199"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:11.71894836px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2929737"
+         x="190.43623"
+         y="71.420311"
+         id="text1203"><tspan
+           sodipodi:role="line"
+           id="tspan1201"
+           x="190.43623"
+           y="71.420311"
+           style="stroke-width:0.2929737">Ganti DVD</tspan></text>
+      <rect
+         y="107.15625"
+         x="87.444794"
+         height="21.166666"
+         width="74.083336"
+         id="rect1205"
+         style="opacity:1;fill:#0000ff;fill-opacity:0.1878613;stroke:#00ffff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.06036883px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 126.88446,100.88203 v 4.82951 h 1.20738 l -2.41476,2.41476 -2.41475,-2.41476 h 1.20738 v -4.82951 z"
+         id="path1207"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:7.3700695px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18425174"
+         x="93.724113"
+         y="116.51482"
+         id="text1211"><tspan
+           sodipodi:role="line"
+           id="tspan1209"
+           x="93.724113"
+           y="116.51482"
+           style="stroke-width:0.18425174">Mulai Permainan</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.65721369px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.11643034"
+         x="95.311958"
+         y="122.99657"
+         id="text1215"><tspan
+           sodipodi:role="line"
+           id="tspan1213"
+           x="95.311958"
+           y="122.99657"
+           style="stroke-width:0.11643034">Mulai ulang / Lanjutkan</tspan></text>
+      <rect
+         style="opacity:1;fill:#00ffff;fill-opacity:0.1878613;stroke:#00ffff;stroke-width:0.49302164;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1217"
+         width="73.854897"
+         height="73.72261"
+         x="87.42672"
+         y="132.40587" />
+      <rect
+         style="opacity:1;fill:#0000ff;fill-opacity:0.1878613;stroke:#00ffff;stroke-width:0.23586519;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1219"
+         width="66.042259"
+         height="18.869215"
+         x="91.333038"
+         y="145.34663" />
+      <rect
+         y="170.48206"
+         x="91.333038"
+         height="18.869215"
+         width="66.042259"
+         id="rect1221"
+         style="opacity:1;fill:#0000ff;fill-opacity:0.1878613;stroke:#00ffff;stroke-width:0.23586519;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:5.48605633px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.13715141"
+         x="93.907623"
+         y="140.42375"
+         id="text1225"><tspan
+           sodipodi:role="line"
+           id="tspan1223"
+           x="93.907623"
+           y="140.42375"
+           style="stroke-width:0.13715141">Kelanjutan permainan</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="93.381897"
+         y="156.3858"
+         id="text1229"><tspan
+           sodipodi:role="line"
+           id="tspan1227"
+           x="93.381897"
+           y="156.3858"
+           style="stroke-width:0.26458332">Mulai Ulang</tspan></text>
+      <text
+         id="text1233"
+         y="180.37659"
+         x="97.898415"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="180.37659"
+           x="97.898415"
+           id="tspan1231"
+           sodipodi:role="line">Lanjutkan</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:3.31060386px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.08276509"
+         x="93.459084"
+         y="159.67464"
+         id="text1237"><tspan
+           sodipodi:role="line"
+           id="tspan1235"
+           x="93.459084"
+           y="159.67464"
+           style="stroke-width:0.08276509">Hapus simpanan, permainan baru</tspan></text>
+      <text
+         id="text1241"
+         y="186.12408"
+         x="92.713486"
+         style="font-style:normal;font-weight:normal;font-size:3.31060386px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.08276509"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.08276509"
+           y="186.12408"
+           x="92.713486"
+           id="tspan1239"
+           sodipodi:role="line">Muat simpanan, Lanjutkan permainan</tspan></text>
+      <rect
+         style="opacity:1;fill:#ff8300;fill-opacity:0.1878613;stroke:#00ffff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1243"
+         width="153.45833"
+         height="74.083336"
+         x="169.33333"
+         y="132.29167" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15.29733467px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.38243335"
+         x="179.45631"
+         y="152.51001"
+         id="text1247"><tspan
+           sodipodi:role="line"
+           id="tspan1245"
+           x="179.45631"
+           y="152.51001"
+           style="stroke-width:0.38243335">Dalam permainan</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="182.87256"
+         y="166.79085"
+         id="text1251"><tspan
+           sodipodi:role="line"
+           id="tspan1249"
+           x="182.87256"
+           y="166.79085"
+           style="stroke-width:0.26458332">- Bioskop masuk konsol</tspan><tspan
+           sodipodi:role="line"
+           x="182.87256"
+           y="180.02002"
+           style="stroke-width:0.26458332"
+           id="tspan1253">- Gameplay layar lebar</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path1255"
+         d="m 159.45256,166.04541 h 13.15166 v -3.28791 l 6.57583,6.57583 -6.57583,6.57583 v -3.28792 h -13.15166 z"
+         style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.16439575px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#ff8300;fill-opacity:0.1878613;stroke:#00ffff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1257"
+         width="105.83333"
+         height="41.010418"
+         x="269.875"
+         y="15.875" />
+      <rect
+         style="opacity:1;fill:#ff8300;fill-opacity:0.1878613;stroke:#00ffff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1259"
+         width="50.270832"
+         height="22.489584"
+         x="275.16666"
+         y="31.75" />
+      <rect
+         style="opacity:1;fill:#ff8300;fill-opacity:0.1878613;stroke:#00ffff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1261"
+         width="46.302082"
+         height="22.489584"
+         x="326.76041"
+         y="31.75" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="275.43021"
+         y="27.621054"
+         id="text1265"><tspan
+           sodipodi:role="line"
+           id="tspan1263"
+           x="275.43021"
+           y="27.621054"
+           style="stroke-width:0.26458332">Konten Ekstra</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="280.43509"
+         y="47.596577"
+         id="text1269"><tspan
+           sodipodi:role="line"
+           id="tspan1267"
+           x="280.43509"
+           y="47.596577"
+           style="stroke-width:0.26458332">Unduh</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="333.6644"
+         y="47.464802"
+         id="text1273"><tspan
+           sodipodi:role="line"
+           id="tspan1271"
+           x="333.6644"
+           y="47.464802"
+           style="stroke-width:0.26458332">Lihat</tspan></text>
+      <path
+         style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.16439575px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 258.04625,46.302083 h 13.15166 v -3.287916 l 6.57583,6.575831 -6.57583,6.575832 v -3.287917 h -13.15166 z"
+         id="path1275"
+         inkscape:connector-curvature="0" />
+      <rect
+         style="opacity:1;fill:#0000ff;fill-opacity:0.1878613;stroke:#00ffff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1304"
+         width="74.083336"
+         height="21.166666"
+         x="174.49271"
+         y="224.89583" />
+      <text
+         id="text1308"
+         y="235.0524"
+         x="180.88757"
+         style="font-style:normal;font-weight:normal;font-size:8.89611435px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.22240286"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.22240286"
+           y="235.0524"
+           x="180.88757"
+           id="tspan1306"
+           sodipodi:role="line">Lanjutkan lagi</tspan></text>
+      <rect
+         y="214.27112"
+         x="251.31279"
+         height="31.700481"
+         width="116.36714"
+         id="rect1310"
+         style="opacity:1;fill:#ff00ff;fill-opacity:0.1878613;stroke:#ffffff;stroke-width:0.18180925;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#ff00ff;fill-opacity:0.1878613;stroke:#ffffff;stroke-width:0.11381184;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1312"
+         width="23.84902"
+         height="12.166128"
+         x="252.58365"
+         y="232.04193" />
+      <text
+         id="text1316"
+         y="240.40108"
+         x="253.35497"
+         style="font-style:normal;font-weight:normal;font-size:8.41408062px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.210352"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.210352"
+           y="240.40108"
+           x="253.35497"
+           id="tspan1314"
+           sodipodi:role="line">Opsi</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:3.9834311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09958578"
+         x="254.64452"
+         y="218.28604"
+         id="text1320"><tspan
+           sodipodi:role="line"
+           id="tspan1318"
+           x="254.64452"
+           y="218.28604"
+           style="stroke-width:0.09958578">Laci pilihan lainnya</tspan></text>
+      <rect
+         y="232.04193"
+         x="342.54199"
+         height="12.166128"
+         width="23.84902"
+         id="rect1322"
+         style="opacity:1;fill:#ff00ff;fill-opacity:0.1878613;stroke:#ffffff;stroke-width:0.11381184;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#ff00ff;fill-opacity:0.1878613;stroke:#ffffff;stroke-width:0.11381184;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1324"
+         width="23.84902"
+         height="12.166128"
+         x="316.15881"
+         y="232.04193" />
+      <rect
+         y="232.04193"
+         x="291.02341"
+         height="12.166128"
+         width="23.84902"
+         id="rect1326"
+         style="opacity:1;fill:#ff00ff;fill-opacity:0.1878613;stroke:#ffffff;stroke-width:0.11381184;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:7.03553867px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17588846"
+         x="342.94574"
+         y="240.74443"
+         id="text1330"><tspan
+           sodipodi:role="line"
+           id="tspan1328"
+           x="342.94574"
+           y="240.74443"
+           style="stroke-width:0.17588846">Keluar</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.00078297px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.10001957"
+         x="317.57248"
+         y="239.57547"
+         id="text1334"><tspan
+           sodipodi:role="line"
+           id="tspan1332"
+           x="317.57248"
+           y="239.57547"
+           style="stroke-width:0.10001957">Ganti DVD</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.8779583px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12194895"
+         x="292.40601"
+         y="239.86134"
+         id="text1338"><tspan
+           sodipodi:role="line"
+           id="tspan1336"
+           x="292.40601"
+           y="239.86134"
+           style="stroke-width:0.12194895">Ke Menu</tspan></text>
+      <path
+         style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1.32291663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 302.94791,243.41666 v 31.75 H 68.791666 V 95.249999 h 10.583333 v -5.291667 l 7.9375,5.291667 -7.9375,5.291671 v -5.291671"
+         id="path1350"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccccccc" />
+      <path
+         style="fill:none;stroke:#ff00ff;stroke-width:1.32291663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 302.94791,243.41666 v 31.75"
+         id="path1352"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ff7a00;stroke-width:1.32291663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 328.08333,243.41666 v 31.75 H 449.79166 V 84.666666 h -63.5 V 74.083333 l -10.58333,10.583333 10.58333,10.583333 V 84.666666"
+         id="path1378"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         style="fill:none;stroke:#ee0000;stroke-width:1.32291663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 354.54166,243.41666 V 269.875 H 381 v -97.89584 h -2.91042 L 381,164.83541 l 2.64583,7.14375 H 381"
+         id="path1394"
+         inkscape:connector-curvature="0" />
+      <rect
+         style="opacity:1;fill:#213c5d;fill-opacity:0.51764706;stroke:#00ff00;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1340"
+         width="76.729164"
+         height="18.520834"
+         x="291.04166"
+         y="243.41666" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.99882364px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17497058"
+         x="297.54456"
+         y="254.56348"
+         id="text1344"><tspan
+           sodipodi:role="line"
+           id="tspan1342"
+           x="297.54456"
+           y="254.56348"
+           style="stroke-width:0.17497058">Simpan permainan</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:3.76605439px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09415136"
+         x="298.46671"
+         y="259.0206"
+         id="text1348"><tspan
+           sodipodi:role="line"
+           id="tspan1346"
+           x="298.46671"
+           y="259.0206"
+           style="stroke-width:0.09415136">Posisi main (Save state) dan Data</tspan></text>
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:0.3612717;stroke:#ffff00;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1354"
+         width="105.83333"
+         height="42.333332"
+         x="269.875"
+         y="63.5" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:7.43698025px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.1859245;stroke-opacity:1"
+         x="275.47391"
+         y="71.692848"
+         id="text1358"><tspan
+           sodipodi:role="line"
+           id="tspan1356"
+           x="275.47391"
+           y="71.692848"
+           style="fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.1859245;stroke-opacity:1">Perpustakaan</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path1360"
+         d="m 254.0775,67.507503 h 13.15166 v -3.287916 l 6.57583,6.575831 -6.57583,6.575832 V 74.083333 H 254.0775 Z"
+         style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.16439575px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <rect
+         y="79.243225"
+         x="274.74033"
+         height="22.489584"
+         width="50.270832"
+         id="rect1362"
+         style="opacity:1;fill:#ff0000;fill-opacity:0.1878613;stroke:#ffff00;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         id="text1366"
+         y="88.264191"
+         x="300.61703"
+         style="font-style:normal;font-weight:normal;font-size:4.38680696px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.10967017"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.10967017"
+           y="88.264191"
+           x="301.38815"
+           id="tspan1364"
+           sodipodi:role="line">Dapatkan Permainan </tspan><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.10967017"
+           y="93.747696"
+           x="300.61703"
+           sodipodi:role="line"
+           id="tspan1368">lain</tspan></text>
+      <rect
+         y="79.242706"
+         x="327.42188"
+         height="22.489584"
+         width="46.302082"
+         id="rect1370"
+         style="opacity:1;fill:#c33c00;fill-opacity:0.38150294;stroke:#ffff00;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         id="text1374"
+         y="88.673607"
+         x="350.53351"
+         style="font-style:normal;font-weight:normal;font-size:7.01513624px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17537841"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.17537841"
+           y="88.673607"
+           x="351.76663"
+           id="tspan1372"
+           sodipodi:role="line">Mainkan </tspan><tspan
+           style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.17537841"
+           y="97.442528"
+           x="350.53351"
+           sodipodi:role="line"
+           id="tspan1376">Permainan</tspan></text>
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ff7a00;stroke-width:1.32291663;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1380"
+         width="42.333332"
+         height="31.75"
+         x="359.83334"
+         y="132.29167" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:1.32291663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 370.41666,137.58333 391.58333,158.75 381,148.16666 370.41666,158.75 391.58333,137.58333 381,148.16666 Z"
+         id="path1382"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.49420309px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#ffff00;stroke-width:0.16235508;stroke-opacity:1"
+         x="370.2963"
+         y="158.52205"
+         id="text1386"><tspan
+           sodipodi:role="line"
+           id="tspan1384"
+           x="370.2963"
+           y="158.52205"
+           style="fill:#ff0000;fill-opacity:1;stroke:#ffff00;stroke-width:0.16235508;stroke-opacity:1">Keluar</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:2.81149817px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07028745"
+         x="361.39844"
+         y="162.2099"
+         id="text1390"><tspan
+           sodipodi:role="line"
+           id="tspan1388"
+           x="361.39844"
+           y="162.2099"
+           style="fill:#ff0000;fill-opacity:1;stroke:#ffff00;stroke-width:0.07028745;stroke-opacity:1">Matikan, Ke sistem, Restart</tspan></text>
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:1.32291663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 222.25,89.958332 V 121.70833 H 381 V 127 h -5.29167 L 381,130.96875 386.29166,127 H 381"
+         id="path1392"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:8.18248844px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2045622"
+         x="174.625"
+         y="220.08714"
+         id="text1302"><tspan
+           sodipodi:role="line"
+           id="tspan1300"
+           x="174.625"
+           y="220.08714"
+           style="stroke-width:0.2045622">Tunda (Pause)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.90977192px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12274429"
+         x="214.89426"
+         y="27.78125"
+         id="text1401"><tspan
+           sodipodi:role="line"
+           id="tspan1399"
+           x="214.89426"
+           y="27.78125"
+           style="stroke-width:0.12274429">+ KREDIT</tspan></text>
+      <g
+         style="display:inline"
+         transform="matrix(0.18214756,0,0,0.18214756,382.57172,-63.651184)"
+         id="g1536-6-4-0-9"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           transform="translate(-128,64)"
+           id="g1492-8-7-8-6">
+          <path
+             inkscape:connector-curvature="0"
+             style="opacity:1;fill:#ffc800;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-opacity:1"
+             d="m 256,208 a 64,64 0 0 0 -64,64 64,64 0 0 0 64,64 h 64 a 64,64 0 0 0 64,-64 64,64 0 0 0 -64,-64 z"
+             transform="translate(0,106.5)"
+             id="path1451-5-8-0-1" />
+          <path
+             inkscape:connector-curvature="0"
+             style="opacity:1;fill:#fffe00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.0444659;stroke-opacity:1"
+             d="m 288,224 a 4,4 0 0 0 -4,4 v 40 h -40 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 h 40 v 40 a 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 v -40 h 40 a 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 h -40 v -40 a 4,4 0 0 0 -4,-4 z"
+             transform="translate(0,106.5)"
+             id="rect1461-3-4-1-9" />
+        </g>
+        <flowRoot
+           transform="translate(-108.256,129.20475)"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:0;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1;"
+           id="flowRoot1482-6-4-6-5"
+           xml:space="preserve"><flowRegion
+             style="line-height:0;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1;"
+             id="flowRegion1484-4-7-0-4"><rect
+               style="line-height:0;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1;"
+               y="272"
+               x="384"
+               height="128"
+               width="1024"
+               id="rect1486-8-8-8-2" /></flowRegion><flowPara
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1;"
+             id="flowPara1488-6-3-8-0">Perkedel </flowPara></flowRoot>      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:14.61370564px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.36534265"
+         x="418.741"
+         y="42.167858"
+         id="text1522"><tspan
+           sodipodi:role="line"
+           id="tspan1520"
+           x="418.741"
+           y="42.167858"
+           style="stroke-width:0.36534265">InterMage</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.49659067,0,0,0.49659067,387.14315,13.422479)"
+       id="g3570">
+      <g
+         id="g3553">
+        <path
+           sodipodi:type="star"
+           style="opacity:1;fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.79374999;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+           id="path3440"
+           sodipodi:sides="6"
+           sodipodi:cx="33.866665"
+           sodipodi:cy="76.866669"
+           sodipodi:r1="16.933332"
+           sodipodi:r2="14.664696"
+           sodipodi:arg1="0"
+           sodipodi:arg2="0.52359878"
+           inkscape:flatsided="true"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="M 50.799997,76.866669 42.333331,91.531365 H 25.399999 l -8.466667,-14.664696 8.466667,-14.664696 16.933332,0 z" />
+        <g
+           id="g3541">
+          <g
+             id="g3526">
+            <circle
+               style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.79374999;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+               id="path3452"
+               cx="26.458334"
+               cy="71.574997"
+               r="3.175" />
+            <circle
+               style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.79374999;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+               id="path3452-6"
+               cx="33.866665"
+               cy="71.574997"
+               r="3.175" />
+            <circle
+               style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.79374999;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+               id="path3452-4"
+               cx="41.275002"
+               cy="71.574997"
+               r="3.175" />
+          </g>
+          <g
+             id="g3531">
+            <circle
+               style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.79374999;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+               id="path3452-9"
+               cx="26.458334"
+               cy="82.158333"
+               r="3.175" />
+            <circle
+               style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.79374999;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+               id="path3452-69"
+               cx="33.866665"
+               cy="82.158333"
+               r="3.175" />
+            <circle
+               style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.79374999;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+               id="path3452-60"
+               cx="41.275002"
+               cy="82.158333"
+               r="3.175" />
+          </g>
+        </g>
+      </g>
+      <flowRoot
+         transform="matrix(0.26458333,0,0,0.26458333,-0.06773267,1.3591397)"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         id="flowRoot3493"
+         xml:space="preserve"><flowRegion
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+           id="flowRegion3495"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+             y="226.51968"
+             x="192"
+             height="127.99999"
+             width="768"
+             id="rect3497" /></flowRegion><flowPara
+           id="flowPara3499">Hexagon Engine</flowPara></flowRoot>    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.62152743px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.06553818"
+       x="414.85043"
+       y="47.946537"
+       id="text2331"><tspan
+         sodipodi:role="line"
+         id="tspan2329"
+         x="414.85043"
+         y="47.946537"
+         style="stroke-width:0.06553818">Dibuat dengan</tspan></text>
+  </g>
 </svg>
