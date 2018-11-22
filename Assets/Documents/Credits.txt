@@ -53,6 +53,7 @@ Kuldeep Singh https://www.youtube.com/watch?v=eM3Vw0PGX4Y . Vibration class for 
 Pro Android Dev https://proandroiddev.com/using-vibrate-in-android-b0e3ef5d5e07 . vibration refferences for new Android O and up.
 Eric5h5 https://answers.unity.com/questions/12301/how-can-i-get-a-parent-gameobject-of-gameobject-us.html . get Parent game object because SHanpe has children gameobject and that's what collide with items!!!
 Alex Stuart Mahan (YandereDev, EvaXephon) https://www.youtube.com/watch?v=8vT-97qiaNQ . Better naming for Proof Concept for Investors.
+xortrox https://answers.unity.com/questions/488583/how-to-stop-textures-from-getting-blurry.html . 2D shader.zip
 
 
 Assets involved:

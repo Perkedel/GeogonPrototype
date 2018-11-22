@@ -266,9 +266,9 @@ public class ItemEffects : MonoBehaviour {
             {
                 sayDebug();
             }
-            if (doVibrate)
+            if (doVibrateCertainTime)
             {
-                Vibrates();
+                Vibrates(vibrateForHowLong);
             }
             if (doLevelComplete)
             {
@@ -292,6 +292,65 @@ public class ItemEffects : MonoBehaviour {
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
+    {
+        
+    }
+
+    //Non-Trigger Collision
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        theGameObject = collision.transform.parent.gameObject;
+        theSHanpeWhoIsTouching = theGameObject.GetComponent<SHanpe>();
+
+        if (theSHanpeWhoIsTouching)
+        {
+            if (doVibrate)
+            {
+                Vibration.Vibrate(50); //android O has trouble with just calling vibrate. deprecated probably
+            }
+            if (doAddHealth)
+            {
+                addHealth(addHPvalue);
+            }
+            if (doSetHealth)
+            {
+                setHealth(setHPvalue);
+            }
+            if (doDamageMe)
+            {
+                damageMe(damageMeValue);
+                //Debug.Log("OUCH");
+            }
+            if (singleUse)
+            {
+                //anItem.destroySelf();
+                Destroy(gameObject);
+            }
+            if (doSayDebug)
+            {
+                sayDebug();
+            }
+            if (doVibrateCertainTime)
+            {
+                Vibrates(vibrateForHowLong);
+            }
+            if (doLevelComplete)
+            {
+                LevelComplete();
+            }
+            if (doSetGravity)
+            {
+                theGameObject.GetComponent<Rigidbody2D>().gravityScale = gravityNewValue;
+            }
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
     {
         
     }

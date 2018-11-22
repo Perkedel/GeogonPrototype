@@ -39,8 +39,8 @@ Voice Actor!!!
 - Volunteer. Any Language.
 - Intern. Bahasa Indonesia + Any Language.
 - Entry. Bahasa Indonesia + English + Any Language. Swearings.
-- Medium. Bahasa Indonesia very fluent + English fluent + Any Language. Swearings. Mild Anti-Wumpus. Standard heartbeat record.
-- Patent. Bahasa Indonesia real native + English very fluent + Any Language. Real Swearings. Full Anti-Wumpus. Full Cardiophille. METICULOUSY!!!
+- Medium. Bahasa Indonesia very fluent + English fluent + optional Any Language. Swearings. Mild Anti-Wumpus. Standard heartbeat record.
+- Patent. Bahasa Indonesia real native + English very fluent + optional Any Language. Real Swearings. Full Anti-Wumpus. Full Cardiophille. METICULOUSY!!!
 
 Godot refferences
 https://www.youtube.com/watch?v=1GlGzFeB_Tc . Change exe icon. (violation detected) no credit name of music
