@@ -18,6 +18,13 @@
    <object id="1" x="0" y="0" width="70" height="35"/>
   </objectgroup>
  </tile>
+ <tile id="4">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="35">
+    <polygon points="0,0 52.5,35 70,35 70,-35 0,-35"/>
+   </object>
+  </objectgroup>
+ </tile>
  <tile id="5">
   <objectgroup draworder="index">
    <object id="1" x="0" y="0">

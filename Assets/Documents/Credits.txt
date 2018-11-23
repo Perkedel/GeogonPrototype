@@ -10,6 +10,7 @@ Audacity [<100%]. Edit audio!
 Inkscape [<100%]. Vector graphic!!!
 https://ezgif.com [100%]. Easy Gif making tool online!
 https://image.online-convert.com/convert-to-ico [100%]. Convert to ICO!!!
+Tiled https://thorbjorn.itch.io/tiled . create maps of sprites! for making 2D platformer!!!
 
 Refferences: (Big Shoutout and Thx)
 Digital-Phantom https://answers.unity.com/questions/930656/how-to-prevent-camera-rotation.html . The Follow camera without rotation.
@@ -63,6 +64,7 @@ Text Mesh Pro. Acquired by Unity. All in one Stylish Text solution!!! Must have 
 2D Standard Asset Unity. Essential Unity's package containing Standard Assets for 2D things
 MOVINARC Package Uninstaller. Sometimes, some package were no longer be needed. can be a hassle to remove just be like that.
 Fenerax Studio Virtual Joystick pack. There is now premade Touch joystick!!! thx Brackeys for telling me this. It is inefficient to create from scratch!
+Seanba Super Tiled 2 Unity https://seanba.itch.io/supertiled2unity . Easy import Tiled! instant prefabs per TMX and Tiled sheets!!! drag and drop the TMX file!!!
 
 Packages involved (Beside preinstalled and built-in, user installed!):
 2D Sprite Shape. Create bendable string of sprites! great for various shaped platform, and other weird stuff! Unity's experimental!!!

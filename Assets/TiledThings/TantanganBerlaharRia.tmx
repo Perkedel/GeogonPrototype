@@ -1,8 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.0" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="2" nextobjectid="1">
- <layer id="1" name="Pijakan" width="50" height="20">
+<map version="1.2" tiledversion="1.2.0" orientation="orthogonal" renderorder="right-down" width="64" height="32" tilewidth="70" tileheight="70" infinite="0" nextlayerid="9" nextobjectid="1">
+ <tileset firstgid="1" source="tiles_spritesheet.tsx"/>
+ <layer id="5" name="Template" width="64" height="32" visible="0" locked="1">
+  <properties>
+   <property name="unity:isTrigger" value="false"/>
+   <property name="unity:layer" value="Default"/>
+   <property name="unity:sortingLayerName" value="Foreground"/>
+   <property name="unity:sortingOrder" value="0"/>
+   <property name="unity:tag" value="Untagged"/>
+  </properties>
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20MH6AAAACAtwEPoAAB
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAgHcDIAAAAQ==
+  </data>
+ </layer>
+ <layer id="6" name="Laharr" width="64" height="32">
+  <properties>
+   <property name="unity:isTrigger" value="true"/>
+   <property name="unity:layer" value="Default"/>
+   <property name="unity:sortingLayerName" value="Foreground"/>
+   <property name="unity:sortingOrder" value="0"/>
+   <property name="unity:tag" value="Lahar"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztz7EJADAIRUHL7D+xIyREK70Dyy+8CAAAANjrXO5n8/Knsu2kX//mfgAAgGkSeYQEAQ==
+  </data>
+ </layer>
+ <layer id="7" name="Ground" width="64" height="32">
+  <properties>
+   <property name="unity:isTrigger" value="false"/>
+   <property name="unity:layer" value="Default"/>
+   <property name="unity:sortingLayerName" value="Foreground"/>
+   <property name="unity:sortingOrder" value="0"/>
+   <property name="unity:tag" value="Ground"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztz0ERgDAMRNFcEYAABCAAAQioCyS1bkEAyWwycOn8N5NTu9vGDAAAAACA+Z3PHC+zBJmtkGliT9ThZXcxk9GDs7WQUXvUDu8PXxmFsyij3lc7sm9lsb/Z5Uy0v5dRe9SOv/cHAAAAMJ8bfIUcKw==
+  </data>
+ </layer>
+ <layer id="8" name="Atapp" width="64" height="32">
+  <properties>
+   <property name="unity:isTrigger" value="false"/>
+   <property name="unity:layer" value="Default"/>
+   <property name="unity:sortingLayerName" value="Foreground"/>
+   <property name="unity:sortingOrder" value="0"/>
+   <property name="unity:tag" value="Ceiling"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztz7ENgDAMRUE3DJCeARiAAdgu7JBlQ8EEcYPRnfRLS35XRPTiO2Ld+WwU357obx/4P7umX79+/Qu2977y7kQ/AAAAAADwPxNb/8zQ
   </data>
  </layer>
 </map>

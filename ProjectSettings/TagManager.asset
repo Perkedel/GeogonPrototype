@@ -10,6 +10,7 @@ TagManager:
   - EventSystem
   - LevelLoader
   - HUD
+  - Lahar
   layers:
   - Default
   - TransparentFX

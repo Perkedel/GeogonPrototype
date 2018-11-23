@@ -43,5 +43,13 @@ Voice Actor!!!
 - Patent. Bahasa Indonesia real native + English very fluent + optional Any Language. Real Swearings. Full Anti-Wumpus. Full Cardiophille. METICULOUSY!!!
 
 Godot refferences
+https://www.godotengine.org Godot Engine website
 https://www.youtube.com/watch?v=1GlGzFeB_Tc . Change exe icon. (violation detected) no credit name of music
 http://docs.godotengine.org/en/3.0/getting_started/step_by_step/index.html . learn Godot for the 1st time.
+
+Issues!
+This:
+	Sound off sync compared to vibration by around 10 to 40 ms. check SHanpe's jump sound and collide to object on your Android device.
+Super Tiled 2 Unity:
+	Scale did not update composite collider! Solution: Spawn this Tiled level under Level Design, set their scale the same as the Level design scale. if Level design is 2, then this TMX is 2 as well.
+	unity:isTrigger did not read! that layer of Laharr did not isTrigger despite on TMX has set to true!

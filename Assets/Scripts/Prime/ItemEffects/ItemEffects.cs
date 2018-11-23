@@ -41,7 +41,8 @@ public class ItemEffects : MonoBehaviour {
     }
     public void lavaDamage(float value) //continuous damage
     {
-        theSHanpeWhoIsTouching.damageMe(value);
+        //theSHanpeWhoIsTouching.damageMe(value);
+        damageMe(value);
     }
 
     public bool singleUse = true;
@@ -286,7 +287,8 @@ public class ItemEffects : MonoBehaviour {
         {
             if (doLavaDamage)
             {
-                damageMe(lavaDamageValue);
+                //damageMe(lavaDamageValue);
+                lavaDamage(lavaDamageValue);
                 Debug.Log("hot");
             }
         }

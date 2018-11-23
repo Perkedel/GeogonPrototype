@@ -117,7 +117,7 @@ public class ECGcable : MonoBehaviour {
         inColoring = new Color((float)HP / 100f, (float)HP / 100f, (float)HP / 100f);
         HPBarBGColor.color = inColoring;
         if (HP == 100) HPTextInfo.text = "FULL";
-        else if (HP == 0) HPTextInfo.text = "DEDD";
+        else if (HP <= 0) HPTextInfo.text = "DEDD";
         else HPTextInfo.text = Mathf.Floor((HP*1000))/1000 + "%";
 
         if (hasBeenDedd)
