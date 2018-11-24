@@ -92,7 +92,7 @@ public class ItemEffects : MonoBehaviour {
     public bool doLevelFailed = false;
     public void LevelFailed() //or game over
     {
-
+        levelManager.FailTheLevel();
     }
 
     public bool doChangeShape = false;
@@ -121,9 +121,9 @@ public class ItemEffects : MonoBehaviour {
 
     public bool doSetGravity = false;
     public float gravityNewValue = 1f;
-    public void SetGravity()
+    public void SetGravity(float newGravityValue)
     {
-
+        theGameObject.GetComponent<Rigidbody2D>().gravityScale = newGravityValue;
     }
 
     //toDo list
@@ -256,7 +256,7 @@ public class ItemEffects : MonoBehaviour {
             if (doDamageMe)
             {
                 damageMe(damageMeValue);
-                Debug.Log("OUCH");
+                //Debug.Log("OUCH");
             }
             if (singleUse)
             {
@@ -275,9 +275,13 @@ public class ItemEffects : MonoBehaviour {
             {
                 LevelComplete();
             }
+            if (doLevelFailed)
+            {
+                LevelFailed();
+            }
             if (doSetGravity)
             {
-                theGameObject.GetComponent<Rigidbody2D>().gravityScale = gravityNewValue;
+                SetGravity(gravityNewValue);
             }
         }
     }
@@ -289,7 +293,7 @@ public class ItemEffects : MonoBehaviour {
             {
                 //damageMe(lavaDamageValue);
                 lavaDamage(lavaDamageValue);
-                Debug.Log("hot");
+                //Debug.Log("hot");
             }
         }
     }
@@ -340,9 +344,13 @@ public class ItemEffects : MonoBehaviour {
             {
                 LevelComplete();
             }
+            if (doLevelFailed)
+            {
+                LevelFailed();
+            }
             if (doSetGravity)
             {
-                theGameObject.GetComponent<Rigidbody2D>().gravityScale = gravityNewValue;
+                SetGravity(gravityNewValue);
             }
         }
     }

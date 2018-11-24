@@ -200,6 +200,10 @@ public class ECGcable : MonoBehaviour {
         {
             CompleteTheLevel();
         }
+        if (LevelManager.levelIsFailed)
+        {
+            FailTheLevel();
+        }
 
 	}
 
@@ -212,5 +216,9 @@ public class ECGcable : MonoBehaviour {
     public void CompleteTheLevel()
     {
         LevelCompleteText.SetActive(true);
+    }
+    public void FailTheLevel()
+    {
+        LevelFailedText.SetActive(true);
     }
 }

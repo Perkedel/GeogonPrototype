@@ -123,6 +123,20 @@ public class LevelLoader : MonoBehaviour {
         levelIsCompleted = true;
         player.controllerIsActive = false;
     }
+    public void FailTheLevel()
+    {
+        Debug.Log("FailLevel");
+        StoreScene.CurrSceneName = SceneManager.GetActiveScene().name;
+        StoreScene.CurrSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        levelIsFailed = true;
+        player.controllerIsActive = false;
+    }
+
+    //Retry Level
+    public void RetryLevel()
+    {
+        LoadLevel(StoreScene.CurrSceneName);
+    }
 
     //Basic Unity Method
     public void Start()
@@ -157,6 +171,14 @@ public class LevelLoader : MonoBehaviour {
             if(goingToNextTimer <= 0)
             {
                 LoadLevel(NextLevelName);
+            }
+        }
+        if (levelIsFailed)
+        {
+            goingToNextTimer -= Time.deltaTime;
+            if (goingToNextTimer <= 0)
+            {
+                LoadLevel(GameOverName);
             }
         }
     }

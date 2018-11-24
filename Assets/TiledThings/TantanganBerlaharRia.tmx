@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.0" orientation="orthogonal" renderorder="right-down" width="64" height="32" tilewidth="70" tileheight="70" infinite="0" nextlayerid="9" nextobjectid="1">
+<map version="1.2" tiledversion="2018.11.13" orientation="orthogonal" renderorder="right-down" width="64" height="32" tilewidth="70" tileheight="70" infinite="0" nextlayerid="9" nextobjectid="1">
  <tileset firstgid="1" source="tiles_spritesheet.tsx"/>
  <layer id="5" name="Template" width="64" height="32" visible="0" locked="1">
   <properties>
@@ -22,7 +22,7 @@
    <property name="unity:tag" value="Lahar"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztz7EJADAIRUHL7D+xIyREK70Dyy+8CAAAANjrXO5n8/Knsu2kX//mfgAAgGkSeYQEAQ==
+   eJztz7ENADAIAzDG/n8xJ7QqTGBLGRMpEQAAAMBW55KfzstOpdvJ/93/AQAApknjBQMB
   </data>
  </layer>
  <layer id="7" name="Ground" width="64" height="32">
