@@ -22,10 +22,12 @@ public class LevelLoader : MonoBehaviour {
     public string GameOverName = "SampleGameOver";
     public float goingToNextTimer = 5f;
     public string NextLevelName;
+    public string [] AltLevelNames;
 
     //Statusing
     public bool levelIsCompleted = false;
     public bool levelIsFailed = false;
+    public bool levelIsDevExited = false;
 
     //Loading Level
     public void LoadLevel(int sceneIndex)
@@ -131,6 +133,13 @@ public class LevelLoader : MonoBehaviour {
         levelIsFailed = true;
         player.controllerIsActive = false;
     }
+    public void DevExitTheLevel()
+    {
+        StoreScene.CurrSceneName = SceneManager.GetActiveScene().name;
+        StoreScene.CurrSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        levelIsDevExited = true;
+        player.controllerIsActive = false;
+    }
 
     //Retry Level
     public void RetryLevel()
@@ -141,6 +150,7 @@ public class LevelLoader : MonoBehaviour {
     //Basic Unity Method
     public void Start()
     {
+        AltLevelNames = new string[AltLevelNames.Length];
         if (!player)
         {
             // Search for object with Player tag
@@ -179,6 +189,14 @@ public class LevelLoader : MonoBehaviour {
             if (goingToNextTimer <= 0)
             {
                 LoadLevel(GameOverName);
+            }
+        }
+        if (levelIsDevExited)
+        {
+            goingToNextTimer -= Time.deltaTime;
+            if (goingToNextTimer <= 0)
+            {
+                LoadLevel(StoreScene.DevExitScene1);
             }
         }
     }

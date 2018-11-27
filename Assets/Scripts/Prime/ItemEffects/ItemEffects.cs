@@ -95,6 +95,12 @@ public class ItemEffects : MonoBehaviour {
         levelManager.FailTheLevel();
     }
 
+    public bool doLevelDevExited = false;
+    public void LevelDevExited()
+    {
+        levelManager.DevExitTheLevel();
+    }
+
     public bool doChangeShape = false;
     public void ChangeShape()
     {
@@ -278,6 +284,10 @@ public class ItemEffects : MonoBehaviour {
             if (doLevelFailed)
             {
                 LevelFailed();
+            }
+            if (doLevelDevExited)
+            {
+                LevelDevExited();
             }
             if (doSetGravity)
             {

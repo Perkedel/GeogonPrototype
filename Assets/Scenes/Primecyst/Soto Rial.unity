@@ -1466,7 +1466,7 @@ Prefab:
     - target: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
         type: 2}
       propertyPath: GameOverName
-      value: DeveloperExit
+      value: GameOverScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57195fb9782a1cb448fcef85c4182b8f, type: 2}
@@ -1536,6 +1536,7 @@ MonoBehaviour:
   vibrateForHowLong: 10
   doLevelComplete: 1
   doLevelFailed: 0
+  doLevelDevExited: 0
   doChangeShape: 0
   doSetShapeLock: 0
   doSetSize: 0
@@ -2235,6 +2236,7 @@ MonoBehaviour:
   vibrateForHowLong: 10
   doLevelComplete: 0
   doLevelFailed: 0
+  doLevelDevExited: 0
   doChangeShape: 0
   doSetShapeLock: 0
   doSetSize: 0
@@ -2764,6 +2766,7 @@ MonoBehaviour:
   vibrateForHowLong: 1
   doLevelComplete: 0
   doLevelFailed: 0
+  doLevelDevExited: 0
   doChangeShape: 0
   doSetShapeLock: 0
   doSetSize: 0
@@ -5425,7 +5428,8 @@ MonoBehaviour:
   doVibrateCertainTime: 0
   vibrateForHowLong: 10
   doLevelComplete: 0
-  doLevelFailed: 1
+  doLevelFailed: 0
+  doLevelDevExited: 1
   doChangeShape: 0
   doSetShapeLock: 0
   doSetSize: 0

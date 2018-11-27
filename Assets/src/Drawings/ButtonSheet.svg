@@ -81,7 +81,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
@@ -109,7 +109,10 @@
      transform="translate(0,-98.51965)">
     <g
        id="g869"
-       transform="matrix(1.7716536,0,0,1.7716536,-107.99999,-183.66141)">
+       transform="matrix(1.7716536,0,0,1.7716536,-107.99999,-183.66141)"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\TombolSatu1\Jongkok.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
       <circle
          style="opacity:1;fill:#ff0000;fill-opacity:1;stroke-width:0.26458332"
          id="circle827"
@@ -133,7 +136,10 @@
     </g>
     <g
        id="g875"
-       transform="matrix(1.7716536,0,0,1.7716536,-116,-183.66143)">
+       transform="matrix(1.7716536,0,0,1.7716536,-116,-183.66143)"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\TombolSatu1\Loncat.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
       <circle
          r="33.866665"
          cy="195.39998"
@@ -157,7 +163,10 @@
     </g>
     <g
        id="g887"
-       transform="matrix(1.7716536,0,0,1.7716536,148.00002,-63.661404)">
+       transform="matrix(1.7716536,0,0,1.7716536,148.00002,-63.661404)"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\TombolSatu1\Pindai.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
       <circle
          r="33.866665"
          cy="127.66665"
@@ -181,7 +190,10 @@
     </g>
     <g
        id="g881"
-       transform="matrix(1.7716536,0,0,1.7716536,140.00001,-63.661404)">
+       transform="matrix(1.7716536,0,0,1.7716536,140.00001,-63.661404)"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\TombolSatu1\Serang.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
       <circle
          style="opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
          id="circle831"

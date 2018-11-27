@@ -204,7 +204,10 @@ public class ECGcable : MonoBehaviour {
         {
             FailTheLevel();
         }
-
+        if (LevelManager.levelIsDevExited)
+        {
+            CompleteTheLevel();
+        }
 	}
 
     //Templatics
