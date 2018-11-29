@@ -146,6 +146,7 @@ public class LevelLoader : MonoBehaviour {
     {
         LoadLevel(StoreScene.CurrSceneName);
     }
+    //same as above restart level lol
 
     //Basic Unity Method
     public void Start()

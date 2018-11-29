@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Alphacyst/Alpha1.unity
     guid: 7ef34c1e70b9dda4b87e38b1c3b445be
   - enabled: 1
+    path: Assets/Scenes/Primecyst/Soto Rial.unity
+    guid: 11c0a3faefd8165449d01f1ef3c5b74b
+  - enabled: 1
     path: Assets/Scenes/Primecyst/TheActivity.unity
     guid: 417fa5d36ce09c648b51d45c9bbd40d7
   - enabled: 1

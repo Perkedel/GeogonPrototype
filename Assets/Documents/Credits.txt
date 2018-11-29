@@ -56,7 +56,7 @@ Eric5h5 https://answers.unity.com/questions/12301/how-can-i-get-a-parent-gameobj
 Alex Stuart Mahan (YandereDev, EvaXephon) https://www.youtube.com/watch?v=8vT-97qiaNQ . Better naming for Proof Concept for Investors.
 xortrox https://answers.unity.com/questions/488583/how-to-stop-textures-from-getting-blurry.html . 2D shader.zip
 Sloan Kelly https://www.youtube.com/watch?v=5XJBBWI2F0I . scrollable text bar
-
+Fast Solution https://www.youtube.com/watch?v=PZ-s1lTpmTM . scroll view tutorial
 
 Assets involved:
 Github for Unity. to do Git with this Unity project

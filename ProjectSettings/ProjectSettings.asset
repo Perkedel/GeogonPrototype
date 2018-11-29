@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Perkedel Technologies
-  productName: GeogonPrototype
+  productName: GeogonVslice
   defaultCursor: {fileID: 2800000, guid: 0008c0c728786dd46b2c939a364e9f83, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0, g: 0.6627451, b: 0, a: 1}
@@ -122,7 +122,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.1
+  bundleVersion: 1
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -156,10 +156,11 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.Perkedel.GeogonPrototype
-    Standalone: com.Perkedel.GeogonPrototypeUnity
-  buildNumber: {}
-  AndroidBundleVersionCode: 1
+    Android: com.Perkedel.GeogonVsliceUnity
+    Standalone: com.Perkedel.GeogonVsliceUnity
+  buildNumber:
+    Standalone: 2018-1
+  AndroidBundleVersionCode: 2017
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -670,14 +671,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Template2D
+  metroPackageName: GeogonVslice
   metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Template_2D
+  metroApplicationDescription: Change your shape to do something
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -692,7 +693,7 @@ PlayerSettings:
   metroSplashScreenUseBackgroundColor: 0
   platformCapabilities:
     WindowsStoreApps:
-      AllJoyn: False
+      AllJoyn: True
       Appointments: False
       BackgroundMediaPlayback: False
       BlockedChatMessages: False
@@ -701,7 +702,7 @@ PlayerSettings:
       CodeGeneration: False
       Contacts: False
       EnterpriseAuthentication: False
-      HumanInterfaceDevice: False
+      HumanInterfaceDevice: True
       InputInjectionBrokered: False
       InternetClient: False
       InternetClientServer: False

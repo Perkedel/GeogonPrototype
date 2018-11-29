@@ -23,7 +23,10 @@ public static class Vibration
             vibrator.Call("vibrate");
         else
 #if !UNITY_STANDALONE
-            Handheld.Vibrate();
+            //Handheld.Vibrate();
+        { }
+#elif UNITY_WEBGL
+        {}
 #else
         {}
 #endif
@@ -36,7 +39,10 @@ public static class Vibration
             vibrator.Call("vibrate", milliseconds);
         else
 #if !UNITY_STANDALONE
-            Handheld.Vibrate();
+            //Handheld.Vibrate();
+        { }
+#elif UNITY_WEBGL
+        {}
 #else
         {}
 #endif
@@ -48,7 +54,10 @@ public static class Vibration
             vibrator.Call("vibrate", pattern, repeat);
         else
 #if !UNITY_STANDALONE
-            Handheld.Vibrate();
+            //Handheld.Vibrate();
+        { }
+#elif UNITY_WEBGL
+        {}
 #else
         {}
 #endif

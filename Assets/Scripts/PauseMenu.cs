@@ -81,6 +81,19 @@ public class PauseMenu : MonoBehaviour {
         Debug.Log("pause");
     }
 
+    public void RestartLevel()
+    {
+        vibratings.VibrateStyle(0);
+        Time.timeScale = 1f;
+        for (int i = 0; i < hideThoseUI.Length; i++)
+        {
+            hideThoseUI[i].SetActive(false);
+        }
+        GameIsPaused = false;
+        levelLoader.RestartLevel();
+        Debug.Log("restart");
+    }
+
     public void LoadMenu()
     {
         vibratings.VibrateStyle(0);
