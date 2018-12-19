@@ -57,6 +57,7 @@ Alex Stuart Mahan (YandereDev, EvaXephon) https://www.youtube.com/watch?v=8vT-97
 xortrox https://answers.unity.com/questions/488583/how-to-stop-textures-from-getting-blurry.html . 2D shader.zip
 Sloan Kelly https://www.youtube.com/watch?v=5XJBBWI2F0I . scrollable text bar
 Fast Solution https://www.youtube.com/watch?v=PZ-s1lTpmTM . scroll view tutorial
+Karl Jones (Unity Technologies) https://forum.unity.com/threads/package-manager-missing-in-ui.535088/ . Reset package to default due to missing package manager in UI of editor.
 
 Assets involved:
 Github for Unity. to do Git with this Unity project
@@ -83,15 +84,16 @@ Audio:
 <link> Sound description. [rights reserved by]. (edited render name.extension, info)
 Freesounds.org: 
 https://freesound.org/people/qubodup/sounds/332056/ Collision sound. [0%]. (Collision.wav)
-https://freesound.org/people/qubodup/sounds/54850 Wood collision collection. [0%]. (WoodCollideN.wav, N is number of sound out of multisounds)
+https://freesound.org/people/qubodup/sounds/54850 Wood collision collection. [0%]. (WoodCollideN.wav, N is number of sound out of multisounds. We spliced each sound parts into individual tracks and render each tracks. One track One file. The options is available!)
 https://freesound.org/people/waveplay_old/sounds/399934/#comments percussion snap for Selection in Menu. [0%]
 https://freesound.org/people/sharesynth/sounds/344500 Jump 8 bit. [0%]
 https://freesound.org/people/Claire.H/sounds/182345 marble rolling on a stone table. [<100%] CC-BY.
+... Sounds Downloaded by JOELwindows7 https://freesound.org/people/JOELwindows7/downloaded_sounds/
 
 People: Perkedel Technologies
 Name (NIM). Role. Job Tier.
 - Joel Robert Justiawan (2101629672). Lead project. Founder.
-- Septesen (...). Artist, Level Designer. Volunteer.
+- Septesen (2101689311). Artist, Level Designer. Volunteer.
 -
 -
 -
