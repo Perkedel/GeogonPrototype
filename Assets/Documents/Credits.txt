@@ -5,7 +5,7 @@ Stuffs: CC4.0-BY-SA
 
 Application Using/Reffering:
 Unity3D (c) Unity [100% $$$+]. This game was built with Unity3D.
-________ (c) ___________,__________[100% 3rdP-DRM]. Joel knows it was him. that guy lectures him.
+________ (c) ___________,__________[100% 3rdP-DRM]. Joel knows it was him. that guy lectures him. [Hint: dash after number is 0, check publisher and creator!]
 Audacity [<100%]. Edit audio!
 Inkscape [<100%]. Vector graphic!!!
 https://ezgif.com [100%]. Easy Gif making tool online!
