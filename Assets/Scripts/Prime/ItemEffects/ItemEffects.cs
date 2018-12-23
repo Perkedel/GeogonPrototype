@@ -5,6 +5,7 @@ using UnityEditor;
 
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(AudioSource))]
 public class ItemEffects : MonoBehaviour {
 
     Collision2D whosTouching;
@@ -45,10 +46,21 @@ public class ItemEffects : MonoBehaviour {
         damageMe(value);
     }
 
-    public bool singleUse = true;
+    public bool singleUse = true; //Use this if you are sure no more need after the object has been "destroyed". This is recomended to save memory.
     public void destroySelf()
     {
         Destroy(gameObject);
+    }
+    public bool pseudoSingleUse = false; //Use this if something should still happening if the object has been "despawned". e.g., Audio cannot play if object is actually destroyed.
+    [SerializeField] private bool hasBeenInvisibled = false;
+    public void invisiblizeSelf()
+    {
+        if (!hasBeenInvisibled)
+        {
+            GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+            GetComponent<Collider2D>().enabled = false;
+            hasBeenInvisibled = true;
+        }
     }
 
     public bool doSayDebug = false;
@@ -132,6 +144,24 @@ public class ItemEffects : MonoBehaviour {
         theGameObject.GetComponent<Rigidbody2D>().gravityScale = newGravityValue;
     }
 
+    public AudioSource ItemSelfSound;
+    public bool doPlaySoundArray = false;
+    public AudioClip[] SoundArray;
+    [Range(0, 1)] public float volumeMultiple;
+    public void PlaySoundArray()
+    {
+        for (int i = 0; i < SoundArray.Length; i++) {
+            ItemSelfSound.PlayOneShot(SoundArray[i], volumeMultiple);
+        }
+    }
+    public bool doPlaySoundWhichRand = false;
+    public AudioClip[] SoundWhichRand;
+    [Range(0, 1)] public float volumeSingle;
+    public void PlaySoundWhichRand()
+    {
+        ItemSelfSound.PlayOneShot(SoundWhichRand[Random.Range(0, SoundWhichRand.Length)], volumeSingle);
+    }
+
     //toDo list
     /*
      * Set camera zoom
@@ -176,6 +206,7 @@ public class ItemEffects : MonoBehaviour {
                     levelManager = go.gameObject.GetComponent<LevelLoader>();
             }
         }
+        ItemSelfSound = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -247,6 +278,14 @@ public class ItemEffects : MonoBehaviour {
         theSHanpeWhoIsTouching = theGameObject.GetComponent<SHanpe>();
         if (theSHanpeWhoIsTouching)
         {
+            if (doPlaySoundArray)
+            {
+                PlaySoundArray();
+            }
+            if (doPlaySoundWhichRand)
+            {
+                PlaySoundWhichRand();
+            }
             if (doVibrate)
             {
                 Vibration.Vibrate(50); //android O has trouble with just calling vibrate. deprecated probably
@@ -263,11 +302,6 @@ public class ItemEffects : MonoBehaviour {
             {
                 damageMe(damageMeValue);
                 //Debug.Log("OUCH");
-            }
-            if (singleUse)
-            {
-                //anItem.destroySelf();
-                Destroy(gameObject);
             }
             if (doSayDebug)
             {
@@ -292,6 +326,15 @@ public class ItemEffects : MonoBehaviour {
             if (doSetGravity)
             {
                 SetGravity(gravityNewValue);
+            }
+            if (pseudoSingleUse)
+            {
+                invisiblizeSelf();
+            }
+            if (singleUse)
+            {
+                //anItem.destroySelf();
+                Destroy(gameObject);
             }
         }
     }

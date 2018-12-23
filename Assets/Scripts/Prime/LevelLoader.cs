@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+[RequireComponent(typeof(AudioSource))]
 public class LevelLoader : MonoBehaviour {
 
     //Brackeys https://www.youtube.com/watch?v=YMj2qPq9CP8
@@ -16,13 +17,19 @@ public class LevelLoader : MonoBehaviour {
 
     //Spare part variable
     private GameObject StoreSelected; //https://youtu.be/FRbRQFpVFxg Store button selection
+    private AudioSource ItselfSound;
 
     //Customizable Variables
     public string MainMenuName = "SampleMenuScene";
     public string GameOverName = "SampleGameOver";
+    public string[] DevExitPack;
     public float goingToNextTimer = 5f;
     public string NextLevelName;
     public string [] AltLevelNames;
+    public bool playTheseSounds = true;
+    [Range(0, 1)] public float volumeControl = 1;
+    public AudioClip[] LevelCompleteSound;
+    public AudioClip[] LevelFailedSound;
 
     //Statusing
     public bool levelIsCompleted = false;
@@ -123,6 +130,7 @@ public class LevelLoader : MonoBehaviour {
     public void CompleteTheLevel()
     {
         levelIsCompleted = true;
+        ItselfSound.PlayOneShot(LevelCompleteSound[Random.Range(0, LevelCompleteSound.Length)], volumeControl);
         player.controllerIsActive = false;
     }
     public void FailTheLevel()
@@ -131,13 +139,16 @@ public class LevelLoader : MonoBehaviour {
         StoreScene.CurrSceneName = SceneManager.GetActiveScene().name;
         StoreScene.CurrSceneIndex = SceneManager.GetActiveScene().buildIndex;
         levelIsFailed = true;
+        ItselfSound.PlayOneShot(LevelFailedSound[Random.Range(0, LevelFailedSound.Length)], volumeControl);
         player.controllerIsActive = false;
     }
     public void DevExitTheLevel()
     {
         StoreScene.CurrSceneName = SceneManager.GetActiveScene().name;
         StoreScene.CurrSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        StoreScene.NextLevelNaming = DevExitPack[Random.Range(0, DevExitPack.Length)];
         levelIsDevExited = true;
+        ItselfSound.PlayOneShot(LevelCompleteSound[Random.Range(0, LevelCompleteSound.Length)], volumeControl);
         player.controllerIsActive = false;
     }
 
@@ -151,6 +162,7 @@ public class LevelLoader : MonoBehaviour {
     //Basic Unity Method
     public void Start()
     {
+        ItselfSound = GetComponent<AudioSource>();
         AltLevelNames = new string[AltLevelNames.Length];
         if (!player)
         {
@@ -197,7 +209,8 @@ public class LevelLoader : MonoBehaviour {
             goingToNextTimer -= Time.deltaTime;
             if (goingToNextTimer <= 0)
             {
-                LoadLevel(StoreScene.DevExitScene1);
+                //LoadLevel(StoreScene.DevExitScene1);
+                LoadLevel(StoreScene.NextLevelNaming);
             }
         }
     }

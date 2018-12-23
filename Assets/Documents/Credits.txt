@@ -11,6 +11,7 @@ Inkscape [<100%]. Vector graphic!!!
 https://ezgif.com [100%]. Easy Gif making tool online!
 https://image.online-convert.com/convert-to-ico [100%]. Convert to ICO!!!
 Tiled https://thorbjorn.itch.io/tiled . create maps of sprites! for making 2D platformer!!!
+youtube-dl https://rg3.github.io/youtube-dl/ . Gratis and Open Source tool to download YouTube videos. supports some other sites as well! Comprehensive!!! (Warning! not GUI tool!)
 
 Refferences: (Big Shoutout and Thx)
 Digital-Phantom https://answers.unity.com/questions/930656/how-to-prevent-camera-rotation.html . The Follow camera without rotation.
@@ -25,12 +26,16 @@ Unity Random value https://docs.unity3d.com/ScriptReference/Random-value.html . 
 Unity Stylish text guide https://docs.unity3d.com/Manual/StyledText.html . something stylish text.
 Unity can Debug Log stylishly! https://docs.unity3d.com/ScriptReference/Debug.Log.html . Debug log with formatings!
 Unity Platform definition https://docs.unity3d.com/Manual/PlatformDependentCompilation.html . Platform definition!
+Unity Instantiate a Prefab in runtime https://docs.unity3d.com/Manual/InstantiatingPrefabs.html . Spawn thing of this reffered prefab.
+Unity Object Instantiate https://docs.unity3d.com/ScriptReference/Object.Instantiate.html . the method of instantiate.
+Unity Particle System how to use thing https://docs.unity3d.com/Manual/PartSysUsage.html . That's how to use PartSys.
 Unity Community XBOX controller mapping http://wiki.unity3d.com/index.php?title=Xbox360Controller . Refference for Xinput based mapping.
 Brackeys' Menu tutorial https://www.youtube.com/watch?v=zc8ac_qUXQY . Nah that's better. WOW!!! BRACKEY!! THAT'S YOU!!! THX!!! Check out SampleMenuScene to see what I did follow.
 Brackeys' Option Menu https://www.youtube.com/watch?v=YOaYQrN1oYQ . Improvements!!! thx!!!
 Brackeys' Pause Menu https://www.youtube.com/watch?v=JivuXdrIHK0&t=29s . Thx again!!! Paused.
 Brackeys' Loading Screen https://www.youtube.com/watch?v=YMj2qPq9CP8 . Loading....
 Brackeys' Mobile Touch Control https://www.youtube.com/watch?v=bp2PiFC9sSs&t=771s . Use Touchscreen joystick to control in Mobile!!!
+Brackeys' Particle System Mega tutorial https://www.youtube.com/watch?v=FEA1wTMJAR0 . Explanation of this particle system.
 Blackthornprod UI tutorial https://www.youtube.com/watch?v=_RIsfVOqTaE . Total fix something that Brackeys forgot such as UI scalings with Shift+Alt.
 Dilon Richie https://www.youtube.com/watch?v=dkduVooA9tE & https://youtu.be/FRbRQFpVFxg . UI navigation!
 Alexander Zotov https://www.youtube.com/watch?v=DNLAuV-d4sA . Jump Button! Standard Assets Cross Platform Input is now used for it!
@@ -83,12 +88,26 @@ Kenney Vleugels https://kenney.nl https://kenney.itch.io https://opengameart.org
 Audio:
 <link> Sound description. [rights reserved by]. (edited render name.extension, info)
 Freesounds.org:
-https://freesound.org/people/qubodup/sounds/332056/ Collision sound. [0%]. (Collision.wav)
-https://freesound.org/people/qubodup/sounds/54850 Wood collision collection. [0%]. (WoodCollideN.wav, N is number of sound out of multisounds. We spliced each sound parts into individual tracks and render each tracks. One track One file. The options is available!)
-https://freesound.org/people/waveplay_old/sounds/399934/#comments percussion snap for Selection in Menu. [0%]
-https://freesound.org/people/sharesynth/sounds/344500 Jump 8 bit. [0%]
+https://freesound.org/people/qubodup/sounds/332056/ Collision sound. [0%] CC0. (Collision.wav)
+https://freesound.org/people/qubodup/sounds/54850 Wood collision collection. [0%] CC0.. (WoodCollideN.wav, N is number of sound out of multisounds. We spliced each sound parts into individual tracks and render each tracks. One track One file. The options is available!)
+https://freesound.org/people/waveplay_old/sounds/399934/#comments percussion snap for Selection in Menu. [0%] CC0.
+https://freesound.org/people/sharesynth/sounds/344500 Jump 8 bit. [0%] CC0.
 https://freesound.org/people/Claire.H/sounds/182345 marble rolling on a stone table. [<100%] CC-BY.
+https://freesound.org/people/kyles/sounds/452596/ Door kick open . [0%] CC0.
 ... Sounds Downloaded by JOELwindows7 https://freesound.org/people/JOELwindows7/downloaded_sounds/
+
+YouTube.com:
+Video Downloaded:
+https://www.youtube.com/watch?v=Gm73TwtUyGY https://photos.app.goo.gl/DNr8Awj1tUcU4z4U9 Lost infamous funny explosion mkv. [???]. (Explodos.wav, we took the google photo backup version, trim the delay start, add fade out to fill its emptiness end, and convert export it to audio file.)
+https://www.youtube.com/watch?v=skMloYSZiRw GradeAUnderA Tada. [???]. Big shoutout for he upload post such rare sound!
+Audio Library https://www.youtube.com/audiolibrary :
+Music:
+Jimmy Fontanez - Floaters. infamously smooth jazz used by h3h3, Technology Connection, Raveja and Raveji, Silhouette Shadows inc., and much more
+SFX:
+
+Fonts:
+https://fonts.google.com/specimen/Roboto Roboto by Christian Robertson. [<100%] Apache License. An infamous and cliche Google's general purpose font.
+https://www.wfonts.com/font/impact Impact. [???]. Memeful generations.
 
 People: Perkedel Technologies
 Name (NIM). Role. Job Tier.

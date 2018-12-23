@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Primecyst/TheActivity.unity
     guid: 417fa5d36ce09c648b51d45c9bbd40d7
   - enabled: 1
-    path: Assets/Scenes/Primecyst/DeveloperExit.unity
+    path: Assets/Scenes/Primecyst/DevExitsPunishments/DeveloperExit.unity
     guid: c6e4ad69a8dbee34b81cc1055e84a926
+  - enabled: 1
+    path: Assets/Scenes/Primecyst/DevExitsPunishments/TidakSemudahItuFerguso.unity
+    guid: c1a92f20de5380947b997d7cc9a79680
   m_configObjects: {}

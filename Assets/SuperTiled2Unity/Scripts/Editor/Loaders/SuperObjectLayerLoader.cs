@@ -70,6 +70,9 @@ namespace SuperTiled2Unity.Editor
 
             // Take care of properties
             Importer.AddSuperCustomProperties(superObject.gameObject, xObject.Element("properties"), superObject.m_SuperTile, superObject.m_Type);
+
+            // Post processing after custom properties have been set
+            PostProcessObject(superObject.gameObject);
         }
 
         private void ApplyTemplate(XElement xObject)
@@ -235,7 +238,7 @@ namespace SuperTiled2Unity.Editor
             var tileOffset = new Vector3(tile.m_TileOffsetX * inversePPU, -tile.m_TileOffsetY * inversePPU);
             var translateCenter = new Vector3(tile.m_Width * 0.5f * inversePPU, tile.m_Height * 0.5f * inversePPU);
 
-            // Our root object with contain the translation, rotation, and scale of the tile object
+            // Our root object will contain the translation, rotation, and scale of the tile object
             var goTRS = superObject.gameObject;
             goTRS.transform.localScale = scale;
 
@@ -262,6 +265,7 @@ namespace SuperTiled2Unity.Editor
             var renderer = goTile.AddComponent<SpriteRenderer>();
             renderer.sprite = tile.m_Sprite;
             renderer.color = new Color(1, 1, 1, superObject.CalculateOpacity());
+            Importer.AssignMaterial(renderer);
             Importer.AssignSortingLayer(renderer, m_ObjectLayer.m_SortingLayerName, (int)superObject.m_Y);
 
             // Add the animator if needed
@@ -318,6 +322,25 @@ namespace SuperTiled2Unity.Editor
             var height = xObject.GetAttributeAs("height", 0f);
             ColliderFactory.MakeBox(goObject, width, height);
             goObject.AddComponent<SuperColliderComponent>();
+        }
+
+        private void PostProcessObject(GameObject go)
+        {
+            var properties = go.GetComponent<SuperCustomProperties>();
+            var collider = go.GetComponent<Collider2D>();
+
+            if (collider != null)
+            {
+                CustomProperty isTrigger;
+                if (properties.TryGetCustomProperty("unity:isTrigger", out isTrigger))
+                {
+                    collider.isTrigger = isTrigger.GetValueAsBool();
+                }
+            }
+
+            // Make sure all children have the same physics layer
+            // This is needed for Tile objects in particular that have their colliders in child objects
+            go.AssignChildLayers();
         }
     }
 }

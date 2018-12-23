@@ -73,6 +73,8 @@ public class SettingsMenu : MonoBehaviour {
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+
+        //LoadSetting();
     }
 
     public void SetVolume(float volume)
@@ -85,15 +87,32 @@ public class SettingsMenu : MonoBehaviour {
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        PlayerPrefs.SetInt("Setting: ResolutionIndex", resolutionIndex);
     }
 
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
+        PlayerPrefs.SetInt("Setting: QualityIndex", qualityIndex);
     }
 
     public void SetFullScreen(bool isFullscreen)
     {
+        Screen.fullScreen = isFullscreen;
+        int fullScreen;
+        if (isFullscreen) fullScreen = 1; else fullScreen = 0;
+        PlayerPrefs.SetInt("Setting: FullScreen", fullScreen);
+    }
+
+    public void LoadSetting()
+    {
+        Resolution resolution = resolutions[PlayerPrefs.GetInt("Setting: ResolutionIndex", 100000)];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+
+        QualitySettings.SetQualityLevel(PlayerPrefs.GetInt("Setting: QualityIndex", 4));
+
+        bool isFullscreen;
+        if (PlayerPrefs.GetInt("Setting: FullScreen", 1) != 0) isFullscreen = true; else isFullscreen = false;
         Screen.fullScreen = isFullscreen;
     }
 }

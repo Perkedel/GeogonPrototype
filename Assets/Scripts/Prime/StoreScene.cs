@@ -8,6 +8,17 @@ public static class StoreScene {
     static string[] altNextSceneNames = { "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
     static int[] altNextSceneIndexes = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
     const string DevExitScene = "DeveloperExit";
+    static string NextLevelNamer;
+
+    public static void LoadSettings()
+    {
+
+    }
+
+    public static void SaveSettings()
+    {
+
+    }
 
     public static string CurrSceneName
     {
@@ -66,6 +77,18 @@ public static class StoreScene {
         get
         {
             return DevExitScene;
+        }
+    }
+
+    public static string NextLevelNaming
+    {
+        get
+        {
+            return NextLevelNamer;
+        }
+        set
+        {
+            NextLevelNamer = value;
         }
     }
 }

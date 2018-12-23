@@ -10,7 +10,7 @@ using UnityEngine.Audio; //https://docs.unity3d.com/ScriptReference/AudioSource.
 public class SHanpe : MonoBehaviour {
 
     //Shape of SHanpe
-    public enum Bentuk { eekSerkat, Lingkaran, Kotak, Segitiga};
+    public enum Bentuk { eekSerkat, Lingkaran, Kotak, Segitiga };
     public Bentuk bentuk, currBentuk;
 
     //public GameObject[] Shappings;
@@ -23,6 +23,10 @@ public class SHanpe : MonoBehaviour {
     public AudioClip[] CollisionSounds;
     public AudioClip[] JumpSounds;
     public AudioClip[] RollingSounds;
+    public AudioClip[] DeathSounds;
+
+    public ParticleSystem[] Exploded;
+    [SerializeField] private bool hasBeenExploded = false;
 
     public float Sliding = 10f;
     public float Rolling = 10f;
@@ -174,17 +178,24 @@ public class SHanpe : MonoBehaviour {
     [SerializeField] private bool hasJumpPressed = false;
     public void JumpByHand()
     {
-        if (!TheCameraAction.isMovingCamera)
+        if (controllerIsActive)
         {
-            if (!hasJumpPressed && JumpingCable == 0)
+            if (!TheCameraAction.isMovingCamera)
             {
-                JumpingCable = 1;
-                hasJumpPressed = true;
+                if (!hasJumpPressed && JumpingCable == 0)
+                {
+                    JumpingCable = 1;
+                    hasJumpPressed = true;
 
-                //Insert Jump Methodings
-                LetsJump();
+                    //Insert Jump Methodings
+                    LetsJump();
+                }
+                if (hasJumpPressed && JumpingCable != 0)
+                {
+                    JumpingCable = 0;
+                }
             }
-            if (hasJumpPressed && JumpingCable != 0)
+            else
             {
                 JumpingCable = 0;
             }
@@ -483,6 +494,23 @@ public class SHanpe : MonoBehaviour {
                 Triangling.SetActive(false);
                 Dying.SetActive(false);
                 break;
+        }
+
+        if (Dying.activeSelf)
+        {
+            if (!hasBeenExploded)
+            {
+                for (int i = 0; i < Exploded.Length; i++)
+                {
+                    Instantiate(Exploded[i].gameObject, GetComponent<Transform>().position, Quaternion.identity);
+                }
+                itSelfSound.PlayOneShot(DeathSounds[Random.Range(0, DeathSounds.Length)], 1);
+                hasBeenExploded = true;
+            }
+        } else
+        {
+            //Destroy(Exploded);
+            hasBeenExploded = false;
         }
 
         rb2D.AddForce(Vector2.right * ControlSlide);
