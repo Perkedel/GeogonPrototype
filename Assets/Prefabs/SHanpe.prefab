@@ -669,6 +669,7 @@ MonoBehaviour:
   RollingSounds:
   - {fileID: 8300000, guid: 3380165c7d21c90488f9b1945995b28d, type: 3}
   DeathSounds:
+  - {fileID: 8300000, guid: 4ffb09c7cc881e246b4a765e21298f61, type: 3}
   - {fileID: 8300000, guid: b24bb1a4f9a382f45a58193e3468e2c4, type: 3}
   Exploded:
   - {fileID: 1526030123275458966, guid: ce24fc658db77b14190ed0cca662a2c6, type: 3}

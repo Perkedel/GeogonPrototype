@@ -86,5 +86,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34fa8cc53a03bfe4aad04be84beb7e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  otherCam: {fileID: 0}
+  target: {fileID: 4246534070854716, guid: 76b832945ffb2ce4780d3ce6bc342d1d, type: 3}
+  otherCam: {fileID: 20797595090361248, guid: ba7baa79de388f741bebb85dfd74748a, type: 3}

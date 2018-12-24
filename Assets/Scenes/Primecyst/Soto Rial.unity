@@ -1739,6 +1739,8 @@ MonoBehaviour:
   doPlaySoundWhichRand: 0
   SoundWhichRand: []
   volumeSingle: 0.5
+  EmitParticles: []
+  doEmitParticles: 0
 --- !u!50 &612589147
 Rigidbody2D:
   serializedVersion: 4
@@ -2529,6 +2531,11 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 768599218}
+    - target: {fileID: 224505561173887178, guid: 8b674b371d577da45a80171c3e1c5440,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 247.45001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b674b371d577da45a80171c3e1c5440, type: 3}
 --- !u!224 &879427965 stripped
@@ -2752,6 +2759,8 @@ MonoBehaviour:
   doPlaySoundWhichRand: 0
   SoundWhichRand: []
   volumeSingle: 0
+  EmitParticles: []
+  doEmitParticles: 0
 --- !u!1001 &1027378766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3206,12 +3215,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311986025}
   m_CullTransparentMesh: 0
---- !u!4 &1321032580 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4951732308513120, guid: ba7baa79de388f741bebb85dfd74748a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1176799788}
-  m_PrefabAsset: {fileID: 0}
 --- !u!20 &1321032582 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 20797595090361248, guid: ba7baa79de388f741bebb85dfd74748a,
@@ -3449,6 +3452,9 @@ MonoBehaviour:
   doPlaySoundWhichRand: 0
   SoundWhichRand: []
   volumeSingle: 0
+  EmitParticles:
+  - {fileID: 1526030123275458966, guid: 16f8c5841e740d2488b25163654ab5fd, type: 3}
+  doEmitParticles: 1
 --- !u!50 &1461712819
 Rigidbody2D:
   serializedVersion: 4
@@ -3796,7 +3802,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1321032582}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -3804,7 +3810,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1132273987
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1688636928
@@ -6307,6 +6313,8 @@ MonoBehaviour:
   doPlaySoundWhichRand: 0
   SoundWhichRand: []
   volumeSingle: 1
+  EmitParticles: []
+  doEmitParticles: 0
 --- !u!50 &1988521365
 Rigidbody2D:
   serializedVersion: 4
@@ -8403,7 +8411,7 @@ PrefabInstance:
         type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1321032580}
+      objectReference: {fileID: 1680032095}
     - target: {fileID: 2438024422851016920, guid: 12ac66ea335f500478c4345f6a0f4160,
         type: 3}
       propertyPath: otherCam

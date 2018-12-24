@@ -65,13 +65,15 @@ Fast Solution https://www.youtube.com/watch?v=PZ-s1lTpmTM . scroll view tutorial
 Karl Jones (Unity Technologies) https://forum.unity.com/threads/package-manager-missing-in-ui.535088/ . Reset package to default due to missing package manager in UI of editor.
 
 Assets involved:
-Github for Unity. to do Git with this Unity project
-Text Mesh Pro. Acquired by Unity. All in one Stylish Text solution!!! Must have or none of the coolness!!!
-2D Game Kit. Decommissioned, Ruining the Game Collider! Try Partial and watch what things change first!
-2D Standard Asset Unity. Essential Unity's package containing Standard Assets for 2D things
-MOVINARC Package Uninstaller. Sometimes, some package were no longer be needed. can be a hassle to remove just be like that.
-Fenerax Studio Virtual Joystick pack. There is now premade Touch joystick!!! thx Brackeys for telling me this. It is inefficient to create from scratch!
-Seanba Super Tiled 2 Unity https://seanba.itch.io/supertiled2unity . Easy import Tiled! instant prefabs per TMX and Tiled sheets!!! drag and drop the TMX file!!!
+Unity https://assetstore.unity.com/packages/tools/version-control/github-for-unity-118069 Github for Unity. to do Git with this Unity project
+Unity + Digital Native Studios https://assetstore.unity.com/packages/essentials/beta-projects/textmesh-pro-84126 Text Mesh Pro. Acquired by Unity. All in one Stylish Text solution!!! Must have or none of the coolness!!!
+Unity https://assetstore.unity.com/packages/essentials/tutorial-projects/2d-game-kit-107098 2D Game Kit. [Decommissioned] Ruining the Game Collider! Try Partial and watch what things change first!
+Unity https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351 2D Standard Asset Unity. Essential Unity's package containing Standard Assets for 2D things
+MOVINARC https://assetstore.unity.com/packages/tools/utilities/package-uninstaller-35439 Package Uninstaller. Sometimes, some package were no longer be needed. can be a hassle to remove just be like that.
+Fenerax Studio https://assetstore.unity.com/packages/tools/input-management/joystick-pack-107631 Virtual Joystick pack. There is now premade Touch joystick!!!. thx Brackeys for telling me this. It is inefficient to create from scratch!
+Seanba https://seanba.itch.io/supertiled2unity Super Tiled 2 Unity. Easy import Tiled! instant prefabs per TMX and Tiled sheets!!! drag and drop the TMX file to the scene!!! WOAHOW SIMPLEZ!!! MANTAB JIWA!!!
+ENSOU https://assetstore.unity.com/packages/tools/audio/ens-music-player-108759 Music Player. [Decommissioned] Missing Assembly refference mysteriously. ruins everything!
+Hajiyev Elnur https://assetstore.unity.com/packages/audio/music/professional-music-player-90589 Music Player. Professional Music Player!
 
 Packages involved (Beside preinstalled and built-in, user installed!):
 2D Sprite Shape. Create bendable string of sprites! great for various shaped platform, and other weird stuff! Unity's experimental!!!
@@ -99,7 +101,8 @@ https://freesound.org/people/kyles/sounds/452596/ Door kick open . [0%] CC0.
 YouTube.com:
 Video Downloaded:
 https://www.youtube.com/watch?v=Gm73TwtUyGY https://photos.app.goo.gl/DNr8Awj1tUcU4z4U9 Lost infamous funny explosion mkv. [???]. (Explodos.wav, we took the google photo backup version, trim the delay start, add fade out to fill its emptiness end, and convert export it to audio file.)
-https://www.youtube.com/watch?v=skMloYSZiRw GradeAUnderA Tada. [???]. Big shoutout for he upload post such rare sound!
+https://www.youtube.com/watch?v=skMloYSZiRw GradeAUnderA Tada uploaded by Michael Ferrel. [???]. Big shoutout for he upload post such rare sound!
+https://www.youtube.com/watch?v=YXBhR1EKe7w Explosion bin. [100%]. bin canon in Poland. (Explosion bin cropped.wav).
 Audio Library https://www.youtube.com/audiolibrary :
 Music:
 Jimmy Fontanez - Floaters. infamously smooth jazz used by h3h3, Technology Connection, Raveja and Raveji, Silhouette Shadows inc., and much more
@@ -108,6 +111,7 @@ SFX:
 Fonts:
 https://fonts.google.com/specimen/Roboto Roboto by Christian Robertson. [<100%] Apache License. An infamous and cliche Google's general purpose font.
 https://www.wfonts.com/font/impact Impact. [???]. Memeful generations.
+https://www.dafontfree.net/freefonts-helvetica-f128587.htm Helvetica Regular. [???]. Helvetica standard.
 
 People: Perkedel Technologies
 Name (NIM). Role. Job Tier.

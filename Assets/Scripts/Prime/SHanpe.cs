@@ -369,6 +369,8 @@ public class SHanpe : MonoBehaviour {
         float ControlSlide = 0;
         float ControlRolls = 0;
 
+        int randSound = Random.Range(0, DeathSounds.Length);
+
         //for (int i = 0; i < Input.touchCount; i++)
         //{
         //    Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
@@ -504,7 +506,7 @@ public class SHanpe : MonoBehaviour {
                 {
                     Instantiate(Exploded[i].gameObject, GetComponent<Transform>().position, Quaternion.identity);
                 }
-                itSelfSound.PlayOneShot(DeathSounds[Random.Range(0, DeathSounds.Length)], 1);
+                itSelfSound.PlayOneShot(DeathSounds[randSound], 1);
                 hasBeenExploded = true;
             }
         } else

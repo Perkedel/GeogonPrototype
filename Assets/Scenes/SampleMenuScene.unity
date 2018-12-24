@@ -921,7 +921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &222606353
@@ -2647,7 +2647,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!114 &519127739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2679,8 +2679,8 @@ Canvas:
   m_GameObject: {fileID: 519127737}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1151338249}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -3613,7 +3613,7 @@ PrefabInstance:
     - target: {fileID: 224384970996426126, guid: b8484deabec4ad64d889503163b902d0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 121.000244
+      value: 121
       objectReference: {fileID: 0}
     - target: {fileID: 224384970996426126, guid: b8484deabec4ad64d889503163b902d0,
         type: 3}
@@ -7002,7 +7002,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1151338250}
   - component: {fileID: 1151338249}
-  - component: {fileID: 1151338248}
   m_Layer: 0
   m_Name: Second Camera
   m_TagString: Untagged
@@ -7010,14 +7009,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1151338248
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151338247}
-  m_Enabled: 1
 --- !u!20 &1151338249
 Camera:
   m_ObjectHideFlags: 0
@@ -7068,7 +7059,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151338247}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1475.7861, y: 716.15735, z: -8.3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -162,6 +162,16 @@ public class ItemEffects : MonoBehaviour {
         ItemSelfSound.PlayOneShot(SoundWhichRand[Random.Range(0, SoundWhichRand.Length)], volumeSingle);
     }
 
+    public ParticleSystem[] EmitParticles;
+    public bool doEmitParticles = false;
+    public void EmitTheseParticles()
+    {
+        for(int i=0; i<EmitParticles.Length; i++)
+        {
+            Instantiate(EmitParticles[i], GetComponent<Transform>().position, Quaternion.identity);
+        }
+    }
+
     //toDo list
     /*
      * Set camera zoom
@@ -326,6 +336,10 @@ public class ItemEffects : MonoBehaviour {
             if (doSetGravity)
             {
                 SetGravity(gravityNewValue);
+            }
+            if (doEmitParticles)
+            {
+                EmitTheseParticles();
             }
             if (pseudoSingleUse)
             {
