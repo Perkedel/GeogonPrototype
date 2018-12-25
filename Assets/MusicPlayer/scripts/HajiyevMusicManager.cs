@@ -285,6 +285,22 @@ public class HajiyevMusicManager : MonoBehaviour {
     }
 
     /// <summary>
+    /// [JOELwindows7] Same as Pause(), but is a workaround for Time scale fade out issue Pause system. Force Pause the song no matter what.
+    /// </summary>
+    public void ForcePause()
+    {
+        SendControlMessage(Message.MusicManager_Pause);
+        saveTime = 0;
+
+        if (IsPlaying())
+        {
+            isPlaying = false;
+            saveTime = audioSource.time;
+            audioSource.Stop();
+        }
+    }
+
+    /// <summary>
     /// Go back to beginning of playlist
     /// </summary>
     public void Rewind() {
@@ -682,7 +698,8 @@ public class HajiyevMusicManager : MonoBehaviour {
         MusicManager_Pause,
         MusicManager_Mute,
         MusicManager_UnMute,
-        MusicManager_ChangeTrack
+        MusicManager_ChangeTrack,
+        MusicManager_ForcePause
     }
 
     #endregion

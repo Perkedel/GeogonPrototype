@@ -29,6 +29,8 @@ Unity Platform definition https://docs.unity3d.com/Manual/PlatformDependentCompi
 Unity Instantiate a Prefab in runtime https://docs.unity3d.com/Manual/InstantiatingPrefabs.html . Spawn thing of this reffered prefab.
 Unity Object Instantiate https://docs.unity3d.com/ScriptReference/Object.Instantiate.html . the method of instantiate.
 Unity Particle System how to use thing https://docs.unity3d.com/Manual/PartSysUsage.html . That's how to use PartSys.
+Unity Text mesh pro scriptss https://forum.unity.com/threads/changing-textmeshpro-text-from-ui-via-script.462250/ . Use TMPro namespace.
+Unity Timeline https://www.youtube.com/playlist?list=PLX2vGYjWbI0ToUaFCtOEuB_2QKv_OikMO . Timeline seems a mother of cutscene and is superior to animation.
 Unity Community XBOX controller mapping http://wiki.unity3d.com/index.php?title=Xbox360Controller . Refference for Xinput based mapping.
 Brackeys' Menu tutorial https://www.youtube.com/watch?v=zc8ac_qUXQY . Nah that's better. WOW!!! BRACKEY!! THAT'S YOU!!! THX!!! Check out SampleMenuScene to see what I did follow.
 Brackeys' Option Menu https://www.youtube.com/watch?v=YOaYQrN1oYQ . Improvements!!! thx!!!
@@ -63,6 +65,9 @@ xortrox https://answers.unity.com/questions/488583/how-to-stop-textures-from-get
 Sloan Kelly https://www.youtube.com/watch?v=5XJBBWI2F0I . scrollable text bar
 Fast Solution https://www.youtube.com/watch?v=PZ-s1lTpmTM . scroll view tutorial
 Karl Jones (Unity Technologies) https://forum.unity.com/threads/package-manager-missing-in-ui.535088/ . Reset package to default due to missing package manager in UI of editor.
+Nicholas Repiquet https://stackoverflow.com/questions/4561374/percentage-calculation . Calculation of percentage progress bar! (current / maximum) * 100 .
+Digital Native Studios (Unity) https://digitalnativestudios.com/forum/index.php?topic=890.0 . FAQ no. 9 .
+
 
 Assets involved:
 Unity https://assetstore.unity.com/packages/tools/version-control/github-for-unity-118069 Github for Unity. to do Git with this Unity project
@@ -107,6 +112,9 @@ Audio Library https://www.youtube.com/audiolibrary :
 Music:
 Jimmy Fontanez - Floaters. infamously smooth jazz used by h3h3, Technology Connection, Raveja and Raveji, Silhouette Shadows inc., and much more
 SFX:
+
+Hajiyev Professional Music Player:
+See SourceCode://Assets/MusicPlayer/resources/musics !
 
 Fonts:
 https://fonts.google.com/specimen/Roboto Roboto by Christian Robertson. [<100%] Apache License. An infamous and cliche Google's general purpose font.
