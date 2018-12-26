@@ -120,10 +120,10 @@ public class SHanpe : MonoBehaviour {
     public bool viewTickled;
 
     //Initial parametrics to be caught by Awake
-    private Vector2 initPosition;
-    private Bentuk initBentuk;
-    private float initHP;
-    private float initArmour;
+    public Vector2 initPosition;
+    public Bentuk initBentuk;
+    public float initHP;
+    public float initArmour;
 
     //Controller Configurations, Hold Functionality template
     public Joystick SHanpedJoystick;

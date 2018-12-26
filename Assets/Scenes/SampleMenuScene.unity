@@ -3765,7 +3765,7 @@ PrefabInstance:
     - target: {fileID: 114850992171066950, guid: b8484deabec4ad64d889503163b902d0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114850992171066950, guid: b8484deabec4ad64d889503163b902d0,
         type: 3}
@@ -3825,7 +3825,7 @@ PrefabInstance:
     - target: {fileID: 114850992171066950, guid: b8484deabec4ad64d889503163b902d0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
-      value: Soto Rial
+      value: TheIntermissionings
       objectReference: {fileID: 0}
     - target: {fileID: 114850992171066950, guid: b8484deabec4ad64d889503163b902d0,
         type: 3}
@@ -3857,6 +3857,11 @@ PrefabInstance:
       propertyPath: m_Navigation.m_SelectOnDown
       value: 
       objectReference: {fileID: 402421959}
+    - target: {fileID: 114850992171066950, guid: b8484deabec4ad64d889503163b902d0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114043671586674856, guid: b8484deabec4ad64d889503163b902d0,
         type: 3}
       propertyPath: m_Sprite

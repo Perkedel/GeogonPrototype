@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1024"
@@ -21,6 +22,18 @@
    inkscape:export-ydpi="600">
   <defs
      id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2008">
+      <stop
+         style="stop-color:#002dff;stop-opacity:0.23148148"
+         offset="0"
+         id="stop2004" />
+      <stop
+         style="stop-color:#4385ff;stop-opacity:0.67592591"
+         offset="1"
+         id="stop2006" />
+    </linearGradient>
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : 561.25985 : 1"
@@ -28,6 +41,16 @@
        inkscape:vp_z="793.70081 : 561.25985 : 1"
        inkscape:persp3d-origin="396.85041 : 374.17323 : 1"
        id="perspective837" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2008"
+       id="radialGradient2010"
+       cx="304"
+       cy="-269.48035"
+       fx="304"
+       fy="-269.48035"
+       r="16.5"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -36,9 +59,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="256.38008"
-     inkscape:cy="1378.5381"
+     inkscape:zoom="11.313709"
+     inkscape:cx="318.42025"
+     inkscape:cy="1392.954"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -6563,5 +6586,14 @@
         </g>
       </g>
     </g>
+    <circle
+       style="opacity:1;fill:url(#radialGradient2010);fill-opacity:1;stroke:#0000fd;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2002"
+       cx="304"
+       cy="-269.48035"
+       r="16"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AnOrbOfEnables.png"
+       inkscape:export-xdpi="3000"
+       inkscape:export-ydpi="3000" />
   </g>
 </svg>

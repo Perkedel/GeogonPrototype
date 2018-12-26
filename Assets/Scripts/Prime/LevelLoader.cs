@@ -14,6 +14,7 @@ public class LevelLoader : MonoBehaviour {
     public Text progressText;
     public EventSystem eventSystem;
     public SHanpe player;
+    public HajiyevMusicManager MusicPlayer;
 
     //Spare part variable
     private GameObject StoreSelected; //https://youtu.be/FRbRQFpVFxg Store button selection
@@ -61,6 +62,12 @@ public class LevelLoader : MonoBehaviour {
             slider.value = progress;
             progressText.text = progress * 100f + "%";
 
+            if (slider.value >= 50)
+            {
+                //HajiyevMusicManager.instance.ForcePause();
+                MusicPlayer.ForcePause();
+            }
+
             yield return null;
         }
     }
@@ -78,6 +85,12 @@ public class LevelLoader : MonoBehaviour {
 
             slider.value = progress;
             progressText.text = progress * 100f + "%";
+
+            if(slider.value >= 50)
+            {
+                //HajiyevMusicManager.instance.ForcePause();
+                MusicPlayer.ForcePause();
+            }
 
             yield return null;
         }
@@ -187,6 +200,11 @@ public class LevelLoader : MonoBehaviour {
             {
                 StoreSelected = eventSystem.currentSelectedGameObject;
             }
+        }
+        if (slider.value >= 50)
+        {
+            //HajiyevMusicManager.instance.ForcePause();
+            MusicPlayer.ForcePause();
         }
         if (levelIsCompleted)
         {

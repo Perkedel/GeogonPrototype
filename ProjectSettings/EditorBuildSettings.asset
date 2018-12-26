@@ -27,6 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Primecyst/TheActivity.unity
     guid: 417fa5d36ce09c648b51d45c9bbd40d7
   - enabled: 1
+    path: Assets/Scenes/Primecyst/TheIntermissionings.unity
+    guid: 8fcbdc1578fd420429b8de086e6f5cee
+  - enabled: 1
+    path: Assets/Scenes/Primecyst/UnderConstruction.unity
+    guid: c5bbaa042c4eae749abdcd4f8ecf4353
+  - enabled: 1
     path: Assets/Scenes/Primecyst/DevExitsPunishments/DeveloperExit.unity
     guid: c6e4ad69a8dbee34b81cc1055e84a926
   - enabled: 1

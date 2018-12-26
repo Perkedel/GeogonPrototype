@@ -31,5 +31,6 @@ public class AttachPlayerCSharp : MonoBehaviour
             transform.position = new Vector3(target.position.x, target.position.y, target.position.z-10);
 
         GetComponent<Camera>().orthographicSize = otherCam.gameObject.GetComponent<Camera>().orthographicSize;
+        GetComponent<Camera>().backgroundColor = otherCam.gameObject.GetComponent<Camera>().backgroundColor;
     }
 }

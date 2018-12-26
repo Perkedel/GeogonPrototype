@@ -624,14 +624,14 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: GeogonVslice
   metroPackageVersion: 1.1.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: Perkedel Technologies
+  metroCertificateIssuer: Perkedel Technologies
+  metroCertificateNotAfter: 009b401de88dd501
   metroApplicationDescription: Change your shape to do something
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: GeogonVslice
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

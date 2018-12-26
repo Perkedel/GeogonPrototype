@@ -67,6 +67,7 @@ Fast Solution https://www.youtube.com/watch?v=PZ-s1lTpmTM . scroll view tutorial
 Karl Jones (Unity Technologies) https://forum.unity.com/threads/package-manager-missing-in-ui.535088/ . Reset package to default due to missing package manager in UI of editor.
 Nicholas Repiquet https://stackoverflow.com/questions/4561374/percentage-calculation . Calculation of percentage progress bar! (current / maximum) * 100 .
 Digital Native Studios (Unity) https://digitalnativestudios.com/forum/index.php?topic=890.0 . FAQ no. 9 .
+Matthew Poush (reply) https://www.youtube.com/watch?v=6SL6zs2bDks . The song name he found! it was at LimeGreenTeknii comment where Matthew Poush replied!
 
 
 Assets involved:
@@ -110,7 +111,7 @@ https://www.youtube.com/watch?v=skMloYSZiRw GradeAUnderA Tada uploaded by Michae
 https://www.youtube.com/watch?v=YXBhR1EKe7w Explosion bin. [100%]. bin canon in Poland. (Explosion bin cropped.wav).
 Audio Library https://www.youtube.com/audiolibrary :
 Music:
-Jimmy Fontanez - Floaters. infamously smooth jazz used by h3h3, Technology Connection, Raveja and Raveji, Silhouette Shadows inc., and much more
+Jimmy Fontanez - Floaters. infamously smooth jazz used by h3h3, Technology Connection, Raveja and Raveji, Silhouette Shadows inc., and much more. [0%??]. (Floaters.wav, there is hiccup on Mobile version!)
 SFX:
 
 Hajiyev Professional Music Player:
@@ -127,7 +128,7 @@ Name (NIM). Role. Job Tier.
 - Septesen (2101689311). Artist, Level Designer. Volunteer.
 -
 -
-Extra Contributors:
+Extra Contributors (Submit your ideas, designs, etc. related to this project to joel.robert99@yahoo.co.id with subject GEOGON-VSLICE-EXTRA-CONTRIB . Put your attachments there!!!):
 -
 -
 -

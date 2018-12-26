@@ -1310,6 +1310,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1526030123275458966, guid: ce24fc658db77b14190ed0cca662a2c6,
         type: 3}
+    - target: {fileID: 82693016819999122, guid: 76b832945ffb2ce4780d3ce6bc342d1d,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 50533945764740296, guid: 76b832945ffb2ce4780d3ce6bc342d1d,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4246534070854716, guid: 76b832945ffb2ce4780d3ce6bc342d1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1341,16 +1351,6 @@ PrefabInstance:
     - target: {fileID: 4246534070854716, guid: 76b832945ffb2ce4780d3ce6bc342d1d, type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 50533945764740296, guid: 76b832945ffb2ce4780d3ce6bc342d1d,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 82693016819999122, guid: 76b832945ffb2ce4780d3ce6bc342d1d,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b832945ffb2ce4780d3ce6bc342d1d, type: 3}
@@ -1705,6 +1705,8 @@ MonoBehaviour:
   theSHanpeWhoIsTouching: {fileID: 0}
   levelManager: {fileID: 0}
   theHUD: {fileID: 0}
+  TheseCameras: []
+  SeriousMainCamera: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
@@ -1741,6 +1743,12 @@ MonoBehaviour:
   volumeSingle: 0.5
   EmitParticles: []
   doEmitParticles: 0
+  doEnableTheseObjects: 0
+  EnableTheseObjects: []
+  doDisableTheseObjects: 0
+  DisableTheseObjects: []
+  doSetCameraColor: 0
+  SetColorCamera: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!50 &612589147
 Rigidbody2D:
   serializedVersion: 4
@@ -2460,6 +2468,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1688636928}
     m_Modifications:
+    - target: {fileID: 1364839444572176, guid: e19b18410a272114fb2f114fdf4b7c6a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 224761811407937662, guid: e19b18410a272114fb2f114fdf4b7c6a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2550,6 +2562,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 224634053409391756, guid: e19b18410a272114fb2f114fdf4b7c6a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224634053409391756, guid: e19b18410a272114fb2f114fdf4b7c6a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e19b18410a272114fb2f114fdf4b7c6a, type: 3}
 --- !u!224 &909208575 stripped
@@ -2580,6 +2602,8 @@ MonoBehaviour:
   theSHanpeWhoIsTouching: {fileID: 0}
   levelManager: {fileID: 0}
   theHUD: {fileID: 0}
+  TheseCameras: []
+  SeriousMainCamera: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
@@ -2616,6 +2640,12 @@ MonoBehaviour:
   volumeSingle: 0
   EmitParticles: []
   doEmitParticles: 0
+  doEnableTheseObjects: 0
+  EnableTheseObjects: []
+  doDisableTheseObjects: 0
+  DisableTheseObjects: []
+  doSetCameraColor: 0
+  SetColorCamera: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1001 &1027378766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2626,11 +2656,6 @@ PrefabInstance:
     - target: {fileID: 1016764383535972, guid: 7ba8909efaf41094b8da24ecae9cc040, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224594741589381378, guid: 7ba8909efaf41094b8da24ecae9cc040,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114166923855351728, guid: 7ba8909efaf41094b8da24ecae9cc040,
         type: 3}
@@ -2732,21 +2757,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 224230796272790888, guid: 7ba8909efaf41094b8da24ecae9cc040,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114235910367268614, guid: 7ba8909efaf41094b8da24ecae9cc040,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1688636929}
-    - target: {fileID: 114235910367268614, guid: 7ba8909efaf41094b8da24ecae9cc040,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Resume
-      objectReference: {fileID: 0}
     - target: {fileID: 114842661436594244, guid: 7ba8909efaf41094b8da24ecae9cc040,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2772,11 +2782,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 6184279909853879469, guid: 7ba8909efaf41094b8da24ecae9cc040,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6257069938055137880, guid: 7ba8909efaf41094b8da24ecae9cc040,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2796,6 +2801,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 6184279909853879469, guid: 7ba8909efaf41094b8da24ecae9cc040,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224594741589381378, guid: 7ba8909efaf41094b8da24ecae9cc040,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224230796272790888, guid: 7ba8909efaf41094b8da24ecae9cc040,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114235910367268614, guid: 7ba8909efaf41094b8da24ecae9cc040,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1688636929}
+    - target: {fileID: 114235910367268614, guid: 7ba8909efaf41094b8da24ecae9cc040,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ba8909efaf41094b8da24ecae9cc040, type: 3}
@@ -3202,6 +3232,8 @@ MonoBehaviour:
   theSHanpeWhoIsTouching: {fileID: 0}
   levelManager: {fileID: 0}
   theHUD: {fileID: 0}
+  TheseCameras: []
+  SeriousMainCamera: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
@@ -3240,6 +3272,12 @@ MonoBehaviour:
   EmitParticles:
   - {fileID: 1526030123275458966, guid: 16f8c5841e740d2488b25163654ab5fd, type: 3}
   doEmitParticles: 1
+  doEnableTheseObjects: 0
+  EnableTheseObjects: []
+  doDisableTheseObjects: 0
+  DisableTheseObjects: []
+  doSetCameraColor: 0
+  SetColorCamera: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!50 &1461712819
 Rigidbody2D:
   serializedVersion: 4
@@ -3638,6 +3676,7 @@ MonoBehaviour:
   InsertResumeButtonObjectHere: {fileID: 1027378768}
   levelLoader: {fileID: 613155530}
   vibratings: {fileID: 1688636930}
+  MusicManager: {fileID: 0}
   sceneMenu: SampleMenuScene
 --- !u!114 &1688636930
 MonoBehaviour:
@@ -6064,6 +6103,8 @@ MonoBehaviour:
   theSHanpeWhoIsTouching: {fileID: 0}
   levelManager: {fileID: 0}
   theHUD: {fileID: 0}
+  TheseCameras: []
+  SeriousMainCamera: {fileID: 0}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
@@ -6100,6 +6141,12 @@ MonoBehaviour:
   volumeSingle: 1
   EmitParticles: []
   doEmitParticles: 0
+  doEnableTheseObjects: 0
+  EnableTheseObjects: []
+  doDisableTheseObjects: 0
+  DisableTheseObjects: []
+  doSetCameraColor: 0
+  SetColorCamera: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!50 &1988521365
 Rigidbody2D:
   serializedVersion: 4

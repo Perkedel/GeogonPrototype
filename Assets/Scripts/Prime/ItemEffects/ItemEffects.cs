@@ -14,6 +14,8 @@ public class ItemEffects : MonoBehaviour {
     public SHanpe theSHanpeWhoIsTouching;
     public LevelLoader levelManager;
     public ECGcable theHUD;
+    public Camera[] TheseCameras;
+    public FollowPlayerCSharp SeriousMainCamera;
 
     //Parametering
     public float setHPvalue = 100;
@@ -172,6 +174,49 @@ public class ItemEffects : MonoBehaviour {
         }
     }
 
+    public bool doEnableTheseObjects;
+    public GameObject[] EnableTheseObjects;
+    public void LetsEnableObjects()
+    {
+        for(int i = 0; i<EnableTheseObjects.Length; i++)
+        {
+            EnableTheseObjects[i].SetActive(true);
+        }
+    }
+
+    public bool doDisableTheseObjects;
+    public GameObject[] DisableTheseObjects;
+    public void LetsDisableObjects()
+    {
+        for (int i = 0; i < DisableTheseObjects.Length; i++)
+        {
+            DisableTheseObjects[i].SetActive(false);
+        }
+    }
+
+    public bool doSetCameraColor;
+    public Color SetColorCamera = Color.gray;
+    public void letsColorCamera()
+    {
+        for(int i = 0; i<TheseCameras.Length; i++)
+        {
+            TheseCameras[i].backgroundColor = SetColorCamera;
+        }
+    }
+
+    public bool doSetCameraZoom;
+    public float NewZoomLevel;
+    public void letsZoomCamera()
+    {
+        SeriousMainCamera.Zoom = NewZoomLevel;
+    }
+
+    public bool doSetCheckPoint;
+    public void letsCheckpoint()
+    {
+        theSHanpeWhoIsTouching.initPosition = GetComponent<Transform>().position;
+    }
+
     //toDo list
     /*
      * Set camera zoom
@@ -190,8 +235,8 @@ public class ItemEffects : MonoBehaviour {
     */
 
     //Base
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         //GetComponent<Rigidbody2D>().isKinematic = true;
         //Search for object with HUD tag
         if (!theHUD)
@@ -340,6 +385,26 @@ public class ItemEffects : MonoBehaviour {
             if (doEmitParticles)
             {
                 EmitTheseParticles();
+            }
+            if (doEnableTheseObjects)
+            {
+                LetsEnableObjects();
+            }
+            if (doDisableTheseObjects)
+            {
+                LetsDisableObjects();
+            }
+            if (doSetCameraColor)
+            {
+                letsColorCamera();
+            }
+            if (doSetCameraZoom)
+            {
+                letsZoomCamera();
+            }
+            if (doSetCheckPoint)
+            {
+                letsCheckpoint();
             }
             if (pseudoSingleUse)
             {

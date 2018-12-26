@@ -58,7 +58,10 @@ public class PauseMenu : MonoBehaviour {
 
     public void Resume()
     {
-        MusicManager.Play();
+        if (MusicManager)
+        {
+            MusicManager.Play();
+        }
         //Vibration.Vibrate();
         vibratings.VibrateIt();
         pauseMenuUI.SetActive(false);
@@ -73,7 +76,10 @@ public class PauseMenu : MonoBehaviour {
 
     public void Pause()
     {
-        MusicManager.ForcePause();
+        if (MusicManager)
+        {
+            MusicManager.ForcePause();
+        }
         vibratings.VibrateStyle(2);
         pauseMenuUI.SetActive(true);
         for (int i = 0; i < hideThoseUI.Length; i++)
@@ -101,7 +107,10 @@ public class PauseMenu : MonoBehaviour {
 
     public void LoadMenu()
     {
-        MusicManager.Stop();
+        if (MusicManager)
+        {
+            MusicManager.Stop();
+        }
         vibratings.VibrateStyle(0);
         //Debug.Log("Loading menu...");
         Time.timeScale = 1f;
@@ -111,7 +120,10 @@ public class PauseMenu : MonoBehaviour {
 
     public void QuitGame()
     {
-        MusicManager.Stop();
+        if (MusicManager)
+        {
+            MusicManager.Stop();
+        }
         vibratings.VibrateStyle(0);
         GameIsPaused = false;
         Debug.Log("Quitting game...");
