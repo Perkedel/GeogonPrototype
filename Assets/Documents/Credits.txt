@@ -38,6 +38,8 @@ Brackeys' Pause Menu https://www.youtube.com/watch?v=JivuXdrIHK0&t=29s . Thx aga
 Brackeys' Loading Screen https://www.youtube.com/watch?v=YMj2qPq9CP8 . Loading....
 Brackeys' Mobile Touch Control https://www.youtube.com/watch?v=bp2PiFC9sSs&t=771s . Use Touchscreen joystick to control in Mobile!!!
 Brackeys' Particle System Mega tutorial https://www.youtube.com/watch?v=FEA1wTMJAR0 . Explanation of this particle system.
+Brackeys' Sprite Shape tutorial get started https://www.youtube.com/watch?v=GSo_fU1JdfM . How to get started and use Sprite Shape.
+Brackeys' New Input system thing https://www.youtube.com/watch?v=Pzd8NhcRzVo . New Unity Input system experimental.
 Blackthornprod UI tutorial https://www.youtube.com/watch?v=_RIsfVOqTaE . Total fix something that Brackeys forgot such as UI scalings with Shift+Alt.
 Dilon Richie https://www.youtube.com/watch?v=dkduVooA9tE & https://youtu.be/FRbRQFpVFxg . UI navigation!
 Alexander Zotov https://www.youtube.com/watch?v=DNLAuV-d4sA . Jump Button! Standard Assets Cross Platform Input is now used for it!
@@ -102,6 +104,7 @@ https://freesound.org/people/waveplay_old/sounds/399934/#comments percussion sna
 https://freesound.org/people/sharesynth/sounds/344500 Jump 8 bit. [0%] CC0.
 https://freesound.org/people/Claire.H/sounds/182345 marble rolling on a stone table. [<100%] CC-BY.
 https://freesound.org/people/kyles/sounds/452596/ Door kick open . [0%] CC0.
+https://freesound.org/people/cdrk/sounds/264594/ Reception bell . [<100%] CC-BY. (ReceptionBell.wav, we shorten the sound and export it to wav. the orignal file is FLAC!)
 ... Sounds Downloaded by JOELwindows7 https://freesound.org/people/JOELwindows7/downloaded_sounds/
 
 YouTube.com:

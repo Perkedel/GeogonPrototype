@@ -147,13 +147,29 @@ public class ItemEffects : MonoBehaviour {
     }
 
     public AudioSource ItemSelfSound;
+    public AudioSource OtherSelfSound;
+    public bool useOtherSelfSoundInstead = false;
     public bool doPlaySoundArray = false;
     public AudioClip[] SoundArray;
     [Range(0, 1)] public float volumeMultiple;
     public void PlaySoundArray()
     {
         for (int i = 0; i < SoundArray.Length; i++) {
-            ItemSelfSound.PlayOneShot(SoundArray[i], volumeMultiple);
+            if (!useOtherSelfSoundInstead)
+            {
+                ItemSelfSound.PlayOneShot(SoundArray[i], volumeMultiple);
+            }
+            else
+            {
+                if (OtherSelfSound)
+                {
+                    OtherSelfSound.PlayOneShot(SoundArray[i], volumeMultiple);
+                } else
+                {
+                    Debug.LogError("OtherSound is not connected to the Inspector!!! using ItemSound instead");
+                    ItemSelfSound.PlayOneShot(SoundArray[i], volumeMultiple);
+                }
+            }
         }
     }
     public bool doPlaySoundWhichRand = false;
@@ -161,7 +177,21 @@ public class ItemEffects : MonoBehaviour {
     [Range(0, 1)] public float volumeSingle;
     public void PlaySoundWhichRand()
     {
-        ItemSelfSound.PlayOneShot(SoundWhichRand[Random.Range(0, SoundWhichRand.Length)], volumeSingle);
+        if (!useOtherSelfSoundInstead)
+        {
+            ItemSelfSound.PlayOneShot(SoundWhichRand[Random.Range(0, SoundWhichRand.Length)], volumeSingle);
+        }
+        else
+        {
+            if (OtherSelfSound)
+            {
+                OtherSelfSound.PlayOneShot(SoundWhichRand[Random.Range(0, SoundWhichRand.Length)], volumeSingle);
+            } else
+            {
+                Debug.LogError("OtherSound is not connected to the Inspector!!! using ItemSound instead");
+                ItemSelfSound.PlayOneShot(SoundWhichRand[Random.Range(0, SoundWhichRand.Length)], volumeSingle);
+            }
+        }
     }
 
     public ParticleSystem[] EmitParticles;

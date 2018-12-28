@@ -11,6 +11,7 @@ TagManager:
   - LevelLoader
   - HUD
   - Lahar
+  - Trigger
   layers:
   - Default
   - TransparentFX
