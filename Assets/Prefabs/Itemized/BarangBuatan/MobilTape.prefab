@@ -682,6 +682,7 @@ Transform:
   - {fileID: 7813493369438359723}
   - {fileID: 7355441960009209605}
   - {fileID: 3468927336118830590}
+  - {fileID: 409096609523463260}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -930,6 +931,7 @@ GameObject:
   - component: {fileID: 799381736386015066}
   - component: {fileID: 8335809056195535121}
   - component: {fileID: 8584017434536798886}
+  - component: {fileID: 4970844792685186169}
   m_Layer: 0
   m_Name: TriggerCore
   m_TagString: Trigger
@@ -1016,3 +1018,132 @@ FixedJoint2D:
   m_ConnectedAnchor: {x: 0, y: 0}
   m_DampingRatio: 0
   m_Frequency: 0
+--- !u!114 &4970844792685186169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8942197690137389958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ffc3bf2be32b9a498c9dae7090fe3ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTouchingSensor: 0
+--- !u!1001 &7774906458856881631
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1387452338735988366}
+    m_Modifications:
+    - target: {fileID: 8089944084508744701, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_Name
+      value: TapeBlanker
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089944084508744701, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947554861010880899, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947554861010880899, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947554861010880899, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947554861010880899, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947554861010880899, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947554861010880899, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947554861010880899, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947554861010880899, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947554861010880899, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947554861010880899, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947554861010880899, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186377945031000086, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: TapeColor.g
+      value: 0.6745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186377945031000086, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: TapeColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186377945031000086, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: NFCSticker
+      value: 
+      objectReference: {fileID: 4970844792685186169}
+    - target: {fileID: 8940874014375360811, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8940874014375360811, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231541480302771793, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000015258789
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550225940681927930, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_ConnectedRigidBody
+      value: 
+      objectReference: {fileID: 3282345124249905998}
+    m_RemovedComponents:
+    - {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: d3c97910542f864498df51a0d4200e42, type: 3}
+--- !u!4 &409096609523463260 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7947554861010880899, guid: d3c97910542f864498df51a0d4200e42,
+    type: 3}
+  m_PrefabInstance: {fileID: 7774906458856881631}
+  m_PrefabAsset: {fileID: 0}

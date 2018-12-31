@@ -120,6 +120,9 @@ SFX:
 Hajiyev Professional Music Player:
 See SourceCode://Assets/MusicPlayer/resources/musics !
 
+The Arcadium:
+TheFatRat - Unity https://lnk.to/tfrunity . Infamous cool song, because it's pun intended for this case! [<100%]. (Unity.wav, Remember, MP3 causes hiccup! convert to wav is the key! Also Includes the thumbnail image as well from its song page!)
+
 Fonts:
 https://fonts.google.com/specimen/Roboto Roboto by Christian Robertson. [<100%] Apache License. An infamous and cliche Google's general purpose font.
 https://www.wfonts.com/font/impact Impact. [???]. Memeful generations.

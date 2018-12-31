@@ -10,6 +10,7 @@ public class PauseMenu : MonoBehaviour {
     //Brackeys https://www.youtube.com/watch?v=JivuXdrIHK0
 
     public static bool GameIsPaused = false;
+    public bool PauseStatus = false;
 
     public GameObject pauseMenuUI;
     public GameObject [] hideThoseUI;
@@ -54,6 +55,7 @@ public class PauseMenu : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         PauseButton();
+        if (GameIsPaused) PauseStatus = true; else PauseStatus = false;
 	}
 
     public void Resume()

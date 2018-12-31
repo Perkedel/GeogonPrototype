@@ -12,6 +12,7 @@ TagManager:
   - HUD
   - Lahar
   - Trigger
+  - RFID
   layers:
   - Default
   - TransparentFX
