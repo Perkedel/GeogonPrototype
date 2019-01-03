@@ -13,6 +13,8 @@ TagManager:
   - Lahar
   - Trigger
   - RFID
+  - Cloud
+  - TeleportBack
   layers:
   - Default
   - TransparentFX

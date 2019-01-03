@@ -10,9 +10,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1024"
+   width="4096"
    height="2028"
-   viewBox="0 0 1024 2028.0001"
+   viewBox="0 0 4096 2028.0001"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
@@ -59,9 +59,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8.0000004"
-     inkscape:cx="183.25194"
-     inkscape:cy="1307.6853"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="945.02399"
+     inkscape:cy="1613.2081"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -76,7 +76,12 @@
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-bbox-midpoints="true"
      inkscape:snap-nodes="true"
-     inkscape:bbox-paths="true">
+     inkscape:bbox-paths="true"
+     inkscape:snap-global="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true">
     <inkscape:grid
        type="xygrid"
        id="grid815"
@@ -674,7 +679,7 @@
          inkscape:connector-curvature="0"
          id="path1149"
          d="m 197,-733.48035 v 64 h 1 v -64 z"
-         style="fill:#323232;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+         style="fill:#323232;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
     <g
        id="g1757"
@@ -684,7 +689,7 @@
       <g
          id="g1749">
         <path
-           style="fill:#ffc015;stroke:#8e5f00;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+           style="fill:#ffc015;fill-opacity:1;stroke:#8e5f00;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            d="m 64,-765.48035 2,5 h 28 l 2,-5 z"
            id="path1743"
            inkscape:connector-curvature="0" />
@@ -710,16 +715,6 @@
          d="m 64,-765.48035 c 0,0 -2,0 -2,-2 0,-2 2,-2 2,-2 h 32 c 0,0 2,0 2,2 0,2 -2,2 -2,2 z"
          style="fill:#00c0ff;fill-opacity:1;stroke:#953c00;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
-    <rect
-       style="opacity:1;fill:#ffc015;fill-opacity:1;stroke:#8e5f00;stroke-width:0.14058252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect1759"
-       width="7.90939"
-       height="79.959419"
-       x="864.02032"
-       y="-861.46002"
-       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\PintuSekolah.png"
-       inkscape:export-xdpi="10000"
-       inkscape:export-ydpi="10000" />
     <g
        id="g1848"
        inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\GerbangSekolah.png"
@@ -747,7 +742,7 @@
           <g
              id="g1801">
             <path
-               style="fill:#ffc015;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+               style="fill:#ffc015;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                d="m 976,-821.48035 c -1,0 -8,0 -8,0 v 16 h 8 z"
                id="path1775"
                inkscape:connector-curvature="0" />
@@ -838,7 +833,7 @@
              inkscape:connector-curvature="0"
              id="path1854"
              d="m 240,-745.48035 -4,-8 c 0,0 0,-4 4,-4 4,0 4,4 4,4 z"
-             style="fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
         </g>
       </g>
     </g>
@@ -864,7 +859,7 @@
            inkscape:export-ydpi="1000" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
            x="144"
            y="-557.48035"
            id="text1878"><tspan
@@ -6253,12 +6248,12 @@
              inkscape:connector-curvature="0"
              id="path7197"
              d="m 64,-237.48035 v -48 h 128 v 48 l -16,-48 -16,48 -16,-48 -16,48 -16,-48 -16,48 -16,-48 z"
-             style="fill:#ff00ff;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+             style="fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
           <path
              inkscape:connector-curvature="0"
              id="path7199"
              d="m 64,-237.48035 16,-48 16,48 16,-48 16,48 16,-48 16,48 16,-48 16,48 z"
-             style="fill:#00ff00;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+             style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
         </g>
         <rect
            style="opacity:1;fill:#002e7d;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -6278,7 +6273,7 @@
          inkscape:connector-curvature="0"
          id="path3076"
          d="m 224,-269.48035 v -3 c 0,0 0,-1 1,-1 1,0 30,0 30,0 0,0 1,0 1,1 0,1 0,3 0,3 h -1 v -2 c 0,0 0,-1 -1,-1 -1,0 -28,0 -28,0 0,0 -1,0 -1,1 0,1 0,2 0,2 z"
-         style="fill:#0071ff;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+         style="fill:#0071ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <g
          id="g4290">
         <g
@@ -6345,8 +6340,9 @@
                   <path
                      id="path3088"
                      transform="translate(0,-905.48035)"
-                     d="M 228 645 A 2.9999967 2.9999967 0 0 0 225 648 A 2.9999967 2.9999967 0 0 0 225.17383 649 L 230.82422 649 A 2.9999967 2.9999967 0 0 0 231 648 A 2.9999967 2.9999967 0 0 0 228 645 z "
-                     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.49999833;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                     d="m 228,645 a 2.9999967,2.9999967 0 0 0 -3,3 2.9999967,2.9999967 0 0 0 0.17383,1 h 5.65039 A 2.9999967,2.9999967 0 0 0 231,648 a 2.9999967,2.9999967 0 0 0 -3,-3 z"
+                     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.49999833;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                     inkscape:connector-curvature="0" />
                   <g
                      id="g3108">
                     <circle
@@ -6356,7 +6352,7 @@
                        cy="-257.48035"
                        r="1" />
                     <path
-                       style="fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+                       style="fill:none;stroke:#000000;stroke-width:0.005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                        d="m 237,-257.48035 1,1"
                        id="path3104"
                        inkscape:connector-curvature="0" />
@@ -6596,12 +6592,12 @@
        inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AnOrbOfEnables.png"
        inkscape:export-xdpi="3000"
        inkscape:export-ydpi="3000" />
-    <ellipse
-       r="8"
+    <circle
+       r="0"
        cy="-261.48035"
        cx="360"
        id="ellipse2011"
-       style="opacity:1;fill:#000000;fill-opacity:0.67592591;stroke:#000000;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#000000;fill-opacity:0.67592594;stroke:#000000;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <g
        id="g2114"
        inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\MesinKeruk.png"
@@ -7345,13 +7341,15 @@
       <path
          id="path2804"
          transform="translate(0,-905.48035)"
-         d="M 240 684 A 16 16 0 0 0 224 700 A 16 16 0 0 0 240 716 A 16 16 0 0 0 256 700 A 16 16 0 0 0 240 684 z M 240 689 A 11 11 0 0 1 251 700 A 11 11 0 0 1 240 711 A 11 11 0 0 1 229 700 A 11 11 0 0 1 240 689 z "
-         style="opacity:1;fill:#4b4b4b;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         d="m 240,684 a 16,16 0 0 0 -16,16 16,16 0 0 0 16,16 16,16 0 0 0 16,-16 16,16 0 0 0 -16,-16 z m 0,5 a 11,11 0 0 1 11,11 11,11 0 0 1 -11,11 11,11 0 0 1 -11,-11 11,11 0 0 1 11,-11 z"
+         style="opacity:1;fill:#4b4b4b;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
       <path
          id="path2806"
          transform="translate(0,-905.48035)"
-         d="M 240 688.70508 A 11.294121 11.294121 0 0 0 228.70508 700 A 11.294121 11.294121 0 0 0 240 711.29492 A 11.294121 11.294121 0 0 0 251.29492 700 A 11.294121 11.294121 0 0 0 240 688.70508 z M 240 691 C 241.37437 691 244 692 244 692 L 240 700 L 248 696 C 248 696 249 698.62563 249 700 C 249 701.37437 248 704 248 704 L 240 700 L 244 708 C 244 708 241.37437 709 240 709 C 238.62563 709 236 708 236 708 L 240 700 L 232 704 C 232 704 231 701.37437 231 700 C 231 698.62563 232 696 232 696 L 240 700 L 236 692 C 236 692 238.62563 691 240 691 z "
-         style="opacity:1;fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:1.4117651;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         d="M 240,688.70508 A 11.294121,11.294121 0 0 0 228.70508,700 11.294121,11.294121 0 0 0 240,711.29492 11.294121,11.294121 0 0 0 251.29492,700 11.294121,11.294121 0 0 0 240,688.70508 Z M 240,691 c 1.37437,0 4,1 4,1 l -4,8 8,-4 c 0,0 1,2.62563 1,4 0,1.37437 -1,4 -1,4 l -8,-4 4,8 c 0,0 -2.62563,1 -4,1 -1.37437,0 -4,-1 -4,-1 l 4,-8 -8,4 c 0,0 -1,-2.62563 -1,-4 0,-1.37437 1,-4 1,-4 l 8,4 -4,-8 c 0,0 2.62563,-1 4,-1 z"
+         style="opacity:1;fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:1.4117651;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
     </g>
     <g
        id="g3228"
@@ -7447,8 +7445,9 @@
               <path
                  id="rect2874"
                  transform="translate(0,-905.48035)"
-                 d="M 912 843.5 L 912 843.75 L 911.75 843.75 L 911.75 908.25 L 919.75 908.25 L 919.75 851.5 L 976 851.5 L 976 843.5 L 912 843.5 z M 936 852 L 920 868 L 920 876 L 928 868 L 944 852 L 936 852 z "
-                 style="opacity:1;fill:#ff58b5;fill-opacity:1;stroke:#000000;stroke-width:0.50188291;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                 d="m 912,843.5 v 0.25 h -0.25 v 64.5 h 8 V 851.5 H 976 v -8 z m 24,8.5 -16,16 v 8 l 8,-8 16,-16 z"
+                 style="opacity:1;fill:#ff58b5;fill-opacity:1;stroke:#000000;stroke-width:0.50188291;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 inkscape:connector-curvature="0" />
               <g
                  transform="translate(1)"
                  id="g2907">
@@ -7598,7 +7597,7 @@
       <g
          id="g3248">
         <path
-           style="fill:#636a86;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+           style="fill:#636a86;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            d="m 64,2.51965 -4,32 h 40 l -4,-32 z"
            id="path3230"
            inkscape:connector-curvature="0" />
@@ -7862,6 +7861,1702 @@
           </g>
         </g>
       </g>
+    </g>
+    <g
+       id="g2265"
+       transform="translate(-3.0769229,15.999997)"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AwanBloky10.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         ry="3.5"
+         y="90.519653"
+         x="168"
+         height="20"
+         width="48"
+         id="rect2257"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="82.519653"
+         x="128"
+         height="32"
+         width="64"
+         id="rect2255"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="11.999997"
+         y="66.519653"
+         x="80"
+         height="64"
+         width="64"
+         id="rect2247"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="9.502286"
+         y="87.116913"
+         x="24.597258"
+         height="22.805487"
+         width="32.305485"
+         id="rect2251"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="11.688629"
+         y="82.934814"
+         x="48.415161"
+         height="31.169678"
+         width="44.669678"
+         id="rect2249"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.3653846"
+         y="94.6735"
+         x="13.153846"
+         height="7.6923075"
+         width="9.6923075"
+         id="rect2253"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g2283"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AwanBloky9.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         ry="3.5"
+         y="178.51965"
+         x="160"
+         height="28"
+         width="40"
+         id="rect2275"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="198.51965"
+         x="128"
+         height="32"
+         width="48"
+         id="rect2273"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="162.51965"
+         x="80"
+         height="96"
+         width="52"
+         id="rect2267"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="178.51965"
+         x="48"
+         height="64"
+         width="76"
+         id="rect2269"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="190.51965"
+         x="20"
+         height="36"
+         width="52"
+         id="rect2271"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g2304"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AwanBloky3.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         ry="3.5"
+         y="110.51965"
+         x="324"
+         height="72"
+         width="100"
+         id="rect2285"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="158.51965"
+         x="376"
+         height="80"
+         width="128"
+         id="rect2287"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="210.51965"
+         x="300"
+         height="60"
+         width="120"
+         id="rect2289"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="242.51965"
+         x="252"
+         height="44"
+         width="72"
+         id="rect2291"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="202.51965"
+         x="488"
+         height="68"
+         width="64"
+         id="rect2293"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="238.51965"
+         x="520"
+         height="60"
+         width="96"
+         id="rect2296"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <rect
+       style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2306"
+       width="80"
+       height="80"
+       x="84"
+       y="306.51965"
+       ry="3.5"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AwanBloky7.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2308"
+       width="20"
+       height="20"
+       x="32"
+       y="338.51965"
+       ry="3.5"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AwanBloky8.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2310"
+       width="80"
+       height="49.442719"
+       x="192"
+       y="322.51965"
+       ry="3.5"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AwanBloky6.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <g
+       id="g2324"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AwanBloky5.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         ry="3.5"
+         y="342.51965"
+         x="348"
+         height="16"
+         width="16"
+         id="rect2312"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="334.51965"
+         x="364"
+         height="36"
+         width="64"
+         id="rect2314"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="326.51965"
+         x="424"
+         height="40"
+         width="88"
+         id="rect2316"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="314.51965"
+         x="472"
+         height="76"
+         width="144"
+         id="rect2318"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g2339"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AwanBloky2.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       transform="translate(72,-8.0000033)">
+      <rect
+         ry="3.5"
+         y="130.51965"
+         x="656"
+         height="32"
+         width="32"
+         id="rect2326"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="138.51965"
+         x="616"
+         height="16"
+         width="40"
+         id="rect2328"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="142.51965"
+         x="588"
+         height="8"
+         width="32"
+         id="rect2330"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="118.51965"
+         x="636"
+         height="20"
+         width="40"
+         id="rect2332"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g2363"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AwanBloky1.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       transform="translate(0,23.999997)">
+      <rect
+         ry="3.5"
+         y="162.51965"
+         x="768"
+         height="224"
+         width="216"
+         id="rect2341"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="178.51965"
+         x="704"
+         height="192"
+         width="192"
+         id="rect2343"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="210.51965"
+         x="680"
+         height="128"
+         width="104"
+         id="rect2345"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="234.51965"
+         x="664"
+         height="80"
+         width="72"
+         id="rect2347"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="194.51965"
+         x="840"
+         height="152"
+         width="120"
+         id="rect2349"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="242.51965"
+         x="752"
+         height="80"
+         width="128"
+         id="rect2351"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="362.51965"
+         x="696"
+         height="32"
+         width="104"
+         id="rect2353"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g2393"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AwanBloky11.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         ry="3.5"
+         y="458.51965"
+         x="52"
+         height="28"
+         width="48"
+         id="rect2365"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="438.51965"
+         x="108"
+         height="68"
+         width="96"
+         id="rect2367"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="442.51965"
+         x="216"
+         height="44"
+         width="72"
+         id="rect2369"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g2399"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AwanBloky12.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         ry="3.5"
+         y="434.51965"
+         x="368"
+         height="112"
+         width="160"
+         id="rect2371"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="474.51965"
+         x="544"
+         height="32"
+         width="56"
+         id="rect2373"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="514.51965"
+         x="336"
+         height="24"
+         width="24"
+         id="rect2375"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="434.51965"
+         x="544"
+         height="16"
+         width="32"
+         id="rect2377"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g2406"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AwanBloky13.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         ry="3.5"
+         y="482.51965"
+         x="704"
+         height="24"
+         width="256"
+         id="rect2379"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="522.51965"
+         x="776"
+         height="24"
+         width="120"
+         id="rect2381"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="442.51965"
+         x="784"
+         height="32"
+         width="112"
+         id="rect2383"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="466.51965"
+         x="688"
+         height="56"
+         width="48"
+         id="rect2385"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="3.5"
+         y="474.51965"
+         x="928"
+         height="56"
+         width="32"
+         id="rect2387"
+         style="opacity:1;fill:#005aff;fill-opacity:1;stroke:#0000ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g2449"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\Gentong.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <g
+         id="g2439">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 64,594.51965 v 128 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v -128 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+           id="path2413"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccscc" />
+        <g
+           id="g2429">
+          <ellipse
+             ry="16"
+             rx="48"
+             cy="594.51965"
+             cx="112"
+             id="path2409"
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#00000a;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <ellipse
+             ry="4"
+             rx="6"
+             cy="594.51965"
+             cx="150"
+             id="path2421"
+             style="opacity:1;fill:#323232;fill-opacity:1;stroke:#00000a;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         id="g2433">
+        <path
+           style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 64,610.51965 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v -16 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+           id="path2417"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 64,706.01965 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v 16.5 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+           id="path2419"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g2453"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\GentongTidur.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <circle
+         r="48"
+         cy="626.51965"
+         cx="240"
+         id="path2423"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#00000a;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         style="opacity:1;fill:#323232;fill-opacity:1;stroke:#00000a;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse2425"
+         cx="278"
+         cy="626.51965"
+         rx="5.4443393"
+         ry="5.4443369" />
+    </g>
+    <g
+       id="g2463"
+       transform="translate(256,-1.6601564e-6)"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\GentongPenyok.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 84,610.51965 -20,48 4,36 -4,28 c 0,0 0.578001,22.01649 48.17678,15.82322 C 148.35355,733.63577 160,722.51965 160,722.51965 l 8,-20 -8,-44 20,-48 c 0,0 -18.27386,50.208 -58.27386,34.208 C 77.159256,626.9009 84,610.51965 84,610.51965 Z"
+         id="path2455"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccsccccsc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 84,610.51965 c 0,0 10.696699,-24.59619 38.6967,-24.59619 28,0 37.3033,8.59619 37.3033,8.59619 0,0 16,8 20,16"
+         id="path2492"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cscc" />
+      <ellipse
+         style="opacity:1;fill:#323232;fill-opacity:1;stroke:#00000a;stroke-width:0.9745236;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path2496"
+         cx="166"
+         cy="612.51965"
+         rx="5.5127382"
+         ry="5.5127378" />
+      <path
+         style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 76,630.51965 c 0,0 32,28 52,28 20,0 40,-20 40,-20 l 12,-28 c 0,0 -11.12406,25.64083 -22.50337,30.66721 -2.81543,1.24361 -5.14636,3.62483 -7.99167,4.53693 -1.79112,0.57417 -2.58933,1.22567 -4.31746,1.63961 -11.14354,2.66921 -23.92569,-2.2277 -35.20742,-7.56583 C 95.140451,632.77595 83.125,623.25671 83.125,611.89465 Z"
+         id="path2500"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csccsssscc" />
+      <path
+         style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 64,722.51965 c 0,0 4,16 24,16 17.15767,0 25.92572,3.91613 55.7261,-7.87457 4.9367,-1.95324 9.45828,-3.40811 16.2739,-8.12543 l 5.125,-13.125 c 0,0 -9.125,13.125 -57.125,13.125 -48,0 -42.298097,-11.58058 -42.298097,-11.58058 z"
+         id="path2502"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cssccscc" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 334.28471,666.43575 c 16.79379,-14.8492 12.55115,-18.3847 12.55115,-18.3847"
+       id="path2504"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 330.39563,649.90716 7.95495,2.2981 5.48008,7.2479"
+       id="path2506"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 382.72153,716.28685 c 0.88388,-1.591 15.9099,-21.9203 15.9099,-21.9203"
+       id="path2508"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 390.14615,705.68025 11.66726,6.7175"
+       id="path2510"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g2536"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\GentongLurus.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <g
+         id="g2528">
+        <rect
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.09167302;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2514"
+           width="95.408325"
+           height="127.90833"
+           x="480.04584"
+           y="594.56549"
+           ry="0" />
+        <rect
+           style="opacity:1;fill:#323232;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2520"
+           width="11.681167"
+           height="2.1811664"
+           x="560.40942"
+           y="592.42908" />
+      </g>
+      <g
+         id="g2524">
+        <rect
+           style="opacity:1;fill:#646464;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2516"
+           width="95.410965"
+           height="15.910964"
+           x="480.04453"
+           y="594.56415" />
+        <rect
+           y="708.04749"
+           x="480.2778"
+           height="14.944356"
+           width="95.444389"
+           id="rect2518"
+           style="opacity:1;fill:#646464;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+    </g>
+    <path
+       style="fill:#945c19;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 288,738.51965 h -96 c 0,0 -16,-4 -16,-8 0,-4 0,-20 4,-20 4,0 12,12 12,12 0,0 0,-20 8,-20 8,0 12,-12 16,-8 4,4 8,8 12,12 4,4 0,12 8,12 8,0 12,-24 16,-24 4,0 24,-8 28,-8 4,0 20,20 16,24 -4,4 4,12 4,12 0,0 0,12 -4,12 -4,0 -8,4 -8,4 z"
+       id="path2538"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\KuburGentong.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <g
+       id="g2779"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\GentongTumpuk.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <g
+         transform="translate(0,352)"
+         id="g2556">
+        <g
+           id="g2548">
+          <path
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 64,594.51965 v 128 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v -128 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             id="path2540"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="ccscc" />
+          <g
+             id="g2546">
+            <ellipse
+               ry="16"
+               rx="48"
+               cy="594.51965"
+               cx="112"
+               id="ellipse2542"
+               style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#00000a;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+            <ellipse
+               ry="4"
+               rx="6"
+               cy="594.51965"
+               cx="150"
+               id="ellipse2544"
+               style="opacity:1;fill:#323232;fill-opacity:1;stroke:#00000a;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          </g>
+        </g>
+        <g
+           id="g2554">
+          <path
+             style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 64,610.51965 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v -16 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             id="path2550"
+             inkscape:connector-curvature="0" />
+          <path
+             style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 64,706.01965 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v 16.5 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             id="path2552"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+      <g
+         id="g2575"
+         transform="translate(96,352)">
+        <g
+           id="g2566">
+          <path
+             sodipodi:nodetypes="ccscc"
+             inkscape:connector-curvature="0"
+             id="path2558"
+             d="m 64,594.51965 v 128 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v -128 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+          <g
+             id="g2564">
+            <ellipse
+               style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#00000a;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               id="ellipse2560"
+               cx="112"
+               cy="594.51965"
+               rx="48"
+               ry="16" />
+            <ellipse
+               style="opacity:1;fill:#323232;fill-opacity:1;stroke:#00000a;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               id="ellipse2562"
+               cx="150"
+               cy="594.51965"
+               rx="6"
+               ry="4" />
+          </g>
+        </g>
+        <g
+           id="g2572">
+          <path
+             inkscape:connector-curvature="0"
+             id="path2568"
+             d="m 64,610.51965 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v -16 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path2570"
+             d="m 64,706.01965 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v 16.5 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         transform="translate(192,352)"
+         id="g2593">
+        <g
+           id="g2585">
+          <path
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 64,594.51965 v 128 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v -128 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             id="path2577"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="ccscc" />
+          <g
+             id="g2583">
+            <ellipse
+               ry="16"
+               rx="48"
+               cy="594.51965"
+               cx="112"
+               id="ellipse2579"
+               style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#00000a;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+            <ellipse
+               ry="4"
+               rx="6"
+               cy="594.51965"
+               cx="150"
+               id="ellipse2581"
+               style="opacity:1;fill:#323232;fill-opacity:1;stroke:#00000a;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          </g>
+        </g>
+        <g
+           id="g2591">
+          <path
+             style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 64,610.51965 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v -16 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             id="path2587"
+             inkscape:connector-curvature="0" />
+          <path
+             style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 64,706.01965 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v 16.5 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             id="path2589"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+      <g
+         id="g2611"
+         transform="translate(48,224)">
+        <g
+           id="g2603">
+          <path
+             sodipodi:nodetypes="ccscc"
+             inkscape:connector-curvature="0"
+             id="path2595"
+             d="m 64,594.51965 v 128 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v -128 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+          <g
+             id="g2601">
+            <ellipse
+               style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#00000a;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               id="ellipse2597"
+               cx="112"
+               cy="594.51965"
+               rx="48"
+               ry="16" />
+            <ellipse
+               style="opacity:1;fill:#323232;fill-opacity:1;stroke:#00000a;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               id="ellipse2599"
+               cx="150"
+               cy="594.51965"
+               rx="6"
+               ry="4" />
+          </g>
+        </g>
+        <g
+           id="g2609">
+          <path
+             inkscape:connector-curvature="0"
+             id="path2605"
+             d="m 64,610.51965 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v -16 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path2607"
+             d="m 64,706.01965 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v 16.5 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         transform="translate(144,224)"
+         id="g2630">
+        <g
+           id="g2621">
+          <path
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 64,594.51965 v 128 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v -128 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             id="path2613"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="ccscc" />
+          <g
+             id="g2619">
+            <ellipse
+               ry="16"
+               rx="48"
+               cy="594.51965"
+               cx="112"
+               id="ellipse2615"
+               style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#00000a;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+            <ellipse
+               ry="4"
+               rx="6"
+               cy="594.51965"
+               cx="150"
+               id="ellipse2617"
+               style="opacity:1;fill:#323232;fill-opacity:1;stroke:#00000a;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          </g>
+        </g>
+        <g
+           id="g2628">
+          <path
+             style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 64,610.51965 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v -16 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             id="path2623"
+             inkscape:connector-curvature="0" />
+          <path
+             style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 64,706.01965 c 0,0 0,16 48,16 48,0 48,-16 48,-16 v 16.5 c 0,0 0,16 -48,16 -48,0 -48,-16 -48,-16 z"
+             id="path2626"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g2816"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\GentongTumpukLurus.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <g
+         transform="translate(0.13890412,352.80919)"
+         id="g2644">
+        <g
+           id="g2636">
+          <rect
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.09167302;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2632"
+             width="95.408325"
+             height="127.90833"
+             x="480.04584"
+             y="594.56549"
+             ry="0" />
+          <rect
+             style="opacity:1;fill:#323232;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2634"
+             width="11.681167"
+             height="2.1811664"
+             x="560.40942"
+             y="592.42908" />
+        </g>
+        <g
+           id="g2642">
+          <rect
+             style="opacity:1;fill:#646464;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2638"
+             width="95.410965"
+             height="15.910964"
+             x="480.04453"
+             y="594.56415" />
+          <rect
+             y="708.04749"
+             x="480.2778"
+             height="14.944356"
+             width="95.444389"
+             id="rect2640"
+             style="opacity:1;fill:#646464;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         id="g2664"
+         transform="translate(96.138904,352.80919)">
+        <g
+           id="g2656">
+          <rect
+             ry="0"
+             y="594.56549"
+             x="480.04584"
+             height="127.90833"
+             width="95.408325"
+             id="rect2652"
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.09167302;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <rect
+             y="592.42908"
+             x="560.40942"
+             height="2.1811664"
+             width="11.681167"
+             id="rect2654"
+             style="opacity:1;fill:#323232;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+        <g
+           id="g2662">
+          <rect
+             y="594.56415"
+             x="480.04453"
+             height="15.910964"
+             width="95.410965"
+             id="rect2658"
+             style="opacity:1;fill:#646464;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <rect
+             style="opacity:1;fill:#646464;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2660"
+             width="95.444389"
+             height="14.944356"
+             x="480.2778"
+             y="708.04749" />
+        </g>
+      </g>
+      <g
+         transform="translate(192.1389,352.80919)"
+         id="g2678">
+        <g
+           id="g2670">
+          <rect
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.09167302;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2666"
+             width="95.408325"
+             height="127.90833"
+             x="480.04584"
+             y="594.56549"
+             ry="0" />
+          <rect
+             style="opacity:1;fill:#323232;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2668"
+             width="11.681167"
+             height="2.1811664"
+             x="560.40942"
+             y="592.42908" />
+        </g>
+        <g
+           id="g2676">
+          <rect
+             style="opacity:1;fill:#646464;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2672"
+             width="95.410965"
+             height="15.910964"
+             x="480.04453"
+             y="594.56415" />
+          <rect
+             y="708.04749"
+             x="480.2778"
+             height="14.944356"
+             width="95.444389"
+             id="rect2674"
+             style="opacity:1;fill:#646464;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         id="g2693"
+         transform="translate(48.138904,224.80919)">
+        <g
+           id="g2685">
+          <rect
+             ry="0"
+             y="594.56549"
+             x="480.04584"
+             height="127.90833"
+             width="95.408325"
+             id="rect2680"
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.09167302;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <rect
+             y="592.42908"
+             x="560.40942"
+             height="2.1811664"
+             width="11.681167"
+             id="rect2682"
+             style="opacity:1;fill:#323232;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+        <g
+           id="g2691">
+          <rect
+             y="594.56415"
+             x="480.04453"
+             height="15.910964"
+             width="95.410965"
+             id="rect2687"
+             style="opacity:1;fill:#646464;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <rect
+             style="opacity:1;fill:#646464;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2689"
+             width="95.444389"
+             height="14.944356"
+             x="480.2778"
+             y="708.04749" />
+        </g>
+      </g>
+      <g
+         transform="translate(144.1389,224.80919)"
+         id="g2707">
+        <g
+           id="g2699">
+          <rect
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.09167302;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2695"
+             width="95.408325"
+             height="127.90833"
+             x="480.04584"
+             y="594.56549"
+             ry="0" />
+          <rect
+             style="opacity:1;fill:#323232;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2697"
+             width="11.681167"
+             height="2.1811664"
+             x="560.40942"
+             y="592.42908" />
+        </g>
+        <g
+           id="g2705">
+          <rect
+             style="opacity:1;fill:#646464;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2701"
+             width="95.410965"
+             height="15.910964"
+             x="480.04453"
+             y="594.56415" />
+          <rect
+             y="708.04749"
+             x="480.2778"
+             height="14.944356"
+             width="95.444389"
+             id="rect2703"
+             style="opacity:1;fill:#646464;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+    </g>
+    <path
+       style="fill:#000046;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 734,704.51965 H 590 c 0,0 -4,0 -4,-4 0,-4 4,-8 8,-8 4,0 140,0 140,0 0,0 8,4 8,8 0,4 -8,4 -8,4 z"
+       id="path2711"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\OliPanjang.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <g
+       id="g2726"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\Bochor.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         inkscape:connector-curvature="0"
+         id="path2709"
+         d="m 720,658.51965 c 4,-32 32,-32 32,-32 v 12 c 0,0 -16,0 -16,20 z"
+         style="fill:#000046;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2713"
+         d="m 752,634.51965 8,12 v 12"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2715"
+         d="m 752,630.51965 h 8 l 12,4 h 8 v 8"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2717"
+         d="m 752,626.51965 12,-4 v -8"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2719"
+         d="m 752,634.51965 12,4 8,-8 12,-4"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path2728"
+       d="m 842.80291,704.62861 h -86.50884 c 0,0 -2.40302,0 -2.40302,-4.07264 0,-4.07264 2.40302,-8.14528 4.80604,-8.14528 2.40303,0 84.10582,0 84.10582,0 0,0 4.80604,4.07264 4.80604,8.14528 0,4.07264 -4.80604,4.07264 -4.80604,4.07264 z"
+       style="fill:#000046;fill-opacity:1;stroke:#000000;stroke-width:0.78209019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\OliSedang.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:#000046;fill-opacity:1;stroke:#000000;stroke-width:0.39235553px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 874.63164,704.82348 h -21.09936 c 0,0 -0.5861,0 -0.5861,-4.20255 0,-4.20256 0.5861,-8.40511 1.17219,-8.40511 0.58609,0 20.51327,0 20.51327,0 0,0 1.17218,4.20255 1.17218,8.40511 0,4.20255 -1.17218,4.20255 -1.17218,4.20255 z"
+       id="path2730"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\OliPendek.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="opacity:1;fill:#000046;fill-opacity:1;stroke:#000000;stroke-width:1.12874568;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2732"
+       cx="896"
+       cy="698.76965"
+       rx="11.935627"
+       ry="7.6856289"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\OliLingkaran.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <g
+       id="g2824"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\PaketLurus.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         y="-797.48035"
+         x="1088"
+         height="32"
+         width="64"
+         id="rect2818"
+         style="opacity:1;fill:#8e4a00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2820"
+         d="m 1092,-790.48035 h -2 l 3,-3 3,3 h -2 v 2 h -2 z"
+         style="fill:#240c00;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+    </g>
+    <g
+       id="g2855"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\Paket.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <g
+         transform="translate(0,-48.000003)"
+         id="g2830">
+        <rect
+           y="-797.48035"
+           x="1088"
+           height="32"
+           width="64"
+           id="rect2826"
+           style="opacity:1;fill:#8e4a00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path2828"
+           d="m 1092,-790.48035 h -2 l 3,-3 3,3 h -2 v 2 h -2 z"
+           style="fill:#240c00;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="path2832"
+         d="m 1088,-845.48035 16,-16 h 64 l -16,16 z"
+         style="fill:#8e4a00;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1;fill-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2840"
+         d="m 1097,-854.48035 h 64"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2836"
+         d="m 1099,-856.48035 h 64 l -4,4 h -64 z"
+         style="fill:#553d00;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.7521866" />
+      <g
+         id="g2844">
+        <path
+           style="fill:#8e4a00;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
+           d="m 1152,-813.48035 16,-16 v -32 l -16,16 z"
+           id="path2834"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#553d00;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.65889215"
+           d="m 1159,-852.48035 v 10 l 1,-1 h 1 l 1,-3 1,1 v -11 z"
+           id="path2838"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g2999"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\ToiletBooth.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <g
+         id="g2931">
+        <path
+           style="fill:#00ffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+           d="m 1040,-857.48035 h -36 c 0,0 0,-4 4,-4 h 64 c 0,0 4,0 4,4 z"
+           id="path2857"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccsccc" />
+        <path
+           style="fill:#beffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+           d="m 1008,-861.48035 c 0,0 0,-16 16,-16 16,0 16,0 16,0 h 16 c 0,0 16,0 16,16 z"
+           id="path2860"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#be82ff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+           d="m 1024,-877.48035 v -4 h 32 v 4 z"
+           id="path2867"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         id="g2981">
+        <path
+           style="fill:#0082ff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+           d="M 1008 48 L 1008 124 L 1072 124 L 1072 48 L 1008 48 z M 1016 52 L 1064 52 L 1064 120 L 1016 120 L 1016 52 z "
+           transform="translate(0,-905.48035)"
+           id="path2862" />
+        <g
+           id="g2906">
+          <g
+             id="g2895">
+            <path
+               style="fill:#00b4ff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+               d="m 1064,-785.48035 h -48 v -68 h 48 z"
+               id="path2864"
+               inkscape:connector-curvature="0" />
+            <g
+               id="g2886">
+              <path
+                 inkscape:connector-curvature="0"
+                 id="path2869"
+                 d="m 1020,-849.48035 8,24 h 8 v -24 z"
+                 style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+              <path
+                 sodipodi:nodetypes="ccccc"
+                 inkscape:connector-curvature="0"
+                 id="path2871"
+                 d="m 1044,-849.48035 v 24 h 8 l 8,-24 z"
+                 style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+              <path
+                 inkscape:connector-curvature="0"
+                 id="path2873"
+                 d="m 1020,-789.48035 h 16 v -24 h -8 z"
+                 style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+              <path
+                 inkscape:connector-curvature="0"
+                 id="path2875"
+                 d="m 1044,-813.48035 v 24 h 16 l -8,-24 z"
+                 style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+              <path
+                 inkscape:connector-curvature="0"
+                 id="path2877"
+                 d="m 1024,-821.48035 v 4 h 32 v -4 z"
+                 style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+            </g>
+          </g>
+          <circle
+             r="2"
+             cy="-819.48035"
+             cx="1062"
+             id="path2879"
+             style="opacity:1;fill:#be1c50;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g2926"
+       transform="translate(-24,116)"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\PintuToiletBooth.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <g
+         id="g2922">
+        <path
+           inkscape:connector-curvature="0"
+           id="path2908"
+           d="m 1064,-785.48035 h -48 v -68 h 48 z"
+           style="fill:#00b4ff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <g
+           id="g2920">
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 1020,-849.48035 8,24 h 8 v -24 z"
+             id="path2910"
+             inkscape:connector-curvature="0" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 1044,-849.48035 v 24 h 8 l 8,-24 z"
+             id="path2912"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="ccccc" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 1020,-789.48035 h 16 v -24 h -8 z"
+             id="path2914"
+             inkscape:connector-curvature="0" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 1044,-813.48035 v 24 h 16 l -8,-24 z"
+             id="path2916"
+             inkscape:connector-curvature="0" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 1024,-821.48035 v 4 h 32 v -4 z"
+             id="path2918"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+      <circle
+         style="opacity:1;fill:#be1c50;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle2924"
+         cx="1062"
+         cy="-819.48035"
+         r="2" />
+    </g>
+    <g
+       id="g3044"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\ToiletBoothKebuka.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         y="-740.48035"
+         x="912"
+         height="76"
+         width="64"
+         id="rect3001"
+         style="opacity:1;fill:#004180;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3027"
+         d="m 920,-698.48035 h 1 v 8 h -1 z"
+         style="fill:#6600ff;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" />
+      <path
+         id="path2933"
+         transform="translate(0,-905.48035)"
+         d="M 912 164.5 L 912 240.5 L 976 240.5 L 976 164.5 L 912 164.5 z M 920 168 L 968 168 L 968 236 L 920 236 L 920 168 z "
+         style="fill:#0082ff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <g
+         transform="translate(-96,116.5)"
+         id="g2941">
+        <path
+           sodipodi:nodetypes="ccsccc"
+           inkscape:connector-curvature="0"
+           id="path2935"
+           d="m 1040,-857.48035 h -36 c 0,0 0,-4 4,-4 h 64 c 0,0 4,0 4,4 z"
+           style="fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path2937"
+           d="m 1008,-861.48035 c 0,0 0,-16 16,-16 16,0 16,0 16,0 h 16 c 0,0 16,0 16,16 z"
+           style="fill:#beffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path2939"
+           d="m 1024,-877.48035 v -4 h 32 v 4 z"
+           style="fill:#be82ff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      </g>
+      <path
+         sodipodi:nodetypes="cccsccc"
+         inkscape:connector-curvature="0"
+         id="path3005"
+         d="m 940,-669.48035 c 4,-5 -2,-9 -2,-9 l 1,-5 c 0,0 1,2 5,2 4,0 5,-2 5,-2 l 1,5 c 0,0 -6,4 -2,9 z"
+         style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1" />
+      <ellipse
+         ry="9"
+         rx="8"
+         cy="-696.48035"
+         cx="944"
+         id="path3013"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cscc"
+         inkscape:connector-curvature="0"
+         id="path3003"
+         d="m 936,-689.48035 c 0,0 0.17678,8.06586 8.17678,8.06586 8,0 7.82322,-8.06586 7.82322,-8.06586 z"
+         style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3017"
+         d="m 936,-689.48035 c 0,0 0,-1 1,-1 1,0 14,0 14,0 0,0 1,0 1,1"
+         style="fill:#0030ff;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3019"
+         d="m 933,-696.48035 h 2 v 2 h -2 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 955,-696.48035 h -2 v 2 h 2 z"
+         id="path3021"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3023"
+         d="m 934,-694.48035 c 0,0 0,5 2,5"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3025"
+         d="m 954,-694.48035 c 0,0 0,5 -2,5"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g2501"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\Pohon.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         inkscape:connector-curvature="0"
+         id="path2481"
+         d="m 320,-669.48035 h -16 c 0,0 0,-16 16,-16 l 4,-64 h 8 l 4,64 c 0,0 16,0 16,16 h -16 -8 z"
+         style="fill:#774900;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccccc"
+         inkscape:connector-curvature="0"
+         id="path2483"
+         d="m 320,-705.48035 c -12,0 -12,12 -12,12 h 12 16 12 c 0,0 0,-12 -12,-12 z"
+         style="fill:#00ff00;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2487"
+         d="m 324,-709.48035 h -12 c 0,0 0,-8 8,-8 8,0 16,0 16,0 0,0 8,0 8,8 h -12 z"
+         style="fill:#23ff38;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2489"
+         d="m 324,-721.48035 h -8 c 0,0 0,-8 8,-8 0,0 0,0 8,0 8,0 8,8 8,8 h -8 z"
+         style="fill:#4bff00;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2491"
+         d="m 328,-733.48035 h -8 c 0,0 0,-8 4,-8 4,0 8,0 8,0 0,0 4,0 4,8 z"
+         style="fill:#a9ff00;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2493"
+         d="m 328,-745.48035 h -8 c 0,0 0,-8 8,-8 8,0 8,8 8,8 z"
+         style="fill:#e2ff00;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+    </g>
+    <g
+       id="g2514"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\Bonsai.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2505"
+         d="m 392,-677.48035 c 8,0 8,8 8,8 h -16 -16 c 0,0 0,-8 8,-8 l 4,-24 h 8 z"
+         style="fill:#774900;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2507"
+         d="m 380,-685.98035 h -8 c 0,0 0,-8 8,-8 8,0 8,0 8,0 0,0 8,0 8,8 z"
+         style="fill:#00ff00;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2509"
+         d="m 384,-697.48035 h -8 c 0,0 0,-8 8,-8 8,0 8,8 8,8 z"
+         style="fill:#ff7b00;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path2516"
+       d="m 432,-669.98035 h -16 c 0,0 0,-16 16,-16 l 4,-64 h 8 l 4,64 c 0,0 16,0 16,16 h -16 -8 z"
+       style="fill:#774900;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\PohonGugur.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path2537"
+       d="m 504,-677.98035 c 8,0 8,8 8,8 h -16 -16 c 0,0 0,-8 8,-8 l 4,-24 h 8 z"
+       style="fill:#774900;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\BonsaiGugur.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:#554974;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 560,-669.48035 c 0,0 4,-16 8,-16 4,0 56,12 56,12 0,0 0,4 -4,4 -4,0 -60,0 -60,0 z"
+       id="path2548"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\Baatu.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <g
+       id="g2557"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\BatuBatu.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         sodipodi:nodetypes="cssssssscscc"
+         inkscape:connector-curvature="0"
+         id="path2551"
+         d="m 544,-705.48035 c 0,0 8,-28 16,-28 2.47513,0 8.77915,2.68023 16.30591,6.38222 1.41277,0.69486 1.56909,-1.38222 4.97531,-0.31839 4.75845,1.48617 2.37684,4.04335 3.8994,4.84177 6.71275,3.52016 14.81938,6.0944 19.51966,9.43297 0.78757,0.5594 2.30296,0.13669 3.40144,0.88769 1.17862,0.80578 1.95289,2.79266 3.14407,3.5943 2.57061,1.72997 4.75421,3.17944 4.75421,3.17944 0,0 -4,4 -8,4 h -56 c 0,0 -4,0 -8,-4 z"
+         style="fill:#3a6174;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cssssccc"
+         inkscape:connector-curvature="0"
+         id="path2553"
+         d="m 536,-701.48035 c 0,0 0,-12 8,-12 2.36877,0 3.48753,-0.69793 5.64863,0.78319 1.1284,0.77336 1.35137,3.21681 4.13945,4.42494 1.32834,0.5756 2.43226,1.2355 3.17206,2.19759 1.90577,2.47839 3.03986,4.59428 3.03986,4.59428 h -14 z"
+         style="fill:#5c3b74;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#554930;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 517.3125,-676.98035 c 0,0 0,-4 4,-4 0,0 0,-12 12,-12 12,0 16,16 16,16 0,0 6,4 2,4 -4,0 -30,0 -30,0 0,0 -2,0 -4,-4 z"
+       id="path2559"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\Batu.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <g
+       id="g2567"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\Bongkahhan.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         inkscape:connector-curvature="0"
+         id="path2563"
+         d="m 720,-749.48035 c 32,0 108,48 96,64 -12,16 -16,16 -20,16 -4,0 -76,0 -76,0 h -48 c 0,0 -32,-4 -32,-16 0,-12 28,-52 36,-56 8,-4 44,-8 44,-8 z"
+         style="fill:#973981;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2561"
+         d="m 672,-669.48035 c 0,0 -28,0 -32,-8 -4,-8 24,-32 32,-32 8,0 40,24 40,32 0,8 -28,8 -28,8 z"
+         style="fill:#427781;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+    </g>
+    <g
+       transform="translate(254.1118,29.995961)"
+       id="g2580"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\pasire.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         inkscape:connector-curvature="0"
+         id="path2569"
+         d="m 896,-733.48035 h -96 c 0,0 32,-16 40,-32 8,-16 32,-16 40,0 8,16 16,28 24,32 v 0 z"
+         style="fill:#fff54d;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2571"
+         d="m 840,-733.48035 c 0,0 28,-8 32,-20 4,-12 12,-8 12,-8 0,0 16,28 24,28 z"
+         style="fill:#fff58b;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g2590"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\pasir.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="fill:#c0be6c;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 1152,-605.48035 c 0,0 -56,-20 -64,-48 -8,-28 -32,0 -32,0 l -48,48 z"
+         id="path2584"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#fff56c;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 1052,-653.48035 -48,48 h 64 l -8,-8 c 0,0 4,-4 4,-4 0,0 4,-8 0,-8 -4,0 0,0 -4,0 -4,0 -4,-8 -4,-8 0,0 0,0 0,-4 0,-4 4,-4 4,-4 0,0 0,4 0,0 0,-4 4,0 0,-4 -4,-4 -4,-4 -4,-4 z"
+         id="path2586"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g2671"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\PedangEISTEIMEYVVAH.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <g
+         id="g2645">
+        <path
+           style="fill:#3151d4;stroke:#000000;stroke-width:0.37795276;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+           d="m 848,-745.48035 v 76 l 8,8 8,-8 v -76 z"
+           id="path2608"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g2634">
+          <path
+             inkscape:connector-curvature="0"
+             id="path2612"
+             d="m 856,-663.48035 -6,-6 h 2 l 4,4 4,-4 h 2 z"
+             style="fill:#ff98d4;stroke:#000000;stroke-width:0.37795276;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+          <g
+             id="g2626">
+            <path
+               style="fill:#3198d4;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+               d="m 852,-745.48035 v 12 l 4,16 -4,16 v 16 l 4,16 4,-16 v -16 l -4,-16 4,-16 v -12 z"
+               id="path2610"
+               inkscape:connector-curvature="0" />
+            <g
+               id="g2620">
+              <path
+                 sodipodi:nodetypes="cccc"
+                 inkscape:connector-curvature="0"
+                 id="path2614"
+                 d="m 851.49655,-728.48035 v 22 l 3,-11 z"
+                 style="fill:#ff29d4;fill-opacity:1;stroke:#000000;stroke-width:0.37795275;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+              <path
+                 style="fill:#ff29d4;fill-opacity:1;stroke:#000000;stroke-width:0.37795275;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 860.50345,-728.48035 v 22 l -3,-11 z"
+                 id="path2616"
+                 inkscape:connector-curvature="0"
+                 sodipodi:nodetypes="cccc" />
+            </g>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g2655">
+        <path
+           style="fill:#4358a1;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 852,-749.48035 h -6 c 0,0 -2,0 -2,2 0,2 2,2 2,2 h 20 c 0,0 2,0 2,-2 0,-2 -2,-2 -2,-2 h -6 z"
+           id="path2600"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccsccsccc" />
+        <g
+           id="g2649">
+          <path
+             sodipodi:nodetypes="ccccccccccccccccccccc"
+             inkscape:connector-curvature="0"
+             id="path2598"
+             transform="translate(0,-905.48035)"
+             d="m 852,128 1,4 -1,3 v 2 l 1,3 -1,3 v 2 l 1,3 -1,3 v 5 h 8 v -5 l -1,-3 1,-3 v -2 l -1,-3 1,-3 v -2 l -1,-3 1,-4 z"
+             style="fill:#554974;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+          <path
+             sodipodi:nodetypes="csccscc"
+             inkscape:connector-curvature="0"
+             id="path2606"
+             d="m 852,-777.48035 c 0,0 -2,0 -2,-1 0,-1 2,-1 2,-1 h 8 c 0,0 2,0 2,1 0,1 -2,1 -2,1 z"
+             style="fill:#550074;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g2695"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\PintuSekolah.png"
+       inkscape:export-xdpi="10000"
+       inkscape:export-ydpi="10000">
+      <rect
+         inkscape:export-ydpi="10000"
+         inkscape:export-xdpi="10000"
+         inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\PintuSekolah.png"
+         y="-861.46002"
+         x="864.02032"
+         height="79.959419"
+         width="7.90939"
+         id="rect1759"
+         style="opacity:1;fill:#ffc015;fill-opacity:1;stroke:#8e5f00;stroke-width:0.14058252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         id="g2687">
+        <rect
+           style="opacity:1;fill:#ff29d4;fill-opacity:1;stroke:none;stroke-width:0.37795275;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2673"
+           width="6"
+           height="12"
+           x="865"
+           y="-829.48035" />
+        <g
+           id="g2681">
+          <rect
+             y="-828.48035"
+             x="866"
+             height="3"
+             width="4"
+             id="rect2675"
+             style="opacity:1;fill:#0029d4;fill-opacity:1;stroke:none;stroke-width:0.37795275;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <rect
+             y="-823.48035"
+             x="866"
+             height="5"
+             width="4"
+             id="rect2677"
+             style="opacity:1;fill:#002900;fill-opacity:1;stroke:none;stroke-width:0.37795275;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g2718"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\KayuStack.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         transform="rotate(15.578168)"
+         y="-838.52106"
+         x="785.58972"
+         height="20"
+         width="176"
+         id="rect2707"
+         style="opacity:1;fill:#ffc015;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#ffc015;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 983.32918,-547.48035 8,16 144.00002,-48 -8,-16 z"
+         id="path2703"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ffc015;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 983.32918,-547.48035 -8,4 8,16 8,-4 z"
+         id="path2705"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2699"
+         d="m 992,-541.48035 8,16 144,-48 -8,-16 z"
+         style="fill:#ffc015;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2701"
+         d="m 992,-541.48035 -8,4 8,16 8,-4 z"
+         style="fill:#ffc015;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2710"
+         d="m 977,-577.48035 -4,-2 6,-18 3,1 z"
+         style="fill:#ffc015;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
     </g>
   </g>
 </svg>

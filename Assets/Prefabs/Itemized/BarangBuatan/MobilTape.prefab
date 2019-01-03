@@ -246,7 +246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4409103986337506263}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7, y: -3, z: 0}
+  m_LocalPosition: {x: -7, y: -3, z: 1}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1387452338735988366}
@@ -389,7 +389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5716777826265102522}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: -3, z: 0}
+  m_LocalPosition: {x: 7, y: -3, z: 1}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1387452338735988366}
@@ -532,7 +532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5981171816632913235}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: 3, z: 0}
+  m_LocalPosition: {x: 5, y: 3, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1387452338735988366}
@@ -714,7 +714,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7288550700356188864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: 3, z: 0}
+  m_LocalPosition: {x: -5, y: 3, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1387452338735988366}
@@ -1048,6 +1048,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4186377945031000086, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: TapeColor.g
+      value: 0.6745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186377945031000086, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: TapeColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186377945031000086, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: NFCSticker
+      value: 
+      objectReference: {fileID: 4970844792685186169}
+    - target: {fileID: 8940874014375360811, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8940874014375360811, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7947554861010880899, guid: d3c97910542f864498df51a0d4200e42,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1103,41 +1128,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4186377945031000086, guid: d3c97910542f864498df51a0d4200e42,
-        type: 3}
-      propertyPath: TapeColor.g
-      value: 0.6745098
-      objectReference: {fileID: 0}
-    - target: {fileID: 4186377945031000086, guid: d3c97910542f864498df51a0d4200e42,
-        type: 3}
-      propertyPath: TapeColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4186377945031000086, guid: d3c97910542f864498df51a0d4200e42,
-        type: 3}
-      propertyPath: NFCSticker
-      value: 
-      objectReference: {fileID: 4970844792685186169}
-    - target: {fileID: 8940874014375360811, guid: d3c97910542f864498df51a0d4200e42,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940874014375360811, guid: d3c97910542f864498df51a0d4200e42,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8231541480302771793, guid: d3c97910542f864498df51a0d4200e42,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.000015258789
-      objectReference: {fileID: 0}
     - target: {fileID: 3550225940681927930, guid: d3c97910542f864498df51a0d4200e42,
         type: 3}
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 3282345124249905998}
+    - target: {fileID: 8231541480302771793, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000015258789
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: d3c97910542f864498df51a0d4200e42, type: 3}
