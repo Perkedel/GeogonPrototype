@@ -294,8 +294,8 @@ public class HajiyevMusicManager : MonoBehaviour {
 
         if (IsPlaying())
         {
-            isPlaying = false;
             saveTime = audioSource.time;
+            isPlaying = false;
             audioSource.Stop();
         }
     }

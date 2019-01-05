@@ -46,6 +46,7 @@ public class TapeBlanker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool HasPaused = false;
         if (HajiyevMusicManager.instance.CurrentTrackNumber() >= 0)
         {
             nowPlayingText.text = "" + HajiyevMusicManager.instance.NowPlaying().name;
@@ -76,16 +77,22 @@ public class TapeBlanker : MonoBehaviour
         {
             if (!PauseDetector.PauseStatus)
             {
-                GetComponent<HajiyevMusicManager>().Play();
+                    GetComponent<HajiyevMusicManager>().Play();
+                    HasPaused = false;
             } else
             {
-                GetComponent<HajiyevMusicManager>().ForcePause();
+                if (!HasPaused)
+                {
+                    GetComponent<HajiyevMusicManager>().ForcePause();
+                    HasPaused = true;
+                }
             }
 
             GetComponent<SpriteRenderer>().color = TapeColor;
             CanvasBlanker.SetActive(true);
             if (!MusicPoppedup)
             {
+                GetComponent<HajiyevMusicManager>().Play();
                 MusicPopUpper.gameObject.SetActive(true);
                 MusicPoppedup = true;
             }

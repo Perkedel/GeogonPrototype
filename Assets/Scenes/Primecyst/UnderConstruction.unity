@@ -666,26 +666,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Second Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 2438024422851016926, guid: 12ac66ea335f500478c4345f6a0f4160,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2438024422851016926, guid: 12ac66ea335f500478c4345f6a0f4160,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0.8946781
-      objectReference: {fileID: 0}
-    - target: {fileID: 2438024422851016926, guid: 12ac66ea335f500478c4345f6a0f4160,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0.4764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 2438024422851016926, guid: 12ac66ea335f500478c4345f6a0f4160,
-        type: 3}
-      propertyPath: orthographic size
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 2438024422851016927, guid: 12ac66ea335f500478c4345f6a0f4160,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -751,6 +731,26 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1176799790}
+    - target: {fileID: 2438024422851016926, guid: 12ac66ea335f500478c4345f6a0f4160,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2438024422851016926, guid: 12ac66ea335f500478c4345f6a0f4160,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.8946781
+      objectReference: {fileID: 0}
+    - target: {fileID: 2438024422851016926, guid: 12ac66ea335f500478c4345f6a0f4160,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.4764151
+      objectReference: {fileID: 0}
+    - target: {fileID: 2438024422851016926, guid: 12ac66ea335f500478c4345f6a0f4160,
+        type: 3}
+      propertyPath: orthographic size
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12ac66ea335f500478c4345f6a0f4160, type: 3}
 --- !u!114 &768599218 stripped

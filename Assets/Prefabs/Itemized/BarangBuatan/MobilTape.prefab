@@ -1063,6 +1063,11 @@ PrefabInstance:
       propertyPath: NFCSticker
       value: 
       objectReference: {fileID: 4970844792685186169}
+    - target: {fileID: 4186377945031000086, guid: d3c97910542f864498df51a0d4200e42,
+        type: 3}
+      propertyPath: enabledTape
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8940874014375360811, guid: d3c97910542f864498df51a0d4200e42,
         type: 3}
       propertyPath: m_AnchorMax.y

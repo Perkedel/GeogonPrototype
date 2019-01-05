@@ -31,6 +31,7 @@ Unity Object Instantiate https://docs.unity3d.com/ScriptReference/Object.Instant
 Unity Particle System how to use thing https://docs.unity3d.com/Manual/PartSysUsage.html . That's how to use PartSys.
 Unity Text mesh pro scriptss https://forum.unity.com/threads/changing-textmeshpro-text-from-ui-via-script.462250/ . Use TMPro namespace.
 Unity Timeline https://www.youtube.com/playlist?list=PLX2vGYjWbI0ToUaFCtOEuB_2QKv_OikMO . Timeline seems a mother of cutscene and is superior to animation.
+Unity Tilemap Collider2D https://unity3d.com/learn/tutorials/topics/2d-game-creation/tilemap-collider-2d-and-composite-collider-2d . Tilemap that has collider!
 Unity Community XBOX controller mapping http://wiki.unity3d.com/index.php?title=Xbox360Controller . Refference for Xinput based mapping.
 Brackeys' Menu tutorial https://www.youtube.com/watch?v=zc8ac_qUXQY . Nah that's better. WOW!!! BRACKEY!! THAT'S YOU!!! THX!!! Check out SampleMenuScene to see what I did follow.
 Brackeys' Option Menu https://www.youtube.com/watch?v=YOaYQrN1oYQ . Improvements!!! thx!!!
