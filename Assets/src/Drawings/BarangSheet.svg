@@ -24,6 +24,18 @@
      id="defs2">
     <linearGradient
        inkscape:collect="always"
+       id="linearGradient2676">
+      <stop
+         style="stop-color:#4dcbff;stop-opacity:1"
+         offset="0"
+         id="stop2672" />
+      <stop
+         style="stop-color:#ff663b;stop-opacity:1"
+         offset="1"
+         id="stop2674" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
        id="linearGradient2008">
       <stop
          style="stop-color:#002dff;stop-opacity:0.23148148"
@@ -51,6 +63,15 @@
        fy="-269.48035"
        r="16.5"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2676"
+       id="linearGradient2678"
+       x1="1080"
+       y1="-381.48035"
+       x2="1080"
+       y2="-333.48035"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -59,11 +80,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="945.02399"
-     inkscape:cy="1613.2081"
+     inkscape:zoom="5.6568544"
+     inkscape:cx="1101.9661"
+     inkscape:cy="1510.4334"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g1866-0"
      showgrid="true"
      units="px"
      inkscape:window-width="1920"
@@ -9557,6 +9578,205 @@
          id="path2710"
          d="m 977,-577.48035 -4,-2 6,-18 3,1 z"
          style="fill:#ffc015;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    </g>
+    <path
+       style="fill:#fff800;stroke:#ff8200;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+       d="m 992,-493.48035 c 16,-8 8,-16 24,-16 16,0 8,8 24,16 -16,8 -8,16 -24,16 -16,0 -8,-8 -24,-16 z"
+       id="path2536"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscsc"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\LemonBiasa.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       sodipodi:nodetypes="cscsc"
+       inkscape:connector-curvature="0"
+       id="path2539"
+       d="m 1056,-493.48035 c 16,-8 8,-16 24,-16 16,0 8,8 24,16 -16,8 -8,16 -24,16 -16,0 -8,-8 -24,-16 z"
+       style="fill:#02ff00;fill-opacity:1;stroke:#ff8200;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\LemonHijau.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:#0282ff;fill-opacity:1;stroke:#ff8200;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1120,-493.48035 c 16,-8 8,-16 24,-16 16,0 8,8 24,16 -16,8 -8,16 -24,16 -16,0 -8,-8 -24,-16 z"
+       id="path2541"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscsc"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\LemonBiru.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       sodipodi:nodetypes="cscsc"
+       inkscape:connector-curvature="0"
+       id="path2543"
+       d="m 1184,-493.48035 c 16,-8 8,-16 24,-16 16,0 8,8 24,16 -16,8 -8,16 -24,16 -16,0 -8,-8 -24,-16 z"
+       style="fill:#ff0000;fill-opacity:1;stroke:#ff8200;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\LemonMerah.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4103-3"
+       width="80"
+       height="48"
+       x="992"
+       y="-445.48035"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\TemplateTanda.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <g
+       id="g2643"
+       transform="translate(-112,-3.3203125e-6)">
+      <circle
+         r="16"
+         cy="-365.48035"
+         cx="1120"
+         id="path2636"
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-369.48035"
+         x="1108"
+         height="8"
+         width="24"
+         id="rect2639"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g2668"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\DilarangMasuk.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2628"
+         width="80"
+         height="48"
+         x="1088"
+         y="-445.48035" />
+      <g
+         id="g2659">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:6.28484058px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15712103"
+           x="1127.7667"
+           y="-400.55707"
+           id="text2632"><tspan
+             sodipodi:role="line"
+             x="1127.7667"
+             y="-400.55707"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;stroke-width:0.15712103"
+             id="tspan2634">DILARANG MASUK</tspan></text>
+        <g
+           transform="translate(8,-60.000003)"
+           id="g2650">
+          <circle
+             style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="circle2645"
+             cx="1120"
+             cy="-365.48035"
+             r="16" />
+          <rect
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2647"
+             width="24"
+             height="8"
+             x="1108"
+             y="-369.48035" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g1866-0"
+       transform="translate(862,393)">
+      <g
+         id="g2754"
+         inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\AwasKetiban.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
+        <rect
+           y="-381.48035"
+           x="1040"
+           height="48"
+           width="80"
+           id="rect2670"
+           style="opacity:1;fill:url(#linearGradient2678);fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           transform="translate(-862,-393)" />
+        <text
+           id="text2682"
+           y="-373.73181"
+           x="1042.1602"
+           style="font-style:normal;font-weight:normal;font-size:7.38228893px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.18455723"
+           xml:space="preserve"
+           transform="translate(-862,-393)"><tspan
+             style="stroke-width:0.18455723;fill:#ff00ff;fill-opacity:1;"
+             y="-373.73181"
+             x="1042.1602"
+             id="tspan2680"
+             sodipodi:role="line">Awas Ketiban!</tspan></text>
+        <text
+           id="text2686"
+           y="-348.14099"
+           x="1042.0933"
+           style="font-style:normal;font-weight:normal;font-size:7.31914139px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.18297854"
+           xml:space="preserve"
+           transform="translate(-862,-393)"><tspan
+             style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';stroke-width:0.18297854;fill:#0000ff;fill-opacity:1;"
+             y="-348.14099"
+             x="1042.0933"
+             id="tspan2684"
+             sodipodi:role="line">&quot;Diatas ada</tspan><tspan
+             id="tspan2688"
+             style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';stroke-width:0.18297854;fill:#0000ff;fill-opacity:1;"
+             y="-338.99207"
+             x="1042.0933"
+             sodipodi:role="line">kayu jatuh!&quot;</tspan></text>
+        <path
+           sodipodi:type="star"
+           style="opacity:1;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path1850-0"
+           sodipodi:sides="4"
+           sodipodi:cx="240"
+           sodipodi:cy="-749.48035"
+           sodipodi:r1="16"
+           sodipodi:r2="11.313708"
+           sodipodi:arg1="1.5707963"
+           sodipodi:arg2="2.3561945"
+           inkscape:flatsided="true"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="m 240,-733.48035 -16,-16 16,-16 16,16 z" />
+        <g
+           id="g1860-8">
+          <circle
+             r="2"
+             cy="-741.48035"
+             cx="240"
+             id="path1852-8"
+             style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path1854-3"
+             d="m 240,-745.48035 -4,-8 c 0,0 0,-4 4,-4 4,0 4,4 4,4 z"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        </g>
+        <text
+           id="text2731"
+           y="-731.54681"
+           x="240.09692"
+           style="font-style:normal;font-weight:normal;font-size:2.54488993px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.06362226"
+           xml:space="preserve"><tspan
+             style="text-align:center;text-anchor:middle;stroke-width:0.06362226"
+             y="-731.54681"
+             x="240.09692"
+             id="tspan2729"
+             sodipodi:role="line">Artisnya malah kabur!</tspan><tspan
+             id="tspan2733"
+             style="text-align:center;text-anchor:middle;stroke-width:0.06362226"
+             y="-728.36572"
+             x="240.09692"
+             sodipodi:role="line">Ini gantinya, tanda seru!</tspan></text>
+      </g>
     </g>
   </g>
 </svg>

@@ -228,9 +228,12 @@ public class ItemEffects : MonoBehaviour {
     public Color SetColorCamera = Color.gray;
     public void letsColorCamera()
     {
-        for(int i = 0; i<TheseCameras.Length; i++)
+        for (int i = 0; i < TheseCameras.Length; i++)
         {
-            TheseCameras[i].backgroundColor = SetColorCamera;
+            if (TheseCameras[i])
+            {
+                TheseCameras[i].backgroundColor = SetColorCamera;
+            }
         }
     }
 
@@ -239,6 +242,12 @@ public class ItemEffects : MonoBehaviour {
     public void letsZoomCamera()
     {
         SeriousMainCamera.Zoom = NewZoomLevel;
+    }
+
+    public bool doTotalResetCamera = false;
+    public void LetsTotalResetCamera()
+    {
+        SeriousMainCamera.ResetCamera();
     }
 
     public bool doSetCheckPoint;
@@ -431,6 +440,10 @@ public class ItemEffects : MonoBehaviour {
             if (doSetCameraZoom)
             {
                 letsZoomCamera();
+            }
+            if (doTotalResetCamera)
+            {
+                LetsTotalResetCamera();
             }
             if (doSetCheckPoint)
             {

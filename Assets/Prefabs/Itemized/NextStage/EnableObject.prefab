@@ -238,14 +238,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2527ea718bdb55845abc6bc9a8eb4daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theGameObject: {fileID: 0}
-  theSHanpeWhoIsTouching: {fileID: 0}
-  levelManager: {fileID: 0}
-  theHUD: {fileID: 0}
+  theGameObject: {fileID: 1879791580275176, guid: 76b832945ffb2ce4780d3ce6bc342d1d,
+    type: 3}
+  theSHanpeWhoIsTouching: {fileID: 114835651349734718, guid: 76b832945ffb2ce4780d3ce6bc342d1d,
+    type: 3}
+  levelManager: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
+    type: 3}
+  theHUD: {fileID: 114772340340392410, guid: 8b674b371d577da45a80171c3e1c5440, type: 3}
   TheseCameras:
-  - {fileID: 0}
-  - {fileID: 0}
-  SeriousMainCamera: {fileID: 0}
+  - {fileID: 20797595090361248, guid: ba7baa79de388f741bebb85dfd74748a, type: 3}
+  - {fileID: 2438024422851016926, guid: 12ac66ea335f500478c4345f6a0f4160, type: 3}
+  SeriousMainCamera: {fileID: 114459739183892036, guid: ba7baa79de388f741bebb85dfd74748a,
+    type: 3}
   setHPvalue: 100
   addHPvalue: 10
   damageMeValue: 20
@@ -273,7 +277,10 @@ MonoBehaviour:
   doSetSpeed: 0
   doSetGravity: 0
   gravityNewValue: 1
-  ItemSelfSound: {fileID: 0}
+  ItemSelfSound: {fileID: 2440555436404271186}
+  OtherSelfSound: {fileID: 3212395759286306825, guid: 57195fb9782a1cb448fcef85c4182b8f,
+    type: 3}
+  useOtherSelfSoundInstead: 1
   doPlaySoundArray: 1
   SoundArray:
   - {fileID: 8300000, guid: f69a81cfe0df20746b08810d19fe3fbe, type: 3}
@@ -293,4 +300,5 @@ MonoBehaviour:
   SetColorCamera: {r: 1, g: 0.9782423, b: 0.5613208, a: 1}
   doSetCameraZoom: 0
   NewZoomLevel: 0
+  doTotalResetCamera: 1
   doSetCheckPoint: 1

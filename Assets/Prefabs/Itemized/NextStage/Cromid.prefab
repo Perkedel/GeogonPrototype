@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4349634542914093350
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2440555436404271193, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_Name
+      value: Cromid
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271198, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271198, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271198, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271198, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271198, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271198, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271198, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271198, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271198, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271198, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271198, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271198, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271198, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271196, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: SetColorCamera.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271196, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: SetColorCamera.g
+      value: 0.6067426
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271196, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: SetColorCamera.b
+      value: 0.07075471
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271196, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: whatDoesDebugSay
+      value: Tilemap Test by JOELwindows7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271196, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: DisableTheseObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 78941196798892148, guid: 1ad44b106d564b9418b610c41210d488,
+        type: 3}
+    - target: {fileID: 2440555436404271196, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: EnableTheseObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 4802560314387822255, guid: f3f858d658bb8fe4ab21b737db3842a0,
+        type: 3}
+    - target: {fileID: 2440555436404271196, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: doSetCameraZoom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271196, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: NewZoomLevel
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271199, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 66ff5ca412f63e345aef24248620c462,
+        type: 3}
+    - target: {fileID: 2440555436404271187, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271187, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271187, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271187, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440555436404271187, guid: a475a8d9551bce341b5617a1ed410f04,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.47
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a475a8d9551bce341b5617a1ed410f04, type: 3}

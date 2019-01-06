@@ -1508,7 +1508,8 @@ MonoBehaviour:
   SetColorCamera: {r: 0.8275633, g: 0, b: 1, a: 1}
   doSetCameraZoom: 1
   NewZoomLevel: 16
-  doSetCheckPoint: 0
+  doTotalResetCamera: 1
+  doSetCheckPoint: 1
 --- !u!1001 &248388212979526143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1962,6 +1963,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6531041438190588197, guid: f81e6a30cdfafb748a4d401af78e3dc4,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.6199999
+      objectReference: {fileID: 0}
     - target: {fileID: 1725540222677075188, guid: f81e6a30cdfafb748a4d401af78e3dc4,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1973,11 +1979,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 229215195000226386, guid: f81e6a30cdfafb748a4d401af78e3dc4,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.6199999
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531041438190588197, guid: f81e6a30cdfafb748a4d401af78e3dc4,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 0.6199999

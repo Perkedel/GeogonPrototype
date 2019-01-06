@@ -72,6 +72,10 @@ Karl Jones (Unity Technologies) https://forum.unity.com/threads/package-manager-
 Nicholas Repiquet https://stackoverflow.com/questions/4561374/percentage-calculation . Calculation of percentage progress bar! (current / maximum) * 100 .
 Digital Native Studios (Unity) https://digitalnativestudios.com/forum/index.php?topic=890.0 . FAQ no. 9 .
 Matthew Poush (reply) https://www.youtube.com/watch?v=6SL6zs2bDks . The song name he found! it was at LimeGreenTeknii comment where Matthew Poush replied!
+Lemon Disappointment car https://en.wikipedia.org/wiki/Lemon_%28automobile%29 . Car that is bad! real bad! already bad!
+Lemon Car meme! e.g. https://knowyourmeme.com/memes/lemon-car . It's a lemon with wheels!
+Earl of Lemongrab (Lemongrab v1) http://adventuretime.wikia.com/wiki/Earl_of_Lemongrab . UNACCEPTABLE!!!!!!!
+Lapigames Traffic Sign Asset pack for Unity https://lapigames.itch.io/unity-city-traffic-signs . Bonus! great useful for all things sign!
 
 
 Assets involved:

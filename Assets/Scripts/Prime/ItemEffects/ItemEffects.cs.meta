@@ -3,7 +3,19 @@ guid: 2527ea718bdb55845abc6bc9a8eb4daa
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - theGameObject: {fileID: 1879791580275176, guid: 76b832945ffb2ce4780d3ce6bc342d1d,
+      type: 3}
+  - theSHanpeWhoIsTouching: {fileID: 114835651349734718, guid: 76b832945ffb2ce4780d3ce6bc342d1d,
+      type: 3}
+  - levelManager: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
+      type: 3}
+  - theHUD: {fileID: 114772340340392410, guid: 8b674b371d577da45a80171c3e1c5440, type: 3}
+  - SeriousMainCamera: {fileID: 114459739183892036, guid: ba7baa79de388f741bebb85dfd74748a,
+      type: 3}
+  - ItemSelfSound: {instanceID: 0}
+  - OtherSelfSound: {fileID: 3212395759286306825, guid: 57195fb9782a1cb448fcef85c4182b8f,
+      type: 3}
   executionOrder: 0
   icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   userData: 
