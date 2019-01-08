@@ -363,7 +363,8 @@ public class ItemEffects : MonoBehaviour {
         //}
     }
     void Start () {
-        if (!theSHanpeWhoIsTouching)
+        bool foundShanpe =false;
+        if (!foundShanpe)
         {
             // Search for object with Player tag
             var go = GameObject.FindWithTag("Player");
@@ -375,6 +376,7 @@ public class ItemEffects : MonoBehaviour {
                 if (go.CompareTag("Player"))
                 {
                     theSHanpeWhoIsTouching = go.gameObject.GetComponent<SHanpe>();
+                    foundShanpe = true;
                 }
             }
         }
@@ -683,10 +685,6 @@ public class ItemEffects : MonoBehaviour {
         }
         if (theGameObject)
         {
-            if (collision.transform.parent.CompareTag("Player"))
-            {
-                theSHanpeWhoIsTouching = collision.transform.parent.GetComponent<SHanpe>();
-            }
         }
         if (theSHanpeWhoIsTouching)
         {
