@@ -15,6 +15,7 @@ TagManager:
   - RFID
   - Cloud
   - TeleportBack
+  - SenjataMusuh
   layers:
   - Default
   - TransparentFX

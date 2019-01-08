@@ -23,6 +23,20 @@ public class ItemEffects : MonoBehaviour {
     public float damageMeValue = 20; public float lavaDamageValue = 10;
     public float addArmorValue = 50;
 
+    //Allowed Shapes
+    [SerializeField] private bool Deserves = true;
+    public bool canBeCircle = true;
+    public bool canBeSquare = true;
+    public bool canBeTriangle = true;
+    public bool canBeDedd = false;
+    [SerializeField] private bool isCircle;
+    [SerializeField] private bool isSquare;
+    [SerializeField] private bool isTriangle;
+    [SerializeField] private bool isEikSerkat;
+
+    //StatusShape
+    [SerializeField] private SHanpe.Bentuk currentShape;
+
     //Template Methods
     public bool doSetHealth;
     public void setHealth(float value)
@@ -57,9 +71,10 @@ public class ItemEffects : MonoBehaviour {
     [SerializeField] private bool hasBeenInvisibled = false;
     public void invisiblizeSelf()
     {
+        SpriteRenderer CheckSpriteRenderer = GetComponent<SpriteRenderer>();
         if (!hasBeenInvisibled)
         {
-            GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+            if(CheckSpriteRenderer) CheckSpriteRenderer.color = new Color(1, 1, 1, 0);
             GetComponent<Collider2D>().enabled = false;
             hasBeenInvisibled = true;
         }
@@ -256,18 +271,82 @@ public class ItemEffects : MonoBehaviour {
         theSHanpeWhoIsTouching.initPosition = GetComponent<Transform>().position;
     }
 
+    public bool doDislodgeJoints;
+    [SerializeField] private bool ShanpeIsTriangle;
+    public Joint2D[] DislodgeTheseJoints;
+    public Collider2D[] DisableTheseWeapons;
+    public void letsDislodgeJoints()
+    {
+
+        //GameObject TriangleShape = null;
+        //Collider2D TriangleCollision;
+        //for(int i = 0; i < theSHanpeWhoIsTouching.transform.childCount; i++)
+        //{
+        //    if(theSHanpeWhoIsTouching.transform.GetChild(i).name == "SHanpe_Triangle")
+        //    {
+        //        TriangleShape = theSHanpeWhoIsTouching.transform.GetChild(i).gameObject;
+        //        TriangleCollision = TriangleShape.GetComponent<Collider2D>();
+        //        break;
+        //    }
+        //}
+        //if (transform.childCount > 0)
+        //{
+        //    GameObject refferChild;
+        //    Joint2D ChildJoint;
+        //    Collider2D ChildCollider2D;
+        //    for (int i = 0; i < transform.childCount; i++)
+        //    {
+        //        refferChild = transform.GetChild(i).gameObject;
+        //        ChildJoint = refferChild.GetComponent<Joint2D>();
+        //        ChildCollider2D = refferChild.GetComponent<Collider2D>();
+        //        if (refferChild)
+        //        {
+        //            if (ChildJoint)
+        //            {
+        //                //ChildJoint.connectedBody = GetComponent<Rigidbody2D>();
+        //                ChildJoint.breakForce = .001f;
+        //                ChildJoint.breakTorque = .001f;
+        //            }
+        //            if (ChildCollider2D)
+        //            {
+        //                if (refferChild.CompareTag("SenjataMusuh"))
+        //                {
+        //                    ChildCollider2D.enabled = false;
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
+
+        for (int i = 0; i < DislodgeTheseJoints.Length; i++)
+        {
+            if (DislodgeTheseJoints[i])
+            {
+                DislodgeTheseJoints[i].breakForce = .001f;
+                DislodgeTheseJoints[i].breakTorque = .001f;
+            }
+        }
+        for (int i = 0; i < DisableTheseWeapons.Length; i++)
+        {
+            if (DisableTheseWeapons[i])
+            {
+                DisableTheseWeapons[i].enabled = false;
+            }
+        }
+    }
+
     //toDo list
     /*
-     * Set camera zoom
+     * Set camera zoom (ok)
      * Set camera rotation
-     * Set camera effect
-     * particle
+     * Set camera effect (color)
+     * particle (ok)
      * medical
      * cynical
      * ah
      * im tierd
      * sleep
-     * set position
+     * set position 
      * set velocity (picking up this item will make the player run that fast)
      * disable movement
      * etc
@@ -275,7 +354,30 @@ public class ItemEffects : MonoBehaviour {
 
     //Base
     // Use this for initialization
+    private void Awake()
+    {
+        //Deserves = true;
+        //if (!theSHanpeWhoIsTouching)
+        //{
+        //    //theSHanpeWhoIsTouching = FindObjectOfType<SHanpe>();
+        //}
+    }
     void Start () {
+        if (!theSHanpeWhoIsTouching)
+        {
+            // Search for object with Player tag
+            var go = GameObject.FindWithTag("Player");
+            // Check we found an object with the player tag
+            if (go)
+            // Set the target to the object we found
+            {
+                //theGameObject = go;
+                if (go.CompareTag("Player"))
+                {
+                    theSHanpeWhoIsTouching = go.gameObject.GetComponent<SHanpe>();
+                }
+            }
+        }
         //GetComponent<Rigidbody2D>().isKinematic = true;
         //Search for object with HUD tag
         if (!theHUD)
@@ -305,7 +407,213 @@ public class ItemEffects : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+        if (theSHanpeWhoIsTouching)
+        {
+            currentShape = theSHanpeWhoIsTouching.currBentuk;
+
+            if (theSHanpeWhoIsTouching.currBentuk == SHanpe.Bentuk.Lingkaran)
+            {
+                isCircle = true;
+            } else
+            {
+                isCircle = false;
+            }
+
+            if (theSHanpeWhoIsTouching.currBentuk == SHanpe.Bentuk.Kotak)
+            {
+                isSquare = true;
+            }
+            else
+            {
+                isSquare = false;
+            }
+
+            if (theSHanpeWhoIsTouching.currBentuk == SHanpe.Bentuk.Segitiga)
+            {
+                ShanpeIsTriangle = true;
+                isTriangle = true;
+            }
+            else
+            {
+                ShanpeIsTriangle = false;
+                isTriangle = false;
+            }
+
+            if (theSHanpeWhoIsTouching.currBentuk == SHanpe.Bentuk.eekSerkat)
+            {
+                isEikSerkat = true;
+            }
+            else
+            {
+                isEikSerkat = false;
+            }
+        }
+
+        #region Can Be What Shape
+
+        if (canBeCircle && canBeSquare && canBeTriangle && canBeDedd)
+        {
+            Deserves = true;
+        }
+        else if (canBeCircle && canBeSquare && canBeTriangle && !canBeDedd)
+        {
+            if (isEikSerkat)
+            {
+                Deserves = false;
+            }
+            else if (isCircle || isSquare || isTriangle)
+            {
+                Deserves = true;
+            }
+        }
+        else if (canBeCircle && canBeSquare && !canBeTriangle && canBeDedd)
+        {
+            if (isTriangle)
+            {
+                Deserves = false;
+            }
+            else if (isCircle || isSquare || isEikSerkat)
+            {
+                Deserves = true;
+            }
+        }
+        else if (canBeCircle && canBeSquare && !canBeTriangle && !canBeDedd)
+        {
+            if (isTriangle || isEikSerkat)
+            {
+                Deserves = false;
+            }
+            else if (isCircle || isSquare)
+            {
+                Deserves = true;
+            }
+        }
+        else if (canBeCircle && !canBeSquare && canBeTriangle && canBeDedd)
+        {
+            if (isSquare)
+            {
+                Deserves = false;
+            }
+            else if (isCircle || isTriangle || isEikSerkat)
+            {
+                Deserves = true;
+            }
+        }
+        else if (canBeCircle && !canBeSquare && canBeTriangle && !canBeDedd)
+        {
+            if (isSquare)
+            {
+                Deserves = false;
+            }
+            else if (isCircle || isTriangle)
+            {
+                Deserves = true;
+            }
+        }
+        else if (canBeCircle && !canBeSquare && !canBeTriangle && canBeDedd)
+        {
+            if (isSquare || isTriangle)
+            {
+                Deserves = false;
+            }
+            else if (isCircle || isEikSerkat)
+            {
+                Deserves = true;
+            }
+        }
+        else if (canBeCircle && !canBeSquare && !canBeTriangle && !canBeDedd)
+        {
+            if (isSquare || isTriangle || isEikSerkat)
+            {
+                Deserves = false;
+            }
+            else if (isCircle)
+            {
+                Deserves = true;
+            }
+        }
+        else if (!canBeCircle && canBeSquare && canBeTriangle && canBeDedd)
+        {
+            if (isCircle)
+            {
+                Deserves = false;
+            }
+            else if (isSquare || isTriangle || isEikSerkat)
+            {
+                Deserves = true;
+            }
+        }
+        else if (!canBeCircle && canBeSquare && canBeTriangle && !canBeDedd)
+        {
+            if (isCircle || isEikSerkat)
+            {
+                Deserves = false;
+            }
+            else if (isSquare || isTriangle)
+            {
+                Deserves = true;
+            }
+        }
+        else if (!canBeCircle && canBeSquare && !canBeTriangle && canBeDedd)
+        {
+            if (isCircle || isTriangle)
+            {
+                Deserves = false;
+            }
+            else if (isSquare || isEikSerkat)
+            {
+                Deserves = true;
+            }
+        }
+        else if (!canBeCircle && canBeSquare && !canBeTriangle && !canBeDedd)
+        {
+            if (isCircle || isTriangle || isEikSerkat)
+            {
+                Deserves = false;
+            }
+            else if (isSquare)
+            {
+                Deserves = true;
+            }
+        }
+        else if (!canBeCircle && !canBeSquare && canBeTriangle && canBeDedd)
+        {
+            if (isCircle || isSquare)
+            {
+                Deserves = false;
+            }
+            else if (isTriangle || isEikSerkat)
+            {
+                Deserves = true;
+            }
+        }
+        else if (!canBeCircle && !canBeSquare && canBeTriangle && !canBeDedd)
+        {
+            if (isCircle || isSquare || isEikSerkat)
+            {
+                Deserves = false;
+            }
+            else if (isTriangle)
+            {
+                Deserves = true;
+            }
+        }
+        else if (!canBeCircle && !canBeSquare && !canBeTriangle && canBeDedd)
+        {
+            if (isCircle || isSquare || isTriangle)
+            {
+                Deserves = false;
+            }
+            else if (isEikSerkat)
+            {
+                Deserves = true;
+            }
+        }
+        else if (!canBeCircle && !canBeSquare && !canBeTriangle && !canBeDedd)
+        {
+            Deserves = true; //if none of them allowed, then it treated as allow all.
+        }
+        #endregion
     }
 
     //OnCollision Detection
@@ -368,101 +676,133 @@ public class ItemEffects : MonoBehaviour {
 
         //Get Parent gameobject! https://answers.unity.com/questions/12301/how-can-i-get-a-parent-gameobject-of-gameobject-us.html
         //Because children contact collide with item!!!
-        theGameObject = collision.gameObject.transform.parent.gameObject;
-        theSHanpeWhoIsTouching = theGameObject.GetComponent<SHanpe>();
+        bool ActualDeserves;
+        if (collision.transform.parent)
+        {
+            theGameObject = collision.transform.parent.gameObject;
+        }
+        if (theGameObject)
+        {
+            if (collision.transform.parent.CompareTag("Player"))
+            {
+                theSHanpeWhoIsTouching = collision.transform.parent.GetComponent<SHanpe>();
+            }
+        }
         if (theSHanpeWhoIsTouching)
         {
-            if (doPlaySoundArray)
+            if (theSHanpeWhoIsTouching.gameObject == theGameObject)
             {
-                PlaySoundArray();
-            }
-            if (doPlaySoundWhichRand)
-            {
-                PlaySoundWhichRand();
-            }
-            if (doVibrate)
-            {
-                Vibration.Vibrate(50); //android O has trouble with just calling vibrate. deprecated probably
-            }
-            if (doAddHealth)
-            {
-                addHealth(addHPvalue);
-            }
-            if (doSetHealth)
-            {
-                setHealth(setHPvalue);
-            }
-            if (doDamageMe)
-            {
-                damageMe(damageMeValue);
-                //Debug.Log("OUCH");
-            }
-            if (doSayDebug)
-            {
-                sayDebug();
-            }
-            if (doVibrateCertainTime)
-            {
-                Vibrates(vibrateForHowLong);
-            }
-            if (doLevelComplete)
-            {
-                LevelComplete();
-            }
-            if (doLevelFailed)
-            {
-                LevelFailed();
-            }
-            if (doLevelDevExited)
-            {
-                LevelDevExited();
-            }
-            if (doSetGravity)
-            {
-                SetGravity(gravityNewValue);
-            }
-            if (doEmitParticles)
-            {
-                EmitTheseParticles();
-            }
-            if (doEnableTheseObjects)
-            {
-                LetsEnableObjects();
-            }
-            if (doDisableTheseObjects)
-            {
-                LetsDisableObjects();
-            }
-            if (doSetCameraColor)
-            {
-                letsColorCamera();
-            }
-            if (doSetCameraZoom)
-            {
-                letsZoomCamera();
-            }
-            if (doTotalResetCamera)
-            {
-                LetsTotalResetCamera();
-            }
-            if (doSetCheckPoint)
-            {
-                letsCheckpoint();
-            }
-            if (pseudoSingleUse)
-            {
-                invisiblizeSelf();
-            }
-            if (singleUse)
-            {
-                //anItem.destroySelf();
-                Destroy(gameObject);
+
+                if (Deserves) ActualDeserves = true; else ActualDeserves = false;
+                //if (!MustBeTriangleShape)
+                //{
+                //    Deserves = true;
+                //} else if(MustBeTriangleShape && ShanpeIsTriangle)
+                //{
+                //    Deserves = true;
+                //} else
+                //{
+                //    Deserves = false;
+                //}
+                if (ActualDeserves)
+                {
+                    if (doPlaySoundArray)
+                    {
+                        PlaySoundArray();
+                    }
+                    if (doPlaySoundWhichRand)
+                    {
+                        PlaySoundWhichRand();
+                    }
+                    if (doVibrate)
+                    {
+                        Vibration.Vibrate(50); //android O has trouble with just calling vibrate. deprecated probably
+                    }
+                    if (doAddHealth)
+                    {
+                        addHealth(addHPvalue);
+                    }
+                    if (doSetHealth)
+                    {
+                        setHealth(setHPvalue);
+                    }
+                    if (doDamageMe)
+                    {
+                        damageMe(damageMeValue);
+                        //Debug.Log("OUCH");
+                    }
+                    if (doSayDebug)
+                    {
+                        sayDebug();
+                    }
+                    if (doVibrateCertainTime)
+                    {
+                        Vibrates(vibrateForHowLong);
+                    }
+                    if (doLevelComplete)
+                    {
+                        LevelComplete();
+                    }
+                    if (doLevelFailed)
+                    {
+                        LevelFailed();
+                    }
+                    if (doLevelDevExited)
+                    {
+                        LevelDevExited();
+                    }
+                    if (doSetGravity)
+                    {
+                        SetGravity(gravityNewValue);
+                    }
+                    if (doEmitParticles)
+                    {
+                        EmitTheseParticles();
+                    }
+                    if (doEnableTheseObjects)
+                    {
+                        LetsEnableObjects();
+                    }
+                    if (doDisableTheseObjects)
+                    {
+                        LetsDisableObjects();
+                    }
+                    if (doSetCameraColor)
+                    {
+                        letsColorCamera();
+                    }
+                    if (doSetCameraZoom)
+                    {
+                        letsZoomCamera();
+                    }
+                    if (doTotalResetCamera)
+                    {
+                        LetsTotalResetCamera();
+                    }
+                    if (doSetCheckPoint)
+                    {
+                        letsCheckpoint();
+                    }
+                    if (doDislodgeJoints)
+                    {
+                        letsDislodgeJoints();
+                    }
+                    if (pseudoSingleUse)
+                    {
+                        invisiblizeSelf();
+                    }
+                    if (singleUse)
+                    {
+                        //anItem.destroySelf();
+                        Destroy(gameObject);
+                    }
+                }
             }
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (theGameObject.tag == "Player")
+        if (theSHanpeWhoIsTouching)
         {
             if (doLavaDamage)
             {
@@ -478,57 +818,57 @@ public class ItemEffects : MonoBehaviour {
     }
 
     //Non-Trigger Collision
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        theGameObject = collision.transform.parent.gameObject;
-        theSHanpeWhoIsTouching = theGameObject.GetComponent<SHanpe>();
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    theGameObject = collision.transform.parent.gameObject;
+    //    theSHanpeWhoIsTouching = theGameObject.GetComponent<SHanpe>();
 
-        if (theSHanpeWhoIsTouching)
-        {
-            if (doVibrate)
-            {
-                Vibration.Vibrate(50); //android O has trouble with just calling vibrate. deprecated probably
-            }
-            if (doAddHealth)
-            {
-                addHealth(addHPvalue);
-            }
-            if (doSetHealth)
-            {
-                setHealth(setHPvalue);
-            }
-            if (doDamageMe)
-            {
-                damageMe(damageMeValue);
-                //Debug.Log("OUCH");
-            }
-            if (singleUse)
-            {
-                //anItem.destroySelf();
-                Destroy(gameObject);
-            }
-            if (doSayDebug)
-            {
-                sayDebug();
-            }
-            if (doVibrateCertainTime)
-            {
-                Vibrates(vibrateForHowLong);
-            }
-            if (doLevelComplete)
-            {
-                LevelComplete();
-            }
-            if (doLevelFailed)
-            {
-                LevelFailed();
-            }
-            if (doSetGravity)
-            {
-                SetGravity(gravityNewValue);
-            }
-        }
-    }
+    //    if (theSHanpeWhoIsTouching)
+    //    {
+    //        if (doVibrate)
+    //        {
+    //            Vibration.Vibrate(50); //android O has trouble with just calling vibrate. deprecated probably
+    //        }
+    //        if (doAddHealth)
+    //        {
+    //            addHealth(addHPvalue);
+    //        }
+    //        if (doSetHealth)
+    //        {
+    //            setHealth(setHPvalue);
+    //        }
+    //        if (doDamageMe)
+    //        {
+    //            damageMe(damageMeValue);
+    //            //Debug.Log("OUCH");
+    //        }
+    //        if (singleUse)
+    //        {
+    //            //anItem.destroySelf();
+    //            Destroy(gameObject);
+    //        }
+    //        if (doSayDebug)
+    //        {
+    //            sayDebug();
+    //        }
+    //        if (doVibrateCertainTime)
+    //        {
+    //            Vibrates(vibrateForHowLong);
+    //        }
+    //        if (doLevelComplete)
+    //        {
+    //            LevelComplete();
+    //        }
+    //        if (doLevelFailed)
+    //        {
+    //            LevelFailed();
+    //        }
+    //        if (doSetGravity)
+    //        {
+    //            SetGravity(gravityNewValue);
+    //        }
+    //    }
+    //}
 
     private void OnCollisionStay2D(Collision2D collision)
     {

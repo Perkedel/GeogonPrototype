@@ -57,6 +57,7 @@ AnaRhisT ZoomIN ZoomOUT https://answers.unity.com/questions/20228/mouse-wheel-zo
 Brian Kehrer https://answers.unity.com/questions/10006/mouse-camera-camera-mouse.html . Valid Tranform move camera.
 bbrode https://answers.unity.com/questions/208447/set-rotation-of-a-transform.html. reset rotation after respawn.
 Molix https://answers.unity.com/questions/14637/get-the-currently-open-scene-name-or-file-name.html. get currently active scene name.
+Mike 3 https://answers.unity.com/questions/16675/running-an-external-exe-file-from-unity.html . run EXE file from Unity
 sparkzbarca https://answers.unity.com/questions/331545/double-click-mouse-detection-.html . Double Click!
 Fabryka Twórców Gier https://www.youtube.com/watch?v=H-jYAWtVnQA . Set this Unity Remote 5 up.
 CodeMasterMike https://answers.unity.com/questions/386592/using-delta-to-find-mouse-movement.html . Delta Mouse position sesungguhnya! (edited for this case)
@@ -76,6 +77,7 @@ Lemon Disappointment car https://en.wikipedia.org/wiki/Lemon_%28automobile%29 . 
 Lemon Car meme! e.g. https://knowyourmeme.com/memes/lemon-car . It's a lemon with wheels!
 Earl of Lemongrab (Lemongrab v1) http://adventuretime.wikia.com/wiki/Earl_of_Lemongrab . UNACCEPTABLE!!!!!!!
 Lapigames Traffic Sign Asset pack for Unity https://lapigames.itch.io/unity-city-traffic-signs . Bonus! great useful for all things sign!
+lonelydodo found error when he nulled the connected rigidbody https://forum.unity.com/threads/disabling-joints.87811/ . So I don't mess it but make the break force and break torque lowest possible!
 
 
 Assets involved:
