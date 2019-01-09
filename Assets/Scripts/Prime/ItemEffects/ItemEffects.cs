@@ -2,11 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using XInputDotNetPure;
 
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(AudioSource))]
 public class ItemEffects : MonoBehaviour {
+
+    //Controller
+    bool playerIndexSet = false;
+    PlayerIndex playerIndex;
+    GamePadState state;
+    GamePadState prevState;
 
     Collision2D whosTouching;
     GameObject genericToucher;
@@ -102,14 +109,17 @@ public class ItemEffects : MonoBehaviour {
     public void VibrateCertainMillisecond()
     {
         Vibration.Vibrate(vibrateForHowLong);
+        CallVibrationGround(vibrateForHowLong, 1f, 1f);
     }
     public void Vibrates(long value) //Milliseconds
     {
         Vibration.Vibrate(value);
+        CallVibrationGround(value, 1f, 1f);
     }
     public void Vibrates(long[] pattern, int repeatFrom)
     {
         Vibration.Vibrate(pattern, repeatFrom);
+        CallVibrationGround(1f, 1f, 1f);
     }
 
     public bool doLevelComplete = false;
@@ -362,6 +372,62 @@ public class ItemEffects : MonoBehaviour {
         //    //theSHanpeWhoIsTouching = FindObjectOfType<SHanpe>();
         //}
     }
+
+    //Special
+    bool PressVibrateGroundButton = true;
+    float timingBrate = 0f;
+    float timingBring = 0f;
+    float StrengthLeft = 1f; //0..1
+    float StrengthRight = 1f; //0..1
+    bool letsbegin = false;
+    public void CallVibrationGround(float howLong)
+    {
+        StrengthLeft = 1f;
+        StrengthRight = 1f;
+        PressVibrateGroundButton = true;
+        timingBring = howLong;
+    }
+    public void CallVibrationGround(float howLong, float howStrongLeft, float howStrongRight)
+    {
+        StrengthLeft = howStrongLeft;
+        StrengthRight = howStrongRight;
+        PressVibrateGroundButton = true;
+        timingBring = howLong;
+    }
+    public void LetsVibratorGround() //always on
+    {
+        if (PressVibrateGroundButton)
+        {
+            timingBrate = timingBring;
+            PressVibrateGroundButton = false;
+        }
+        if (timingBrate > 0)
+        {
+            if (!letsbegin)
+            {
+                //Debug.Log("VibrateON");
+                GamePad.SetVibration(playerIndex, StrengthLeft, StrengthRight);
+                letsbegin = true;
+            }
+        }
+        else
+        {
+            if (letsbegin)
+            {
+                //Debug.Log("VibrateOFF");
+                GamePad.SetVibration(playerIndex, 0f, 0f);
+                letsbegin = false;
+            }
+        }
+        timingBrate -= Time.deltaTime;
+    }
+    //end Special
+
+    private void FixedUpdate()
+    {
+        LetsVibratorGround();
+    }
+
     void Start () {
         bool foundShanpe =false;
         if (!foundShanpe)

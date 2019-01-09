@@ -90,6 +90,7 @@ Fenerax Studio https://assetstore.unity.com/packages/tools/input-management/joys
 Seanba https://seanba.itch.io/supertiled2unity Super Tiled 2 Unity. Easy import Tiled! instant prefabs per TMX and Tiled sheets!!! drag and drop the TMX file to the scene!!! WOAHOW SIMPLEZ!!! MANTAB JIWA!!!
 ENSOU https://assetstore.unity.com/packages/tools/audio/ens-music-player-108759 Music Player. [Decommissioned] Missing Assembly refference mysteriously. ruins everything!
 Hajiyev Elnur https://assetstore.unity.com/packages/audio/music/professional-music-player-90589 Music Player. Professional Music Player!
+speps https://github.com/speps/XInputDotNet XinputDotNet. full Xbox controller support!
 
 Packages involved (Beside preinstalled and built-in, user installed!):
 2D Sprite Shape. Create bendable string of sprites! great for various shaped platform, and other weird stuff! Unity's experimental!!!

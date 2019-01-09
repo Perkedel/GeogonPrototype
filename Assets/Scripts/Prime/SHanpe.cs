@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput; //https://www.youtube.com/watch?v=DNLAuV-d4sA 
 using UnityEngine.Audio; //https://docs.unity3d.com/ScriptReference/AudioSource.Play.html
+using XInputDotNetPure;
 
 [RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -69,6 +70,13 @@ public class SHanpe : MonoBehaviour {
     //View Conditions
     [SerializeField][Range(0, 100)] private float healthMonitor = 100;
     [SerializeField][Range(0, 100)] private float armourMonitor = 20;
+    [SerializeField] private bool VibrationGrounded = false;
+
+    //Controller
+    bool playerIndexSet = false;
+    PlayerIndex playerIndex;
+    GamePadState state;
+    GamePadState prevState;
 
     //Item Effects (Deprecating)
     private bool isTickled = false;
@@ -149,6 +157,7 @@ public class SHanpe : MonoBehaviour {
             (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2") || Input.GetButtonDown("Fire3")))
         {
             Vibration.Vibrate(50);
+            CallVibrationGround(.1f, .4f, .4f);
         }
     }
 
@@ -158,6 +167,7 @@ public class SHanpe : MonoBehaviour {
         {
             itSelfSound.PlayOneShot(JumpSounds[Random.Range(0, JumpSounds.Length)], .05f);
             Vibration.Vibrate(75);
+            CallVibrationGround(.1f, 1f, 1f);
             rb2D.AddForce(Vector2.up * currJumps * 10f);
             currJumpToken -= 1;
         }
@@ -242,6 +252,7 @@ public class SHanpe : MonoBehaviour {
         if (value > 0)
         {
             Vibration.Vibrate(150);
+            CallVibrationGround(.2f, 1f, 1f);
             HealthPoint -= (value - ArmourPoint/3f);
         } else
         {
@@ -250,6 +261,7 @@ public class SHanpe : MonoBehaviour {
         if(HealthPoint <= 0)
         {
             Vibration.Vibrate(2000);
+            CallVibrationGround(5f, 100f, 100f);
         }
     }
 
@@ -263,7 +275,7 @@ public class SHanpe : MonoBehaviour {
     public void vibrateDevice()
     {
 #if UNITY_IOS || UNITY_ANDROID || UNITY_WSA
-        Handheld.Vibrate();
+        //Handheld.Vibrate();
 #endif
     }
 
@@ -310,6 +322,56 @@ public class SHanpe : MonoBehaviour {
         SelfDestructButton = false;
         HealthPoint = 0;
     }
+
+    //Special
+    bool PressVibrateGroundButton = true;
+    float timingBrate = 0f;
+    float timingBring = 0f;
+    float StrengthLeft = 1f; //0..1
+    float StrengthRight = 1f; //0..1
+    bool letsbegin = false;
+    public void CallVibrationGround(float howLong)
+    {
+        StrengthLeft = 1f;
+        StrengthRight = 1f;
+        PressVibrateGroundButton = true;
+        timingBring = howLong;
+    }
+    public void CallVibrationGround(float howLong, float howStrongLeft, float howStrongRight)
+    {
+        StrengthLeft = howStrongLeft;
+        StrengthRight = howStrongRight;
+        PressVibrateGroundButton = true;
+        timingBring = howLong;
+    }
+    public void LetsVibratorGround() //always on
+    {
+        if (PressVibrateGroundButton)
+        {
+            timingBrate = timingBring;
+            PressVibrateGroundButton = false;
+        }
+        if (timingBrate > 0)
+        {
+            if (!letsbegin)
+            {
+                //Debug.Log("VibrateON");
+                GamePad.SetVibration(playerIndex, StrengthLeft, StrengthRight);
+                letsbegin = true;
+            }
+        }
+        else
+        {
+            if (letsbegin)
+            {
+                //Debug.Log("VibrateOFF");
+                GamePad.SetVibration(playerIndex, 0f, 0f);
+                letsbegin = false;
+            }
+        }
+        timingBrate -= Time.deltaTime;
+    }
+    //end Special
 
     //Check Something from other objects
     public FollowPlayerCSharp TheCameraAction;
@@ -362,9 +424,38 @@ public class SHanpe : MonoBehaviour {
         }
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void FixedUpdate()
+    {
+        LetsVibratorGround();
+    }
+
+    // Update is called once per frame
+    void Update () {
+        
+        //Copied from XInputTestCS.cs
+        if (!playerIndexSet || !prevState.IsConnected)
+        {
+            //for (int i = 0; i < 4; ++i)
+            //{
+            //    PlayerIndex testPlayerIndex = (PlayerIndex)i;
+            //    GamePadState testState = GamePad.GetState(testPlayerIndex);
+            //    if (testState.IsConnected)
+            //    {
+            //        Debug.Log(string.Format("GamePad found {0}", testPlayerIndex));
+            //        playerIndex = testPlayerIndex;
+            //        playerIndexSet = true;
+            //    }
+            //}
+            PlayerIndex testPlayerIndex = (PlayerIndex)0;
+            GamePadState testState = GamePad.GetState(testPlayerIndex);
+            if (testState.IsConnected)
+            {
+                playerIndex = testPlayerIndex;
+                playerIndexSet = true;
+            }
+        }
+        //End Copy of XInputTestCS.cs
 
         float ControlSlide = 0;
         float ControlRolls = 0;
@@ -596,6 +687,7 @@ public class SHanpe : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Vibration.Vibrate(50);
+        CallVibrationGround(.15f);
         //Touched the Ground
         //itSelfSound.Play(0);
         //Debug.Log("Collision Enter");
@@ -627,6 +719,11 @@ public class SHanpe : MonoBehaviour {
             }
             //collision.gameObject.SetActive(false);
         }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        PressVibrateGroundButton = false;
     }
 
     private void OnCollisionExit2D(Collision2D collision)
