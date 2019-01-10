@@ -78,6 +78,8 @@ Lemon Car meme! e.g. https://knowyourmeme.com/memes/lemon-car . It's a lemon wit
 Earl of Lemongrab (Lemongrab v1) http://adventuretime.wikia.com/wiki/Earl_of_Lemongrab . UNACCEPTABLE!!!!!!!
 Lapigames Traffic Sign Asset pack for Unity https://lapigames.itch.io/unity-city-traffic-signs . Bonus! great useful for all things sign!
 lonelydodo found error when he nulled the connected rigidbody https://forum.unity.com/threads/disabling-joints.87811/ . So I don't mess it but make the break force and break torque lowest possible!
+Aaron Nieze http://goinkscape.com/how-to-create-3d-perspective-grids-in-inkscape/ Create perspective inkscape. make perspective!
+Aaron Nieze http://goinkscape.com/using-perspective-for-3d-in-inkscape/ using perspective . branded perspective.
 
 
 Assets involved:
