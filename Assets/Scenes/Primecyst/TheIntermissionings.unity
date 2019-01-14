@@ -412,6 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab5ae5e1f5e82e84286b753d9c1df954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PauseStatus: 0
   pauseMenuUI: {fileID: 1552214077}
   hideThoseUI:
   - {fileID: 1851538142}
@@ -1417,7 +1418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 012ec01599fad3240b63225fb7036cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SetTimer: 90
+  SetTimer: 5
   ButtonText: Play now
   SeeTimer: 0
   PercentTimer: 0
@@ -2935,6 +2936,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
+        type: 3}
+      propertyPath: eventSystem
+      value: 
+      objectReference: {fileID: 2071597636}
+    - target: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
+        type: 3}
+      propertyPath: progressText
+      value: 
+      objectReference: {fileID: 486275209}
+    - target: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
+        type: 3}
+      propertyPath: loadingScreen
+      value: 
+      objectReference: {fileID: 603075335}
+    - target: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 791822248}
+    - target: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
+        type: 3}
+      propertyPath: MusicPlayer
+      value: 
+      objectReference: {fileID: 253201021}
     - target: {fileID: 1834674460889490, guid: 57195fb9782a1cb448fcef85c4182b8f, type: 3}
       propertyPath: m_Name
       value: LevelLoader
@@ -2987,31 +3013,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
-        type: 3}
-      propertyPath: eventSystem
-      value: 
-      objectReference: {fileID: 2071597636}
-    - target: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
-        type: 3}
-      propertyPath: progressText
-      value: 
-      objectReference: {fileID: 486275209}
-    - target: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
-        type: 3}
-      propertyPath: loadingScreen
-      value: 
-      objectReference: {fileID: 603075335}
-    - target: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
-        type: 3}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 791822248}
-    - target: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
-        type: 3}
-      propertyPath: MusicPlayer
-      value: 
-      objectReference: {fileID: 253201021}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57195fb9782a1cb448fcef85c4182b8f, type: 3}
 --- !u!114 &1778252011 stripped
@@ -4108,11 +4109,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5564033696924969277, guid: d8a8dc02128e6a94485835f7c70f4750,
-        type: 3}
-      propertyPath: playList.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 020cd7dd7f5efa145b8126648d2d2970, type: 3}
     - target: {fileID: 5564033695763198506, guid: d8a8dc02128e6a94485835f7c70f4750,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -4133,5 +4129,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5564033696924969277, guid: d8a8dc02128e6a94485835f7c70f4750,
+        type: 3}
+      propertyPath: playList.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 020cd7dd7f5efa145b8126648d2d2970, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a8dc02128e6a94485835f7c70f4750, type: 3}

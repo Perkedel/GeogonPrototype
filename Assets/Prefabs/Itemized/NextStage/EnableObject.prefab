@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2440555436404271196}
   m_Layer: 0
   m_Name: EnableObject
-  m_TagString: Untagged
+  m_TagString: NextStage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -255,6 +255,16 @@ MonoBehaviour:
   damageMeValue: 20
   lavaDamageValue: 10
   addArmorValue: 50
+  Deserves: 1
+  canBeCircle: 1
+  canBeSquare: 1
+  canBeTriangle: 1
+  canBeDedd: 0
+  isCircle: 0
+  isSquare: 0
+  isTriangle: 0
+  isEikSerkat: 0
+  currentShape: 0
   doSetHealth: 0
   doAddHealth: 0
   doDamageMe: 0
@@ -302,3 +312,7 @@ MonoBehaviour:
   NewZoomLevel: 0
   doTotalResetCamera: 1
   doSetCheckPoint: 1
+  doDislodgeJoints: 0
+  ShanpeIsTriangle: 0
+  DislodgeTheseJoints: []
+  DisableTheseWeapons: []

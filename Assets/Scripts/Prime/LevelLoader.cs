@@ -31,6 +31,9 @@ public class LevelLoader : MonoBehaviour {
     [Range(0, 1)] public float volumeControl = 1;
     public AudioClip[] LevelCompleteSound;
     public AudioClip[] LevelFailedSound;
+    public bool levelIsModuleBased = false;
+    public GameObject[] LevelModules;
+    public GameObject[] ModuleCheckpoints;
 
     //Statusing
     public bool levelIsCompleted = false;
@@ -187,6 +190,27 @@ public class LevelLoader : MonoBehaviour {
                 player = go.gameObject.GetComponent<SHanpe>();
         }
         StoreSelected = eventSystem.firstSelectedGameObject;
+
+        //Load level from Module
+        GameObject SelectedLevelModule;
+        GameObject DirectToNextStage;
+        if (StoreScene.checkStartPoint)
+        {
+            if (StoreScene.whichLevelModuleIndex == 0)
+            {
+
+            }
+            else if (StoreScene.whichLevelModuleIndex > 0)
+            {
+                for (int i = 0; i < LevelModules.Length; i++)
+                {
+                    SelectedLevelModule = LevelModules[1];
+                    //find with tag inside this Selected level module, those child, for Module Checkpoint
+                    //so the player should teleport instant to that object position, and enable that module
+                }
+            }
+        }
+        //End load level from module
     }
     public void Update()
     {

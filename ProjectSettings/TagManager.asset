@@ -16,6 +16,8 @@ TagManager:
   - Cloud
   - TeleportBack
   - SenjataMusuh
+  - NextStage
+  - Module Checkpoint
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,8 @@ public static class StoreScene {
     static string[] altNextSceneNames = { "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
     static int[] altNextSceneIndexes = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
     const string DevExitScene = "DeveloperExit";
-    static string NextLevelNamer;
+    public static bool checkStartPoint;
+    public static int whichLevelModuleIndex;
 
     public static void LoadSettings()
     {
@@ -80,15 +81,5 @@ public static class StoreScene {
         }
     }
 
-    public static string NextLevelNaming
-    {
-        get
-        {
-            return NextLevelNamer;
-        }
-        set
-        {
-            NextLevelNamer = value;
-        }
-    }
+    public static string NextLevelNaming { get; set; }
 }
