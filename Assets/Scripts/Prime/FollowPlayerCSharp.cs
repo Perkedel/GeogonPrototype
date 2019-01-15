@@ -23,7 +23,7 @@ public class FollowPlayerCSharp : MonoBehaviour
     [Range(10, 1000000)] public float constrainXleft = -100, constrainYdown = -100, constrainXright = 100, constrainYup = 100;
 
     [Range(1, 1000000)] public float Zoom; //Modification has just happened! (JOELwindows7)
-    [SerializeField] private float initialZoom;
+    public float initialZoom;
     [Range(1, 1000000)] public float constrainZoomMax = 100f, constrainZoomMin = 1f;
 
     //Conditions

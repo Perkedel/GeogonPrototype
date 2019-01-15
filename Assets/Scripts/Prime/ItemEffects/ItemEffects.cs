@@ -263,10 +263,12 @@ public class ItemEffects : MonoBehaviour {
     }
 
     public bool doSetCameraZoom;
+    public bool doSetNewZoomADefault = true;
     public float NewZoomLevel;
     public void letsZoomCamera()
     {
         SeriousMainCamera.Zoom = NewZoomLevel;
+        if(doSetNewZoomADefault) SeriousMainCamera.initialZoom = NewZoomLevel;
     }
 
     public bool doTotalResetCamera = false;
@@ -276,9 +278,16 @@ public class ItemEffects : MonoBehaviour {
     }
 
     public bool doSetCheckPoint;
+    public bool doSetCheckPointBasedOnCurrShanpePosition = true;
     public void letsCheckpoint()
     {
-        theSHanpeWhoIsTouching.initPosition = GetComponent<Transform>().position;
+        if (!doSetCheckPointBasedOnCurrShanpePosition)
+        {
+            theSHanpeWhoIsTouching.initPosition = GetComponent<Transform>().position;
+        } else
+        {
+            theSHanpeWhoIsTouching.initPosition = theSHanpeWhoIsTouching.transform.position;
+        }
     }
 
     public bool doDislodgeJoints;
@@ -682,6 +691,16 @@ public class ItemEffects : MonoBehaviour {
             Deserves = true; //if none of them allowed, then it treated as allow all.
         }
         #endregion
+    }
+
+    private void Executo()
+    {
+        //Basically trigger for ItemEffect activation to be called by Collision and Trigger
+        //considering should it be put
+    }
+    private void ExecutoHold()
+    {
+        //for Collider/Trigger Hold
     }
 
     //OnCollision Detection

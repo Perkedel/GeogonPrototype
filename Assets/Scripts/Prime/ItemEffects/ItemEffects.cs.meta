@@ -14,8 +14,7 @@ MonoImporter:
   - SeriousMainCamera: {fileID: 114459739183892036, guid: ba7baa79de388f741bebb85dfd74748a,
       type: 3}
   - ItemSelfSound: {instanceID: 0}
-  - OtherSelfSound: {fileID: 3212395759286306825, guid: 57195fb9782a1cb448fcef85c4182b8f,
-      type: 3}
+  - OtherSelfSound: {instanceID: 0}
   executionOrder: 0
   icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   userData: 

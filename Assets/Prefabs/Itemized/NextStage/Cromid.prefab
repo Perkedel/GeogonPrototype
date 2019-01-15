@@ -117,7 +117,7 @@ PrefabInstance:
     - target: {fileID: 2440555436404271196, guid: a475a8d9551bce341b5617a1ed410f04,
         type: 3}
       propertyPath: NewZoomLevel
-      value: 17
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2440555436404271199, guid: a475a8d9551bce341b5617a1ed410f04,
         type: 3}

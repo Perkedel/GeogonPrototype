@@ -33,7 +33,7 @@ public class LevelLoader : MonoBehaviour {
     public AudioClip[] LevelFailedSound;
     public bool levelIsModuleBased = false;
     public GameObject[] LevelModules;
-    public GameObject[] ModuleCheckpoints;
+    //public GameObject[] ModuleCheckpoints;
 
     //Statusing
     public bool levelIsCompleted = false;
@@ -175,9 +175,26 @@ public class LevelLoader : MonoBehaviour {
     }
     //same as above restart level lol
 
+    //SetDoLoadfromModule
+    public void SetLoadfromModule(bool value)
+    {
+        StoreScene.checkStartPoint = value;
+    }
+    public void SetWhichLeveltoLoadIndex(int index)
+    {
+        StoreScene.whichLevelModuleIndex = index;
+    }
+    //end set do load from module
+
     //Basic Unity Method
     public void Start()
     {
+        levelIsCompleted = false;
+        levelIsDevExited = false;
+        levelIsFailed = false;
+        levelIsModuleBased = false;
+        //StoreScene.checkStartPoint = false;
+        //StoreScene.whichLevelModuleIndex = 0;
         ItselfSound = GetComponent<AudioSource>();
         AltLevelNames = new string[AltLevelNames.Length];
         if (!player)
@@ -193,22 +210,32 @@ public class LevelLoader : MonoBehaviour {
 
         //Load level from Module
         GameObject SelectedLevelModule;
-        GameObject DirectToNextStage;
+        SubLevelGovernor StartPointFromSubLevelGovern;
         if (StoreScene.checkStartPoint)
         {
-            if (StoreScene.whichLevelModuleIndex == 0)
+            if (LevelModules.Length > 0)
             {
-
-            }
-            else if (StoreScene.whichLevelModuleIndex > 0)
-            {
-                for (int i = 0; i < LevelModules.Length; i++)
+                if (StoreScene.whichLevelModuleIndex == 0)
                 {
-                    SelectedLevelModule = LevelModules[1];
+
+                }
+                else if (StoreScene.whichLevelModuleIndex >= 0)
+                {
+                    SelectedLevelModule = LevelModules[StoreScene.whichLevelModuleIndex];
+                    LevelModules[0].SetActive(false);
+                    SelectedLevelModule.SetActive(true);
                     //find with tag inside this Selected level module, those child, for Module Checkpoint
                     //so the player should teleport instant to that object position, and enable that module
+                    StartPointFromSubLevelGovern = SelectedLevelModule.GetComponent<SubLevelGovernor>();
+                    if (StartPointFromSubLevelGovern)
+                    {
+                        player.transform.SetPositionAndRotation(StartPointFromSubLevelGovern.StartPoint.transform.position, Quaternion.identity);
+                    }
                 }
             }
+            levelIsModuleBased = false;
+            StoreScene.whichLevelModuleIndex = 0;
+            StoreScene.checkStartPoint = false;
         }
         //End load level from module
     }
