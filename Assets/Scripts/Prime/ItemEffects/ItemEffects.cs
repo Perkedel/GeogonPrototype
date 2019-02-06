@@ -355,14 +355,33 @@ public class ItemEffects : MonoBehaviour {
     }
 
     public bool doJockeyMachine;
+    public WheelJoint2D[] wheelLists;
+    public JointMotor2D motorProperty;
+    public float MotorSpeedingScale = 1000f;
+    public float MotorTorqueingScale = 100f;
+    public float GasPedal = 0f;
     public void letsJockeyMachine()
     {
-        theSHanpeWhoIsTouching.JockeyIsThat = true;
-        theSHanpeWhoIsTouching.JockeyMachine = this;
+        if (!theSHanpeWhoIsTouching.isRidingVehicle)
+        {
+            theSHanpeWhoIsTouching.JockeyIsThat = true;
+            theSHanpeWhoIsTouching.JockeyMachine = gameObject.GetComponent<ItemEffects>();
+            //motorProperty.motorSpeed = MotorSpeedingScale;
+            motorProperty.maxMotorTorque = MotorTorqueingScale;
+
+            theSHanpeWhoIsTouching.gasPedalScale = MotorSpeedingScale;
+            theSHanpeWhoIsTouching.motorForcingScale = MotorTorqueingScale;
+        } else
+        {
+            theSHanpeWhoIsTouching.JockeyIsThat = true;
+        }
     }
     public void letsNotJockeyMachine()
     {
-        theSHanpeWhoIsTouching.JockeyIsThat = false;
+        if (!theSHanpeWhoIsTouching.isRidingVehicle)
+        {
+            theSHanpeWhoIsTouching.JockeyIsThat = false;
+        }
     }
 
     //toDo list
@@ -535,6 +554,31 @@ public class ItemEffects : MonoBehaviour {
             {
                 isEikSerkat = false;
             }
+
+            #region riding vehcicle
+            if (theSHanpeWhoIsTouching.isRidingVehicle)
+            {
+                //GasPedal = theSHanpeWhoIsTouching.gasPedal * MotorSpeedingScale;
+                //motorProperty.motorSpeed = GasPedal;
+                //motorProperty.maxMotorTorque = MotorTorqueingScale;
+                //if(theSHanpeWhoIsTouching.gasPedal > 0 || theSHanpeWhoIsTouching.gasPedal < 0)
+                //{
+                //    for(int i = 0; i < wheelLists.Length; i++)
+                //    {
+                //        wheelLists[i].useMotor = true;
+                //        wheelLists[i].motor = motorProperty;
+                //    }
+                //} else
+                //{
+                //    for (int i = 0; i < wheelLists.Length; i++)
+                //    {
+                //        wheelLists[i].useMotor = false;
+                //        wheelLists[i].motor = motorProperty;
+                //    }
+                //}
+            }
+            
+            #endregion riding vehicle
         }
 
         #region Can Be What Shape
@@ -702,6 +746,9 @@ public class ItemEffects : MonoBehaviour {
             Deserves = true; //if none of them allowed, then it treated as allow all.
         }
         #endregion
+
+        
+
     }
 
     private void Executo()

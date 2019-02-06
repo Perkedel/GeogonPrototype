@@ -38,6 +38,9 @@ public class SHanpe : MonoBehaviour {
     float currRolls = 10f;
     float currJumps = 100f;
 
+    public float gasPedal;
+    public float motorForcing;
+
     public int jumpToken = 2; //Recomended 2! Not Recomended when > 2!
     [SerializeField] [Range(0, 2)] int currJumpToken = 2;
 
@@ -49,6 +52,8 @@ public class SHanpe : MonoBehaviour {
     public bool resetShapeOnRespawn = false;
     public bool canChangeShapeWhileDead = true;
     public bool controllerIsActive = true;
+    public float gasPedalScale = 1000f;
+    public float motorForcingScale = 100f;
 
     //Initial Conditions
     [Range(0, 100)] public float InitHealthPoint = 100;
@@ -69,7 +74,8 @@ public class SHanpe : MonoBehaviour {
     private float timerHealthChanged;
     public ItemEffects JockeyMachine;
     public bool JockeyIsThat = false;
-    [SerializeField] private bool isRidingVehicle = false;
+    public bool isRidingVehicle = false;
+    public JointMotor2D motorKey;
 
     //View Conditions
     [SerializeField] [Range(0, 100)] private float healthMonitor = 100;
@@ -181,7 +187,10 @@ public class SHanpe : MonoBehaviour {
         //CrossPlatformInputManager is incompatible with PC (Windows) standalone!
         if (Input.GetButtonDown("Jump") && !TheCameraAction.isMovingCamera) //Jump button
         {
-            LetsJump();
+            if (!isRidingVehicle)
+            {
+                LetsJump();
+            }
         }
     }
 
@@ -202,7 +211,10 @@ public class SHanpe : MonoBehaviour {
                     hasJumpPressed = true;
 
                     //Insert Jump Methodings
-                    LetsJump();
+                    if (!isRidingVehicle)
+                    {
+                        LetsJump();
+                    }
                 }
                 if (hasJumpPressed && JumpingCable != 0)
                 {
@@ -228,13 +240,16 @@ public class SHanpe : MonoBehaviour {
     public int RidingCable = 0;
     private void ToggleIsRiding()
     {
-        if (!isRidingVehicle && !hasJockeyPressed)
+        if (JockeyIsThat)
         {
-            Debug.Log("isRidingVehicle calk" + isRidingVehicle);
-            isRidingVehicle = true;
-            hasJockeyPressed = true;
-            Debug.Log("isRidingVehicle talk" + isRidingVehicle);
+            if (!isRidingVehicle && !hasJockeyPressed)
+            {
+                Debug.Log("isRidingVehicle calk" + isRidingVehicle);
+                isRidingVehicle = true;
+                hasJockeyPressed = true;
+                Debug.Log("isRidingVehicle talk" + isRidingVehicle);
 
+            }
         }
         if (isRidingVehicle && !hasJockeyPressed)
         {
@@ -243,7 +258,7 @@ public class SHanpe : MonoBehaviour {
             hasJockeyPressed = true;
             Debug.Log("isRidingVehicle nalk" + isRidingVehicle);
         }
-
+        
     }
     public void PressToRide()
     {
@@ -568,11 +583,21 @@ public class SHanpe : MonoBehaviour {
                 //Controlling
                 if (controllerIsActive)
                 {
-                    if (currSlide > 0) ControlSlide = (Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal) * currSlide; else ControlSlide = 0;
-                    if (currRolls > 0) ControlRolls = (Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal) * currRolls; else ControlRolls = 0;
+                    if (!isRidingVehicle)
+                    {
+                        if (currSlide > 0) ControlSlide = (Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal) * currSlide; else ControlSlide = 0;
+                        if (currRolls > 0) ControlRolls = (Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal) * currRolls; else ControlRolls = 0;
 
-                    //To allow Keyboard controll, you must have Axes Horizontal and Vertical that set to Type as Key or Mouse Button
-                    //Then add another same set for Joystick. Types are Joystick Axis.
+                        //To allow Keyboard controll, you must have Axes Horizontal and Vertical that set to Type as Key or Mouse Button
+                        //Then add another same set for Joystick. Types are Joystick Axis.
+
+                        
+                    } else if(isRidingVehicle)
+                    {
+                        currJumpToken = jumpToken;
+                        ControlSlide = 0f;
+                        ControlRolls = 0f;
+                    }
 
                     //jump button
                     JumpButton();
@@ -596,7 +621,9 @@ public class SHanpe : MonoBehaviour {
         {
             //Handheld.Vibrate(); //https://docs.unity3d.com/ScriptReference/Handheld.Vibrate.html
             //Vibration.Vibrate(2000); //Just use the basic 2s vibrate! this character is not human being that uses heartbeat dying pattern!!!
-            
+
+            isRidingVehicle = false;
+
             bentuk = Bentuk.eekSerkat;
             currJumpToken = 0;
 
@@ -685,15 +712,42 @@ public class SHanpe : MonoBehaviour {
             if (JockeyMachine)
             {
                 GetComponent<FixedJoint2D>().connectedBody = JockeyMachine.GetComponent<Rigidbody2D>();
+                GetComponent<Rigidbody2D>().mass = 0;
+                Vector3 hookPosition = new Vector3(JockeyMachine.transform.position.x, JockeyMachine.transform.position.y);
+                transform.SetPositionAndRotation(hookPosition, JockeyMachine.transform.rotation);
+
+                //https://answers.unity.com/questions/821148/modifying-wheel-joint-2d-motor-speed.html Glued Brain
+                gasPedal = Mathf.Clamp((Input.GetAxis("Horizontal") + SHanpedJoystick.Horizontal),-1,1);
+                motorKey.motorSpeed = gasPedal * gasPedalScale;
+                motorForcing = motorForcingScale;
+                motorKey.maxMotorTorque = motorForcing;
+                if (gasPedal > 0 || gasPedal < 0)
+                {
+                    for(int i = 0; i < JockeyMachine.wheelLists.Length; i++)
+                    {
+                        JockeyMachine.wheelLists[i].useMotor = true;
+                        JockeyMachine.wheelLists[i].motor = motorKey;
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < JockeyMachine.wheelLists.Length; i++)
+                    {
+                        JockeyMachine.wheelLists[i].useMotor = false;
+                        JockeyMachine.wheelLists[i].motor = motorKey;
+                    }
+                }
             }
         } else
         {
+            gasPedal = 0f;
             if (!JointReseted)
             {
                 //GetComponent<FixedJoint2D>().breakForce = 0;
                 //GetComponent<FixedJoint2D>().breakForce = float.PositiveInfinity;
+                GetComponent<Rigidbody2D>().mass = 1f;
+                GetComponent<FixedJoint2D>().connectedBody = null;
                 GetComponent<FixedJoint2D>().enabled = false;
-                //GetComponent<FixedJoint2D>().connectedBody = null;
                 JointReseted = true;
             }
         }

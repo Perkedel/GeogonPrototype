@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 50533945764740296}
   - component: {fileID: 82693016819999122}
   - component: {fileID: 114835651349734718}
-  - component: {fileID: 2241794380879844140}
+  - component: {fileID: 2843093005576642498}
   m_Layer: 0
   m_Name: SHanpe
   m_TagString: Player
@@ -678,6 +678,8 @@ MonoBehaviour:
   Sliding: 10
   Rolling: 10
   Jumping: 100
+  gasPedal: 0
+  motorForcing: 0
   jumpToken: 2
   currJumpToken: 2
   timeToRestart: 5
@@ -686,6 +688,8 @@ MonoBehaviour:
   resetShapeOnRespawn: 0
   canChangeShapeWhileDead: 1
   controllerIsActive: 1
+  gasPedalScale: 1000
+  motorForcingScale: 100
   InitHealthPoint: 100
   InitArmourPoint: 20
   grounded: 0
@@ -709,25 +713,26 @@ MonoBehaviour:
   JumpingCable: 0
   hasJumpPressed: 0
   hasJockeyPressed: 0
+  RidingCable: 0
   LevelLoadering: {fileID: 0}
   SelfDestructButton: 0
   TheCameraAction: {fileID: 114459739183892036, guid: ba7baa79de388f741bebb85dfd74748a,
     type: 3}
---- !u!255 &2241794380879844140
+--- !u!255 &2843093005576642498
 FixedJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879791580275176}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_DampingRatio: 0
-  m_Frequency: 0
+  m_DampingRatio: 1
+  m_Frequency: 1000

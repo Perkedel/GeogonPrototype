@@ -61,10 +61,11 @@ bbrode https://answers.unity.com/questions/208447/set-rotation-of-a-transform.ht
 Molix https://answers.unity.com/questions/14637/get-the-currently-open-scene-name-or-file-name.html. get currently active scene name.
 Mike 3 https://answers.unity.com/questions/16675/running-an-external-exe-file-from-unity.html . run EXE file from Unity
 sparkzbarca https://answers.unity.com/questions/331545/double-click-mouse-detection-.html . Double Click!
-Fabryka Twórców Gier https://www.youtube.com/watch?v=H-jYAWtVnQA . Set this Unity Remote 5 up.
+Glued Brain https://answers.unity.com/questions/821148/modifying-wheel-joint-2d-motor-speed.html . Motor Speed Control
 CodeMasterMike https://answers.unity.com/questions/386592/using-delta-to-find-mouse-movement.html . Delta Mouse position sesungguhnya! (edited for this case)
 tebandesade https://answers.unity.com/questions/961372/ui-radio-button.html UI radio button. Put toggles inside a gameobject with ToggleGroup inspector!
 Various https://forum.unity.com/threads/how-to-skip-handheld-vibrate-when-building-for-mac-pc.166910/ . Platform Specific vibrate methods Handhel Vibrate!
+Fabryka Twórców Gier https://www.youtube.com/watch?v=H-jYAWtVnQA . Set this Unity Remote 5 up.
 Kuldeep Singh https://www.youtube.com/watch?v=eM3Vw0PGX4Y . Vibration class for Android introduction.
 Pro Android Dev https://proandroiddev.com/using-vibrate-in-android-b0e3ef5d5e07 . vibration refferences for new Android O and up.
 Eric5h5 https://answers.unity.com/questions/12301/how-can-i-get-a-parent-gameobject-of-gameobject-us.html . get Parent game object because SHanpe has children gameobject and that's what collide with items!!!
@@ -89,6 +90,7 @@ Mosey Mimes https://www.youtube.com/watch?v=Y6xtGAqcIvg . Windows Sounds Collect
 AgentWhatever https://www.youtube.com/watch?v=URsVQduqpRw . Windows Sounds Collection pack download!
 Windows Sounds https://winsounds.com/ . what did Mosey Mimes collect and make it easy to download all sound schemes!
 These people https://stackoverflow.com/questions/1352721/express-mathematical-infinity-in-c-sharp/ . Infinity number not in C#
+
 
 
 Assets involved:

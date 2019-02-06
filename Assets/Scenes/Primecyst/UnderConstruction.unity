@@ -924,6 +924,11 @@ PrefabInstance:
       propertyPath: LevelManager
       value: 
       objectReference: {fileID: 613155530}
+    - target: {fileID: 224505561173887178, guid: 8b674b371d577da45a80171c3e1c5440,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 247.4502
+      objectReference: {fileID: 0}
     - target: {fileID: 224228925222524278, guid: 8b674b371d577da45a80171c3e1c5440,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1144,17 +1149,7 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: JumpByNone
       objectReference: {fileID: 0}
-    - target: {fileID: 114573900884543938, guid: 8b674b371d577da45a80171c3e1c5440,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 224832771767325614, guid: 8b674b371d577da45a80171c3e1c5440,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 247.4502
-      objectReference: {fileID: 0}
-    - target: {fileID: 224505561173887178, guid: 8b674b371d577da45a80171c3e1c5440,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 247.4502
@@ -1173,6 +1168,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 65.799805
+      objectReference: {fileID: 0}
+    - target: {fileID: 114573900884543938, guid: 8b674b371d577da45a80171c3e1c5440,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387587546939419197, guid: 8b674b371d577da45a80171c3e1c5440,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 768599218}
+    - target: {fileID: 4387587546939419197, guid: 8b674b371d577da45a80171c3e1c5440,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PressToRide
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387587546939419197, guid: 8b674b371d577da45a80171c3e1c5440,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 768599218}
+    - target: {fileID: 4387587546939419197, guid: 8b674b371d577da45a80171c3e1c5440,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DepressToStay
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b674b371d577da45a80171c3e1c5440, type: 3}
