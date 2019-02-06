@@ -30,6 +30,7 @@ Unity Platform definition https://docs.unity3d.com/Manual/PlatformDependentCompi
 Unity Instantiate a Prefab in runtime https://docs.unity3d.com/Manual/InstantiatingPrefabs.html . Spawn thing of this reffered prefab.
 Unity Object Instantiate https://docs.unity3d.com/ScriptReference/Object.Instantiate.html . the method of instantiate.
 Unity Particle System how to use thing https://docs.unity3d.com/Manual/PartSysUsage.html . That's how to use PartSys.
+Unity Button OnClick https://docs.unity3d.com/ScriptReference/UI.Button-onClick.html . how to add listener
 Unity Text mesh pro scriptss https://forum.unity.com/threads/changing-textmeshpro-text-from-ui-via-script.462250/ . Use TMPro namespace.
 Unity Timeline https://www.youtube.com/playlist?list=PLX2vGYjWbI0ToUaFCtOEuB_2QKv_OikMO . Timeline seems a mother of cutscene and is superior to animation.
 Unity Tilemap Collider2D https://unity3d.com/learn/tutorials/topics/2d-game-creation/tilemap-collider-2d-and-composite-collider-2d . Tilemap that has collider!
@@ -84,6 +85,10 @@ Aaron Nieze http://goinkscape.com/how-to-create-3d-perspective-grids-in-inkscape
 Aaron Nieze http://goinkscape.com/using-perspective-for-3d-in-inkscape/ using perspective . branded perspective.
 Solitz and Leo https://superuser.com/questions/955129/built-in-disc-burning-software-in-windows-10 . Reappear the Windows Disc burner!
 Joel and Fillip W https://stackoverflow.com/questions/19132/expression-versus-statement . Expression vs Statement in c#. the variable ? 1 : 3 thingy
+Mosey Mimes https://www.youtube.com/watch?v=Y6xtGAqcIvg . Windows Sounds Collection pack download so many files!
+AgentWhatever https://www.youtube.com/watch?v=URsVQduqpRw . Windows Sounds Collection pack download!
+Windows Sounds https://winsounds.com/ . what did Mosey Mimes collect and make it easy to download all sound schemes!
+These people https://stackoverflow.com/questions/1352721/express-mathematical-infinity-in-c-sharp/ . Infinity number not in C#
 
 
 Assets involved:

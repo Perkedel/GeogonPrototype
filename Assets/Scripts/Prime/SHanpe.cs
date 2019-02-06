@@ -8,6 +8,7 @@ using XInputDotNetPure;
 
 [RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(FixedJoint2D))]
 public class SHanpe : MonoBehaviour {
 
     //Shape of SHanpe
@@ -38,11 +39,11 @@ public class SHanpe : MonoBehaviour {
     float currJumps = 100f;
 
     public int jumpToken = 2; //Recomended 2! Not Recomended when > 2!
-    [SerializeField][Range(0,2)] int currJumpToken = 2;
+    [SerializeField] [Range(0, 2)] int currJumpToken = 2;
 
     //Parametrics, Customizable variables
     public float timeToRestart = 5f;
-    public enum whatToDoIfDead { ReloadLevel, Respawn, quitToMenu, GameOverScreen, DoNothing};
+    public enum whatToDoIfDead { ReloadLevel, Respawn, quitToMenu, GameOverScreen, DoNothing };
     public whatToDoIfDead deadAction = whatToDoIfDead.Respawn;
     public bool resetRotationOnRespawn = true;
     public bool resetShapeOnRespawn = false;
@@ -62,14 +63,17 @@ public class SHanpe : MonoBehaviour {
     public Rigidbody2D rb2D;
 
     //Extern Conditions
-    [SerializeField] private bool eekSerkat = false; //eek Serkat means died
+    public bool eekSerkat = false; //eek Serkat means died
     [SerializeField] private float timerRestart = 0;
     [SerializeField] public bool healthWasChanged = false;
     private float timerHealthChanged;
+    public ItemEffects JockeyMachine;
+    public bool JockeyIsThat = false;
+    [SerializeField] private bool isRidingVehicle = false;
 
     //View Conditions
-    [SerializeField][Range(0, 100)] private float healthMonitor = 100;
-    [SerializeField][Range(0, 100)] private float armourMonitor = 20;
+    [SerializeField] [Range(0, 100)] private float healthMonitor = 100;
+    [SerializeField] [Range(0, 100)] private float armourMonitor = 20;
     [SerializeField] private bool VibrationGrounded = false;
 
     //Controller
@@ -135,15 +139,15 @@ public class SHanpe : MonoBehaviour {
 
     //Controller Configurations, Hold Functionality template
     public Joystick SHanpedJoystick;
-    
+
     private void changeShapeButton()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetButtonDown("Fire1"))
         {
-            if(!eekSerkat) bentuk = Bentuk.Lingkaran;
+            if (!eekSerkat) bentuk = Bentuk.Lingkaran;
             currBentuk = Bentuk.Lingkaran;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2)|| Input.GetButtonDown("Fire2"))
+        else if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetButtonDown("Fire2"))
         {
             if (!eekSerkat) bentuk = Bentuk.Kotak;
             currBentuk = Bentuk.Kotak;
@@ -153,7 +157,7 @@ public class SHanpe : MonoBehaviour {
             if (!eekSerkat) bentuk = Bentuk.Segitiga;
             currBentuk = Bentuk.Segitiga;
         }
-        if((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3)) ||
+        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3)) ||
             (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2") || Input.GetButtonDown("Fire3")))
         {
             Vibration.Vibrate(50);
@@ -218,6 +222,87 @@ public class SHanpe : MonoBehaviour {
     {
         JumpingCable = 0;
         hasJumpPressed = false;
+    }
+
+    [SerializeField]private bool hasJockeyPressed = false;
+    public int RidingCable = 0;
+    private void ToggleIsRiding()
+    {
+        if (!isRidingVehicle && !hasJockeyPressed)
+        {
+            Debug.Log("isRidingVehicle calk" + isRidingVehicle);
+            isRidingVehicle = true;
+            hasJockeyPressed = true;
+            Debug.Log("isRidingVehicle talk" + isRidingVehicle);
+
+        }
+        if (isRidingVehicle && !hasJockeyPressed)
+        {
+            Debug.Log("isRidingVehicle walk" + isRidingVehicle);
+            isRidingVehicle = false;
+            hasJockeyPressed = true;
+            Debug.Log("isRidingVehicle nalk" + isRidingVehicle);
+        }
+
+    }
+    public void PressToRide()
+    {
+        //if (controllerIsActive)
+        //{
+        //    if (!TheCameraAction.isMovingCamera)
+        //    {
+        //        if (!hasJockeyPressed)
+        //        {
+        //            Debug.Log("PressRide");
+        //            if (true)
+        //            {
+        //                Debug.Log("Jockey machine");
+        //                ToggleIsRiding();
+        //            }
+        //            hasJockeyPressed = true;
+        //        }
+        //    }
+        //}
+        //if (!hasJockeyPressed)
+        //{
+        //    if (controllerIsActive)
+        //    {
+        //        Debug.Log("Pressed");
+        //        ToggleIsRiding();
+        //    }
+        //    hasJockeyPressed = true;
+        //}
+        if (controllerIsActive)
+        {
+            if (!TheCameraAction.isMovingCamera)
+            {
+                if (!hasJockeyPressed && RidingCable == 0)
+                {
+                    //Insert Jump Methodings
+                    ToggleIsRiding();
+                    //Debug.Log("gamein");
+                    RidingCable = 1;
+                    hasJockeyPressed = true;
+                }
+                if (hasJockeyPressed && RidingCable != 0)
+                {
+                    RidingCable = 0;
+                }
+            }
+            else
+            {
+                RidingCable = 0;
+            }
+        }
+        else
+        {
+            RidingCable = 0;
+        }
+    }
+    public void DepressToStay()
+    {
+        RidingCable = 0;
+        hasJockeyPressed = false;
     }
 
     public void setShape(int index)
@@ -379,6 +464,8 @@ public class SHanpe : MonoBehaviour {
     //Begin
     private void Awake()
     {
+        //isRidingVehicle = false;
+        GetComponent<FixedJoint2D>().enabled = false;
         rb2D = GetComponent<Rigidbody2D>();
         //bentuk = Bentuk.Lingkaran;
         currBentuk = bentuk;
@@ -430,6 +517,7 @@ public class SHanpe : MonoBehaviour {
         LetsVibratorGround();
     }
 
+    bool JointReseted = false;
     // Update is called once per frame
     void Update () {
         
@@ -589,6 +677,27 @@ public class SHanpe : MonoBehaviour {
                 break;
         }
 
+        
+        if (isRidingVehicle)
+        {
+            JointReseted = false;
+            GetComponent<FixedJoint2D>().enabled = true;
+            if (JockeyMachine)
+            {
+                GetComponent<FixedJoint2D>().connectedBody = JockeyMachine.GetComponent<Rigidbody2D>();
+            }
+        } else
+        {
+            if (!JointReseted)
+            {
+                //GetComponent<FixedJoint2D>().breakForce = 0;
+                //GetComponent<FixedJoint2D>().breakForce = float.PositiveInfinity;
+                GetComponent<FixedJoint2D>().enabled = false;
+                //GetComponent<FixedJoint2D>().connectedBody = null;
+                JointReseted = true;
+            }
+        }
+
         if (Dying.activeSelf)
         {
             if (!hasBeenExploded)
@@ -699,26 +808,33 @@ public class SHanpe : MonoBehaviour {
         }
 
         //Picked an Item
-        GameObject anItem = collision.gameObject;
-        ItemEffects anItemEffect = anItem.GetComponent<ItemEffects>();
-        if(collision.gameObject.CompareTag("Item") && !!collision.gameObject.GetComponent<Collider2D>().isTrigger) //if you collide with item and is not trigger
-        {
-            Debug.Log(anItem.gameObject.name);
-            if (anItemEffect.doAddHealth)
-            {
-                addHealth(anItemEffect.addHPvalue);
-            }
-            if (anItemEffect.doSetHealth)
-            {
-                setHealth(anItemEffect.setHPvalue);
-            }
-            if (anItemEffect.singleUse)
-            {
-                //anItem.destroySelf();
-                Destroy(anItem.gameObject);
-            }
-            //collision.gameObject.SetActive(false);
-        }
+        //GameObject anItem = collision.gameObject;
+        //ItemEffects anItemEffect = anItem.GetComponent<ItemEffects>();
+        //if(collision.gameObject.CompareTag("Item") && !!collision.gameObject.GetComponent<Collider2D>().isTrigger) //if you collide with item and is not trigger
+        //{
+        //    Debug.Log(anItem.gameObject.name);
+        //    if (anItemEffect.doAddHealth)
+        //    {
+        //        addHealth(anItemEffect.addHPvalue);
+        //    }
+        //    if (anItemEffect.doSetHealth)
+        //    {
+        //        setHealth(anItemEffect.setHPvalue);
+        //    }
+        //    if (anItemEffect.singleUse)
+        //    {
+        //        //anItem.destroySelf();
+        //        Destroy(anItem.gameObject);
+        //    }
+        //    //collision.gameObject.SetActive(false);
+        //}
+
+        //Jockey-able vehicles
+        //ItemEffects verifyingJockey = collision.gameObject.GetComponent<ItemEffects>();
+        //if (verifyingJockey.doJockeyMachine)
+        //{
+        //    JockeyMachine = collision.gameObject.GetComponent<ItemEffects>();
+        //}
     }
 
     private void OnCollisionStay2D(Collision2D collision)

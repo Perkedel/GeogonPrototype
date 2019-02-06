@@ -354,6 +354,17 @@ public class ItemEffects : MonoBehaviour {
         }
     }
 
+    public bool doJockeyMachine;
+    public void letsJockeyMachine()
+    {
+        theSHanpeWhoIsTouching.JockeyIsThat = true;
+        theSHanpeWhoIsTouching.JockeyMachine = this;
+    }
+    public void letsNotJockeyMachine()
+    {
+        theSHanpeWhoIsTouching.JockeyIsThat = false;
+    }
+
     //toDo list
     /*
      * Set camera zoom (ok)
@@ -697,10 +708,117 @@ public class ItemEffects : MonoBehaviour {
     {
         //Basically trigger for ItemEffect activation to be called by Collision and Trigger
         //considering should it be put
+        if (doPlaySoundArray)
+        {
+            PlaySoundArray();
+        }
+        if (doPlaySoundWhichRand)
+        {
+            PlaySoundWhichRand();
+        }
+        if (doVibrate)
+        {
+            Vibration.Vibrate(50); //android O has trouble with just calling vibrate. deprecated probably
+        }
+        if (doAddHealth)
+        {
+            addHealth(addHPvalue);
+        }
+        if (doSetHealth)
+        {
+            setHealth(setHPvalue);
+        }
+        if (doDamageMe)
+        {
+            damageMe(damageMeValue);
+            //Debug.Log("OUCH");
+        }
+        if (doSayDebug)
+        {
+            sayDebug();
+        }
+        if (doVibrateCertainTime)
+        {
+            Vibrates(vibrateForHowLong);
+        }
+        if (doLevelComplete)
+        {
+            LevelComplete();
+        }
+        if (doLevelFailed)
+        {
+            LevelFailed();
+        }
+        if (doLevelDevExited)
+        {
+            LevelDevExited();
+        }
+        if (doSetGravity)
+        {
+            SetGravity(gravityNewValue);
+        }
+        if (doEmitParticles)
+        {
+            EmitTheseParticles();
+        }
+        if (doEnableTheseObjects)
+        {
+            LetsEnableObjects();
+        }
+        if (doDisableTheseObjects)
+        {
+            LetsDisableObjects();
+        }
+        if (doSetCameraColor)
+        {
+            letsColorCamera();
+        }
+        if (doSetCameraZoom)
+        {
+            letsZoomCamera();
+        }
+        if (doTotalResetCamera)
+        {
+            LetsTotalResetCamera();
+        }
+        if (doSetCheckPoint)
+        {
+            letsCheckpoint();
+        }
+        if (doDislodgeJoints)
+        {
+            letsDislodgeJoints();
+        }
+        if (doJockeyMachine)
+        {
+            letsJockeyMachine();
+        }
+        if (pseudoSingleUse)
+        {
+            invisiblizeSelf();
+        }
+        if (singleUse)
+        {
+            //anItem.destroySelf();
+            Destroy(gameObject);
+        }
     }
     private void ExecutoHold()
     {
         //for Collider/Trigger Hold
+        if (doLavaDamage)
+        {
+            //damageMe(lavaDamageValue);
+            lavaDamage(lavaDamageValue);
+            //Debug.Log("hot");
+        }
+    }
+    private void ExecutoExit()
+    {
+        if (doJockeyMachine)
+        {
+            letsNotJockeyMachine();
+        }
     }
 
     //OnCollision Detection
@@ -789,96 +907,7 @@ public class ItemEffects : MonoBehaviour {
                 //}
                 if (ActualDeserves)
                 {
-                    if (doPlaySoundArray)
-                    {
-                        PlaySoundArray();
-                    }
-                    if (doPlaySoundWhichRand)
-                    {
-                        PlaySoundWhichRand();
-                    }
-                    if (doVibrate)
-                    {
-                        Vibration.Vibrate(50); //android O has trouble with just calling vibrate. deprecated probably
-                    }
-                    if (doAddHealth)
-                    {
-                        addHealth(addHPvalue);
-                    }
-                    if (doSetHealth)
-                    {
-                        setHealth(setHPvalue);
-                    }
-                    if (doDamageMe)
-                    {
-                        damageMe(damageMeValue);
-                        //Debug.Log("OUCH");
-                    }
-                    if (doSayDebug)
-                    {
-                        sayDebug();
-                    }
-                    if (doVibrateCertainTime)
-                    {
-                        Vibrates(vibrateForHowLong);
-                    }
-                    if (doLevelComplete)
-                    {
-                        LevelComplete();
-                    }
-                    if (doLevelFailed)
-                    {
-                        LevelFailed();
-                    }
-                    if (doLevelDevExited)
-                    {
-                        LevelDevExited();
-                    }
-                    if (doSetGravity)
-                    {
-                        SetGravity(gravityNewValue);
-                    }
-                    if (doEmitParticles)
-                    {
-                        EmitTheseParticles();
-                    }
-                    if (doEnableTheseObjects)
-                    {
-                        LetsEnableObjects();
-                    }
-                    if (doDisableTheseObjects)
-                    {
-                        LetsDisableObjects();
-                    }
-                    if (doSetCameraColor)
-                    {
-                        letsColorCamera();
-                    }
-                    if (doSetCameraZoom)
-                    {
-                        letsZoomCamera();
-                    }
-                    if (doTotalResetCamera)
-                    {
-                        LetsTotalResetCamera();
-                    }
-                    if (doSetCheckPoint)
-                    {
-                        letsCheckpoint();
-                    }
-                    if (doDislodgeJoints)
-                    {
-                        letsDislodgeJoints();
-                    }
-                    if (pseudoSingleUse)
-                    {
-                        invisiblizeSelf();
-                    }
-                    if (singleUse)
-                    {
-                        //anItem.destroySelf();
-                        Destroy(gameObject);
-                    }
+                    Executo();
                 }
             }
         }
@@ -887,17 +916,12 @@ public class ItemEffects : MonoBehaviour {
     {
         if (theSHanpeWhoIsTouching)
         {
-            if (doLavaDamage)
-            {
-                //damageMe(lavaDamageValue);
-                lavaDamage(lavaDamageValue);
-                //Debug.Log("hot");
-            }
+            ExecutoHold();
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        
+        ExecutoExit();
     }
 
     //Non-Trigger Collision

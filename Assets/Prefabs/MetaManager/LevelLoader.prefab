@@ -50,6 +50,7 @@ MonoBehaviour:
   progressText: {fileID: 0}
   eventSystem: {fileID: 0}
   player: {fileID: 114835651349734718, guid: 76b832945ffb2ce4780d3ce6bc342d1d, type: 3}
+  MusicPlayer: {fileID: 0}
   MainMenuName: SampleMenuScene
   GameOverName: SampleGameOver
   DevExitPack: []
@@ -60,7 +61,10 @@ MonoBehaviour:
   volumeControl: 1
   LevelCompleteSound:
   - {fileID: 8300000, guid: 44209fe4218c161448e964e168ecf8b9, type: 3}
+  - {fileID: 8300000, guid: a2965da5b8c0bb34e8fee7658d696a2f, type: 3}
   LevelFailedSound: []
+  levelIsModuleBased: 0
+  LevelModules: []
   levelIsCompleted: 0
   levelIsFailed: 0
   levelIsDevExited: 0

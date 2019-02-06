@@ -18,6 +18,7 @@ TagManager:
   - SenjataMusuh
   - NextStage
   - Module Checkpoint
+  - JockeyButton
   layers:
   - Default
   - TransparentFX
