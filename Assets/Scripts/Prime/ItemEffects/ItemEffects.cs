@@ -384,6 +384,27 @@ public class ItemEffects : MonoBehaviour {
         }
     }
 
+    public bool doTriggerButton = false;
+    public bool doBeingFallenObject = false;
+    public bool killColliderAfterTouchdown = false;
+    public void letsKillColliderAfterTouchdown()
+    {
+        GetComponent<Collider2D>().enabled = false;
+    }
+    public ItemEffects targetMachine;
+    public void letsTriggerButton()
+    {
+        if (targetMachine)
+        {
+            targetMachine.TombolMangsa();
+        }
+    }
+    public void TombolMangsa()
+    {
+        //GetComponent<FixedJoint2D>().enabled = false;
+        transform.parent.GetComponent<FixedJoint2D>().enabled = false;
+    }
+
     //toDo list
     /*
      * Set camera zoom (ok)
@@ -840,6 +861,16 @@ public class ItemEffects : MonoBehaviour {
         {
             letsJockeyMachine();
         }
+        if (doTriggerButton)
+        {
+            letsTriggerButton();
+        }
+
+        //Destroy Item
+        if (killColliderAfterTouchdown)
+        {
+            letsKillColliderAfterTouchdown();
+        }
         if (pseudoSingleUse)
         {
             invisiblizeSelf();
@@ -972,65 +1003,50 @@ public class ItemEffects : MonoBehaviour {
     }
 
     //Non-Trigger Collision
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    theGameObject = collision.transform.parent.gameObject;
-    //    theSHanpeWhoIsTouching = theGameObject.GetComponent<SHanpe>();
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        bool ActualDeserves;
+        if (collision.transform.parent)
+        {
+            theGameObject = collision.transform.parent.gameObject;
+        }
+        if (theGameObject)
+        {
+        }
+        if (theSHanpeWhoIsTouching)
+        {
+            if (theSHanpeWhoIsTouching.gameObject == theGameObject)
+            {
 
-    //    if (theSHanpeWhoIsTouching)
-    //    {
-    //        if (doVibrate)
-    //        {
-    //            Vibration.Vibrate(50); //android O has trouble with just calling vibrate. deprecated probably
-    //        }
-    //        if (doAddHealth)
-    //        {
-    //            addHealth(addHPvalue);
-    //        }
-    //        if (doSetHealth)
-    //        {
-    //            setHealth(setHPvalue);
-    //        }
-    //        if (doDamageMe)
-    //        {
-    //            damageMe(damageMeValue);
-    //            //Debug.Log("OUCH");
-    //        }
-    //        if (singleUse)
-    //        {
-    //            //anItem.destroySelf();
-    //            Destroy(gameObject);
-    //        }
-    //        if (doSayDebug)
-    //        {
-    //            sayDebug();
-    //        }
-    //        if (doVibrateCertainTime)
-    //        {
-    //            Vibrates(vibrateForHowLong);
-    //        }
-    //        if (doLevelComplete)
-    //        {
-    //            LevelComplete();
-    //        }
-    //        if (doLevelFailed)
-    //        {
-    //            LevelFailed();
-    //        }
-    //        if (doSetGravity)
-    //        {
-    //            SetGravity(gravityNewValue);
-    //        }
-    //    }
-    //}
+                if (Deserves) ActualDeserves = true; else ActualDeserves = false;
+                //if (!MustBeTriangleShape)
+                //{
+                //    Deserves = true;
+                //} else if(MustBeTriangleShape && ShanpeIsTriangle)
+                //{
+                //    Deserves = true;
+                //} else
+                //{
+                //    Deserves = false;
+                //}
+                if (ActualDeserves)
+                {
+                    Executo();
+                }
+            }
+        }
+    }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        
+        if (theSHanpeWhoIsTouching)
+        {
+            ExecutoHold();
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        
+        ExecutoExit();
     }
 }
