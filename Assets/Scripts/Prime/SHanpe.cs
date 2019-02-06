@@ -533,6 +533,7 @@ public class SHanpe : MonoBehaviour {
     }
 
     bool JointReseted = false;
+    JointMotor2D tempEmptyPropMotor;
     // Update is called once per frame
     void Update () {
         
@@ -731,10 +732,12 @@ public class SHanpe : MonoBehaviour {
                 }
                 else
                 {
+                    tempEmptyPropMotor.motorSpeed = 0f;
+                    tempEmptyPropMotor.maxMotorTorque = 0f;
                     for (int i = 0; i < JockeyMachine.wheelLists.Length; i++)
                     {
                         JockeyMachine.wheelLists[i].useMotor = false;
-                        JockeyMachine.wheelLists[i].motor = motorKey;
+                        JockeyMachine.wheelLists[i].motor = tempEmptyPropMotor;
                     }
                 }
             }
@@ -743,10 +746,20 @@ public class SHanpe : MonoBehaviour {
             gasPedal = 0f;
             if (!JointReseted)
             {
+                if (JockeyMachine)
+                {
+                    tempEmptyPropMotor.motorSpeed = 0f;
+                    tempEmptyPropMotor.maxMotorTorque = 0f;
+                    for (int i = 0; i < JockeyMachine.wheelLists.Length; i++)
+                    {
+                        JockeyMachine.wheelLists[i].useMotor = false;
+                        JockeyMachine.wheelLists[i].motor = tempEmptyPropMotor;
+                    }
+                }
                 //GetComponent<FixedJoint2D>().breakForce = 0;
                 //GetComponent<FixedJoint2D>().breakForce = float.PositiveInfinity;
                 GetComponent<Rigidbody2D>().mass = 1f;
-                GetComponent<FixedJoint2D>().connectedBody = null;
+                //GetComponent<FixedJoint2D>().connectedBody = null;
                 GetComponent<FixedJoint2D>().enabled = false;
                 JointReseted = true;
             }

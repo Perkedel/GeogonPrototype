@@ -804,7 +804,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 5273936631578496328}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999998
+  m_Size: 0.9999907
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1929,7 +1929,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hideThoseObjects:
   - {fileID: 3055782655785447530}
-  - {fileID: 0}
   hideThoseButtons: []
   reshowThoseObjects:
   - {fileID: 0}
@@ -4249,6 +4248,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00009439633}
+  m_AnchoredPosition: {x: 0, y: 0.000043295942}
   m_SizeDelta: {x: 0, y: 680.77}
   m_Pivot: {x: 0, y: 1}

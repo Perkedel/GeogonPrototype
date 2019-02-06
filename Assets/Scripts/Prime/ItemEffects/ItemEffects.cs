@@ -597,6 +597,9 @@ public class ItemEffects : MonoBehaviour {
                 //        wheelLists[i].motor = motorProperty;
                 //    }
                 //}
+            } else
+            {
+
             }
             
             #endregion riding vehicle
