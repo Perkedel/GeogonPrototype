@@ -418,6 +418,8 @@ public class ItemEffects : MonoBehaviour {
     }
 
     public bool doThisThingIsMovingTowards = false;
+    public float MovingspeedX = 0f;
+    public float MovingspeedY = 10f;
     public Vector3 initPositional;
     //use doTriggerButton
     public bool TriggerIsTouched;
@@ -428,42 +430,6 @@ public class ItemEffects : MonoBehaviour {
     public Vector3 gotoMove;
     public void letsThisThingThingIsMovingTowards() {
         LaunchIsMovingProgram = true;
-        //if (targetTarget)
-        //{
-        //    targetTargetHasItemEffect = targetTarget.GetComponent<ItemEffects>();
-        //    if (targetTargetHasItemEffect)
-        //    {
-                
-        //        if (targetTargetHasItemEffect.TriggerIsTouched || targetTargetHasItemEffect.IamBeingTouched)
-        //        {
-        //            ThingIsMoving = true;
-        //            gotoMove = new Vector3(0, -2);
-        //            if (transform.position.y > targetTarget.transform.position.y)
-        //            {
-        //                GetComponent<FixedJoint2D>().enabled = false;
-        //                //GetComponent<Rigidbody2D>().AddForce(gotoMove);
-        //                transform.position += gotoMove*Time.deltaTime;
-
-        //            } else if(transform.position.y <= targetTarget.transform.position.y)
-        //            {
-        //                GetComponent<FixedJoint2D>().enabled = true;
-        //            }
-        //        } else
-        //        {
-        //            ThingIsMoving = false;
-        //            gotoMove = new Vector2(0, 2);
-        //            if (transform.position.y < initPositional.y)
-        //            {
-        //                GetComponent<FixedJoint2D>().enabled = false;
-        //                //GetComponent<Rigidbody2D>().AddForce(gotoMove);
-        //                transform.position += gotoMove * Time.deltaTime;
-        //            } else if(transform.position.y >= initPositional.y)
-        //            {
-        //                GetComponent<FixedJoint2D>().enabled = true;
-        //            }
-        //        }
-        //    }
-        //}
     }
     public void letsNotThisThingTHingIsMovingTowards()
     {
@@ -673,51 +639,10 @@ public class ItemEffects : MonoBehaviour {
 
             #region Hydraulic Press
             if (targetTargetHasItemEffect) TargetBeingTouched = targetTargetHasItemEffect.IamBeingTouched;
-            //if (LaunchIsMovingProgram)
-            //{
-            //    if (targetTarget)
-            //    {
-            //        if(!targetTargetHasItemEffect) targetTargetHasItemEffect = targetTarget.GetComponent<ItemEffects>();
-            //        if (targetTargetHasItemEffect)
-            //        {
-
-            //            if (targetTargetHasItemEffect.TriggerIsTouched || TargetBeingTouched)
-            //            {
-            //                ThingIsMoving = true;
-            //                gotoMove = new Vector3(0, -2);
-            //                if (transform.position.y > targetTarget.transform.position.y)
-            //                {
-            //                    if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = false;
-            //                    //GetComponent<Rigidbody2D>().AddForce(gotoMove);
-            //                    transform.position += gotoMove * Time.deltaTime;
-
-            //                }
-            //                else if (transform.position.y <= targetTarget.transform.position.y)
-            //                {
-            //                    if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = true;
-            //                }
-            //            }
-            //        }
-            //    }
-            //} else
-            //{
-            //    ThingIsMoving = false;
-            //    gotoMove = new Vector2(0, 2);
-            //    if (transform.position.y < initPositional.y)
-            //    {
-            //        if(GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = false;
-            //        //GetComponent<Rigidbody2D>().AddForce(gotoMove);
-            //        transform.position += gotoMove * Time.deltaTime;
-            //    }
-            //    else if (transform.position.y >= initPositional.y)
-            //    {
-            //        if(GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = true;
-            //    }
-            //}
             if (TargetBeingTouched)
             {
                 ThingIsMoving = true;
-                gotoMove = new Vector3(0, -2);
+                gotoMove = new Vector3(MovingspeedX, -MovingspeedY);
                 if (transform.position.y > targetTarget.transform.position.y)
                 {
                     if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = false;
@@ -732,7 +657,7 @@ public class ItemEffects : MonoBehaviour {
             } else
             {
                 ThingIsMoving = false;
-                gotoMove = new Vector2(0, 2);
+                gotoMove = new Vector2(MovingspeedX, MovingspeedY);
                 if (transform.position.y < initPositional.y)
                 {
                     if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = false;
