@@ -385,6 +385,8 @@ public class ItemEffects : MonoBehaviour {
     }
 
     public bool doTriggerButton = false;
+    public bool IamBeingTouched = false;
+    public bool TargetBeingTouched = false;
     public bool doBeingFallenObject = false;
     public bool killColliderAfterTouchdown = false;
     public void letsKillColliderAfterTouchdown()
@@ -394,16 +396,80 @@ public class ItemEffects : MonoBehaviour {
     public ItemEffects targetMachine;
     public void letsTriggerButton()
     {
+        IamBeingTouched = true;
         if (targetMachine)
         {
             targetMachine.TombolMangsa();
         }
+        if (targetTargetHasItemEffect)
+        {
+            TriggerIsTouched = true;
+        }
+    }
+    public void letsNotTriggerButton()
+    {
+        IamBeingTouched = false;
+        TriggerIsTouched = false;
     }
     public void TombolMangsa()
     {
         //GetComponent<FixedJoint2D>().enabled = false;
         transform.parent.GetComponent<FixedJoint2D>().enabled = false;
     }
+
+    public bool doThisThingIsMovingTowards = false;
+    public Vector3 initPositional;
+    //use doTriggerButton
+    public bool TriggerIsTouched;
+    public bool ThingIsMoving = false;
+    public bool LaunchIsMovingProgram = false;
+    public GameObject targetTarget;
+    public ItemEffects targetTargetHasItemEffect;
+    public Vector3 gotoMove;
+    public void letsThisThingThingIsMovingTowards() {
+        LaunchIsMovingProgram = true;
+        //if (targetTarget)
+        //{
+        //    targetTargetHasItemEffect = targetTarget.GetComponent<ItemEffects>();
+        //    if (targetTargetHasItemEffect)
+        //    {
+                
+        //        if (targetTargetHasItemEffect.TriggerIsTouched || targetTargetHasItemEffect.IamBeingTouched)
+        //        {
+        //            ThingIsMoving = true;
+        //            gotoMove = new Vector3(0, -2);
+        //            if (transform.position.y > targetTarget.transform.position.y)
+        //            {
+        //                GetComponent<FixedJoint2D>().enabled = false;
+        //                //GetComponent<Rigidbody2D>().AddForce(gotoMove);
+        //                transform.position += gotoMove*Time.deltaTime;
+
+        //            } else if(transform.position.y <= targetTarget.transform.position.y)
+        //            {
+        //                GetComponent<FixedJoint2D>().enabled = true;
+        //            }
+        //        } else
+        //        {
+        //            ThingIsMoving = false;
+        //            gotoMove = new Vector2(0, 2);
+        //            if (transform.position.y < initPositional.y)
+        //            {
+        //                GetComponent<FixedJoint2D>().enabled = false;
+        //                //GetComponent<Rigidbody2D>().AddForce(gotoMove);
+        //                transform.position += gotoMove * Time.deltaTime;
+        //            } else if(transform.position.y >= initPositional.y)
+        //            {
+        //                GetComponent<FixedJoint2D>().enabled = true;
+        //            }
+        //        }
+        //    }
+        //}
+    }
+    public void letsNotThisThingTHingIsMovingTowards()
+    {
+        LaunchIsMovingProgram = false;
+    }
+
 
     //toDo list
     /*
@@ -489,6 +555,7 @@ public class ItemEffects : MonoBehaviour {
     }
 
     void Start () {
+        initPositional = transform.position;
         bool foundShanpe =false;
         if (!foundShanpe)
         {
@@ -601,8 +668,83 @@ public class ItemEffects : MonoBehaviour {
             {
 
             }
-            
+
             #endregion riding vehicle
+
+            #region Hydraulic Press
+            if (targetTargetHasItemEffect) TargetBeingTouched = targetTargetHasItemEffect.IamBeingTouched;
+            //if (LaunchIsMovingProgram)
+            //{
+            //    if (targetTarget)
+            //    {
+            //        if(!targetTargetHasItemEffect) targetTargetHasItemEffect = targetTarget.GetComponent<ItemEffects>();
+            //        if (targetTargetHasItemEffect)
+            //        {
+
+            //            if (targetTargetHasItemEffect.TriggerIsTouched || TargetBeingTouched)
+            //            {
+            //                ThingIsMoving = true;
+            //                gotoMove = new Vector3(0, -2);
+            //                if (transform.position.y > targetTarget.transform.position.y)
+            //                {
+            //                    if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = false;
+            //                    //GetComponent<Rigidbody2D>().AddForce(gotoMove);
+            //                    transform.position += gotoMove * Time.deltaTime;
+
+            //                }
+            //                else if (transform.position.y <= targetTarget.transform.position.y)
+            //                {
+            //                    if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = true;
+            //                }
+            //            }
+            //        }
+            //    }
+            //} else
+            //{
+            //    ThingIsMoving = false;
+            //    gotoMove = new Vector2(0, 2);
+            //    if (transform.position.y < initPositional.y)
+            //    {
+            //        if(GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = false;
+            //        //GetComponent<Rigidbody2D>().AddForce(gotoMove);
+            //        transform.position += gotoMove * Time.deltaTime;
+            //    }
+            //    else if (transform.position.y >= initPositional.y)
+            //    {
+            //        if(GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = true;
+            //    }
+            //}
+            if (TargetBeingTouched)
+            {
+                ThingIsMoving = true;
+                gotoMove = new Vector3(0, -2);
+                if (transform.position.y > targetTarget.transform.position.y)
+                {
+                    if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = false;
+                    //GetComponent<Rigidbody2D>().AddForce(gotoMove);
+                    transform.position += gotoMove * Time.deltaTime;
+
+                }
+                else if (transform.position.y <= targetTarget.transform.position.y)
+                {
+                    if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = true;
+                }
+            } else
+            {
+                ThingIsMoving = false;
+                gotoMove = new Vector2(0, 2);
+                if (transform.position.y < initPositional.y)
+                {
+                    if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = false;
+                    //GetComponent<Rigidbody2D>().AddForce(gotoMove);
+                    transform.position += gotoMove * Time.deltaTime;
+                }
+                else if (transform.position.y >= initPositional.y)
+                {
+                    if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = true;
+                }
+            }
+            #endregion
         }
 
         #region Can Be What Shape
@@ -868,6 +1010,10 @@ public class ItemEffects : MonoBehaviour {
         {
             letsTriggerButton();
         }
+        if (doTriggerButton)
+        {
+            letsThisThingThingIsMovingTowards();
+        }
 
         //Destroy Item
         if (killColliderAfterTouchdown)
@@ -899,6 +1045,15 @@ public class ItemEffects : MonoBehaviour {
         if (doJockeyMachine)
         {
             letsNotJockeyMachine();
+        }
+        if (doTriggerButton)
+        {
+            letsNotTriggerButton();
+        }
+        if (doThisThingIsMovingTowards)
+        {
+            //letsNotTriggerButton();
+            letsNotThisThingTHingIsMovingTowards();
         }
     }
 
