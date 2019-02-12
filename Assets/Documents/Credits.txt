@@ -31,6 +31,7 @@ Unity Instantiate a Prefab in runtime https://docs.unity3d.com/Manual/Instantiat
 Unity Object Instantiate https://docs.unity3d.com/ScriptReference/Object.Instantiate.html . the method of instantiate.
 Unity Particle System how to use thing https://docs.unity3d.com/Manual/PartSysUsage.html . That's how to use PartSys.
 Unity Button OnClick https://docs.unity3d.com/ScriptReference/UI.Button-onClick.html . how to add listener
+Unity Hinge Joint 2D https://docs.unity3d.com/Manual/class-HingeJoint2D.html https://www.youtube.com/watch?v=l6awvCT29yU . Joint 2d of hinge with angle limit and motorer trap door
 Unity Text mesh pro scriptss https://forum.unity.com/threads/changing-textmeshpro-text-from-ui-via-script.462250/ . Use TMPro namespace.
 Unity Timeline https://www.youtube.com/playlist?list=PLX2vGYjWbI0ToUaFCtOEuB_2QKv_OikMO . Timeline seems a mother of cutscene and is superior to animation.
 Unity Tilemap Collider2D https://unity3d.com/learn/tutorials/topics/2d-game-creation/tilemap-collider-2d-and-composite-collider-2d . Tilemap that has collider!
@@ -90,7 +91,7 @@ Mosey Mimes https://www.youtube.com/watch?v=Y6xtGAqcIvg . Windows Sounds Collect
 AgentWhatever https://www.youtube.com/watch?v=URsVQduqpRw . Windows Sounds Collection pack download!
 Windows Sounds https://winsounds.com/ . what did Mosey Mimes collect and make it easy to download all sound schemes!
 These people https://stackoverflow.com/questions/1352721/express-mathematical-infinity-in-c-sharp/ . Infinity number not in C#
-
+King Foo http://www.king-foo.com/2011/11/creating-debianubuntu-deb-packages/ . make dot deb packages the installation file for Debian based OS.
 
 
 Assets involved:

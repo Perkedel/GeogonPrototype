@@ -436,6 +436,35 @@ public class ItemEffects : MonoBehaviour {
         LaunchIsMovingProgram = false;
     }
 
+    public bool doActivateMotor = false;
+    public HingeJoint2D Motoring;
+    public JointMotor2D MotoringProperty;
+    public float AngularVelocity = 100f;
+    public float Torqueing = 1000f;
+    public bool Reversing = false;
+    public void letsActivateMotor()
+    {
+        motorProperty.motorSpeed = AngularVelocity;
+        motorProperty.maxMotorTorque = Torqueing;
+        Reversing = false;
+        if (Motoring)
+        {
+            Motoring.motor = motorProperty;
+            Motoring.useMotor = true;
+        }
+    }
+    public void letsNotActivateMotor()
+    {
+        motorProperty.motorSpeed = -AngularVelocity;
+        motorProperty.maxMotorTorque = Torqueing;
+        Reversing = true;
+        if (Motoring)
+        {
+            Motoring.motor = motorProperty;
+            Motoring.useMotor = true;
+        }
+    }
+
 
     //toDo list
     /*
@@ -638,35 +667,39 @@ public class ItemEffects : MonoBehaviour {
             #endregion riding vehicle
 
             #region Hydraulic Press
-            if (targetTargetHasItemEffect) TargetBeingTouched = targetTargetHasItemEffect.IamBeingTouched;
-            if (TargetBeingTouched)
+            if (doThisThingIsMovingTowards)
             {
-                ThingIsMoving = true;
-                gotoMove = new Vector3(MovingspeedX, -MovingspeedY);
-                if (transform.position.y > targetTarget.transform.position.y)
+                if (targetTargetHasItemEffect) TargetBeingTouched = targetTargetHasItemEffect.IamBeingTouched;
+                if (TargetBeingTouched)
                 {
-                    if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = false;
-                    //GetComponent<Rigidbody2D>().AddForce(gotoMove);
-                    transform.position += gotoMove * Time.deltaTime;
+                    ThingIsMoving = true;
+                    gotoMove = new Vector3(MovingspeedX, -MovingspeedY);
+                    if (transform.position.y > targetTarget.transform.position.y)
+                    {
+                        if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = false;
+                        //GetComponent<Rigidbody2D>().AddForce(gotoMove);
+                        transform.position += gotoMove * Time.deltaTime;
 
+                    }
+                    else if (transform.position.y <= targetTarget.transform.position.y)
+                    {
+                        if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = true;
+                    }
                 }
-                else if (transform.position.y <= targetTarget.transform.position.y)
+                else
                 {
-                    if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = true;
-                }
-            } else
-            {
-                ThingIsMoving = false;
-                gotoMove = new Vector2(MovingspeedX, MovingspeedY);
-                if (transform.position.y < initPositional.y)
-                {
-                    if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = false;
-                    //GetComponent<Rigidbody2D>().AddForce(gotoMove);
-                    transform.position += gotoMove * Time.deltaTime;
-                }
-                else if (transform.position.y >= initPositional.y)
-                {
-                    if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = true;
+                    ThingIsMoving = false;
+                    gotoMove = new Vector2(MovingspeedX, MovingspeedY);
+                    if (transform.position.y < initPositional.y)
+                    {
+                        if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = false;
+                        //GetComponent<Rigidbody2D>().AddForce(gotoMove);
+                        transform.position += gotoMove * Time.deltaTime;
+                    }
+                    else if (transform.position.y >= initPositional.y)
+                    {
+                        if (GetComponent<FixedJoint2D>()) GetComponent<FixedJoint2D>().enabled = true;
+                    }
                 }
             }
             #endregion
@@ -939,6 +972,10 @@ public class ItemEffects : MonoBehaviour {
         {
             letsThisThingThingIsMovingTowards();
         }
+        if (doActivateMotor)
+        {
+            letsActivateMotor();
+        }
 
         //Destroy Item
         if (killColliderAfterTouchdown)
@@ -979,6 +1016,10 @@ public class ItemEffects : MonoBehaviour {
         {
             //letsNotTriggerButton();
             letsNotThisThingTHingIsMovingTowards();
+        }
+        if (doActivateMotor)
+        {
+            letsNotActivateMotor();
         }
     }
 
@@ -1082,7 +1123,10 @@ public class ItemEffects : MonoBehaviour {
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        ExecutoExit();
+        if (theSHanpeWhoIsTouching)
+        {
+            ExecutoExit();
+        }
     }
 
     //Non-Trigger Collision
