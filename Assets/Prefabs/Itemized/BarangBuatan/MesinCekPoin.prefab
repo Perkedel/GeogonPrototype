@@ -361,7 +361,7 @@ MonoBehaviour:
   doPlaySoundArray: 1
   SoundArray:
   - {fileID: 8300000, guid: a2965da5b8c0bb34e8fee7658d696a2f, type: 3}
-  volumeMultiple: 0
+  volumeMultiple: 0.5
   doPlaySoundWhichRand: 0
   SoundWhichRand: []
   volumeSingle: 0
