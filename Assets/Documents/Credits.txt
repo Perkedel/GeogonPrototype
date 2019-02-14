@@ -105,6 +105,7 @@ Seanba https://seanba.itch.io/supertiled2unity Super Tiled 2 Unity. Easy import 
 ENSOU https://assetstore.unity.com/packages/tools/audio/ens-music-player-108759 Music Player. [Decommissioned] Missing Assembly refference mysteriously. ruins everything!
 Hajiyev Elnur https://assetstore.unity.com/packages/audio/music/professional-music-player-90589 Music Player. Professional Music Player!
 speps https://github.com/speps/XInputDotNet XinputDotNet. full Xbox controller support!
+Nick Judy https://www.youtube.com/watch?v=aKa0CLeTh4o Cartoon FX Sound pack. 
 
 Packages involved (Beside preinstalled and built-in, user installed!):
 2D Sprite Shape. Create bendable string of sprites! great for various shaped platform, and other weird stuff! Unity's experimental!!!
@@ -135,6 +136,7 @@ Video Downloaded:
 https://www.youtube.com/watch?v=Gm73TwtUyGY https://photos.app.goo.gl/DNr8Awj1tUcU4z4U9 Lost infamous funny explosion mkv. [???]. (Explodos.wav, we took the google photo backup version, trim the delay start, add fade out to fill its emptiness end, and convert export it to audio file.)
 https://www.youtube.com/watch?v=skMloYSZiRw GradeAUnderA Tada uploaded by Michael Ferrel. [???]. Big shoutout for he upload post such rare sound!
 https://www.youtube.com/watch?v=YXBhR1EKe7w Explosion bin. [100%]. bin canon in Poland. (Explosion bin cropped.wav).
+https://www.youtube.com/watch?v=aKa0CLeTh4o Cartoon FX Sound pack Nick Judy. [100%]. Nick Judy collection http://www.mediafire.com/file/3b0d5wvu7rf8w8j/Cartoon+Sound+FX+Pack.zip , munch.wav.
 Audio Library https://www.youtube.com/audiolibrary :
 Music:
 Jimmy Fontanez - Floaters. infamously smooth jazz used by h3h3, Technology Connection, Raveja and Raveji, Silhouette Shadows inc., and much more. [0%??]. (Floaters.wav, there is hiccup on Mobile version!)

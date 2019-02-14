@@ -348,6 +348,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b832945ffb2ce4780d3ce6bc342d1d, type: 3}
+--- !u!82 &350536053 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 82693016819999122, guid: 76b832945ffb2ce4780d3ce6bc342d1d,
+    type: 3}
+  m_PrefabInstance: {fileID: 350536052}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &359403583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -924,6 +930,11 @@ PrefabInstance:
       propertyPath: LevelManager
       value: 
       objectReference: {fileID: 613155530}
+    - target: {fileID: 224832771767325614, guid: 8b674b371d577da45a80171c3e1c5440,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 247.4502
+      objectReference: {fileID: 0}
     - target: {fileID: 224505561173887178, guid: 8b674b371d577da45a80171c3e1c5440,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1019,6 +1030,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 224518946255230316, guid: 8b674b371d577da45a80171c3e1c5440,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 247.4502
+      objectReference: {fileID: 0}
+    - target: {fileID: 114573900884543938, guid: 8b674b371d577da45a80171c3e1c5440,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224691975136048064, guid: 8b674b371d577da45a80171c3e1c5440,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1063,6 +1084,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224268539382177470, guid: 8b674b371d577da45a80171c3e1c5440,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 65.799805
+      objectReference: {fileID: 0}
+    - target: {fileID: 224882153060929948, guid: 8b674b371d577da45a80171c3e1c5440,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 65.799805
       objectReference: {fileID: 0}
     - target: {fileID: 224459184258099014, guid: 8b674b371d577da45a80171c3e1c5440,
         type: 3}
@@ -1148,31 +1179,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: JumpByNone
-      objectReference: {fileID: 0}
-    - target: {fileID: 224832771767325614, guid: 8b674b371d577da45a80171c3e1c5440,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 247.4502
-      objectReference: {fileID: 0}
-    - target: {fileID: 224518946255230316, guid: 8b674b371d577da45a80171c3e1c5440,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 247.4502
-      objectReference: {fileID: 0}
-    - target: {fileID: 224268539382177470, guid: 8b674b371d577da45a80171c3e1c5440,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 65.799805
-      objectReference: {fileID: 0}
-    - target: {fileID: 224882153060929948, guid: 8b674b371d577da45a80171c3e1c5440,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 65.799805
-      objectReference: {fileID: 0}
-    - target: {fileID: 114573900884543938, guid: 8b674b371d577da45a80171c3e1c5440,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4387587546939419197, guid: 8b674b371d577da45a80171c3e1c5440,
         type: 3}
@@ -2290,6 +2296,11 @@ PrefabInstance:
       propertyPath: theSHanpeWhoIsTouching
       value: 
       objectReference: {fileID: 768599218}
+    - target: {fileID: 455039839522766619, guid: c1b539a3f9c273243acd43645727d6c5,
+        type: 3}
+      propertyPath: OtherSelfSound
+      value: 
+      objectReference: {fileID: 350536053}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1b539a3f9c273243acd43645727d6c5, type: 3}
 --- !u!4 &1807796001 stripped

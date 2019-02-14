@@ -81,8 +81,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.8595232"
-     inkscape:cx="1173.4931"
-     inkscape:cy="1646.0658"
+     inkscape:cx="1223.1098"
+     inkscape:cy="1574.6012"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -11175,5 +11175,95 @@
          d="m 1204,-535.48035 -2,2 2,2 2,-2 z"
          style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
+    <g
+       transform="rotate(90,1200,-509.48035)"
+       id="g2800-5"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\KayuSembarangan90deg.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         y="-573.48035"
+         x="1168"
+         height="16"
+         width="144"
+         id="rect2779-5"
+         style="opacity:1;fill:#ffc015;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2781-1"
+         d="m 1176,-569.48035 h 40"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2783-5"
+         d="m 1184,-565.48035 h 36"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2785-5"
+         d="m 1236,-565.48035 c 0,0 4,-4 8,-4 4,0 8,4 8,4"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2787-1"
+         d="m 1236,-564.48035 c 0,0 4,4 8,4 4,0 8,-4 8,-4"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2789-5"
+         d="m 1264,-565.48035 h 44"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2791-3"
+         d="m 1244,-566.48035 -1,1 1,1 1,-1 z"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       transform="rotate(90,1232,-477.48035)"
+       id="g3671-8"
+       inkscape:export-filename="C:\Users\ASUS\Documents\starring codes\Unity Projects\JOELwindows7_GeoGon-ProofConcept_2DgameProg_Unity\Assets\Sprites\BarangSatu1\KayuSembarPendek90deg.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         y="-541.48035"
+         x="1168"
+         height="16"
+         width="48"
+         id="rect3662-8"
+         style="opacity:1;fill:#ffc015;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3664-9"
+         d="m 1176,-537.48035 c 0,0 0,8 4,8 4,0 4,-4 4,-4 0,0 0,-4 4,-4 4,0 4,8 4,8"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3666-6"
+         d="m 1204,-535.48035 -2,2 2,2 2,-2 z"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g2884">
+      <rect
+         y="-445.48035"
+         x="1184"
+         height="32"
+         width="48"
+         id="rect2878"
+         style="opacity:1;fill:#7a4ad1;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2880"
+         d="m 1184,-445.48035 c 0,0 0,-16 8,-16 8,0 32,0 32,0 0,0 8,0 8,16 z"
+         style="fill:#7ac2d1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+    </g>
+    <rect
+       style="opacity:1;fill:#b10000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2886"
+       width="8"
+       height="8"
+       x="1204"
+       y="-449.48035" />
   </g>
 </svg>
