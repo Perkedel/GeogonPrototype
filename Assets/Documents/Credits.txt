@@ -93,6 +93,7 @@ Windows Sounds https://winsounds.com/ . what did Mosey Mimes collect and make it
 These people https://stackoverflow.com/questions/1352721/express-mathematical-infinity-in-c-sharp/ . Infinity number not in C#
 King Foo http://www.king-foo.com/2011/11/creating-debianubuntu-deb-packages/ . make dot deb packages the installation file for Debian based OS.
 LittleMissBurton http://www.furaffinity.net/view/30486874/ . The Ko-fi cup inspires me to make the game object of Ko-fi cup that is basically coffee mug with heart and https://ko-fi.com/joelwindows7 .
+Lirik Lagu Anak http://liriklaguanak.com/pok-ame-ame-lirik/ Pok Ame Ame . Emoji Pok Ame Ame adaptation easter egg poster.
 
 
 Assets involved:
