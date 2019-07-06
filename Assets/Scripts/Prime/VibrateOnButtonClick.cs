@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using XInputDotNetPure;
+//using Mono;
+//using Mono.Data.Sqlite;
 
 public class VibrateOnButtonClick : MonoBehaviour {
 
@@ -75,7 +77,10 @@ public class VibrateOnButtonClick : MonoBehaviour {
 
     private void FixedUpdate()
     {
+#if !UNITY_ANDROID
         LetsVibratorGround();
+#endif
+
     }
 
     // Update is called once per frame

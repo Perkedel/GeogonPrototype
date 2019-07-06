@@ -339,6 +339,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &39982719
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1015,6 +1036,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &136680312
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1190,6 +1232,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &158292400
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1413,6 +1476,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &160579854
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1753,6 +1837,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &174500440
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1987,6 +2092,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!50 &176242753
 Rigidbody2D:
   serializedVersion: 4
@@ -2193,6 +2319,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &177081755
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3805,6 +3952,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &380829292
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4145,6 +4313,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &410476037
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4905,17 +5094,17 @@ PrefabInstance:
         type: 3}
       propertyPath: loadingScreen
       value: 
-      objectReference: {fileID: 618928288}
+      objectReference: {fileID: 909208578}
     - target: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
         type: 3}
       propertyPath: slider
       value: 
-      objectReference: {fileID: 1627518108}
+      objectReference: {fileID: 909208577}
     - target: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
         type: 3}
       propertyPath: progressText
       value: 
-      objectReference: {fileID: 1521567668}
+      objectReference: {fileID: 909208576}
     - target: {fileID: 114805487358535976, guid: 57195fb9782a1cb448fcef85c4182b8f,
         type: 3}
       propertyPath: eventSystem
@@ -5507,12 +5696,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72786c003cb70854cab0ea9982c88320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &618928288 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1364839444572176, guid: e19b18410a272114fb2f114fdf4b7c6a,
-    type: 3}
-  m_PrefabInstance: {fileID: 909208574}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &635217300
 GameObject:
   m_ObjectHideFlags: 0
@@ -5634,6 +5817,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &635217303
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5904,6 +6108,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &669423495
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6733,6 +6958,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &770038916
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7010,6 +7256,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &796368887
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7350,6 +7617,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &837834793
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7690,6 +7978,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &851504645
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8111,6 +8420,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114573900884543938, guid: 8b674b371d577da45a80171c3e1c5440,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224691975136048064, guid: 8b674b371d577da45a80171c3e1c5440,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -8235,11 +8549,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: JumpByNone
-      objectReference: {fileID: 0}
-    - target: {fileID: 114573900884543938, guid: 8b674b371d577da45a80171c3e1c5440,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4387587546939419197, guid: 8b674b371d577da45a80171c3e1c5440,
         type: 3}
@@ -8540,11 +8849,49 @@ PrefabInstance:
       propertyPath: m_AnchorMax.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 117, guid: e19b18410a272114fb2f114fdf4b7c6a, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 116, guid: e19b18410a272114fb2f114fdf4b7c6a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e19b18410a272114fb2f114fdf4b7c6a, type: 3}
 --- !u!224 &909208575 stripped
 RectTransform:
-  m_CorrespondingSourceObject: {fileID: 224761811407937662, guid: e19b18410a272114fb2f114fdf4b7c6a,
+  m_CorrespondingSourceObject: {fileID: 117, guid: e19b18410a272114fb2f114fdf4b7c6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 909208574}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &909208576 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 131, guid: e19b18410a272114fb2f114fdf4b7c6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 909208574}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &909208577 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 127, guid: e19b18410a272114fb2f114fdf4b7c6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 909208574}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &909208578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 70, guid: e19b18410a272114fb2f114fdf4b7c6a,
     type: 3}
   m_PrefabInstance: {fileID: 909208574}
   m_PrefabAsset: {fileID: 0}
@@ -8669,6 +9016,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &971301466
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9301,6 +9669,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1090579856
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9535,6 +9924,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1110963344
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9758,6 +10168,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1118457575
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10511,6 +10942,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1179068987
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11052,6 +11504,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1255556769
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11286,6 +11759,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1333365476
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11522,6 +12016,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1335007005
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11756,6 +12271,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1354472382
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11977,18 +12513,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1521567668 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114843946352512556, guid: e19b18410a272114fb2f114fdf4b7c6a,
-    type: 3}
-  m_PrefabInstance: {fileID: 909208574}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1561313028
 GameObject:
   m_ObjectHideFlags: 0
@@ -12110,6 +12634,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1561313031
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12344,6 +12889,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1567255974
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13382,18 +13948,6 @@ Transform:
   m_Father: {fileID: 2041383388}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1627518108 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114471786784248516, guid: e19b18410a272114fb2f114fdf4b7c6a,
-    type: 3}
-  m_PrefabInstance: {fileID: 909208574}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1641496891
 GameObject:
   m_ObjectHideFlags: 0
@@ -13584,6 +14138,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1641496896
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13749,6 +14324,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1660226927
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13972,6 +14568,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1672521230
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15040,6 +15657,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!50 &1723284145
 Rigidbody2D:
   serializedVersion: 4
@@ -15352,6 +15990,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1777213097
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15586,6 +16245,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1778463560
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15820,6 +16500,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1790009769
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16056,6 +16757,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1797951652
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17370,6 +18092,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1881869753
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18061,6 +18804,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &1970591921
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18496,6 +19260,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &2002783336
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18788,6 +19573,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &2036953505
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19346,6 +20152,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &2052512461
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19686,6 +20513,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &2102553820
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19922,6 +20770,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &2118479609
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20474,6 +21343,27 @@ MonoBehaviour:
   MotorSpeedingScale: 1000
   MotorTorqueingScale: 100
   GasPedal: 0
+  doTriggerButton: 0
+  IamBeingTouched: 0
+  TargetBeingTouched: 0
+  doBeingFallenObject: 0
+  killColliderAfterTouchdown: 0
+  targetMachine: {fileID: 0}
+  doThisThingIsMovingTowards: 0
+  MovingspeedX: 0
+  MovingspeedY: 10
+  initPositional: {x: 0, y: 0, z: 0}
+  TriggerIsTouched: 0
+  ThingIsMoving: 0
+  LaunchIsMovingProgram: 0
+  targetTarget: {fileID: 0}
+  targetTargetHasItemEffect: {fileID: 0}
+  gotoMove: {x: 0, y: 0, z: 0}
+  doActivateMotor: 0
+  Motoring: {fileID: 0}
+  AngularVelocity: 100
+  Torqueing: 1000
+  Reversing: 0
 --- !u!60 &2143838571
 PolygonCollider2D:
   m_ObjectHideFlags: 0

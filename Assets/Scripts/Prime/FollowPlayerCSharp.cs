@@ -60,7 +60,7 @@ public class FollowPlayerCSharp : MonoBehaviour
         initialZoom = Zoom;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         //MouseClick Heurestics
 

@@ -546,7 +546,9 @@ public class ItemEffects : MonoBehaviour {
 
     private void FixedUpdate()
     {
+#if !UNITY_ANDROID
         LetsVibratorGround();
+#endif
     }
 
     void Start () {
@@ -638,7 +640,7 @@ public class ItemEffects : MonoBehaviour {
                 isEikSerkat = false;
             }
 
-            #region riding vehcicle
+#region riding vehcicle
             if (theSHanpeWhoIsTouching.isRidingVehicle)
             {
                 //GasPedal = theSHanpeWhoIsTouching.gasPedal * MotorSpeedingScale;
@@ -664,9 +666,9 @@ public class ItemEffects : MonoBehaviour {
 
             }
 
-            #endregion riding vehicle
+#endregion riding vehicle
 
-            #region Hydraulic Press
+#region Hydraulic Press
             if (doThisThingIsMovingTowards)
             {
                 if (targetTargetHasItemEffect) TargetBeingTouched = targetTargetHasItemEffect.IamBeingTouched;
@@ -702,10 +704,10 @@ public class ItemEffects : MonoBehaviour {
                     }
                 }
             }
-            #endregion
+#endregion
         }
 
-        #region Can Be What Shape
+#region Can Be What Shape
 
         if (canBeCircle && canBeSquare && canBeTriangle && canBeDedd)
         {
@@ -869,7 +871,7 @@ public class ItemEffects : MonoBehaviour {
         {
             Deserves = true; //if none of them allowed, then it treated as allow all.
         }
-        #endregion
+#endregion
 
         
 

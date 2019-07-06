@@ -44,8 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72786c003cb70854cab0ea9982c88320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingScreen: {fileID: 1364839444572176, guid: e19b18410a272114fb2f114fdf4b7c6a,
-    type: 3}
+  loadingScreen: {fileID: 70, guid: e19b18410a272114fb2f114fdf4b7c6a, type: 3}
   slider: {fileID: 114471786784248516, guid: e19b18410a272114fb2f114fdf4b7c6a, type: 3}
   progressText: {fileID: 0}
   eventSystem: {fileID: 0}

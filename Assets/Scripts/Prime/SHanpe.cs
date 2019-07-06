@@ -193,6 +193,22 @@ public class SHanpe : MonoBehaviour {
             }
         }
     }
+    [SerializeField] bool copyJockeyPress = false;
+    private void JockeyButton()
+    {
+        if(Input.GetButtonDown("Jockey") && !TheCameraAction.isMovingCamera)
+        {
+            PressToRide();
+            Debug.Log("JockeyButton");
+        }
+    }
+    private void DepressJockey()
+    {
+        if (Input.GetButtonUp("Jockey"))
+        {
+            DepressToStay();
+        }
+    }
 
     //functionality, Template Methods
     //Hard To figure out Jump By touch button
@@ -322,7 +338,7 @@ public class SHanpe : MonoBehaviour {
 
     public void setShape(int index)
     {
-        //Vibration.Vibrate(50);
+        Vibration.Vibrate(50);
         if(!eekSerkat) bentuk = (Bentuk) index;
         currBentuk = (Bentuk)index;
     }
@@ -529,7 +545,9 @@ public class SHanpe : MonoBehaviour {
 
     private void FixedUpdate()
     {
+#if !UNITY_ANDROID
         LetsVibratorGround();
+#endif
     }
 
     bool JointReseted = false;
@@ -552,12 +570,14 @@ public class SHanpe : MonoBehaviour {
             //    }
             //}
             PlayerIndex testPlayerIndex = (PlayerIndex)0;
+#if !UNITY_ANDROID
             GamePadState testState = GamePad.GetState(testPlayerIndex);
             if (testState.IsConnected)
             {
                 playerIndex = testPlayerIndex;
                 playerIndexSet = true;
             }
+#endif
         }
         //End Copy of XInputTestCS.cs
 
@@ -591,7 +611,7 @@ public class SHanpe : MonoBehaviour {
 
                         //To allow Keyboard controll, you must have Axes Horizontal and Vertical that set to Type as Key or Mouse Button
                         //Then add another same set for Joystick. Types are Joystick Axis.
-
+                        
                         
                     } else if(isRidingVehicle)
                     {
@@ -602,6 +622,10 @@ public class SHanpe : MonoBehaviour {
 
                     //jump button
                     JumpButton();
+
+                    //jockey button
+                    JockeyButton();
+                    DepressJockey();
 
                     //change shape
                     changeShapeButton();

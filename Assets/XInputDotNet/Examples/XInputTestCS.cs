@@ -1,5 +1,9 @@
 using UnityEngine;
 using XInputDotNetPure; // Required in C#
+#if ENABLE_WINMD_SUPPORT
+using Windows.Gaming.Input;
+#endif
+
 
 public class XInputTestCS : MonoBehaviour
 {

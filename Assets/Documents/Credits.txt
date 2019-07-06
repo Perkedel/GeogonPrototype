@@ -94,6 +94,8 @@ These people https://stackoverflow.com/questions/1352721/express-mathematical-in
 King Foo http://www.king-foo.com/2011/11/creating-debianubuntu-deb-packages/ . make dot deb packages the installation file for Debian based OS.
 LittleMissBurton http://www.furaffinity.net/view/30486874/ . The Ko-fi cup inspires me to make the game object of Ko-fi cup that is basically coffee mug with heart and https://ko-fi.com/joelwindows7 .
 Lirik Lagu Anak http://liriklaguanak.com/pok-ame-ame-lirik/ Pok Ame Ame . Emoji Pok Ame Ame adaptation easter egg poster.
+Programmer https://stackoverflow.com/questions/41393285/do-i-have-to-add-vibrate-permission-if-im-using-handheld-vibrate https://stackoverflow.com/questions/39651021/vibrate-with-duration-and-pattern/39668630#39668630 Vibrate Permission. If your app missing this permission it will not vibrate and for this unity game, the game is broken entirely, as if the method is invoked and fail that vibrate, the method won't run!!!
+
 
 
 Assets involved:
@@ -107,6 +109,7 @@ Seanba https://seanba.itch.io/supertiled2unity Super Tiled 2 Unity. Easy import 
 ENSOU https://assetstore.unity.com/packages/tools/audio/ens-music-player-108759 Music Player. [Decommissioned] Missing Assembly refference mysteriously. ruins everything!
 Hajiyev Elnur https://assetstore.unity.com/packages/audio/music/professional-music-player-90589 Music Player. Professional Music Player!
 speps https://github.com/speps/XInputDotNet XinputDotNet. full Xbox controller support!
+Digital Ruby (Jeff Johnson) https://assetstore.unity.com/packages/tools/physics/advanced-polygon-collider-52265 Advanced Polygon 2Dcollider. make better collider of polygon with animation cache support, simplifications, and more time savings!
 Nick Judy https://www.youtube.com/watch?v=aKa0CLeTh4o Cartoon FX Sound pack. 
 
 Packages involved (Beside preinstalled and built-in, user installed!):
